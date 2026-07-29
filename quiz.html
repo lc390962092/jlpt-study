@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JLPT 真题测试</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "Hiragino Sans", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .back { text-decoration: none; color: #667eea; font-size: 15px; }
+        .level-title { font-size: 18px; font-weight: bold; }
+        .progress-info { font-size: 13px; color: #888; }
+        .stage { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .panel {
+            background: white;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+        .panel h2 { font-size: 22px; margin-bottom: 8px; }
+        .panel .sub { font-size: 14px; color: #888; margin-bottom: 22px; }
+        .form-row { margin-bottom: 20px; }
+        .form-label { font-size: 14px; color: #555; margin-bottom: 10px; display: block; font-weight: 500; }
+        .option-group { display: flex; flex-wrap: wrap; gap: 10px; }
+        .option-chip {
+            flex: 1;
+            min-width: 70px;
+            text-align: center;
+            padding: 12px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            background: #f9fafb;
+            color: #555;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all .15s;
+        }
+        .option-chip.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102,126,234,0.25);
+        }
+        .switch-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            background: #f9fafb;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+        .switch-row span { font-size: 14px; color: #444; }
+        .switch { position: relative; width: 46px; height: 26px; background: #d1d5db; border-radius: 13px; transition: background .2s; }
+        .switch::after { content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; background: white; border-radius: 50%; transition: transform .2s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+        .switch.active { background: #667eea; }
+        .switch.active::after { transform: translateX(20px); }
+        .start-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 6px 18px rgba(102,126,234,0.3);
+        }
+        .start-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .quiz-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #888;
+        }
+        .progress-track {
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 3px;
+            transition: width .3s ease;
+        }
+        .question-card {
+            background: white;
+            border-radius: 24px;
+            padding: 30px 22px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            margin-bottom: 18px;
+        }
+        .q-type { font-size: 12px; color: #888; margin-bottom: 10px; }
+        .q-main { font-size: 26px; font-weight: bold; line-height: 1.5; margin-bottom: 10px; word-break: break-word; }
+        .q-sub { font-size: 15px; color: #667eea; }
+        .choices { display: flex; flex-direction: column; gap: 10px; }
+        .choice {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 16px 18px;
+            font-size: 15px;
+            text-align: left;
+            cursor: pointer;
+            transition: all .12s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .choice:active { transform: scale(0.98); }
+        .choice .badge {
+            flex-shrink: 0;
+            width: 26px; height: 26px; line-height: 26px;
+            border-radius: 50%;
+            background: #f3f4f6;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .choice.correct { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
+        .choice.correct .badge { background: #22c55e; color: white; }
+        .choice.wrong { border-color: #ef4444; background: #fef2f2; color: #b91c1c; }
+        .choice.wrong .badge { background: #ef4444; color: white; }
+        .choice.disabled { pointer-events: none; }
+
+        .feedback {
+            background: white;
+            border-radius: 18px;
+            padding: 18px;
+            margin-top: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            font-size: 14px;
+        }
+        .feedback.correct { border-left: 5px solid #22c55e; }
+        .feedback.wrong { border-left: 5px solid #ef4444; }
+        .feedback-title { font-weight: bold; margin-bottom: 6px; }
+        .feedback.correct .feedback-title { color: #15803d; }
+        .feedback.wrong .feedback-title { color: #b91c1c; }
+        .feedback-detail { color: #555; line-height: 1.6; }
+        .next-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 16px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 14px;
+        }
+
+        .result-score {
+            text-align: center;
+            padding: 30px 0;
+        }
+        .score-ring {
+            width: 140px; height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: conic-gradient(#667eea var(--score-deg), #e5e7eb 0);
+            position: relative;
+        }
+        .score-ring::before {
+            content: '';
+            position: absolute;
+            width: 116px; height: 116px;
+            border-radius: 50%;
+            background: white;
+        }
+        .score-text { position: relative; font-size: 36px; font-weight: bold; color: #333; }
+        .score-label { position: relative; font-size: 12px; color: #888; }
+        .result-title { font-size: 20px; font-weight: bold; margin-bottom: 6px; }
+        .result-desc { font-size: 14px; color: #888; }
+        .stat-row {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 22px 0;
+        }
+        .stat { text-align: center; }
+        .stat .num { font-size: 22px; font-weight: bold; color: #333; }
+        .stat .label { font-size: 12px; color: #888; }
+        .mistakes { margin-top: 22px; }
+        .mistakes h3 { font-size: 16px; margin-bottom: 12px; }
+        .mistake-item {
+            background: #f9fafb;
+            border-radius: 14px;
+            padding: 14px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .mistake-item .q { font-weight: bold; color: #333; margin-bottom: 4px; }
+        .mistake-item .a { color: #22c55e; }
+        .mistake-item .y { color: #ef4444; text-decoration: line-through; }
+        .btn-row { display: flex; gap: 12px; margin-top: 22px; }
+        .btn-row button { flex: 1; padding: 14px; border: none; border-radius: 14px; font-size: 15px; font-weight: 500; cursor: pointer; }
+        .btn-primary { background: #667eea; color: white; }
+        .btn-secondary { background: #f3f4f6; color: #555; }
+
+        .msg { text-align: center; padding: 40px; color: #888; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <a href="index.html" class="back">← 返回</a>
+        <div class="level-title" id="levelTitle">N5</div>
+        <div class="progress-info" id="progressInfo">测试模式</div>
+    </div>
+    <div class="stage" id="stage">
+        <div class="msg">加载中...</div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(location.search);
+        const level = params.get('level') || 'N5';
+        const titleEl = document.getElementById('levelTitle');
+        const stageEl = document.getElementById('stage');
+        titleEl.textContent = level + ' 测试';
+
+        const LS_KEYS = {
+            mistakes: (lv) => `jlpt_quiz_mistakes_${lv}`,
+            history: (lv) => `jlpt_quiz_history_${lv}`,
+            settings: () => `jlpt_quiz_settings`
+        };
+
+        let words = [];
+        let grammars = [];
+        let questions = [];
+        let currentIdx = 0;
+        let correctCount = 0;
+        let answers = [];
+        let settings = { count: 20, scope: 'mixed', mistakesOnly: false };
+
+        async function init() {
+            const basePath = location.pathname.replace(/\/[^\/]*$/, '/');
+            try {
+                const [wResp, gResp] = await Promise.all([
+                    fetch(`${basePath}content/${level}_words.json`),
+                    fetch(`${basePath}content/${level}_grammar.json`)
+                ]);
+                if (!wResp.ok || !gResp.ok) throw new Error('数据加载失败');
+                words = await wResp.json();
+                grammars = await gResp.json();
+                loadSettings();
+                renderSetup();
+            } catch (err) {
+                console.error(err);
+                stageEl.innerHTML = `<div class="msg">加载失败：${err.message}<br>请刷新重试</div>`;
+            }
+        }
+
+        function loadSettings() {
+            const saved = localStorage.getItem(LS_KEYS.settings());
+            if (saved) settings = { ...settings, ...JSON.parse(saved) };
+        }
+        function saveSettings() {
+            localStorage.setItem(LS_KEYS.settings(), JSON.stringify(settings));
+        }
+
+        function getMistakes() {
+            const raw = localStorage.getItem(LS_KEYS.mistakes(level));
+            return raw ? JSON.parse(raw) : [];
+        }
+        function saveMistakes(list) {
+            localStorage.setItem(LS_KEYS.mistakes(level), JSON.stringify(list.slice(-100)));
+        }
+        function addMistake(q) {
+            const list = getMistakes();
+            const key = q.key;
+            const idx = list.findIndex(m => m.key === key);
+            if (idx >= 0) list.splice(idx, 1);
+            list.push({ key, type: q.type, data: q.data, correctText: q.options[q.answerIndex] });
+            saveMistakes(list);
+        }
+        function removeMistake(key) {
+            const list = getMistakes();
+            const idx = list.findIndex(m => m.key === key);
+            if (idx >= 0) {
+                list.splice(idx, 1);
+                saveMistakes(list);
+            }
+        }
+
+        function randPick(arr, n, excludeSet) {
+            const pool = arr.filter(x => !excludeSet.has(x));
+            const out = [];
+            while (out.length < n && pool.length) {
+                const idx = Math.floor(Math.random() * pool.length);
+                out.push(pool.splice(idx, 1)[0]);
+            }
+            return out;
+        }
+
+        function shuffle(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function makeWordQuestions(pool, count) {
+            const selected = shuffle(pool).slice(0, count);
+            return selected.map(item => {
+                const isWordToMeaning = Math.random() < 0.5;
+                const correctText = isWordToMeaning ? item.meaning : item.word;
+                const distractors = randPick(
+                    pool.filter(x => x.id !== item.id).map(x => isWordToMeaning ? x.meaning : x.word),
+                    3,
+                    new Set([correctText])
+                );
+                const options = shuffle([correctText, ...distractors]);
+                return {
+                    type: isWordToMeaning ? 'word_meaning' : 'word_recognition',
+                    key: item.id,
+                    data: item,
+                    question: isWordToMeaning ? item.word : item.meaning,
+                    sub: isWordToMeaning ? (item.reading ? `读音：${item.reading}` : '') : (item.reading ? `选出对应的日文词` : ''),
+                    options,
+                    answerIndex: options.indexOf(correctText),
+                    explanation: `${item.word}（${item.reading}）→ ${item.meaning}`
+                };
+            });
+        }
+
+        function makeGrammarQuestions(pool, count) {
+            const selected = shuffle(pool).slice(0, count);
+            return selected.map(item => {
+                const r = Math.random();
+                let type, question, sub, correctText, distractorMap;
+                if (r < 0.4) {
+                    type = 'grammar_meaning';
+                    question = `${item.grammar} 的意思是？`;
+                    sub = '';
+                    correctText = item.meaning;
+                    distractorMap = x => x.meaning;
+                } else if (r < 0.7 && item.pattern) {
+                    type = 'grammar_pattern';
+                    question = `${item.grammar} 的接续是？`;
+                    sub = '';
+                    correctText = item.pattern;
+                    distractorMap = x => x.pattern || x.meaning;
+                } else {
+                    type = 'grammar_form';
+                    question = `「${item.meaning}」对应的语法是？`;
+                    sub = '';
+                    correctText = item.grammar;
+                    distractorMap = x => x.grammar;
+                }
+                const used = new Set([correctText]);
+                const rawDistractors = pool
+                    .filter(x => x.id !== item.id)
+                    .map(distractorMap)
+                    .filter(t => t && !used.has(t));
+                const distractors = randPick(rawDistractors, 3, used);
+                const options = shuffle([correctText, ...distractors]);
+                return {
+                    type, key: item.id, data: item,
+                    question, sub, options,
+                    answerIndex: options.indexOf(correctText),
+                    explanation: `${item.grammar}（${item.reading}）：${item.meaning}${item.pattern ? `，接续：${item.pattern}` : ''}`
+                };
+            });
+        }
+
+        function generateQuestions() {
+            const count = settings.count;
+            if (settings.mistakesOnly) {
+                const mistakes = getMistakes();
+                const out = [];
+                for (const m of mistakes) {
+                    if (m.type.startsWith('word_')) {
+                        const item = words.find(x => x.id === m.key);
+                        if (item) out.push(...makeWordQuestions([item], 1));
+                    } else {
+                        const item = grammars.find(x => x.id === m.key);
+                        if (item) out.push(...makeGrammarQuestions([item], 1));
+                    }
+                }
+                return shuffle(out);
+            }
+
+            let q = [];
+            if (settings.scope === 'words') {
+                q = makeWordQuestions(words, Math.min(count, words.length));
+            } else if (settings.scope === 'grammar') {
+                q = makeGrammarQuestions(grammars, Math.min(count, grammars.length));
+            } else {
+                const half = Math.ceil(count / 2);
+                const wordCount = Math.min(half, words.length);
+                const grammarCount = Math.min(count - wordCount, grammars.length);
+                const wordQ = makeWordQuestions(words, wordCount);
+                const grammarQ = makeGrammarQuestions(grammars, grammarCount);
+                q = shuffle([...wordQ, ...grammarQ]);
+            }
+            return q;
+        }
+
+        function renderSetup() {
+            const mistakesCount = getMistakes().length;
+            stageEl.innerHTML = `
+                <div class="panel">
+                    <h2>${level} 真题测试</h2>
+                    <div class="sub">词汇 ${words.length} 条 · 语法 ${grammars.length} 条 · 错题 ${mistakesCount} 条</div>
+
+                    <div class="form-row">
+                        <label class="form-label">题型</label>
+                        <div class="option-group">
+                            <div class="option-chip ${settings.scope === 'words' ? 'active' : ''}" data-scope="words">词汇</div>
+                            <div class="option-chip ${settings.scope === 'grammar' ? 'active' : ''}" data-scope="grammar">语法</div>
+                            <div class="option-chip ${settings.scope === 'mixed' ? 'active' : ''}" data-scope="mixed">混合</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-label">题量</label>
+                        <div class="option-group">
+                            <div class="option-chip ${settings.count === 10 ? 'active' : ''}" data-count="10">10</div>
+                            <div class="option-chip ${settings.count === 20 ? 'active' : ''}" data-count="20">20</div>
+                            <div class="option-chip ${settings.count === 50 ? 'active' : ''}" data-count="50">50</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="switch-row" id="mistakesToggle">
+                            <span>只练错题</span>
+                            <div class="switch ${settings.mistakesOnly ? 'active' : ''}"></div>
+                        </div>
+                    </div>
+
+                    <button class="start-btn" id="startBtn">开始测试</button>
+                </div>
+            `;
+
+            document.querySelectorAll('[data-scope]').forEach(el => {
+                el.addEventListener('click', () => {
+                    settings.scope = el.dataset.scope;
+                    if (settings.mistakesOnly) settings.mistakesOnly = false;
+                    saveSettings();
+                    renderSetup();
+                });
+            });
+            document.querySelectorAll('[data-count]').forEach(el => {
+                el.addEventListener('click', () => {
+                    settings.count = parseInt(el.dataset.count, 10);
+                    saveSettings();
+                    renderSetup();
+                });
+            });
+            document.getElementById('mistakesToggle').addEventListener('click', () => {
+                settings.mistakesOnly = !settings.mistakesOnly;
+                saveSettings();
+                renderSetup();
+            });
+            document.getElementById('startBtn').addEventListener('click', startQuiz);
+        }
+
+        function startQuiz() {
+            questions = generateQuestions();
+            if (!questions.length) {
+                alert(settings.mistakesOnly ? '暂无错题，先去学习吧！' : '题目生成失败，请检查数据。');
+                return;
+            }
+            currentIdx = 0;
+            correctCount = 0;
+            answers = [];
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            const q = questions[currentIdx];
+            const progress = ((currentIdx) / questions.length) * 100;
+            stageEl.innerHTML = `
+                <div class="quiz-top">
+                    <span>第 ${currentIdx + 1} / ${questions.length} 题</span>
+                    <span>${q.type.includes('word') ? '词汇' : '语法'}</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:${progress}%"></div></div>
+                <div class="question-card">
+                    <div class="q-type">${typeLabel(q.type)}</div>
+                    <div class="q-main">${escapeHtml(q.question)}</div>
+                    ${q.sub ? `<div class="q-sub">${escapeHtml(q.sub)}</div>` : ''}
+                </div>
+                <div class="choices" id="choices"></div>
+                <div class="feedback hidden" id="feedback"></div>
+                <button class="next-btn hidden" id="nextBtn">下一题</button>
+            `;
+
+            const choicesEl = document.getElementById('choices');
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('div');
+                btn.className = 'choice';
+                btn.innerHTML = `<div class="badge">${String.fromCharCode(65 + i)}</div><div>${escapeHtml(opt)}</div>`;
+                btn.addEventListener('click', () => selectOption(i));
+                choicesEl.appendChild(btn);
+            });
+
+            document.getElementById('nextBtn').addEventListener('click', nextQuestion);
+        }
+
+        function typeLabel(type) {
+            const map = {
+                word_meaning: '词汇：选择中文释义',
+                word_recognition: '词汇：选择日文词',
+                grammar_meaning: '语法：选择释义',
+                grammar_form: '语法：选择语法形式',
+                grammar_pattern: '语法：选择接续方式'
+            };
+            return map[type] || type;
+        }
+
+        function selectOption(idx) {
+            const q = questions[currentIdx];
+            const correct = idx === q.answerIndex;
+            const choices = document.querySelectorAll('.choice');
+            choices.forEach((c, i) => {
+                c.classList.add('disabled');
+                if (i === q.answerIndex) c.classList.add('correct');
+                else if (i === idx) c.classList.add('wrong');
+            });
+
+            if (correct) {
+                correctCount++;
+                removeMistake(q.key);
+            } else {
+                addMistake(q);
+            }
+            answers.push({ q, selected: idx, correct });
+
+            const fb = document.getElementById('feedback');
+            fb.className = `feedback ${correct ? 'correct' : 'wrong'}`;
+            fb.innerHTML = `
+                <div class="feedback-title">${correct ? '✓ 回答正确' : '✗ 回答错误'}</div>
+                <div class="feedback-detail">${escapeHtml(q.explanation)}</div>
+            `;
+            fb.classList.remove('hidden');
+
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.textContent = currentIdx === questions.length - 1 ? '查看结果' : '下一题';
+            nextBtn.classList.remove('hidden');
+            nextBtn.focus();
+        }
+
+        function nextQuestion() {
+            currentIdx++;
+            if (currentIdx >= questions.length) {
+                renderResult();
+            } else {
+                renderQuestion();
+            }
+        }
+
+        function renderResult() {
+            const total = questions.length;
+            const wrong = total - correctCount;
+            const pct = total ? Math.round((correctCount / total) * 100) : 0;
+            const deg = pct * 3.6;
+            const mistakes = answers.filter(a => !a.correct);
+
+            stageEl.innerHTML = `
+                <div class="panel">
+                    <div class="result-score">
+                        <div class="score-ring" style="--score-deg:${deg}deg;">
+                            <div class="score-text">${pct}%</div>
+                            <div class="score-label">正确率</div>
+                        </div>
+                        <div class="result-title">${scoreComment(pct)}</div>
+                        <div class="result-desc">${level} · ${settings.scope === 'mixed' ? '混合' : (settings.scope === 'words' ? '词汇' : '语法')} · 共 ${total} 题</div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat"><div class="num">${correctCount}</div><div class="label">正确</div></div>
+                        <div class="stat"><div class="num">${wrong}</div><div class="label">错误</div></div>
+                        <div class="stat"><div class="num">${total}</div><div class="label">总计</div></div>
+                    </div>
+                    ${mistakes.length ? `
+                    <div class="mistakes">
+                        <h3>错题回顾</h3>
+                        ${mistakes.slice(0, 20).map(a => `
+                            <div class="mistake-item">
+                                <div class="q">${escapeHtml(a.q.question)}</div>
+                                <div class="y">你的答案：${escapeHtml(a.q.options[a.selected])}</div>
+                                <div class="a">正确答案：${escapeHtml(a.q.options[a.q.answerIndex])}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    ` : '<div class="msg" style="padding:20px;">🎉 全对！继续保持</div>'}
+                    <div class="btn-row">
+                        <button class="btn-primary" onclick="restartQuiz()">再测一次</button>
+                        <button class="btn-secondary" onclick="reviewMistakes()">只练错题</button>
+                        <button class="btn-secondary" onclick="location.href='index.html'">返回首页</button>
+                    </div>
+                </div>
+            `;
+
+            const history = JSON.parse(localStorage.getItem(LS_KEYS.history(level)) || '[]');
+            history.unshift({ date: new Date().toISOString(), level, scope: settings.scope, total, correct: correctCount, pct });
+            localStorage.setItem(LS_KEYS.history(level), JSON.stringify(history.slice(0, 20)));
+        }
+
+        function scoreComment(pct) {
+            if (pct >= 90) return '优秀！';
+            if (pct >= 75) return '不错，继续巩固';
+            if (pct >= 60) return '及格，还有提升空间';
+            return '加油，多复习错题';
+        }
+
+        function restartQuiz() {
+            currentIdx = 0;
+            correctCount = 0;
+            answers = [];
+            renderQuestion();
+        }
+
+        function reviewMistakes() {
+            settings.mistakesOnly = true;
+            saveSettings();
+            startQuiz();
+        }
+
+        function escapeHtml(str) {
+            if (str == null) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        init();
+    </script>
+</body>
+</html>
