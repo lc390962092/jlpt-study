@@ -244,7 +244,25 @@
         .section-bar .pct { width: 40px; text-align: right; color: #888; }
         .btn-row { display: flex; gap: 12px; margin-top: 22px; }
         .btn-row button { flex: 1; }
+        .btn-row button.half { flex: 1; }
         .msg { text-align: center; padding: 40px; color: #888; }
+
+        .review-list { margin-top: 18px; }
+        .review-item {
+            background: white; border-radius: 18px; padding: 18px; margin-bottom: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06); text-align: left;
+        }
+        .review-item .rev-q { font-size: 15px; font-weight: bold; color: #333; margin-bottom: 10px; }
+        .review-item .rev-ans { font-size: 13px; color: #555; margin-bottom: 6px; }
+        .review-item .rev-ans .right { color: #16a34a; font-weight: bold; }
+        .review-item .rev-ans .wrong { color: #ef4444; font-weight: bold; }
+        .review-item .rev-exp { font-size: 13px; color: #555; line-height: 1.6; background: #f8f9ff; border-radius: 12px; padding: 12px; }
+        .review-filter { display: flex; gap: 10px; margin-bottom: 14px; }
+        .review-filter button { flex: 1; padding: 10px; border-radius: 12px; border: none; background: #f3f4f6; color: #555; font-size: 13px; cursor: pointer; }
+        .review-filter button.active { background: #667eea; color: white; }
+        .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .review-header .tag { font-size: 11px; padding: 4px 10px; border-radius: 20px; background: #f0fdf4; color: #16a34a; }
+        .review-header .tag.wrong { background: #fef2f2; color: #b91c1c; }
     </style>
 </head>
 <body>
@@ -267,6 +285,7 @@
         let currentIdx = 0;
         let correctCount = 0;
         let sectionStats = {};
+        let currentAnswers = []; // 记录每题作答：{ selected, correct, q }
 
         function init() {
             loadExams();
@@ -477,6 +496,7 @@
             currentIdx = 0;
             correctCount = 0;
             sectionStats = {};
+            currentAnswers = [];
             renderQuestion();
         }
 
@@ -546,6 +566,7 @@
                 sectionStats[q.sectionId] = sectionStats[q.sectionId] || { name: q.sectionName, total: 0, correct: 0 };
                 sectionStats[q.sectionId].total++;
             }
+            currentAnswers.push({ selected: idx, correct: correct, q: q });
 
             const fb = document.getElementById('feedback');
             fb.className = `feedback ${correct ? 'correct' : 'wrong'}`;
@@ -601,17 +622,58 @@
                     </div>
                     <div class="btn-row">
                         <button class="btn btn-primary" onclick="startExamById('${currentExam.importedAt}')">再做一次</button>
+                        <button class="btn btn-secondary" onclick="renderReview('wrong')">错题解析</button>
+                        <button class="btn btn-secondary" onclick="renderReview('all')">全部解析</button>
                         <button class="btn btn-secondary" onclick="renderList()">真题列表</button>
                     </div>
                 </div>
             `;
-            saveHistory({ exam: currentExam, total, correct: correctCount, pct, sectionStats, date: new Date().toISOString() });
+            saveHistory({ exam: currentExam, total, correct: correctCount, pct, sectionStats, answers: currentAnswers, date: new Date().toISOString() });
         }
 
         function startExamById(importedAt) {
             const idx = exams.findIndex(e => e.importedAt === importedAt);
             if (idx >= 0) startExam(idx);
             else alert('真题未找到');
+        }
+
+        function renderReview(filter) {
+            const list = filter === 'wrong' ? currentAnswers.filter(a => !a.correct) : currentAnswers;
+            stageEl.innerHTML = `
+                <div class="topbar" style="position:static;margin-bottom:15px;">
+                    <a href="javascript:renderResult()" class="back">← 返回结果</a>
+                    <div class="level-title">${filter === 'wrong' ? '错题解析' : '全部解析'}</div>
+                    <div style="width:40px"></div>
+                </div>
+                <div class="review-filter">
+                    <button class="${filter === 'all' ? 'active' : ''}" onclick="renderReview('all')">全部(${currentAnswers.length})</button>
+                    <button class="${filter === 'wrong' ? 'active' : ''}" onclick="renderReview('wrong')">仅错题(${currentAnswers.filter(a=>!a.correct).length})</button>
+                </div>
+                <div class="review-list">
+                    ${list.length ? list.map((a, i) => renderReviewItem(a, i+1)).join('') : '<div class="msg">暂无错题，真棒！</div>'}
+                </div>
+            `;
+        }
+
+        function renderReviewItem(a, i) {
+            const q = a.q;
+            const badge = a.correct ? '<span class="tag">✓ 答对</span>' : '<span class="tag wrong">✗ 答错</span>';
+            const yourAnswer = q.options[a.selected] || '未作答';
+            const correctAnswer = q.options[q.answer] || '';
+            return `
+                <div class="review-item">
+                    <div class="review-header">
+                        <div style="font-size:12px;color:#888;">第 ${i} 题 · ${escapeHtml(typeLabel(q.type))}</div>
+                        ${badge}
+                    </div>
+                    <div class="rev-q">${escapeHtml(q.question)}${q.sub ? `<br><span style="font-size:13px;color:#667eea;">${escapeHtml(q.sub)}</span>` : ''}</div>
+                    <div class="rev-ans">
+                        <div>你的答案：<span class="${a.correct ? 'right' : 'wrong'}">${escapeHtml(yourAnswer)}</span></div>
+                        ${a.correct ? '' : `<div>正确答案：<span class="right">${escapeHtml(correctAnswer)}</span></div>`}
+                    </div>
+                    <div class="rev-exp">${escapeHtml(q.explanation || '正确答案是：' + q.options[q.answer])}</div>
+                </div>
+            `;
         }
 
         function scoreComment(pct) {
@@ -626,6 +688,47 @@
             const history = JSON.parse(localStorage.getItem(key) || '[]');
             history.unshift(record);
             localStorage.setItem(key, JSON.stringify(history.slice(0, 50)));
+        }
+
+        function renderResult() {
+            const total = currentQuestions.length;
+            const wrong = total - correctCount;
+            const pct = total ? Math.round((correctCount / total) * 100) : 0;
+            const deg = pct * 3.6;
+            stageEl.innerHTML = `
+                <div class="panel">
+                    <div class="result-score">
+                        <div class="score-ring" style="--score-deg:${deg}deg;">
+                            <div class="score-text">${pct}%</div>
+                            <div class="score-label">正确率</div>
+                        </div>
+                        <div class="result-title">${scoreComment(pct)}</div>
+                        <div class="result-desc">${escapeHtml(currentExam.title)}</div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat"><div class="num">${correctCount}</div><div class="label">正确</div></div>
+                        <div class="stat"><div class="num">${wrong}</div><div class="label">错误</div></div>
+                        <div class="stat"><div class="num">${total}</div><div class="label">总计</div></div>
+                    </div>
+                    <div class="section-stat">
+                        <h3>各单元正确率</h3>
+                        ${Object.values(sectionStats).map(s => `
+                            <div class="section-bar">
+                                <div class="name">${escapeHtml(s.name)}</div>
+                                <div class="track"><div class="fill" style="width:${Math.round(s.correct/s.total*100)}%"></div></div>
+                                <div class="pct">${Math.round(s.correct/s.total*100)}%</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn btn-primary" onclick="startExamById('${currentExam.importedAt}')">再做一次</button>
+                        <button class="btn btn-secondary" onclick="renderReview('wrong')">错题解析</button>
+                        <button class="btn btn-secondary" onclick="renderReview('all')">全部解析</button>
+                        <button class="btn btn-secondary" onclick="renderList()">真题列表</button>
+                    </div>
+                </div>
+            `;
+            saveHistory({ exam: currentExam, total, correct: correctCount, pct, sectionStats, answers: currentAnswers, date: new Date().toISOString() });
         }
 
         function shuffle(arr) {
