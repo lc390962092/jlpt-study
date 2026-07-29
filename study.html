@@ -252,11 +252,16 @@
 
         async function init() {
             loadProgress();
-            const resp = await fetch(`content/${level}_words.json`);
+            const basePath = location.pathname.replace(/\/[^\/]*$/, '/');
+            const resp = await fetch(`${basePath}content/${level}_words.json`);
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             words = await resp.json();
             render();
         }
-        init();
+        init().catch(err => {
+            console.error('加载失败', err);
+            stageEl.innerHTML = `<div class="msg">加载失败：${err.message}<br>请刷新重试</div>`;
+        });
     </script>
 </body>
 </html>
