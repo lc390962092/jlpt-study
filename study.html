@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JLPT 词汇学习</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "Hiragino Sans", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+        }
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .back { text-decoration: none; color: #667eea; font-size: 15px; }
+        .level-title { font-size: 18px; font-weight: bold; }
+        .progress-info { font-size: 13px; color: #888; }
+        .stage { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            min-height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            user-select: none;
+        }
+        .card:active { transform: scale(0.98); }
+        .word { font-size: 52px; font-weight: bold; margin-bottom: 12px; }
+        .hint { font-size: 14px; color: #888; margin-top: 20px; }
+        .back-face { display: none; }
+        .card.flipped .front-face { display: none; }
+        .card.flipped .back-face { display: block; }
+        .reading { font-size: 28px; color: #667eea; margin-bottom: 8px; }
+        .accent { font-size: 14px; color: #999; margin-bottom: 15px; }
+        .meaning { font-size: 22px; color: #333; margin-bottom: 25px; line-height: 1.5; }
+        .sentence-box {
+            background: #f8f9ff;
+            border-radius: 16px;
+            padding: 18px;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .sentence { font-size: 18px; color: #444; margin-bottom: 8px; }
+        .sentence-reading { font-size: 15px; color: #667eea; margin-bottom: 8px; }
+        .sentence-meaning { font-size: 15px; color: #666; }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            border: none;
+            border-radius: 22px;
+            padding: 12px 22px;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .btn-word { background: #667eea; }
+        .btn-sentence { background: #10b981; }
+        .btn-known { background: #4ade80; color: #064e3b; }
+        .btn-unknown { background: #f87171; }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            gap: 15px;
+        }
+        .nav-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 14px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+        }
+        .nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .msg {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <a href="index.html" class="back">← 返回</a>
+        <div class="level-title" id="levelTitle">N5</div>
+        <div class="progress-info" id="progressInfo">0 / 0</div>
+    </div>
+    <div class="stage" id="stage">
+        <div class="msg">加载中...</div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(location.search);
+        const level = params.get('level') || 'N5';
+        const titleEl = document.getElementById('levelTitle');
+        const progressEl = document.getElementById('progressInfo');
+        const stageEl = document.getElementById('stage');
+        titleEl.textContent = level;
+
+        let words = [];
+        let index = 0;
+        let known = new Set();
+        let synth = window.speechSynthesis;
+        let japaneseVoice = null;
+
+        function findJapaneseVoice() {
+            const voices = synth.getVoices();
+            for (const v of voices) {
+                if (v.lang.startsWith('ja')) { japaneseVoice = v; break; }
+            }
+        }
+        if (synth.onvoiceschanged !== undefined) {
+            synth.onvoiceschanged = findJapaneseVoice;
+        }
+        findJapaneseVoice();
+
+        function speak(text, rate = 0.85) {
+            if (!synth) return;
+            synth.cancel();
+            const utter = new SpeechSynthesisUtterance(text);
+            utter.lang = 'ja-JP';
+            utter.rate = rate;
+            utter.pitch = 1.0;
+            if (japaneseVoice) utter.voice = japaneseVoice;
+            synth.speak(utter);
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem(`jlpt_progress_${level}`);
+            if (saved) known = new Set(JSON.parse(saved));
+        }
+        function saveProgress() {
+            localStorage.setItem(`jlpt_progress_${level}`, JSON.stringify([...known]));
+        }
+
+        function render() {
+            if (!words.length) {
+                stageEl.innerHTML = '<div class="msg">暂无词汇数据</div>';
+                return;
+            }
+            if (index >= words.length) {
+                stageEl.innerHTML = `
+                    <div class="msg">
+                        <h2>🎉 ${level} 已完成</h2>
+                        <p>本轮共 ${words.length} 词，已掌握 ${known.size} 词</p>
+                        <button class="btn btn-known" onclick="restart()" style="margin-top:20px;">重新开始</button>
+                    </div>
+                `;
+                progressEl.textContent = `${known.size} / ${words.length}`;
+                return;
+            }
+            const w = words[index];
+            const isKnown = known.has(w.id);
+            progressEl.textContent = `${index + 1} / ${words.length} · 已掌握 ${known.size}`;
+            stageEl.innerHTML = `
+                <div class="card" id="card" onclick="flip()">
+                    <div class="front-face">
+                        <div class="word">${w.word}</div>
+                        <div class="accent">${w.pos} ${w.accent}</div>
+                        <div class="hint">点击卡片查看释义</div>
+                    </div>
+                    <div class="back-face">
+                        <div class="word">${w.word}</div>
+                        <div class="reading">${w.reading}</div>
+                        <div class="accent">${w.pos} ${w.accent}</div>
+                        <div class="meaning">${w.meaning}</div>
+                        ${w.sentence ? `
+                        <div class="sentence-box">
+                            <div class="sentence">${w.sentence}</div>
+                            <div class="sentence-reading">${w.sentence_reading}</div>
+                            <div class="sentence-meaning">${w.sentence_meaning}</div>
+                        </div>
+                        ` : ''}
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-word" onclick="event.stopPropagation(); speakWord()">🔊 读音</button>
+                    ${w.sentence ? `<button class="btn btn-sentence" onclick="event.stopPropagation(); speakSentence()">📝 例句</button>` : ''}
+                    <button class="btn ${isKnown ? 'btn-unknown' : 'btn-known'}" onclick="event.stopPropagation(); toggleKnown()">${isKnown ? '取消掌握' : '✓ 掌握'}</button>
+                </div>
+                <div class="controls">
+                    <button class="nav-btn" onclick="prev()" ${index === 0 ? 'disabled' : ''}>← 上一个</button>
+                    <button class="nav-btn" onclick="next()">下一个 →</button>
+                </div>
+            `;
+        }
+
+        function flip() {
+            document.getElementById('card').classList.toggle('flipped');
+        }
+
+        function speakWord() {
+            const w = words[index];
+            speak(`${w.word}、${w.reading}`);
+        }
+
+        function speakSentence() {
+            const w = words[index];
+            if (w.sentence) speak(w.sentence);
+        }
+
+        function toggleKnown() {
+            const w = words[index];
+            if (known.has(w.id)) known.delete(w.id);
+            else known.add(w.id);
+            saveProgress();
+            render();
+        }
+
+        function next() {
+            if (synth) synth.cancel();
+            index++;
+            render();
+        }
+
+        function prev() {
+            if (synth) synth.cancel();
+            if (index > 0) index--;
+            render();
+        }
+
+        function restart() {
+            index = 0;
+            render();
+        }
+
+        async function init() {
+            loadProgress();
+            const resp = await fetch(`content/${level}_words.json`);
+            words = await resp.json();
+            render();
+        }
+        init();
+    </script>
+</body>
+</html>
