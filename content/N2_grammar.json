@@ -6,7 +6,9 @@
     "meaning": "感慨……/本应……",
     "example": "若い時は、何でも挑戦したいものだ",
     "example_reading": "若[わか]い 時[とき]は、 何[なに]でも 挑戦[ちょうせん]したいものだ",
-    "example_meaning": "年轻的时候，什么都想挑战"
+    "example_meaning": "年轻的时候，什么都想挑战",
+    "pattern": "动词辞書形 + ものだ",
+    "compare": "〜ことだ：ものだ感慨常理"
   },
   {
     "id": "n2-002",
@@ -15,7 +17,9 @@
     "meaning": "不应该……",
     "example": "人を裏切ることは人間としてあるものではない",
     "example_reading": "人[ひと]を 裏切[うらぎ]ることは 人間[にんげん]としてあるものではない",
-    "example_meaning": "作为人不应该背叛别人"
+    "example_meaning": "作为人不应该背叛别人",
+    "pattern": "动词辞書形 + ものではない",
+    "compare": "〜べきではない：ものではない感慨，べきではない义务"
   },
   {
     "id": "n2-003",
@@ -24,7 +28,9 @@
     "meaning": "最好……/就是……",
     "example": "健康を大切にすることだ",
     "example_reading": "健康[けんこう]を 大切[たいせつ]にすることだ",
-    "example_meaning": "最重要的是珍惜健康"
+    "example_meaning": "最重要的是珍惜健康",
+    "pattern": "动词辞書形 + ことだ",
+    "compare": "〜ものだ：ことだ忠告"
   },
   {
     "id": "n2-004",
@@ -33,7 +39,9 @@
     "meaning": "不必……",
     "example": "少しの失敗で落ち込むことはない",
     "example_reading": "少[すこ]しの 失敗[しっぱい]で 落[お]ち 込[こ]むことはない",
-    "example_meaning": "不必因为一点失败就消沉"
+    "example_meaning": "不必因为一点失败就消沉",
+    "pattern": "动词辞書形 + ことはない",
+    "compare": "〜までもない：同义"
   },
   {
     "id": "n2-005",
@@ -42,7 +50,9 @@
     "meaning": "应该……",
     "example": "正しいことを貫くべきだ",
     "example_reading": "正[ただ]しいことを 貫[つらぬ]くべきだ",
-    "example_meaning": "应该坚持正确的事"
+    "example_meaning": "应该坚持正确的事",
+    "pattern": "动词辞書形 + べきだ",
+    "compare": "〜べきではない：正反"
   },
   {
     "id": "n2-006",
@@ -51,7 +61,9 @@
     "meaning": "不应该……",
     "example": "人を軽蔑する態度を取るべきではない",
     "example_reading": "人[ひと]を 軽蔑[けいべつ]する 態度[たいど]を 取[と]るべきではない",
-    "example_meaning": "不应该采取蔑视他人的态度"
+    "example_meaning": "不应该采取蔑视他人的态度",
+    "pattern": "动词辞書形 + べきではない",
+    "compare": "〜べきだ：正反"
   },
   {
     "id": "n2-007",
@@ -60,7 +72,9 @@
     "meaning": "一定……",
     "example": "あの慎重な彼がミスをしたに違いない",
     "example_reading": "あの 慎重[しんちょう]な 彼[かれ]がミスをしたに 違[ちが]いない",
-    "example_meaning": "一定是那个谨慎的他犯了错"
+    "example_meaning": "一定是那个谨慎的他犯了错",
+    "pattern": "动词普通形/名詞 + に違いない",
+    "compare": "〜に決まっている：違いない中性，決まっている偏确信"
   },
   {
     "id": "n2-008",
@@ -69,7 +83,9 @@
     "meaning": "肯定……",
     "example": "あの人が優勝するに決まっている",
     "example_reading": "あの 人[ひと]が 優勝[ゆうしょう]するに 決[き]まっている",
-    "example_meaning": "那个人肯定会获胜"
+    "example_meaning": "那个人肯定会获胜",
+    "pattern": "动词普通形/名詞 + に決まっている",
+    "compare": "〜に違いない：決まっている偏主观确信"
   },
   {
     "id": "n2-009",
@@ -78,7 +94,9 @@
     "meaning": "应该……",
     "example": "この電車なら30分で着くはずだ",
     "example_reading": "この 電車[でんしゃ]なら30 分[ぷん]で 着[つ]くはずだ",
-    "example_meaning": "这趟电车应该30分钟能到"
+    "example_meaning": "这趟电车应该30分钟能到",
+    "pattern": "动词普通形/名詞 + はずだ",
+    "compare": "〜はずがない：正反"
   },
   {
     "id": "n2-010",
@@ -87,7 +105,9 @@
     "meaning": "不可能……",
     "example": "彼が犯人のはずがない",
     "example_reading": "彼[かれ]が 犯人[はんにん]のはずがない",
-    "example_meaning": "他不可能是犯人"
+    "example_meaning": "他不可能是犯人",
+    "pattern": "动词普通形/名詞 + はずがない",
+    "compare": "〜はずだ：正反"
   },
   {
     "id": "n2-011",
@@ -96,7 +116,9 @@
     "meaning": "也许……",
     "example": "この計画は失敗するかもしれない",
     "example_reading": "この 計画[けいかく]は 失敗[しっぱい]するかもしれない",
-    "example_meaning": "这个计划也许会失败"
+    "example_meaning": "这个计划也许会失败",
+    "pattern": "动词普通形/名詞 + かもしれない",
+    "compare": "〜かねない：かも中性，かね偏负面"
   },
   {
     "id": "n2-012",
@@ -105,7 +127,9 @@
     "meaning": "说不定会……",
     "example": "彼は怒りかねないから、注意して話そう",
     "example_reading": "彼[かれ]は 怒[おこ]りかねないから、 注意[ちゅうい]して 話[はな]そう",
-    "example_meaning": "说不定他会生气，说话注意点"
+    "example_meaning": "说不定他会生气，说话注意点",
+    "pattern": "动词ます形 + かねない",
+    "compare": "〜かもしれない：かね偏负面"
   },
   {
     "id": "n2-013",
@@ -114,7 +138,9 @@
     "meaning": "一定……",
     "example": "彼女が犯人に相違ない",
     "example_reading": "彼女[かのじょ]が 犯人[はんにん]に 相違[そうい]ない",
-    "example_meaning": "她一定是犯人"
+    "example_meaning": "她一定是犯人",
+    "pattern": "动词普通形/名詞 + に相違ない",
+    "compare": "〜に違いない：相違ない书面"
   },
   {
     "id": "n2-014",
@@ -123,7 +149,9 @@
     "meaning": "不……吧",
     "example": "あんな危険な場所へは二度と行くまい",
     "example_reading": "あんな 危険[きけん]な 場所[ばしょ]へは 二度[にど]と 行[い]くまい",
-    "example_meaning": "我不会再去那么危险的地方了"
+    "example_meaning": "我不会再去那么危险的地方了",
+    "pattern": "动词意志形 + まい",
+    "compare": "〜ないだろう：まい表意志/否定推测"
   },
   {
     "id": "n2-015",
@@ -132,7 +160,9 @@
     "meaning": "想要……/试图……",
     "example": "彼は立ち上がろうとしたが、力が入らなかった",
     "example_reading": "彼[かれ]は 立[た]ち 上[あ]がろうとしたが、 力[ちから]が 入[はい]らなかった",
-    "example_meaning": "他想要站起来，但使不上力"
+    "example_meaning": "他想要站起来，但使不上力",
+    "pattern": "动词意志形 + とする",
+    "compare": "〜ようとする：同义"
   },
   {
     "id": "n2-016",
@@ -141,7 +171,9 @@
     "meaning": "不想……",
     "example": "彼はどうしても謝ろうとしない",
     "example_reading": "彼[かれ]はどうしても 謝[あやま]ろうとしない",
-    "example_meaning": "他怎么也不想道歉"
+    "example_meaning": "他怎么也不想道歉",
+    "pattern": "动词意志形 + としない",
+    "compare": "〜ようとしない：同义"
   },
   {
     "id": "n2-017",
@@ -150,7 +182,9 @@
     "meaning": "一边……一边……",
     "example": "仕事をしつつ、子供の世話もする",
     "example_reading": "仕事[しごと]をしつつ、 子供[こども]の 世話[せわ]もする",
-    "example_meaning": "一边工作一边照顾孩子"
+    "example_meaning": "一边工作一边照顾孩子",
+    "pattern": "动词ます形 + つつ",
+    "compare": "〜ながら：つつ书面"
   },
   {
     "id": "n2-018",
@@ -159,7 +193,9 @@
     "meaning": "虽然……但是……",
     "example": "危険を承知しつつも、山に登った",
     "example_reading": "危険[きけん]を 承知[しょうち]しつつも、 山[やま]に 登[のぼ]った",
-    "example_meaning": "明知危险还是去登山了"
+    "example_meaning": "明知危险还是去登山了",
+    "pattern": "动词ます形 + つつも",
+    "compare": "〜ながらも：同义"
   },
   {
     "id": "n2-019",
@@ -168,7 +204,9 @@
     "meaning": "虽然……但是……",
     "example": "彼は子供ながらも、大人のような発言をする",
     "example_reading": "彼[かれ]は 子供[こども]ながらも、 大人[おとな]のような 発言[はつげん]をする",
-    "example_meaning": "他虽然还是个孩子，却说着像大人一样的话"
+    "example_meaning": "他虽然还是个孩子，却说着像大人一样的话",
+    "pattern": "动词普通形/イ形/名詞 + ながらも",
+    "compare": "〜けれども：ながらも书面"
   },
   {
     "id": "n2-020",
@@ -177,7 +215,9 @@
     "meaning": "虽说……",
     "example": "経験者とはいえ、ミスはつきものだ",
     "example_reading": "経験者[けいけんしゃ]とはいえ、ミスはつきものだ",
-    "example_meaning": "虽说是有经验的人，但错误总是难免的"
+    "example_meaning": "虽说是有经验的人，但错误总是难免的",
+    "pattern": "动词普通形/名詞 + とはいえ",
+    "compare": "〜とは言うものの：同义"
   },
   {
     "id": "n2-021",
@@ -186,7 +226,9 @@
     "meaning": "虽说……",
     "example": "高いと言っても、それほどではない",
     "example_reading": "高[たか]いと 言[い]っても、それほどではない",
-    "example_meaning": "虽说贵，但也没那么贵"
+    "example_meaning": "虽说贵，但也没那么贵",
+    "pattern": "动词普通形/名詞 + と言っても",
+    "compare": "〜にしては：言っても强调反向"
   },
   {
     "id": "n2-022",
@@ -195,7 +237,9 @@
     "meaning": "虽说……但是……",
     "example": "専門家といえども、全てを知っているわけではない",
     "example_reading": "専門家[せんもんか]といえども、 全[すべ]てを 知[し]っているわけではない",
-    "example_meaning": "虽说是专家，但也不是全都知道"
+    "example_meaning": "虽说是专家，但也不是全都知道",
+    "pattern": "动词普通形/名詞 + といえども",
+    "compare": "〜とはいえ：といえども书面古语"
   },
   {
     "id": "n2-023",
@@ -204,7 +248,9 @@
     "meaning": "明明……却……",
     "example": "知っているくせに、知らないふりをする",
     "example_reading": "知[し]っているくせに、 知[し]らないふりをする",
-    "example_meaning": "明明知道却装作不知道"
+    "example_meaning": "明明知道却装作不知道",
+    "pattern": "动词普通形/名詞 + くせに",
+    "compare": "〜のに：くせに带责备"
   },
   {
     "id": "n2-024",
@@ -213,7 +259,9 @@
     "meaning": "明明……却……",
     "example": "待っていたのに、来てくれなかった",
     "example_reading": "待[ま]っていたのに、 来[こ]てくれなかった",
-    "example_meaning": "明明等他了，却没来"
+    "example_meaning": "明明等他了，却没来",
+    "pattern": "动词普通形/名詞 + のに",
+    "compare": "〜くせに：のに偏遗憾"
   },
   {
     "id": "n2-025",
@@ -222,7 +270,9 @@
     "meaning": "虽然……但是……",
     "example": "承知したものの、納得していない",
     "example_reading": "承知[しょうち]したものの、 納得[なっとく]していない",
-    "example_meaning": "虽然答应了，但并不信服"
+    "example_meaning": "虽然答应了，但并不信服",
+    "pattern": "动词普通形/名詞 + ものの",
+    "compare": "〜けれども：ものの书面"
   },
   {
     "id": "n2-026",
@@ -231,7 +281,9 @@
     "meaning": "刚一……就……",
     "example": "ドアを開けたとたん、猫が飛び出した",
     "example_reading": "ドアを 開[あ]けたとたん、 猫[ねこ]が 飛[と]び 出[だ]した",
-    "example_meaning": "刚打开门，猫就冲了出去"
+    "example_meaning": "刚打开门，猫就冲了出去",
+    "pattern": "动词た形 + とたん",
+    "compare": "〜か〜ないかのうちに：とたん强调瞬间"
   },
   {
     "id": "n2-027",
@@ -240,7 +292,9 @@
     "meaning": "刚……就……",
     "example": "彼女は電話に出るか出ないかのうちに、泣き出した",
     "example_reading": "彼女[かのじょ]は 電話[でんわ]に 出[で]るか 出[で]ないかのうちに、 泣[な]き 出[だ]した",
-    "example_meaning": "她电话还没接就哭了"
+    "example_meaning": "她电话还没接就哭了",
+    "pattern": "动词るか动词ないかのうちに",
+    "compare": "〜や否や：うちに更口语"
   },
   {
     "id": "n2-028",
@@ -249,7 +303,9 @@
     "meaning": "刚一……就……",
     "example": "彼は社長室に入るや否や、怒鳴り始めた",
     "example_reading": "彼[かれ]は 社長室[しゃちょうしつ]に 入[はい]るや 否[いな]や、 怒鳴[どな]り 始[はじ]めた",
-    "example_meaning": "他刚进社长室就开始怒吼"
+    "example_meaning": "他刚进社长室就开始怒吼",
+    "pattern": "动词辞書形 + や否や",
+    "compare": "〜とたん：や否や书面"
   },
   {
     "id": "n2-029",
@@ -258,7 +314,9 @@
     "meaning": "刚……就……",
     "example": "覚えるそばから忘れてしまう",
     "example_reading": "覚[おぼ]えるそばから 忘[わす]れてしまう",
-    "example_meaning": "刚记住就忘了"
+    "example_meaning": "刚记住就忘了",
+    "pattern": "动词辞書形/た形 + そばから",
+    "compare": "〜が早いか：そばから强调反复"
   },
   {
     "id": "n2-030",
@@ -267,7 +325,9 @@
     "meaning": "刚……就……",
     "example": "彼は会うが早いか、抱きついてきた",
     "example_reading": "彼[かれ]は 会[あ]うが 早[はや]いか、 抱[だ]きついてきた",
-    "example_meaning": "他刚一见面就抱了过来"
+    "example_meaning": "他刚一见面就抱了过来",
+    "pattern": "动词辞書形 + が早いか",
+    "compare": "〜や否や：が早いか书面"
   },
   {
     "id": "n2-031",
@@ -276,7 +336,9 @@
     "meaning": "刚……之后",
     "example": "家に着いたところに、電話がかかってきた",
     "example_reading": "家[いえ]に 着[つ]いたところに、 電話[でんわ]がかかってきた",
-    "example_meaning": "我刚到家电话就来了"
+    "example_meaning": "我刚到家电话就来了",
+    "pattern": "动词た形 + ところ",
+    "compare": "〜たばかり：ところ更中性"
   },
   {
     "id": "n2-032",
@@ -285,7 +347,9 @@
     "meaning": "刚刚……",
     "example": "食べたばかりなので、お腹が空かない",
     "example_reading": "食[た]べたばかりなので、お 腹[なか]が 空[す]かない",
-    "example_meaning": "刚吃过所以不饿"
+    "example_meaning": "刚吃过所以不饿",
+    "pattern": "动词た形 + ばかり",
+    "compare": "〜たところ：ばかり强调刚完成不久"
   },
   {
     "id": "n2-033",
@@ -294,7 +358,9 @@
     "meaning": "原以为……却……",
     "example": "雨が降るかと思ったら、晴れてきた",
     "example_reading": "雨[あめ]が 降[ふ]るかと 思[おも]ったら、 晴[は]れてきた",
-    "example_meaning": "原以为会下雨，结果放晴了"
+    "example_meaning": "原以为会下雨，结果放晴了",
+    "pattern": "动词普通形 + かと思ったら",
+    "compare": "〜と思ったら：か加强惊讶"
   },
   {
     "id": "n2-034",
@@ -303,7 +369,9 @@
     "meaning": "原以为……没想到……",
     "example": "彼は来ると思いきや、来なかった",
     "example_reading": "彼[かれ]は 来[く]ると 思[おも]いきや、 来[こ]なかった",
-    "example_meaning": "原以为他会来，结果没来"
+    "example_meaning": "原以为他会来，结果没来",
+    "pattern": "动词普通形 + と思いきや",
+    "compare": "〜かと思ったら：思いきや书面"
   },
   {
     "id": "n2-035",
@@ -312,7 +380,9 @@
     "meaning": "宛如……/好像……",
     "example": "彼女は何も知らないかのように振る舞った",
     "example_reading": "彼女[かのじょ]は 何[なに]も 知[し]らないかのように 振[ふ]る 舞[ま]った",
-    "example_meaning": "她装作什么都不知道"
+    "example_meaning": "她装作什么都不知道",
+    "pattern": "动词普通形/名詞 + かのように",
+    "compare": "〜ようだ：かのように强调仿佛"
   },
   {
     "id": "n2-036",
@@ -321,7 +391,9 @@
     "meaning": "宛如……的",
     "example": "まるで夢を見ているかのような気分だ",
     "example_reading": "まるで 夢[ゆめ]を 見[み]ているかのような 気分[きぶん]だ",
-    "example_meaning": "感觉就像在做梦一样"
+    "example_meaning": "感觉就像在做梦一样",
+    "pattern": "动词普通形/名詞 + かのような",
+    "compare": "〜ような：かのような强调宛如"
   },
   {
     "id": "n2-037",
@@ -330,7 +402,9 @@
     "meaning": "好像……/虽然……",
     "example": "簡単なようで、実は難しい",
     "example_reading": "簡単[かんたん]なようで、 実[じつ]は 難[むずか]しい",
-    "example_meaning": "看似简单，其实很难"
+    "example_meaning": "看似简单，其实很难",
+    "pattern": "动词普通形/名詞 + ようで",
+    "compare": "〜ようだ：ようで作中顿"
   },
   {
     "id": "n2-038",
@@ -339,7 +413,9 @@
     "meaning": "不是……吗？（呼吁）",
     "example": "一緒に努力しようではないか",
     "example_reading": "一緒[いっしょ]に 努力[どりょく]しようではないか",
-    "example_meaning": "让我们一起努力吧"
+    "example_meaning": "让我们一起努力吧",
+    "pattern": "动词意志形 + ようではないか",
+    "compare": "〜ましょう：ようではないか呼吁"
   },
   {
     "id": "n2-039",
@@ -348,7 +424,9 @@
     "meaning": "并非不……/也有可能……",
     "example": "その話は本当ではないことはない",
     "example_reading": "その 話[はなし]は 本当[ほんとう]ではないことはない",
-    "example_meaning": "那件事也不是没有可能是真的"
+    "example_meaning": "那件事也不是没有可能是真的",
+    "pattern": "动词ない形 + ないことはない",
+    "compare": "〜ないこともない：同义"
   },
   {
     "id": "n2-040",
@@ -357,7 +435,9 @@
     "meaning": "忍不住……",
     "example": "面白い話を聞いて、笑わずにはいられない",
     "example_reading": "面白[おもしろ]い 話[はなし]を 聞[き]いて、 笑[わら]わずにはいられない",
-    "example_meaning": "听到有趣的故事忍不住笑"
+    "example_meaning": "听到有趣的故事忍不住笑",
+    "pattern": "动词ない形 + ずにはいられない",
+    "compare": "〜ないではいられない：ずには书面"
   },
   {
     "id": "n2-041",
@@ -366,7 +446,9 @@
     "meaning": "忍不住……",
     "example": "彼の優しさに感動しないではいられない",
     "example_reading": "彼[かれ]の 優[やさ]しさに 感動[かんどう]しないではいられない",
-    "example_meaning": "忍不住被他的温柔打动"
+    "example_meaning": "忍不住被他的温柔打动",
+    "pattern": "动词ない形 + ないではいられない",
+    "compare": "〜ずにはいられない：ないではいられない口语"
   },
   {
     "id": "n2-042",
@@ -375,7 +457,9 @@
     "meaning": "不……不行",
     "example": "今回の失敗は謝らずにはすまない",
     "example_reading": "今回[こんかい]の 失敗[しっぱい]は 謝[あやま]らずにはすまない",
-    "example_meaning": "这次失败不能不道歉"
+    "example_meaning": "这次失败不能不道歉",
+    "pattern": "动词ない形 + ずにはすまない",
+    "compare": "〜ないではすまない：ずには书面"
   },
   {
     "id": "n2-043",
@@ -384,7 +468,9 @@
     "meaning": "不……不行",
     "example": "自分の責任なので、説明しないではすまない",
     "example_reading": "自分[じぶん]の 責任[せきにん]なので、 説明[せつめい]しないではすまない",
-    "example_meaning": "因为是自己的责任，必须说明"
+    "example_meaning": "因为是自己的责任，必须说明",
+    "pattern": "动词ない形 + ないではすまない",
+    "compare": "〜ずにはすまない：ないでは口语"
   },
   {
     "id": "n2-044",
@@ -393,7 +479,9 @@
     "meaning": "不禁……",
     "example": "彼の頑張りを見て、涙を禁じえない",
     "example_reading": "彼[かれ]の 頑張[がんば]りを 見[み]て、 涙[なみだ]を 禁[きん]じえない",
-    "example_meaning": "看到他的努力不禁落泪"
+    "example_meaning": "看到他的努力不禁落泪",
+    "pattern": "名詞 + を禁じえない",
+    "compare": "〜ずにはいられない：を禁じえない书面"
   },
   {
     "id": "n2-045",
@@ -402,7 +490,9 @@
     "meaning": "最好是……",
     "example": "健康には気をつけるに越したことはない",
     "example_reading": "健康[けんこう]には 気[き]をつけるに 越[こ]したことはない",
-    "example_meaning": "最好注意健康"
+    "example_meaning": "最好注意健康",
+    "pattern": "名詞/动词普通形 + に越したことはない",
+    "compare": "〜ほうがいい：越したことはない表最好如此"
   },
   {
     "id": "n2-046",
@@ -411,7 +501,9 @@
     "meaning": "即使……也……",
     "example": "理由にしろ、遅刻は許されない",
     "example_reading": "理由[りゆう]にしろ、 遅刻[ちこく]は 許[ゆる]されない",
-    "example_meaning": "即使有理由，迟到也不被允许"
+    "example_meaning": "即使有理由，迟到也不被允许",
+    "pattern": "名詞/动词普通形 + にしろ/にせよ",
+    "compare": "〜にしても：にしろ更书面"
   },
   {
     "id": "n2-047",
@@ -420,7 +512,9 @@
     "meaning": "无论……都……",
     "example": "誰だろうと、平等に扱う",
     "example_reading": "誰[だれ]だろうと、 平等[びょうどう]に 扱[あつか]う",
-    "example_meaning": "无论谁都平等对待"
+    "example_meaning": "无论谁都平等对待",
+    "pattern": "动词普通形/名詞 + だろうと/であろうと",
+    "compare": "〜にしても：だろうと假设"
   },
   {
     "id": "n2-048",
@@ -429,7 +523,9 @@
     "meaning": "无论……都……",
     "example": "親であれ、子供に暴力を振るうべきではない",
     "example_reading": "親[おや]であれ、 子供[こども]に 暴力[ぼうりょく]を 振[ふ]るうべきではない",
-    "example_meaning": "即使是父母也不应该对孩子使用暴力"
+    "example_meaning": "即使是父母也不应该对孩子使用暴力",
+    "pattern": "动词普通形/名詞 + であれ/であろうと",
+    "compare": "〜だろうと：であれ书面"
   },
   {
     "id": "n2-049",
@@ -438,7 +534,9 @@
     "meaning": "……得不得了",
     "example": "彼の怠慢ぶりといったらない",
     "example_reading": "彼[かれ]の 怠慢[たいまん]ぶりといったらない",
-    "example_meaning": "他的怠慢程度简直没法说"
+    "example_meaning": "他的怠慢程度简直没法说",
+    "pattern": "名詞 + といったらない",
+    "compare": "〜てたまらない：といったらない表程度"
   },
   {
     "id": "n2-050",
@@ -447,6 +545,558 @@
     "meaning": "一旦……就完了",
     "example": "一度言ったら最後、彼は絶対引かない",
     "example_reading": "一度[いちど] 言[い]ったら 最後[さいご]、 彼[かれ]は 絶対[ぜったい] 引[ひ]かない",
-    "example_meaning": "一旦说出口，他就绝对不会退缩"
+    "example_meaning": "一旦说出口，他就绝对不会退缩",
+    "pattern": "动词た形 + ら最後/れば最後",
+    "compare": "〜たが最後：同义"
+  },
+  {
+    "id": "n2-051",
+    "grammar": "〜たが最後",
+    "reading": "ta ga saigo",
+    "meaning": "一旦……就完了",
+    "pattern": "动词た形 + が最後",
+    "compare": "〜たら最後：同义",
+    "example": "彼女に怒られたが最後、もう終わりだ",
+    "example_reading": "彼女[かのじょ]に 怒[おこ]られたが 最後[さいご]、もう 終[お]わりだ",
+    "example_meaning": "一旦被她骂了就完了"
+  },
+  {
+    "id": "n2-052",
+    "grammar": "〜ば最後",
+    "reading": "ba saigo",
+    "meaning": "一旦……就完了",
+    "pattern": "动词ば形 + 最後",
+    "compare": "〜たが最後：同义",
+    "example": "嘘をつけば最後、信頼を失う",
+    "example_reading": "嘘[うそ]をつけば 最後[さいご]、 信頼[しんらい]を 失[うしな]う",
+    "example_meaning": "一旦说谎就失去信任"
+  },
+  {
+    "id": "n2-053",
+    "grammar": "〜なり",
+    "reading": "nari",
+    "meaning": "一……就……/按……那样",
+    "pattern": "动词辞書形 + なり",
+    "compare": "〜や否や：なり书面",
+    "example": "彼は家に帰るなり、寝てしまった",
+    "example_reading": "彼[かれ]は 家[いえ]に 帰[かえ]るなり、 寝[ね]てしまった",
+    "example_meaning": "他一回家就睡了"
+  },
+  {
+    "id": "n2-054",
+    "grammar": "〜がてら",
+    "reading": "gatera",
+    "meaning": "顺便……",
+    "pattern": "动词ます形/名詞 + がてら",
+    "compare": "〜ついでに：がてら书面",
+    "example": "買い物がてら、散歩した",
+    "example_reading": "買[か]い 物[もの]がてら、 散歩[さんぽ]した",
+    "example_meaning": "顺便买东西，散了散步"
+  },
+  {
+    "id": "n2-055",
+    "grammar": "〜ついでに",
+    "reading": "tsuideni",
+    "meaning": "顺便……",
+    "pattern": "动词た形/名詞 + のついでに",
+    "compare": "〜がてら：ついでに口语",
+    "example": "散歩のついでに、郵便局に寄った",
+    "example_reading": "散歩[さんぽ]のついでに、 郵便局[ゆうびんきょく]に 寄[よ]った",
+    "example_meaning": "散步时顺便去了邮局"
+  },
+  {
+    "id": "n2-056",
+    "grammar": "〜かたわら",
+    "reading": "katawara",
+    "meaning": "一边……一边……",
+    "pattern": "名詞 + のかたわら",
+    "compare": "〜ながら：かたわら书面",
+    "example": "彼女は主婦のかたわら、小説を書いている",
+    "example_reading": "彼女[かのじょ]は 主婦[しゅふ]のかたわら、 小説[しょうせつ]を 書[か]いている",
+    "example_meaning": "她一边做家庭主妇一边写小说"
+  },
+  {
+    "id": "n2-057",
+    "grammar": "〜そばらく",
+    "reading": "soba raku",
+    "meaning": "不久之后……",
+    "pattern": "动词た形 + そばらく",
+    "compare": "〜すぐに：そばらく书面",
+    "example": "彼が来たそばらく、仕事が始まった",
+    "example_reading": "彼[かれ]が 来[き]たそばらく、 仕事[しごと]が 始[はじ]まった",
+    "example_meaning": "他来了不一会儿，工作就开始了"
+  },
+  {
+    "id": "n2-058",
+    "grammar": "〜や",
+    "reading": "ya",
+    "meaning": "一……就……",
+    "pattern": "动词辞書形 + や",
+    "compare": "〜や否や：や为简略",
+    "example": "彼は会議室に入るや、泣き始めた",
+    "example_reading": "彼[かれ]は 会議室[かいぎしつ]に 入[はい]るや、 泣[な]き 始[はじ]めた",
+    "example_meaning": "他一进会议室就开始哭"
+  },
+  {
+    "id": "n2-059",
+    "grammar": "〜かと思うと/思えば",
+    "reading": "ka to omou to",
+    "meaning": "刚……就……/原以为……",
+    "pattern": "动词た形/辞書形 + かと思うと",
+    "compare": "〜と思ったら：同义",
+    "example": "静かになったかと思うと、大きな音がした",
+    "example_reading": "静[しず]かになったかと 思[おも]うと、 大[おお]きな 音[おと]がした",
+    "example_meaning": "刚安静下来就传来了巨响"
+  },
+  {
+    "id": "n2-060",
+    "grammar": "〜たかと思うと/思えば",
+    "reading": "ta ka to omou to",
+    "meaning": "刚……就……",
+    "pattern": "动词た形 + かと思うと",
+    "compare": "〜かと思うと：た形强调过去",
+    "example": "彼は怒ったかと思うと、すぐに笑った",
+    "example_reading": "彼[かれ]は 怒[おこ]ったかと 思[おも]うと、すぐに 笑[わら]った",
+    "example_meaning": "他刚生气马上又笑了"
+  },
+  {
+    "id": "n2-061",
+    "grammar": "〜たりとも",
+    "reading": "tari tomo",
+    "meaning": "即使……也……",
+    "pattern": "数量 + たりとも + 动词ない",
+    "compare": "〜さえ：たりとも书面",
+    "example": "一刻たりとも無駄にできない",
+    "example_reading": "一刻[いっこく]たりとも 無駄[むだ]にできない",
+    "example_meaning": "一刻也不能浪费"
+  },
+  {
+    "id": "n2-062",
+    "grammar": "〜でなくてなんだろう",
+    "reading": "de nakute nan darou",
+    "meaning": "不是……又是什么呢",
+    "pattern": "名詞 + でなくてなんだろう",
+    "compare": "〜にほかならない：同义",
+    "example": "これが愛でなくてなんだろう",
+    "example_reading": "これが 愛[あい]でなくてなんだろう",
+    "example_meaning": "这不是爱又是什么呢"
+  },
+  {
+    "id": "n2-063",
+    "grammar": "〜までのことだ",
+    "reading": "made no koto da",
+    "meaning": "只是……罢了",
+    "pattern": "动词辞書形 + までのことだ",
+    "compare": "〜だけのことだ：同义",
+    "example": "やってみるまでのことだ",
+    "example_reading": "やってみるまでのことだ",
+    "example_meaning": "只是试试看罢了"
+  },
+  {
+    "id": "n2-064",
+    "grammar": "〜までだ",
+    "reading": "made da",
+    "meaning": "只是……而已",
+    "pattern": "动词辞書形 + までだ",
+    "compare": "〜までのことだ：同义",
+    "example": "ダメなら諦めるまでだ",
+    "example_reading": "ダメなら 諦[あきら]めるまでだ",
+    "example_meaning": "不行的话就放弃而已"
+  },
+  {
+    "id": "n2-065",
+    "grammar": "〜までもない",
+    "reading": "made mo nai",
+    "meaning": "不必……",
+    "pattern": "动词辞書形 + までもない",
+    "compare": "〜ことはない：同义",
+    "example": "そんなことまで心配するまでもない",
+    "example_reading": "そんなことまで 心配[しんぱい]するまでもない",
+    "example_meaning": "不必担心到那种地步"
+  },
+  {
+    "id": "n2-066",
+    "grammar": "〜に足る/足りる",
+    "reading": "ni taru / ni tariru",
+    "meaning": "值得……/足以……",
+    "pattern": "名詞 + に足る/足りる",
+    "compare": "〜に値する：に足る表值得",
+    "example": "信頼に足る人物だ",
+    "example_reading": "信頼[しんらい]に 足[た]る 人物[じんぶつ]だ",
+    "example_meaning": "他是值得信赖的人物"
+  },
+  {
+    "id": "n2-067",
+    "grammar": "〜に至るまで",
+    "reading": "ni itaru made",
+    "meaning": "甚至……/直到……",
+    "pattern": "名詞 + に至るまで",
+    "compare": "〜まで：に至るまで强调极端",
+    "example": "幼い子供に至るまで、皆参加した",
+    "example_reading": "幼[おさな]い 子供[こども]に 至[いた]るまで、 皆[みな] 参加[さんか]した",
+    "example_meaning": "连年幼的孩子都参加了"
+  },
+  {
+    "id": "n2-068",
+    "grammar": "〜を余儀なくされる",
+    "reading": "wo yoginaku sareru",
+    "meaning": "被迫……",
+    "pattern": "名詞 + を余儀なくされる",
+    "compare": "〜ざるを得ない：を余儀なくされる偏被动",
+    "example": "雨で大会は中止を余儀なくされた",
+    "example_reading": "雨[あめ]で 大会[たいかい]は 中止[ちゅうし]を 余儀[よぎ]なくされた",
+    "example_meaning": "大会因雨被迫中止"
+  },
+  {
+    "id": "n2-069",
+    "grammar": "〜を禁じえない",
+    "reading": "wo kinji enai",
+    "meaning": "不禁……",
+    "pattern": "名詞 + を禁じえない",
+    "compare": "〜ずにはいられない：を禁じえない书面",
+    "example": "彼の健闘をたたえるのを禁じえない",
+    "example_reading": "彼[かれ]の 健闘[けんとう]をたたえるのを 禁[きん]じえない",
+    "example_meaning": "不禁要称赞他的奋斗"
+  },
+  {
+    "id": "n2-070",
+    "grammar": "〜ずにはいられない",
+    "reading": "zu ni wa irarenai",
+    "meaning": "忍不住……",
+    "pattern": "动词ない形 + ずにはいられない",
+    "compare": "〜ないではいられない：ずには书面",
+    "example": "面白い話を聞いて、笑わずにはいられない",
+    "example_reading": "面白[おもしろ]い 話[はなし]を 聞[き]いて、 笑[わら]わずにはいられない",
+    "example_meaning": "听到有趣的故事忍不住笑"
+  },
+  {
+    "id": "n2-071",
+    "grammar": "〜ずにはすまない",
+    "reading": "zu ni wa sumanai",
+    "meaning": "必须……/不……不行",
+    "pattern": "动词ない形 + ずにはすまない",
+    "compare": "〜ないではすまない：ずには书面",
+    "example": "この件は責任者として謝らずにはすまない",
+    "example_reading": "この 件[けん]は 責任者[せきにんしゃ]として 謝[あやま]らずにはすまない",
+    "example_meaning": "作为负责人这件事必须道歉"
+  },
+  {
+    "id": "n2-072",
+    "grammar": "〜ないことには〜ない",
+    "reading": "nai koto niwa nai",
+    "meaning": "不……的话就不……",
+    "pattern": "动词ない形 + ないことには + 动词ない",
+    "compare": "〜なしには：ないことには更强调",
+    "example": "行かないことには、何もわからない",
+    "example_reading": "行[い]かないことには、 何[なに]もわからない",
+    "example_meaning": "不去的话什么都不明白"
+  },
+  {
+    "id": "n2-073",
+    "grammar": "〜なしには/なしに",
+    "reading": "nashi niwa / nashi ni",
+    "meaning": "没有……就不能……",
+    "pattern": "名詞 + なしには/なしに",
+    "compare": "〜がなければ：なしに书面",
+    "example": "彼女なしには生きていけない",
+    "example_reading": "彼女[かのじょ]なしには 生[い]きていけない",
+    "example_meaning": "没有她活不下去"
+  },
+  {
+    "id": "n2-074",
+    "grammar": "〜をおいて",
+    "reading": "wo oite",
+    "meaning": "除了……之外",
+    "pattern": "名詞 + をおいて",
+    "compare": "〜以外に：をおいて书面",
+    "example": "この仕事を任せられるのは君をおいて他にいない",
+    "example_reading": "この 仕事[しごと]を 任[まか]せられるのは 君[きみ]をおいて 他[ほか]にいない",
+    "example_meaning": "除了你没人能胜任这项工作"
+  },
+  {
+    "id": "n2-075",
+    "grammar": "〜に越したことはない",
+    "reading": "ni koshita koto wa nai",
+    "meaning": "最好是……",
+    "pattern": "名詞/动词普通形 + に越したことはない",
+    "compare": "〜べきだ：越したことはない表最好如此",
+    "example": "健康に気をつけるに越したことはない",
+    "example_reading": "健康[けんこう]に 気[き]をつけるに 越[こ]したことはない",
+    "example_meaning": "最好注意健康"
+  },
+  {
+    "id": "n2-076",
+    "grammar": "〜べからず",
+    "reading": "bekarazu",
+    "meaning": "不可……",
+    "pattern": "动词辞書形 + べからず",
+    "compare": "〜てはいけない：べからず古语",
+    "example": "立入るべからず",
+    "example_reading": "立[たち] 入[い]るべからず",
+    "example_meaning": "禁止入内"
+  },
+  {
+    "id": "n2-077",
+    "grammar": "〜べく",
+    "reading": "beku",
+    "meaning": "为了……（书面）",
+    "pattern": "动词辞書形 + べく",
+    "compare": "〜ために：べく书面",
+    "example": "合格すべく、毎日勉強している",
+    "example_reading": "合格[ごうかく]すべく、 毎日[まいにち] 勉強[べんきょう]している",
+    "example_meaning": "为了合格每天学习"
+  },
+  {
+    "id": "n2-078",
+    "grammar": "〜べき/べし",
+    "reading": "beki / beshi",
+    "meaning": "应该……（古体）",
+    "pattern": "动词辞書形 + べき/べし",
+    "compare": "〜べきだ：べし古语",
+    "example": "若者は未来を信じるべきだ",
+    "example_reading": "若者[わかもの]は 未来[みらい]を 信[しん]じるべきだ",
+    "example_meaning": "年轻人应该相信未来"
+  },
+  {
+    "id": "n2-079",
+    "grammar": "〜まじき/まじきこと",
+    "reading": "majiki / majiki koto",
+    "meaning": "不该有的……",
+    "pattern": "名詞 + まじき/まじきこと",
+    "compare": "〜べきではない：まじき书面道德",
+    "example": "教師としてあるまじき行為だ",
+    "example_reading": "教師[きょうし]としてあるまじき 行為[こうい]だ",
+    "example_meaning": "这是作为教师不该有的行为"
+  },
+  {
+    "id": "n2-080",
+    "grammar": "〜きらいがある",
+    "reading": "kirai ga aru",
+    "meaning": "有点……的倾向",
+    "pattern": "动词ます形 + きらいがある",
+    "compare": "〜がちだ：きらい表倾向负面",
+    "example": "彼の言い方には上から目線きらいがある",
+    "example_reading": "彼[かれ]の 言[い]い 方[かた]には 上[うえ]から 目線[めせん]きらいがある",
+    "example_meaning": "他说话的方式有点居高临下"
+  },
+  {
+    "id": "n2-081",
+    "grammar": "〜この上ない",
+    "reading": "kono ue nai",
+    "meaning": "无比……",
+    "pattern": "名詞/ナ形容詞 + この上ない",
+    "compare": "〜極まりない：同义",
+    "example": "幸せなこの上ない日々だ",
+    "example_reading": "幸[しあわ]せなこの 上[うえ]ない 日々[ひび]だ",
+    "example_meaning": "这是无比幸福的日子"
+  },
+  {
+    "id": "n2-082",
+    "grammar": "〜てたまらない",
+    "reading": "te tamaranai",
+    "meaning": "……得不得了",
+    "pattern": "动词て形 + たまらない",
+    "compare": "〜てならない：たまらない表难忍",
+    "example": "彼に会いたくてたまらない",
+    "example_reading": "彼[かれ]に 会[あ]いたくてたまらない",
+    "example_meaning": "想他想得不得了"
+  },
+  {
+    "id": "n2-083",
+    "grammar": "〜てしようがない",
+    "reading": "te shiyou ga nai",
+    "meaning": "……得不得了",
+    "pattern": "动词て形 + しようがない",
+    "compare": "〜てたまらない：同义",
+    "example": "あの映画が悲しくてしようがない",
+    "example_reading": "あの 映画[えいが]が 悲[かな]しくてしようがない",
+    "example_meaning": "那部电影让我悲伤得不得了"
+  },
+  {
+    "id": "n2-084",
+    "grammar": "〜てならない",
+    "reading": "te naranai",
+    "meaning": "情不自禁……",
+    "pattern": "动词て形 + ならない",
+    "compare": "〜てたまらない：ならない偏情不自禁",
+    "example": "故郷が恋しくてならない",
+    "example_reading": "故郷[ふるさと]が 恋[こい]しくてならない",
+    "example_meaning": "情不自禁地思念故乡"
+  },
+  {
+    "id": "n2-085",
+    "grammar": "〜ずくめだ",
+    "reading": "zukume da",
+    "meaning": "全是……",
+    "pattern": "名詞 + ずくめだ",
+    "compare": "〜だらけ：ずくめ偏正面堆叠",
+    "example": "今日はいいことずくめだ",
+    "example_reading": "今日[きょう]はいいことずくめだ",
+    "example_meaning": "今天全是好事"
+  },
+  {
+    "id": "n2-086",
+    "grammar": "〜だらけだ",
+    "reading": "darake da",
+    "meaning": "满是……",
+    "pattern": "名詞 + だらけだ",
+    "compare": "〜ずくめ：だらけ偏负面",
+    "example": "部屋はゴミだらけだ",
+    "example_reading": "部屋[へや]はゴミだらけだ",
+    "example_meaning": "房间里全是垃圾"
+  },
+  {
+    "id": "n2-087",
+    "grammar": "〜つくす/つくす",
+    "reading": "tsukusu",
+    "meaning": "……尽/……完",
+    "pattern": "动词ます形 + つくす",
+    "compare": "〜尽くす：同义",
+    "example": "持っている力を出し尽くした",
+    "example_reading": "持[も]っている 力[ちから]を 出[だ]し 尽[つ]くした",
+    "example_meaning": "使出了全部力量"
+  },
+  {
+    "id": "n2-088",
+    "grammar": "〜かねる",
+    "reading": "kaneru",
+    "meaning": "难以……",
+    "pattern": "动词ます形 + かねる",
+    "compare": "〜がたい：かねる表说话人困难",
+    "example": "その件については、お答えしかねます",
+    "example_reading": "その 件[けん]については、お 答[こた]えしかねます",
+    "example_meaning": "关于那件事我难以回答"
+  },
+  {
+    "id": "n2-089",
+    "grammar": "〜がたい",
+    "reading": "gatai",
+    "meaning": "难于……",
+    "pattern": "动词ます形 + がたい",
+    "compare": "〜かねる：がたい表普遍困难",
+    "example": "彼の気持ちは理解しがたい",
+    "example_reading": "彼[かれ]の 気持[きも]ちは 理解[りかい]しがたい",
+    "example_meaning": "他的心情难以理解"
+  },
+  {
+    "id": "n2-090",
+    "grammar": "〜かける",
+    "reading": "kakeru",
+    "meaning": "做到一半/刚开始",
+    "pattern": "动词ます形 + かける",
+    "compare": "〜始める：かける表动作中途",
+    "example": "食べかけのケーキを置いた",
+    "example_reading": "食[た]べかけのケーキを 置[お]いた",
+    "example_meaning": "放下了吃了一半的蛋糕"
+  },
+  {
+    "id": "n2-091",
+    "grammar": "〜そびれる",
+    "reading": "sobireru",
+    "meaning": "错过……",
+    "pattern": "动词ます形 + そびれる",
+    "compare": "〜損ねる：そびれる表错过",
+    "example": "電車に乗りそびれた",
+    "example_reading": "電車[でんしゃ]に 乗[の]りそびれた",
+    "example_meaning": "没赶上电车"
+  },
+  {
+    "id": "n2-092",
+    "grammar": "〜損ねる",
+    "reading": "sokoneru",
+    "meaning": "没……成/搞砸……",
+    "pattern": "动词ます形 + 損ねる",
+    "compare": "〜そびれる：損ねる表搞砸",
+    "example": "良いチャンスを逃し損ねた",
+    "example_reading": "良[よ]いチャンスを 逃[のが]し 損[そこ]ねた",
+    "example_meaning": "差点错过好机会"
+  },
+  {
+    "id": "n2-093",
+    "grammar": "〜わけがない",
+    "reading": "wake ga nai",
+    "meaning": "不可能……",
+    "pattern": "动词普通形/名詞 + わけがない",
+    "compare": "〜はずがない：同义",
+    "example": "そんなことがあるわけがない",
+    "example_reading": "そんなことがあるわけがない",
+    "example_meaning": "不可能有那种事"
+  },
+  {
+    "id": "n2-094",
+    "grammar": "〜わけではない",
+    "reading": "wake dewa nai",
+    "meaning": "并非……",
+    "pattern": "动词普通形/名詞 + わけではない",
+    "compare": "〜わけがない：部分否定",
+    "example": "私がいつも正しいわけではない",
+    "example_reading": "私[わたし]がいつも 正[ただ]しいわけではない",
+    "example_meaning": "我并不总是对的"
+  },
+  {
+    "id": "n2-095",
+    "grammar": "〜わけにはいかない",
+    "reading": "wake ni wa ikanai",
+    "meaning": "不能……",
+    "pattern": "动词ない形 + わけにはいかない",
+    "compare": "〜てはいけない：わけにはいかない情理约束",
+    "example": "家族が待っているので、帰らないわけにはいかない",
+    "example_reading": "家族[かぞく]が 待[ま]っているので、 帰[かえ]らないわけにはいかない",
+    "example_meaning": "家人在等，不能不回去"
+  },
+  {
+    "id": "n2-096",
+    "grammar": "〜気味だ",
+    "reading": "gimi da",
+    "meaning": "有点……的样子",
+    "pattern": "动词ます形/名詞 + 気味だ",
+    "compare": "〜がちだ：気味表轻微倾向",
+    "example": "風邪気味だ",
+    "example_reading": "風邪[かぜ] 気味[ぎみ]だ",
+    "example_meaning": "有点感冒的样子"
+  },
+  {
+    "id": "n2-097",
+    "grammar": "〜目だ",
+    "reading": "me da",
+    "meaning": "带有……样子/倾向",
+    "pattern": "动词ます形/名詞 + 目だ",
+    "compare": "〜気味だ：目だ表状态",
+    "example": "疲れ目だ",
+    "example_reading": "疲[つか]れ 目[め]だ",
+    "example_meaning": "一脸疲惫"
+  },
+  {
+    "id": "n2-098",
+    "grammar": "〜だらけ",
+    "reading": "darake",
+    "meaning": "满是……",
+    "pattern": "名詞 + だらけ",
+    "compare": "〜ずくめ：だらけ负面",
+    "example": "間違いだらけの作文",
+    "example_reading": "間違[まちが]いだらけの 作文[さくぶん]",
+    "example_meaning": "满是错误的作文"
+  },
+  {
+    "id": "n2-099",
+    "grammar": "〜まみれだ",
+    "reading": "mamire da",
+    "meaning": "沾满……",
+    "pattern": "名詞 + まみれだ",
+    "compare": "〜だらけ：まみれ用于液体粉末",
+    "example": "泥まみれになった",
+    "example_reading": "泥[どろ]まみれになった",
+    "example_meaning": "浑身是泥"
+  },
+  {
+    "id": "n2-100",
+    "grammar": "〜いっぱい",
+    "reading": "ippai",
+    "meaning": "满满的……",
+    "pattern": "名詞 + いっぱい",
+    "compare": "〜だらけ：いっぱい中性",
+    "example": "夢いっぱいの人生",
+    "example_reading": "夢[ゆめ]いっぱいの 人生[じんせい]",
+    "example_meaning": "充满梦想的人生"
   }
 ]

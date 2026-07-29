@@ -1,52 +1,958 @@
 [
-  {"id":"n3-001","grammar":"〜わけにはいかない","reading":"wake ni wa ikanai","meaning":"不能……（受情理约束）","example":"明日は試験なので、遊んでいるわけにはいかない","example_reading":"明日[あした]は 試験[しけん]なので、 遊[あそ]んでいるわけにはいかない","example_meaning":"明天有考试，不能去玩"},
-  {"id":"n3-002","grammar":"〜わけがない","reading":"wake ga nai","meaning":"不可能……","example":"あの人が犯人のわけがない","example_reading":"あの 人[ひと]が 犯人[はんにん]のわけがない","example_meaning":"那个人不可能是犯人"},
-  {"id":"n3-003","grammar":"〜わけではない","reading":"wake dewa nai","meaning":"并非……","example":"私が何でも知っているわけではない","example_reading":"私[わたし]が 何[なに]でも 知[し]っているわけではない","example_meaning":"我并非什么都知道"},
-  {"id":"n3-004","grammar":"〜ものだ","reading":"mono da","meaning":"应该……/本来就是……","example":"人は誰でも失敗するものだ","example_reading":"人[ひと]は 誰[だれ]でも 失敗[しっぱい]するものだ","example_meaning":"人都会失败"},
-  {"id":"n3-005","grammar":"〜ものではない","reading":"mono dewa nai","meaning":"不应该……","example":"人の悪口を言うものではない","example_reading":"人[ひと]の 悪口[わるぐち]を 言[い]うものではない","example_meaning":"不应该说别人坏话"},
-  {"id":"n3-006","grammar":"〜ことだ","reading":"koto da","meaning":"最好……","example":"若いうちに、いろいろなことを経験することだ","example_reading":"若[わか]いうちに、いろいろなことを 経験[けいけん]することだ","example_meaning":"趁年轻最好多经历一些事情"},
-  {"id":"n3-007","grammar":"〜ことはない","reading":"koto wa nai","meaning":"不必……","example":"失敗を恐れることはない","example_reading":"失敗[しっぱい]を 恐[おそ]れることはない","example_meaning":"不必害怕失败"},
-  {"id":"n3-008","grammar":"〜べきだ","reading":"beki da","meaning":"应该……","example":"約束は守るべきだ","example_reading":"約束[やくそく]は 守[まも]るべきだ","example_meaning":"应该遵守约定"},
-  {"id":"n3-009","grammar":"〜べきではない","reading":"beki dewa nai","meaning":"不应该……","example":"人を傷つけることを言うべきではない","example_reading":"人[ひと]を 傷[きず]つけることを 言[い]うべきではない","example_meaning":"不应该说伤害人的话"},
-  {"id":"n3-010","grammar":"〜に違いない","reading":"ni chigai nai","meaning":"一定……","example":"あの人は日本に長く住んでいたに違いない","example_reading":"あの 人[ひと]は 日本[にほん]に 長[なが]く 住[す]んでいたに 違[ちが]いない","example_meaning":"那个人一定在日本住过很久"},
-  {"id":"n3-011","grammar":"〜に決まっている","reading":"ni kimatte iru","meaning":"肯定……","example":"彼女なら合格に決まっている","example_reading":"彼女[かのじょ]なら 合格[ごうかく]に 決[き]まっている","example_meaning":"如果是她，肯定能及格"},
-  {"id":"n3-012","grammar":"〜はずだ","reading":"hazu da","meaning":"应该……","example":"もうすぐ電車が来るはずだ","example_reading":"もうすぐ 電車[でんしゃ]が 来[く]るはずだ","example_meaning":"电车应该快来了"},
-  {"id":"n3-013","grammar":"〜はずがない","reading":"hazu ga nai","meaning":"不可能……","example":"そんなことがあるはずがない","example_reading":"そんなことがあるはずがない","example_meaning":"不可能有那种事"},
-  {"id":"n3-014","grammar":"〜かもしれない","reading":"kamoshirenai","meaning":"也许……","example":"明日は雪かもしれない","example_reading":"明日[あした]は 雪[ゆき]かもしれない","example_meaning":"明天也许会下雪"},
-  {"id":"n3-015","grammar":"〜かねない","reading":"kanenai","meaning":"说不定会……","example":"彼は怒りかねない","example_reading":"彼[かれ]は 怒[おこ]りかねない","example_meaning":"说不定他会生气"},
-  {"id":"n3-016","grammar":"〜に相違ない","reading":"ni souinai","meaning":"一定……（书面）","example":"犯人は彼に相違ない","example_reading":"犯人[はんにん]は 彼[かれ]に 相違[そうい]ない","example_meaning":"犯人一定是他"},
-  {"id":"n3-017","grammar":"〜そうだ","reading":"sou da","meaning":"听说……","example":"あの店は閉店するそうだ","example_reading":"あの 店[みせ]は 閉店[へいてん]するそうだ","example_meaning":"听说那家店要关门了"},
-  {"id":"n3-018","grammar":"〜ようだ","reading":"you da","meaning":"好像……","example":"誰かが来たようだ","example_reading":"誰[だれ]かが 来[き]たようだ","example_meaning":"好像有人来了"},
-  {"id":"n3-019","grammar":"〜らしい","reading":"rashii","meaning":"好像……/有……风格","example":"彼は今忙しいらしい","example_reading":"彼[かれ]は 今[いま] 忙[いそが]しいらしい","example_meaning":"他现在好像很忙"},
-  {"id":"n3-020","grammar":"〜みたいだ","reading":"mitai da","meaning":"好像……","example":"雨が降るみたいだ","example_reading":"雨[あめ]が 降[ふ]るみたいだ","example_meaning":"好像要下雨了"},
-  {"id":"n3-021","grammar":"〜そうだ","reading":"sou da","meaning":"看起来好像……","example":"この本は面白そうだ","example_reading":"この 本[ほん]は 面白[おもしろ]そうだ","example_meaning":"这本书看起来很有趣"},
-  {"id":"n3-022","grammar":"〜そうもない","reading":"sou mo nai","meaning":"不太可能……","example":"雨が止みそうもない","example_reading":"雨[あめ]が 止[や]みそうもない","example_meaning":"雨看起来不会停"},
-  {"id":"n3-023","grammar":"〜つもりだ","reading":"tsumori da","meaning":"打算……","example":"来年、日本へ留学するつもりだ","example_reading":"来年[らいねん]、 日本[にほん]へ 留学[りゅうがく]するつもりだ","example_meaning":"我打算明年去日本留学"},
-  {"id":"n3-024","grammar":"〜つもりはない","reading":"tsumori wa nai","meaning":"不打算……","example":"もう一度行くつもりはない","example_reading":"もう 一度[いちど] 行[い]くつもりはない","example_meaning":"我不打算再去一次"},
-  {"id":"n3-025","grammar":"〜つもりで","reading":"tsumori de","meaning":"当作……/以……的心态","example":"自分の家のように使うつもりでいてください","example_reading":"自分[じぶん]の 家[いえ]のように 使[つか]うつもりでいてください","example_meaning":"请当作自己家一样使用"},
-  {"id":"n3-026","grammar":"〜ことにする","reading":"koto ni suru","meaning":"决定……","example":"毎日運動することにした","example_reading":"毎日[まいにち] 運動[うんどう]することにした","example_meaning":"我决定每天运动"},
-  {"id":"n3-027","grammar":"〜ことになる","reading":"koto ni naru","meaning":"（客观上）变成……","example":"来月から東京に転勤することになった","example_reading":"来月[らいげつ]から 東京[とうきょう]に 転勤[てんきん]することになった","example_meaning":"从下月起被调到东京工作"},
-  {"id":"n3-028","grammar":"〜ようにする","reading":"you ni suru","meaning":"努力做到……","example":"毎日日本語を話すようにしている","example_reading":"毎日[まいにち] 日本語[にほんご]を 話[はな]すようにしている","example_meaning":"我努力做到每天说日语"},
-  {"id":"n3-029","grammar":"〜ようになる","reading":"you ni naru","meaning":"变得能够……","example":"日本語の新聞が読めるようになった","example_reading":"日本語[にほんご]の 新聞[しんぶん]が 読[よ]めるようになった","example_meaning":"变得能读日语报纸了"},
-  {"id":"n3-030","grammar":"〜ように見える","reading":"you ni mieru","meaning":"看起来好像……","example":"彼は元気のように見える","example_reading":"彼[かれ]は 元気[げんき]のように 見[み]える","example_meaning":"他看起来很有精神"},
-  {"id":"n3-031","grammar":"〜ことにしている","reading":"koto ni shite iru","meaning":"养成了……的习惯","example":"毎朝水を一杯飲むことにしている","example_reading":"毎朝[まいあさ] 水[みず]を 一杯[いっぱい] 飲[の]むことにしている","example_meaning":"我养成了每天早上喝一杯水的习惯"},
-  {"id":"n3-032","grammar":"〜ことになっている","reading":"koto ni natte iru","meaning":"规定……/预定……","example":"会議は毎週月曜日に行うことになっている","example_reading":"会議[かいぎ]は 毎週[まいしゅう] 月曜日[げつようび]に 行[おこな]うことになっている","example_meaning":"会议定于每周一举行"},
-  {"id":"n3-033","grammar":"〜に違いない","reading":"ni chigai nai","meaning":"一定……","example":"この料理は彼女が作ったに違いない","example_reading":"この 料理[りょうり]は 彼女[かのじょ]が 作[つく]ったに 違[ちが]いない","example_meaning":"这道菜一定是她做的"},
-  {"id":"n3-034","grammar":"〜に決まっている","reading":"ni kimatte iru","meaning":"肯定……","example":"そんな安いもの、怪しいに決まっている","example_reading":"そんな 安[やす]いもの、 怪[あや]しいに 決[き]まっている","example_meaning":"那么便宜的东西肯定有问题"},
-  {"id":"n3-035","grammar":"〜まい","reading":"mai","meaning":"不……吧（否定意志/推测）","example":"二度と失敗するまい","example_reading":"二度[にど]と 失敗[しっぱい]するまい","example_meaning":"我不会再失败了吧"},
-  {"id":"n3-036","grammar":"〜う/ようとする","reading":"u/you to suru","meaning":"想要……/试图……","example":"立とうとした時、転んでしまった","example_reading":"立[た]とうとした 時[とき]、 転[ころ]んでしまった","example_meaning":"想要站起来的时候摔倒了"},
-  {"id":"n3-037","grammar":"〜う/ようとしない","reading":"u/you to shinai","meaning":"不想……/不试图……","example":"子供は何も言おうとしない","example_reading":"子供[こども]は 何[なに]も 言[い]おうとしない","example_meaning":"孩子什么都不想说"},
-  {"id":"n3-038","grammar":"〜つつ","reading":"tsutsu","meaning":"一边……一边……（书面）","example":"歩きつつ、音楽を聞く","example_reading":"歩[ある]きつつ、 音楽[おんがく]を 聞[き]く","example_meaning":"一边走路一边听音乐"},
-  {"id":"n3-039","grammar":"〜つつも","reading":"tsutsu mo","meaning":"虽然……但是……","example":"知りつつも、黙っていた","example_reading":"知[し]りつつも、 黙[だま]っていた","example_meaning":"虽然知道，但一直保持沉默"},
-  {"id":"n3-040","grammar":"〜ながらも","reading":"nagara mo","meaning":"虽然……但是……","example":"彼は小さいながらも、力が強い","example_reading":"彼[かれ]は 小[ちい]さいながらも、 力[ちから]が 強[つよ]い","example_meaning":"他虽然个子小，但力气很大"},
-  {"id":"n3-041","grammar":"〜ものの","reading":"mono no","meaning":"虽然……但是……","example":"約束したものの、忘れてしまった","example_reading":"約束[やくそく]したものの、 忘[わす]れてしまった","example_meaning":"虽然约好了，但忘了"},
-  {"id":"n3-042","grammar":"〜くせに","reading":"kuse ni","meaning":"明明……却……","example":"分かっているくせに、教えてくれない","example_reading":"分[わ]かっているくせに、 教[おし]えてくれない","example_meaning":"明明知道却不告诉我"},
-  {"id":"n3-043","grammar":"〜とはいえ","reading":"to wa ie","meaning":"虽说……","example":"春とはいえ、まだ寒い日がある","example_reading":"春[はる]とはいえ、まだ 寒[さむ]い 日[ひ]がある","example_meaning":"虽说到了春天，但还有冷的日子"},
-  {"id":"n3-044","grammar":"〜ながら","reading":"nagara","meaning":"一边……一边……","example":"テレビを見ながら食事をする","example_reading":"テレビを 見[み]ながら 食事[しょくじ]をする","example_meaning":"一边看电视一边吃饭"},
-  {"id":"n3-045","grammar":"〜たとたん","reading":"ta totan","meaning":"刚一……就……","example":"電車に乗ったとたん、眠くなった","example_reading":"電車[でんしゃ]に 乗[の]ったとたん、 眠[ねむ]くなった","example_meaning":"刚上电车就困了"},
-  {"id":"n3-046","grammar":"〜か〜ないかのうちに","reading":"ka nai ka no uchi ni","meaning":"刚……就……","example":"ベルが鳴るか鳴らないかのうちに、彼は飛び出した","example_reading":"ベルが 鳴[な]るか 鳴[な]らないかのうちに、 彼[かれ]は 飛[と]び 出[だ]した","example_meaning":"铃声还没响完，他就冲了出去"},
-  {"id":"n3-047","grammar":"〜や否や","reading":"ya ina ya","meaning":"刚一……就……（书面）","example":"彼は舞台に上がるや否や、歌い始めた","example_reading":"彼[かれ]は 舞台[ぶたい]に 上[あ]がるや 否[いな]や、 歌[うた]い 始[はじ]めた","example_meaning":"他刚上台就开始唱了"},
-  {"id":"n3-048","grammar":"〜そばから","reading":"soba kara","meaning":"刚……就……","example":"覚えたそばから忘れる","example_reading":"覚[おぼ]えたそばから 忘[わす]れる","example_meaning":"刚记住就忘了"},
-  {"id":"n3-049","grammar":"〜が早いか","reading":"ga hayai ka","meaning":"刚……就……","example":"先生が教室に入るが早いか、静かになった","example_reading":"先生[せんせい]が 教室[きょうしつ]に 入[はい]るが 早[はや]いか、 静[しず]かになった","example_meaning":"老师刚一进教室就安静下来了"},
-  {"id":"n3-050","grammar":"〜やいなや","reading":"ya ina ya","meaning":"刚一……就……","example":"彼女は私の顔を見るやいなや、泣き出した","example_reading":"彼女[かのじょ]は 私[わたし]の 顔[かお]を 見[み]るやいなや、 泣[な]き 出[だ]した","example_meaning":"她一看见我的脸就哭了起来"}
+  {
+    "id": "n3-001",
+    "grammar": "〜わけにはいかない",
+    "reading": "wake ni wa ikanai",
+    "meaning": "不能……（受情理约束）",
+    "example": "明日は試験なので、遊んでいるわけにはいかない",
+    "example_reading": "明日[あした]は 試験[しけん]なので、 遊[あそ]んでいるわけにはいかない",
+    "example_meaning": "明天有考试，不能去玩",
+    "pattern": "动词ない形 + わけにはいかない",
+    "compare": "〜てはいけない：わけにはいかない情理约束，てはいけない规则禁止"
+  },
+  {
+    "id": "n3-002",
+    "grammar": "〜わけがない",
+    "reading": "wake ga nai",
+    "meaning": "不可能……",
+    "example": "あの人が犯人のわけがない",
+    "example_reading": "あの 人[ひと]が 犯人[はんにん]のわけがない",
+    "example_meaning": "那个人不可能是犯人",
+    "pattern": "动词普通形/名詞 + わけがない",
+    "compare": "〜はずがない：同义，わけがない稍口语"
+  },
+  {
+    "id": "n3-003",
+    "grammar": "〜わけではない",
+    "reading": "wake dewa nai",
+    "meaning": "并非……",
+    "example": "私が何でも知っているわけではない",
+    "example_reading": "私[わたし]が 何[なに]でも 知[し]っているわけではない",
+    "example_meaning": "我并非什么都知道",
+    "pattern": "动词普通形/名詞 + わけではない",
+    "compare": "〜わけがない：部分否定 vs 完全否定"
+  },
+  {
+    "id": "n3-004",
+    "grammar": "〜ものだ",
+    "reading": "mono da",
+    "meaning": "应该……/本来就是……",
+    "example": "人は誰でも失敗するものだ",
+    "example_reading": "人[ひと]は 誰[だれ]でも 失敗[しっぱい]するものだ",
+    "example_meaning": "人都会失败",
+    "pattern": "动词辞書形 + ものだ",
+    "compare": "〜ことだ：ものだ感慨常理"
+  },
+  {
+    "id": "n3-005",
+    "grammar": "〜ものではない",
+    "reading": "mono dewa nai",
+    "meaning": "不应该……",
+    "example": "人の悪口を言うものではない",
+    "example_reading": "人[ひと]の 悪口[わるぐち]を 言[い]うものではない",
+    "example_meaning": "不应该说别人坏话",
+    "pattern": "动词辞書形 + ものではない",
+    "compare": "〜べきではない：ものではない感慨，べきではない义务"
+  },
+  {
+    "id": "n3-006",
+    "grammar": "〜ことだ",
+    "reading": "koto da",
+    "meaning": "最好……",
+    "example": "若いうちに、いろいろなことを経験することだ",
+    "example_reading": "若[わか]いうちに、いろいろなことを 経験[けいけん]することだ",
+    "example_meaning": "趁年轻最好多经历一些事情",
+    "pattern": "动词辞書形 + ことだ",
+    "compare": "〜ものだ：ことだ忠告"
+  },
+  {
+    "id": "n3-007",
+    "grammar": "〜ことはない",
+    "reading": "koto wa nai",
+    "meaning": "不必……",
+    "example": "失敗を恐れることはない",
+    "example_reading": "失敗[しっぱい]を 恐[おそ]れることはない",
+    "example_meaning": "不必害怕失败",
+    "pattern": "动词辞書形 + ことはない",
+    "compare": "〜までもない：同义"
+  },
+  {
+    "id": "n3-008",
+    "grammar": "〜べきだ",
+    "reading": "beki da",
+    "meaning": "应该……",
+    "example": "約束は守るべきだ",
+    "example_reading": "約束[やくそく]は 守[まも]るべきだ",
+    "example_meaning": "应该遵守约定",
+    "pattern": "动词辞書形 + べきだ",
+    "compare": "〜べきではない：正反"
+  },
+  {
+    "id": "n3-009",
+    "grammar": "〜べきではない",
+    "reading": "beki dewa nai",
+    "meaning": "不应该……",
+    "example": "人を傷つけることを言うべきではない",
+    "example_reading": "人[ひと]を 傷[きず]つけることを 言[い]うべきではない",
+    "example_meaning": "不应该说伤害人的话",
+    "pattern": "动词辞書形 + べきではない",
+    "compare": "〜べきだ：正反"
+  },
+  {
+    "id": "n3-010",
+    "grammar": "〜に違いない",
+    "reading": "ni chigai nai",
+    "meaning": "一定……",
+    "example": "あの人は日本に長く住んでいたに違いない",
+    "example_reading": "あの 人[ひと]は 日本[にほん]に 長[なが]く 住[す]んでいたに 違[ちが]いない",
+    "example_meaning": "那个人一定在日本住过很久",
+    "pattern": "动词普通形/名詞 + に違いない",
+    "compare": "〜に決まっている：違いない中性，決まっている偏确信"
+  },
+  {
+    "id": "n3-011",
+    "grammar": "〜に決まっている",
+    "reading": "ni kimatte iru",
+    "meaning": "肯定……",
+    "example": "彼女なら合格に決まっている",
+    "example_reading": "彼女[かのじょ]なら 合格[ごうかく]に 決[き]まっている",
+    "example_meaning": "如果是她，肯定能及格",
+    "pattern": "动词普通形/名詞 + に決まっている",
+    "compare": "〜に違いない：決まっている偏主观确信"
+  },
+  {
+    "id": "n3-012",
+    "grammar": "〜はずだ",
+    "reading": "hazu da",
+    "meaning": "应该……",
+    "example": "もうすぐ電車が来るはずだ",
+    "example_reading": "もうすぐ 電車[でんしゃ]が 来[く]るはずだ",
+    "example_meaning": "电车应该快来了",
+    "pattern": "动词普通形/名詞 + はずだ",
+    "compare": "〜はずがない：正反"
+  },
+  {
+    "id": "n3-013",
+    "grammar": "〜はずがない",
+    "reading": "hazu ga nai",
+    "meaning": "不可能……",
+    "example": "そんなことがあるはずがない",
+    "example_reading": "そんなことがあるはずがない",
+    "example_meaning": "不可能有那种事",
+    "pattern": "动词普通形/名詞 + はずがない",
+    "compare": "〜はずだ：正反"
+  },
+  {
+    "id": "n3-014",
+    "grammar": "〜かもしれない",
+    "reading": "kamoshirenai",
+    "meaning": "也许……",
+    "example": "明日は雪かもしれない",
+    "example_reading": "明日[あした]は 雪[ゆき]かもしれない",
+    "example_meaning": "明天也许会下雪",
+    "pattern": "动词普通形/名詞 + かもしれない",
+    "compare": "〜かねない：かも中性，かね偏负面"
+  },
+  {
+    "id": "n3-015",
+    "grammar": "〜かねない",
+    "reading": "kanenai",
+    "meaning": "说不定会……",
+    "example": "彼は怒りかねない",
+    "example_reading": "彼[かれ]は 怒[おこ]りかねない",
+    "example_meaning": "说不定他会生气",
+    "pattern": "动词ます形 + かねない",
+    "compare": "〜かもしれない：かね偏负面"
+  },
+  {
+    "id": "n3-016",
+    "grammar": "〜に相違ない",
+    "reading": "ni souinai",
+    "meaning": "一定……（书面）",
+    "example": "犯人は彼に相違ない",
+    "example_reading": "犯人[はんにん]は 彼[かれ]に 相違[そうい]ない",
+    "example_meaning": "犯人一定是他",
+    "pattern": "动词普通形/名詞 + に相違ない",
+    "compare": "〜に違いない：相違ない书面"
+  },
+  {
+    "id": "n3-017",
+    "grammar": "〜そうだ",
+    "reading": "sou da",
+    "meaning": "听说……",
+    "example": "あの店は閉店するそうだ",
+    "example_reading": "あの 店[みせ]は 閉店[へいてん]するそうだ",
+    "example_meaning": "听说那家店要关门了",
+    "pattern": "动词普通形/名詞 + そうだ",
+    "compare": "〜ようだ/らしい：そうだ表传闻"
+  },
+  {
+    "id": "n3-018",
+    "grammar": "〜ようだ",
+    "reading": "you da",
+    "meaning": "好像……",
+    "example": "誰かが来たようだ",
+    "example_reading": "誰[だれ]かが 来[き]たようだ",
+    "example_meaning": "好像有人来了",
+    "pattern": "动词普通形/名詞 + ようだ",
+    "compare": "〜そうだ/らしい：ようだ基于判断"
+  },
+  {
+    "id": "n3-019",
+    "grammar": "〜らしい",
+    "reading": "rashii",
+    "meaning": "好像……/有……风格",
+    "example": "彼は今忙しいらしい",
+    "example_reading": "彼[かれ]は 今[いま] 忙[いそが]しいらしい",
+    "example_meaning": "他现在好像很忙",
+    "pattern": "动词普通形/名詞 + らしい",
+    "compare": "〜そうだ/ようだ：らしい表传闻或典型"
+  },
+  {
+    "id": "n3-020",
+    "grammar": "〜みたいだ",
+    "reading": "mitai da",
+    "meaning": "好像……",
+    "example": "雨が降るみたいだ",
+    "example_reading": "雨[あめ]が 降[ふ]るみたいだ",
+    "example_meaning": "好像要下雨了",
+    "pattern": "动词普通形/名詞 + みたいだ",
+    "compare": "〜ようだ：みたい更口语"
+  },
+  {
+    "id": "n3-021",
+    "grammar": "〜そうだ",
+    "reading": "sou da",
+    "meaning": "看起来好像……",
+    "example": "この本は面白そうだ",
+    "example_reading": "この 本[ほん]は 面白[おもしろ]そうだ",
+    "example_meaning": "这本书看起来很有趣",
+    "pattern": "动词ます形/イ形去い + そうだ",
+    "compare": "〜ようだ：そうだ表样态（外观）"
+  },
+  {
+    "id": "n3-022",
+    "grammar": "〜そうもない",
+    "reading": "sou mo nai",
+    "meaning": "不太可能……",
+    "example": "雨が止みそうもない",
+    "example_reading": "雨[あめ]が 止[や]みそうもない",
+    "example_meaning": "雨看起来不会停",
+    "pattern": "动词ます形/イ形去い + そうもない",
+    "compare": "〜そうにない：同义"
+  },
+  {
+    "id": "n3-023",
+    "grammar": "〜つもりだ",
+    "reading": "tsumori da",
+    "meaning": "打算……",
+    "example": "来年、日本へ留学するつもりだ",
+    "example_reading": "来年[らいねん]、 日本[にほん]へ 留学[りゅうがく]するつもりだ",
+    "example_meaning": "我打算明年去日本留学",
+    "pattern": "动词辞書形/ナイ形 + つもりだ",
+    "compare": "〜ようとする：つもり表计划，ようとする表意图"
+  },
+  {
+    "id": "n3-024",
+    "grammar": "〜つもりはない",
+    "reading": "tsumori wa nai",
+    "meaning": "不打算……",
+    "example": "もう一度行くつもりはない",
+    "example_reading": "もう 一度[いちど] 行[い]くつもりはない",
+    "example_meaning": "我不打算再去一次",
+    "pattern": "动词辞書形/ナイ形 + つもりはない",
+    "compare": "〜つもりだ：正反"
+  },
+  {
+    "id": "n3-025",
+    "grammar": "〜つもりで",
+    "reading": "tsumori de",
+    "meaning": "当作……/以……的心态",
+    "example": "自分の家のように使うつもりでいてください",
+    "example_reading": "自分[じぶん]の 家[いえ]のように 使[つか]うつもりでいてください",
+    "example_meaning": "请当作自己家一样使用",
+    "pattern": "动词辞書形/ナイ形 + つもりで",
+    "compare": "〜ように：つもりで表假设心境"
+  },
+  {
+    "id": "n3-026",
+    "grammar": "〜ことにする",
+    "reading": "koto ni suru",
+    "meaning": "决定……",
+    "example": "毎日運動することにした",
+    "example_reading": "毎日[まいにち] 運動[うんどう]することにした",
+    "example_meaning": "我决定每天运动",
+    "pattern": "动词辞書形 + ことにする",
+    "compare": "〜ことになる：する主观，なる客观"
+  },
+  {
+    "id": "n3-027",
+    "grammar": "〜ことになる",
+    "reading": "koto ni naru",
+    "meaning": "（客观上）变成……",
+    "example": "来月から東京に転勤することになった",
+    "example_reading": "来月[らいげつ]から 東京[とうきょう]に 転勤[てんきん]することになった",
+    "example_meaning": "从下月起被调到东京工作",
+    "pattern": "动词辞書形 + ことになる",
+    "compare": "〜ことにする：なる客观"
+  },
+  {
+    "id": "n3-028",
+    "grammar": "〜ようにする",
+    "reading": "you ni suru",
+    "meaning": "努力做到……",
+    "example": "毎日日本語を話すようにしている",
+    "example_reading": "毎日[まいにち] 日本語[にほんご]を 話[はな]すようにしている",
+    "example_meaning": "我努力做到每天说日语",
+    "pattern": "动词辞書形/ナイ形 + ようにする",
+    "compare": "〜ようになる：する主观"
+  },
+  {
+    "id": "n3-029",
+    "grammar": "〜ようになる",
+    "reading": "you ni naru",
+    "meaning": "变得能够……",
+    "example": "日本語の新聞が読めるようになった",
+    "example_reading": "日本語[にほんご]の 新聞[しんぶん]が 読[よ]めるようになった",
+    "example_meaning": "变得能读日语报纸了",
+    "pattern": "动词可能形/ナイ形 + ようになる",
+    "compare": "〜ようにする：なる客观"
+  },
+  {
+    "id": "n3-030",
+    "grammar": "〜ように見える",
+    "reading": "you ni mieru",
+    "meaning": "看起来好像……",
+    "example": "彼は元気のように見える",
+    "example_reading": "彼[かれ]は 元気[げんき]のように 見[み]える",
+    "example_meaning": "他看起来很有精神",
+    "pattern": "动词普通形/名詞 + ように見える",
+    "compare": "〜ようだ：見える强调外观判断"
+  },
+  {
+    "id": "n3-031",
+    "grammar": "〜ことにしている",
+    "reading": "koto ni shite iru",
+    "meaning": "养成了……的习惯",
+    "example": "毎朝水を一杯飲むことにしている",
+    "example_reading": "毎朝[まいあさ] 水[みず]を 一杯[いっぱい] 飲[の]むことにしている",
+    "example_meaning": "我养成了每天早上喝一杯水的习惯",
+    "pattern": "动词辞書形 + ことにしている",
+    "compare": "〜ことになっている：している表个人习惯"
+  },
+  {
+    "id": "n3-032",
+    "grammar": "〜ことになっている",
+    "reading": "koto ni natte iru",
+    "meaning": "规定……/预定……",
+    "example": "会議は毎週月曜日に行うことになっている",
+    "example_reading": "会議[かいぎ]は 毎週[まいしゅう] 月曜日[げつようび]に 行[おこな]うことになっている",
+    "example_meaning": "会议定于每周一举行",
+    "pattern": "动词辞書形 + ことになっている",
+    "compare": "〜ことにしている：なっている表规则"
+  },
+  {
+    "id": "n3-033",
+    "grammar": "〜に違いない",
+    "reading": "ni chigai nai",
+    "meaning": "一定……",
+    "example": "この料理は彼女が作ったに違いない",
+    "example_reading": "この 料理[りょうり]は 彼女[かのじょ]が 作[つく]ったに 違[ちが]いない",
+    "example_meaning": "这道菜一定是她做的",
+    "pattern": "动词普通形/名詞 + に違いない",
+    "compare": "〜に決まっている：同义辨析"
+  },
+  {
+    "id": "n3-034",
+    "grammar": "〜に決まっている",
+    "reading": "ni kimatte iru",
+    "meaning": "肯定……",
+    "example": "そんな安いもの、怪しいに決まっている",
+    "example_reading": "そんな 安[やす]いもの、 怪[あや]しいに 決[き]まっている",
+    "example_meaning": "那么便宜的东西肯定有问题",
+    "pattern": "动词普通形/名詞 + に決まっている",
+    "compare": "〜に違いない：同义辨析"
+  },
+  {
+    "id": "n3-035",
+    "grammar": "〜まい",
+    "reading": "mai",
+    "meaning": "不……吧（否定意志/推测）",
+    "example": "二度と失敗するまい",
+    "example_reading": "二度[にど]と 失敗[しっぱい]するまい",
+    "example_meaning": "我不会再失败了吧",
+    "pattern": "动词辞書形 + まい",
+    "compare": "〜ないだろう：まい表意志/否定推测"
+  },
+  {
+    "id": "n3-036",
+    "grammar": "〜う/ようとする",
+    "reading": "u/you to suru",
+    "meaning": "想要……/试图……",
+    "example": "立とうとした時、転んでしまった",
+    "example_reading": "立[た]とうとした 時[とき]、 転[ころ]んでしまった",
+    "example_meaning": "想要站起来的时候摔倒了",
+    "pattern": "动词意志形 + とする",
+    "compare": "〜ようとする：同义"
+  },
+  {
+    "id": "n3-037",
+    "grammar": "〜う/ようとしない",
+    "reading": "u/you to shinai",
+    "meaning": "不想……/不试图……",
+    "example": "子供は何も言おうとしない",
+    "example_reading": "子供[こども]は 何[なに]も 言[い]おうとしない",
+    "example_meaning": "孩子什么都不想说",
+    "pattern": "动词意志形 + としない",
+    "compare": "〜ようとしない：同义"
+  },
+  {
+    "id": "n3-038",
+    "grammar": "〜つつ",
+    "reading": "tsutsu",
+    "meaning": "一边……一边……（书面）",
+    "example": "歩きつつ、音楽を聞く",
+    "example_reading": "歩[ある]きつつ、 音楽[おんがく]を 聞[き]く",
+    "example_meaning": "一边走路一边听音乐",
+    "pattern": "动词ます形 + つつ",
+    "compare": "〜ながら：つつ书面"
+  },
+  {
+    "id": "n3-039",
+    "grammar": "〜つつも",
+    "reading": "tsutsu mo",
+    "meaning": "虽然……但是……",
+    "example": "知りつつも、黙っていた",
+    "example_reading": "知[し]りつつも、 黙[だま]っていた",
+    "example_meaning": "虽然知道，但一直保持沉默",
+    "pattern": "动词ます形 + つつも",
+    "compare": "〜ながらも：同义"
+  },
+  {
+    "id": "n3-040",
+    "grammar": "〜ながらも",
+    "reading": "nagara mo",
+    "meaning": "虽然……但是……",
+    "example": "彼は小さいながらも、力が強い",
+    "example_reading": "彼[かれ]は 小[ちい]さいながらも、 力[ちから]が 強[つよ]い",
+    "example_meaning": "他虽然个子小，但力气很大",
+    "pattern": "动词普通形/イ形/名詞 + ながらも",
+    "compare": "〜けれども：ながらも书面"
+  },
+  {
+    "id": "n3-041",
+    "grammar": "〜ものの",
+    "reading": "mono no",
+    "meaning": "虽然……但是……",
+    "example": "約束したものの、忘れてしまった",
+    "example_reading": "約束[やくそく]したものの、 忘[わす]れてしまった",
+    "example_meaning": "虽然约好了，但忘了",
+    "pattern": "动词普通形/名詞 + ものの",
+    "compare": "〜けれども：ものの书面"
+  },
+  {
+    "id": "n3-042",
+    "grammar": "〜くせに",
+    "reading": "kuse ni",
+    "meaning": "明明……却……",
+    "example": "分かっているくせに、教えてくれない",
+    "example_reading": "分[わ]かっているくせに、 教[おし]えてくれない",
+    "example_meaning": "明明知道却不告诉我",
+    "pattern": "动词普通形/名詞 + くせに",
+    "compare": "〜のに：くせに带责备"
+  },
+  {
+    "id": "n3-043",
+    "grammar": "〜とはいえ",
+    "reading": "to wa ie",
+    "meaning": "虽说……",
+    "example": "春とはいえ、まだ寒い日がある",
+    "example_reading": "春[はる]とはいえ、まだ 寒[さむ]い 日[ひ]がある",
+    "example_meaning": "虽说到了春天，但还有冷的日子",
+    "pattern": "动词普通形/名詞 + とはいえ",
+    "compare": "〜とは言うものの：同义"
+  },
+  {
+    "id": "n3-044",
+    "grammar": "〜ながら",
+    "reading": "nagara",
+    "meaning": "一边……一边……",
+    "example": "テレビを見ながら食事をする",
+    "example_reading": "テレビを 見[み]ながら 食事[しょくじ]をする",
+    "example_meaning": "一边看电视一边吃饭",
+    "pattern": "动词ます形 + ながら",
+    "compare": "〜つつ：ながら口语"
+  },
+  {
+    "id": "n3-045",
+    "grammar": "〜たとたん",
+    "reading": "ta totan",
+    "meaning": "刚一……就……",
+    "example": "電車に乗ったとたん、眠くなった",
+    "example_reading": "電車[でんしゃ]に 乗[の]ったとたん、 眠[ねむ]くなった",
+    "example_meaning": "刚上电车就困了",
+    "pattern": "动词た形 + とたん",
+    "compare": "〜か〜ないかのうちに：とたん强调瞬间"
+  },
+  {
+    "id": "n3-046",
+    "grammar": "〜か〜ないかのうちに",
+    "reading": "ka nai ka no uchi ni",
+    "meaning": "刚……就……",
+    "example": "ベルが鳴るか鳴らないかのうちに、彼は飛び出した",
+    "example_reading": "ベルが 鳴[な]るか 鳴[な]らないかのうちに、 彼[かれ]は 飛[と]び 出[だ]した",
+    "example_meaning": "铃声还没响完，他就冲了出去",
+    "pattern": "动词るか动词ないかのうちに",
+    "compare": "〜や否や：うちに更口语"
+  },
+  {
+    "id": "n3-047",
+    "grammar": "〜や否や",
+    "reading": "ya ina ya",
+    "meaning": "刚一……就……（书面）",
+    "example": "彼は舞台に上がるや否や、歌い始めた",
+    "example_reading": "彼[かれ]は 舞台[ぶたい]に 上[あ]がるや 否[いな]や、 歌[うた]い 始[はじ]めた",
+    "example_meaning": "他刚上台就开始唱了",
+    "pattern": "动词辞書形 + や否や",
+    "compare": "〜とたん：や否や书面"
+  },
+  {
+    "id": "n3-048",
+    "grammar": "〜そばから",
+    "reading": "soba kara",
+    "meaning": "刚……就……",
+    "example": "覚えたそばから忘れる",
+    "example_reading": "覚[おぼ]えたそばから 忘[わす]れる",
+    "example_meaning": "刚记住就忘了",
+    "pattern": "动词辞書形/た形 + そばから",
+    "compare": "〜が早いか：そばから强调反复"
+  },
+  {
+    "id": "n3-049",
+    "grammar": "〜が早いか",
+    "reading": "ga hayai ka",
+    "meaning": "刚……就……",
+    "example": "先生が教室に入るが早いか、静かになった",
+    "example_reading": "先生[せんせい]が 教室[きょうしつ]に 入[はい]るが 早[はや]いか、 静[しず]かになった",
+    "example_meaning": "老师刚一进教室就安静下来了",
+    "pattern": "动词辞書形 + が早いか",
+    "compare": "〜や否や：が早いか书面"
+  },
+  {
+    "id": "n3-050",
+    "grammar": "〜やいなや",
+    "reading": "ya ina ya",
+    "meaning": "刚一……就……",
+    "example": "彼女は私の顔を見るやいなや、泣き出した",
+    "example_reading": "彼女[かのじょ]は 私[わたし]の 顔[かお]を 見[み]るやいなや、 泣[な]き 出[だ]した",
+    "example_meaning": "她一看见我的脸就哭了起来",
+    "pattern": "动词辞書形 + やいなや",
+    "compare": "〜や否や：やいなや古语风"
+  },
+  {
+    "id": "n3-051",
+    "grammar": "〜う/ようものなら",
+    "reading": "u/you mono nara",
+    "meaning": "如果……的话可就……",
+    "pattern": "动词意志形 + ものなら",
+    "compare": "〜たら：ものなら强调严重后果",
+    "example": "嘘をつこうものなら、大変だ",
+    "example_reading": "嘘[うそ]をつこうものなら、 大変[たいへん]だ",
+    "example_meaning": "如果说谎可就糟了"
+  },
+  {
+    "id": "n3-052",
+    "grammar": "〜（よ）うにも〜ない",
+    "reading": "u/you ni mo nai",
+    "meaning": "即使想……也不能……",
+    "pattern": "动词意志形 + にも + 动词ない",
+    "compare": "〜ようとする：にもない强调无法实施",
+    "example": "行きたくても、お金がなくて行こうにも行けない",
+    "example_reading": "行[い]きたくても、お 金[かね]がなくて 行[い]こうにも 行[い]けない",
+    "example_meaning": "想去但没钱去不了"
+  },
+  {
+    "id": "n3-053",
+    "grammar": "〜ばかりに",
+    "reading": "bakari ni",
+    "meaning": "只因……（负面结果）",
+    "pattern": "动词普通形/名詞 + ばかりに",
+    "compare": "〜からこそ：ばかりに偏负面"
+  },
+  {
+    "id": "n3-054",
+    "grammar": "〜だけに",
+    "reading": "dake ni",
+    "meaning": "正因为……",
+    "pattern": "动词普通形/名詞 + だけに",
+    "compare": "〜ばかりに：だけに可正可负"
+  },
+  {
+    "id": "n3-055",
+    "grammar": "〜だけあって",
+    "reading": "dake atte",
+    "meaning": "不愧……",
+    "pattern": "动词普通形/名詞 + だけあって",
+    "compare": "〜だけに：だけあって偏正面评价"
+  },
+  {
+    "id": "n3-056",
+    "grammar": "〜だけのことはある",
+    "reading": "dake no koto wa aru",
+    "meaning": "不愧……",
+    "pattern": "动词普通形/名詞 + だけのことはある",
+    "compare": "〜だけあって：同义"
+  },
+  {
+    "id": "n3-057",
+    "grammar": "〜さえ〜ば",
+    "reading": "sae ba",
+    "meaning": "只要……就……",
+    "pattern": "名詞 + さえ + 动词ば形",
+    "compare": "〜ば：さえ强调最低条件"
+  },
+  {
+    "id": "n3-058",
+    "grammar": "〜すら",
+    "reading": "sura",
+    "meaning": "连……都（书面）",
+    "pattern": "名詞 + すら",
+    "compare": "〜さえ：すら更书面生硬"
+  },
+  {
+    "id": "n3-059",
+    "grammar": "〜でも",
+    "reading": "demo",
+    "meaning": "即使是……也……",
+    "pattern": "名詞 + でも",
+    "compare": "〜さえ：でも表举例，さえ强调最低条件"
+  },
+  {
+    "id": "n3-060",
+    "grammar": "〜だに",
+    "reading": "da ni",
+    "meaning": "甚至连……都不（书面）",
+    "pattern": "名詞 + だに + 动词ない",
+    "compare": "〜すら：だに更古雅"
+  },
+  {
+    "id": "n3-061",
+    "grammar": "〜ながら",
+    "reading": "nagara",
+    "meaning": "虽然……但是……",
+    "pattern": "动词ます形/名詞 + ながら",
+    "compare": "〜つつ：ながら口语"
+  },
+  {
+    "id": "n3-062",
+    "grammar": "〜つつ",
+    "reading": "tsutsu",
+    "meaning": "一边……/虽然……",
+    "pattern": "动词ます形 + つつ",
+    "compare": "〜ながら：つつ书面"
+  },
+  {
+    "id": "n3-063",
+    "grammar": "〜ものと思われる",
+    "reading": "mono to omowareru",
+    "meaning": "被认为……",
+    "pattern": "动词普通形 + ものと思われる",
+    "compare": "〜と考えられる：同义"
+  },
+  {
+    "id": "n3-064",
+    "grammar": "〜ものと考えられる",
+    "reading": "mono to kangaerareru",
+    "meaning": "被认为……（更正式）",
+    "pattern": "动词普通形 + ものと考えられる",
+    "compare": "〜ものと思われる：同义更正式"
+  },
+  {
+    "id": "n3-065",
+    "grammar": "〜とされている",
+    "reading": "to sarete iru",
+    "meaning": "被认为……/人们认为……",
+    "pattern": "动词普通形 + とされている",
+    "compare": "〜と考えられている：同义"
+  },
+  {
+    "id": "n3-066",
+    "grammar": "〜と言われている",
+    "reading": "to iwarete iru",
+    "meaning": "人们说……",
+    "pattern": "动词普通形 + と言われている",
+    "compare": "〜とされている：言われている表传说/公认"
+  },
+  {
+    "id": "n3-067",
+    "grammar": "〜に違いない",
+    "reading": "ni chigai nai",
+    "meaning": "一定……",
+    "pattern": "动词普通形/名詞 + に違いない",
+    "compare": "〜に決まっている：同义"
+  },
+  {
+    "id": "n3-068",
+    "grammar": "〜に極まっている",
+    "reading": "ni kiwamatte iru",
+    "meaning": "极其……",
+    "pattern": "名詞/ナ形容詞 + に極まっている",
+    "compare": "〜の至り：極まっている表程度"
+  },
+  {
+    "id": "n3-069",
+    "grammar": "〜の至りだ",
+    "reading": "no itari da",
+    "meaning": "……至极",
+    "pattern": "名詞 + の至りだ",
+    "compare": "〜に極まっている：至り更文雅"
+  },
+  {
+    "id": "n3-070",
+    "grammar": "〜というものだ",
+    "reading": "to iu mono da",
+    "meaning": "所谓……",
+    "pattern": "动词普通形/名詞 + というものだ",
+    "compare": "〜ものだ：というものだ加强感慨"
+  },
+  {
+    "id": "n3-071",
+    "grammar": "〜ということだ",
+    "reading": "to iu koto da",
+    "meaning": "也就是说……/据说……",
+    "pattern": "动词普通形/名詞 + ということだ",
+    "compare": "〜つまり：同义"
+  },
+  {
+    "id": "n3-072",
+    "grammar": "〜ということはない",
+    "reading": "to iu koto wa nai",
+    "meaning": "不必……",
+    "pattern": "动词辞書形 + ということはない",
+    "compare": "〜ことはない：同义"
+  },
+  {
+    "id": "n3-073",
+    "grammar": "〜からには",
+    "reading": "kara ni wa",
+    "meaning": "既然……就……",
+    "pattern": "动词普通形/名詞 + からには",
+    "compare": "〜以上：からには偏决心"
+  },
+  {
+    "id": "n3-074",
+    "grammar": "〜以上",
+    "reading": "ijou",
+    "meaning": "既然……就……",
+    "pattern": "动词普通形/名詞 + 以上",
+    "compare": "〜からには：以上偏义务"
+  },
+  {
+    "id": "n3-075",
+    "grammar": "〜上",
+    "reading": "jou",
+    "meaning": "在……方面/上",
+    "pattern": "动词た形/名詞 + の + 上",
+    "compare": "〜点：上书面"
+  },
+  {
+    "id": "n3-076",
+    "grammar": "〜上に",
+    "reading": "ue ni",
+    "meaning": "而且……",
+    "pattern": "动词普通形/名詞 + 上に",
+    "compare": "〜そのうえ：上に书面"
+  },
+  {
+    "id": "n3-077",
+    "grammar": "〜一方",
+    "reading": "ippou",
+    "meaning": "另一方面……",
+    "pattern": "动词普通形 + 一方",
+    "compare": "〜反面：同义"
+  },
+  {
+    "id": "n3-078",
+    "grammar": "〜反面",
+    "reading": "hanmen",
+    "meaning": "反面……",
+    "pattern": "动词普通形/名詞 + の反面",
+    "compare": "〜一方：反面书面"
+  },
+  {
+    "id": "n3-079",
+    "grammar": "〜かわりに",
+    "reading": "kawari ni",
+    "meaning": "代替……/虽然……但是……",
+    "pattern": "动词普通形/名詞 + かわりに",
+    "compare": "〜代わりに：同义"
+  },
+  {
+    "id": "n3-080",
+    "grammar": "〜代わりに",
+    "reading": "kawari ni",
+    "meaning": "代替……/作为交换……",
+    "pattern": "动词普通形/名詞 + 代わりに",
+    "compare": "〜かわりに：同义"
+  },
+  {
+    "id": "n3-081",
+    "grammar": "〜反面",
+    "reading": "hanmen",
+    "meaning": "相反地……",
+    "pattern": "动词普通形/名詞 + 反面",
+    "compare": "〜一方：同义"
+  },
+  {
+    "id": "n3-082",
+    "grammar": "〜反面",
+    "reading": "hanmen",
+    "meaning": "与……相反",
+    "pattern": "动词普通形/名詞 + 反面",
+    "compare": "〜一方：同义"
+  },
+  {
+    "id": "n3-083",
+    "grammar": "〜にしたがって",
+    "reading": "ni shitagatte",
+    "meaning": "随着……/按照……",
+    "pattern": "动词辞書形/名詞 + にしたがって",
+    "compare": "〜につれて：にしたがって可表按规则"
+  },
+  {
+    "id": "n3-084",
+    "grammar": "〜に伴って",
+    "reading": "ni tomonatte",
+    "meaning": "随着……",
+    "pattern": "动词辞書形/名詞 + に伴って",
+    "compare": "〜につれて：伴って常表变化"
+  },
+  {
+    "id": "n3-085",
+    "grammar": "〜に応じて",
+    "reading": "ni oujite",
+    "meaning": "根据……",
+    "pattern": "名詞 + に応じて",
+    "compare": "〜によって：応じて强调相应"
+  },
+  {
+    "id": "n3-086",
+    "grammar": "〜に反して",
+    "reading": "ni hanshite",
+    "meaning": "与……相反",
+    "pattern": "名詞 + に反して",
+    "compare": "〜とは対照的に：同义"
+  },
+  {
+    "id": "n3-087",
+    "grammar": "〜に基づいて",
+    "reading": "ni motozuite",
+    "meaning": "基于……",
+    "pattern": "名詞 + に基づいて",
+    "compare": "〜によって：基づいて强调根据"
+  },
+  {
+    "id": "n3-088",
+    "grammar": "〜を皮切りに",
+    "reading": "wo kawa kiri ni",
+    "meaning": "以……为开端",
+    "pattern": "名詞 + を皮切りに",
+    "compare": "〜から始まる：皮切りに正式"
+  },
+  {
+    "id": "n3-089",
+    "grammar": "〜を始め",
+    "reading": "wo hajime",
+    "meaning": "以……为首",
+    "pattern": "名詞 + を始め",
+    "compare": "〜など：始め用于列举代表"
+  },
+  {
+    "id": "n3-090",
+    "grammar": "〜をはじめとする",
+    "reading": "wo hajime to suru",
+    "meaning": "以……为首的……",
+    "pattern": "名詞 + をはじめとする",
+    "compare": "〜を始め：同义更正式"
+  },
+  {
+    "id": "n3-091",
+    "grammar": "〜にわたって",
+    "reading": "ni watatte",
+    "meaning": "历时……/遍及……",
+    "pattern": "名詞 + にわたって",
+    "compare": "〜を通じて：にわたって强调空间时间跨度"
+  },
+  {
+    "id": "n3-092",
+    "grammar": "〜を通じて",
+    "reading": "wo tsuujite",
+    "meaning": "通过……",
+    "pattern": "名詞 + を通じて",
+    "compare": "〜を通して：通じて强调媒介"
+  },
+  {
+    "id": "n3-093",
+    "grammar": "〜を通して",
+    "reading": "wo tooshite",
+    "meaning": "通过……/整个……",
+    "pattern": "名詞 + を通して",
+    "compare": "〜を通じて：通して强调过程"
+  },
+  {
+    "id": "n3-094",
+    "grammar": "〜を込めて",
+    "reading": "wo komete",
+    "meaning": "饱含……",
+    "pattern": "名詞 + を込めて",
+    "compare": "〜をもって：込めて强调情感"
+  },
+  {
+    "id": "n3-095",
+    "grammar": "〜をもって",
+    "reading": "wo motte",
+    "meaning": "以……/用……",
+    "pattern": "名詞 + をもって",
+    "compare": "〜で：をもって正式"
+  },
+  {
+    "id": "n3-096",
+    "grammar": "〜かたわら",
+    "reading": "katawara",
+    "meaning": "一边……一边……",
+    "pattern": "名詞 + のかたわら",
+    "compare": "〜ながら：かたわら书面"
+  },
+  {
+    "id": "n3-097",
+    "grammar": "〜がてら",
+    "reading": "gatera",
+    "meaning": "顺便……",
+    "pattern": "动词ます形/名詞 + がてら",
+    "compare": "〜ついでに：がてら略正式"
+  },
+  {
+    "id": "n3-098",
+    "grammar": "〜ついでに",
+    "reading": "tsuideni",
+    "meaning": "顺便……",
+    "pattern": "动词た形/名詞 + のついでに",
+    "compare": "〜がてら：ついでに更口语"
+  },
+  {
+    "id": "n3-099",
+    "grammar": "〜かねる",
+    "reading": "kaneru",
+    "meaning": "难以……",
+    "pattern": "动词ます形 + かねる",
+    "compare": "〜がたい：かねる表说话人难以，がたい表普遍"
+  },
+  {
+    "id": "n3-100",
+    "grammar": "〜がたい",
+    "reading": "gatai",
+    "meaning": "难于……",
+    "pattern": "动词ます形 + がたい",
+    "compare": "〜かねる：がたい表普遍困难"
+  }
 ]

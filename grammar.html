@@ -88,6 +88,10 @@
         .card.flipped .back-face { display: block; }
         .reading { font-size: 26px; color: #667eea; margin-bottom: 10px; }
         .meaning { font-size: 22px; color: #333; margin-bottom: 25px; line-height: 1.5; }
+        .pattern, .compare { font-size: 15px; color: #555; background: #fff7ed; border-radius: 10px; padding: 10px 14px; margin: 0 auto 12px; max-width: 90%; text-align: left; line-height: 1.5; }
+        .compare { background: #f0fdf4; }
+        .pattern .label, .compare .label { font-weight: bold; color: #c2410c; }
+        .compare .label { color: #15803d; }
         .example-box {
             background: #f8f9ff;
             border-radius: 16px;
@@ -205,6 +209,8 @@
                     <div class="grammar">${g.grammar}</div>
                     <div class="reading">${g.reading}</div>
                     <div class="meaning">${g.meaning}</div>
+                    ${g.pattern ? `<div class="pattern"><span class="label">接续：</span>${g.pattern}</div>` : ''}
+                    ${g.compare ? `<div class="compare"><span class="label">对比：</span>${g.compare}</div>` : ''}
                     ${g.example ? `
                     <div class="example-box">
                         <div class="example">${g.example}</div>
