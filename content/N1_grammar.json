@@ -1,0 +1,452 @@
+[
+  {
+    "id": "n1-001",
+    "grammar": "〜とは/というのは",
+    "reading": "to wa / to iu no wa",
+    "meaning": "所谓……",
+    "example": "幸福とは何か、考えたことはあるか",
+    "example_reading": "幸福[こうふく]とは 何[なに]か、 考[かんが]えたことはあるか",
+    "example_meaning": "你考虑过所谓幸福是什么吗"
+  },
+  {
+    "id": "n1-002",
+    "grammar": "〜と言うより",
+    "reading": "to iu yori",
+    "meaning": "与其说是……不如说是……",
+    "example": "彼は怖いというより、慎重なのだ",
+    "example_reading": "彼[かれ]は 怖[こわ]いというより、 慎重[しんちょう]なのだ",
+    "example_meaning": "与其说他胆小，不如说他谨慎"
+  },
+  {
+    "id": "n1-003",
+    "grammar": "〜と言えば/と言ったら",
+    "reading": "to ieba / to ittara",
+    "meaning": "说起……/提到……",
+    "example": "桜と言えば、日本を思い出す",
+    "example_reading": "桜[さくら]と 言[い]えば、 日本[にほん]を 思[おも]い 出[だ]す",
+    "example_meaning": "说起樱花就想起日本"
+  },
+  {
+    "id": "n1-004",
+    "grammar": "〜ならでは",
+    "reading": "nara de wa",
+    "meaning": "只有……才有的",
+    "example": "この味は老舗ならではだ",
+    "example_reading": "この 味[あじ]は 老舗[しにせ]ならではだ",
+    "example_meaning": "这个味道只有老字号才有"
+  },
+  {
+    "id": "n1-005",
+    "grammar": "〜なりに",
+    "reading": "nari ni",
+    "meaning": "以……自己的方式",
+    "example": "彼なりに一生懸命やっている",
+    "example_reading": "彼[かれ]なりに 一生懸命[いっしょうけんめい]やっている",
+    "example_meaning": "他以自己的方式努力着"
+  },
+  {
+    "id": "n1-006",
+    "grammar": "〜にして/にあって/にもかかわらず",
+    "reading": "ni shite / ni atte / ni mo kakawarazu",
+    "meaning": "身为……却……",
+    "example": "彼は子供にして、大人の考え方をする",
+    "example_reading": "彼[かれ]は 子供[こども]にして、 大人[おとな]の 考[かんが]え 方[かた]をする",
+    "example_meaning": "他身为孩子却有着大人的想法"
+  },
+  {
+    "id": "n1-007",
+    "grammar": "〜がてら",
+    "reading": "gatera",
+    "meaning": "顺便……",
+    "example": "買い物がてら、散歩した",
+    "example_reading": "買[か]い 物[もの]がてら、 散歩[さんぽ]した",
+    "example_meaning": "顺便买东西，散了散步"
+  },
+  {
+    "id": "n1-008",
+    "grammar": "〜かたわら",
+    "reading": "katawara",
+    "meaning": "一边……一边……（正式）",
+    "example": "彼女は主婦のかたわら、小説を書いている",
+    "example_reading": "彼女[かのじょ]は 主婦[しゅふ]のかたわら、 小説[しょうせつ]を 書[か]いている",
+    "example_meaning": "她一边做家庭主妇一边写小说"
+  },
+  {
+    "id": "n1-009",
+    "grammar": "〜そばから",
+    "reading": "soba kara",
+    "meaning": "刚……就……",
+    "example": "覚えるそばから忘れる",
+    "example_reading": "覚[おぼ]えるそばから 忘[わす]れる",
+    "example_meaning": "刚记住就忘了"
+  },
+  {
+    "id": "n1-010",
+    "grammar": "〜や否や",
+    "reading": "ya ina ya",
+    "meaning": "刚一……就……",
+    "example": "彼は目を覚ますや否や、飛び起きた",
+    "example_reading": "彼[かれ]は 目[め]を 覚[さ]ますや 否[いな]や、 飛[と]び 起[お]きた",
+    "example_meaning": "他刚醒来就跳了起来"
+  },
+  {
+    "id": "n1-011",
+    "grammar": "〜が早いか",
+    "reading": "ga hayai ka",
+    "meaning": "刚……就……",
+    "example": "彼は私の顔を見るが早いか、逃げ出した",
+    "example_reading": "彼[かれ]は 私[わたし]の 顔[かお]を 見[み]るが 早[はや]いか、 逃[に]げ 出[だ]した",
+    "example_meaning": "他一看到我的脸就逃跑了"
+  },
+  {
+    "id": "n1-012",
+    "grammar": "〜そばらく",
+    "reading": "soba raku",
+    "meaning": "不久……/不一会儿",
+    "example": "彼が来たそばらく、仕事が始まった",
+    "example_reading": "彼[かれ]が 来[き]たそばらく、 仕事[しごと]が 始[はじ]まった",
+    "example_meaning": "他来了不一会儿，工作就开始了"
+  },
+  {
+    "id": "n1-013",
+    "grammar": "〜や/や否や",
+    "reading": "ya / ya ina ya",
+    "meaning": "一……就……",
+    "example": "彼は会議室に入るや、泣き始めた",
+    "example_reading": "彼[かれ]は 会議室[かいぎしつ]に 入[はい]るや、 泣[な]き 始[はじ]めた",
+    "example_meaning": "他一进会议室就开始哭"
+  },
+  {
+    "id": "n1-014",
+    "grammar": "〜かと思うと/思えば",
+    "reading": "ka to omou to / omoeba",
+    "meaning": "刚……就……/原以为……",
+    "example": "静かになったかと思うと、大きな音がした",
+    "example_reading": "静[しず]かになったかと 思[おも]うと、 大[おお]きな 音[おと]がした",
+    "example_meaning": "刚安静下来就传来了巨响"
+  },
+  {
+    "id": "n1-015",
+    "grammar": "〜たかと思うと/思えば",
+    "reading": "ta ka to omou to / omoeba",
+    "meaning": "刚……就……",
+    "example": "彼は怒ったかと思うと、すぐに笑った",
+    "example_reading": "彼[かれ]は 怒[おこ]ったかと 思[おも]うと、すぐに 笑[わら]った",
+    "example_meaning": "他刚生气马上又笑了"
+  },
+  {
+    "id": "n1-016",
+    "grammar": "〜たりとも",
+    "reading": "tari tomo",
+    "meaning": "即使……也……",
+    "example": "一刻たりとも無駄にできない",
+    "example_reading": "一刻[いっこく]たりとも 無駄[むだ]にできない",
+    "example_meaning": "一刻也不能浪费"
+  },
+  {
+    "id": "n1-017",
+    "grammar": "〜でなくてなんだろう",
+    "reading": "de nakute nan darou",
+    "meaning": "不是……又是什么呢",
+    "example": "これが愛でなくてなんだろう",
+    "example_reading": "これが 愛[あい]でなくてなんだろう",
+    "example_meaning": "这不是爱又是什么呢"
+  },
+  {
+    "id": "n1-018",
+    "grammar": "〜までのことだ",
+    "reading": "made no koto da",
+    "meaning": "只是……罢了",
+    "example": "やってみるまでのことだ",
+    "example_reading": "やってみるまでのことだ",
+    "example_meaning": "只是试试看罢了"
+  },
+  {
+    "id": "n1-019",
+    "grammar": "〜までだ/までのことだ",
+    "reading": "made da / made no koto da",
+    "meaning": "只是……而已",
+    "example": "ダメなら諦めるまでだ",
+    "example_reading": "ダメなら 諦[あきら]めるまでだ",
+    "example_meaning": "不行的话就放弃而已"
+  },
+  {
+    "id": "n1-020",
+    "grammar": "〜までもない",
+    "reading": "made mo nai",
+    "meaning": "不必……",
+    "example": "そんなことまで心配するまでもない",
+    "example_reading": "そんなことまで 心配[しんぱい]するまでもない",
+    "example_meaning": "不必担心到那种地步"
+  },
+  {
+    "id": "n1-021",
+    "grammar": "〜に足る/に足りる",
+    "reading": "ni taru / ni tariru",
+    "meaning": "值得……/足以……",
+    "example": "信頼に足る人物だ",
+    "example_reading": "信頼[しんらい]に 足[た]る 人物[じんぶつ]だ",
+    "example_meaning": "他是值得信赖的人物"
+  },
+  {
+    "id": "n1-022",
+    "grammar": "〜に至るまで",
+    "reading": "ni itaru made",
+    "meaning": "甚至……/直到……",
+    "example": "幼い子供に至るまで、皆参加した",
+    "example_reading": "幼[おさな]い 子供[こども]に 至[いた]るまで、 皆[みな] 参加[さんか]した",
+    "example_meaning": "连年幼的孩子都参加了"
+  },
+  {
+    "id": "n1-023",
+    "grammar": "〜を余儀なくされる",
+    "reading": "wo yoginaku sareru",
+    "meaning": "被迫……",
+    "example": "雨で大会は中止を余儀なくされた",
+    "example_reading": "雨[あめ]で 大会[たいかい]は 中止[ちゅうし]を 余儀[よぎ]なくされた",
+    "example_meaning": "大会因雨被迫中止"
+  },
+  {
+    "id": "n1-024",
+    "grammar": "〜を禁じえない",
+    "reading": "wo kinji enai",
+    "meaning": "不禁……",
+    "example": "彼の健闘をたたえるのを禁じえない",
+    "example_reading": "彼[かれ]の 健闘[けんとう]をたたえるのを 禁[きん]じえない",
+    "example_meaning": "不禁要称赞他的奋斗"
+  },
+  {
+    "id": "n1-025",
+    "grammar": "〜ずにはいられない",
+    "reading": "zu ni wa irarenai",
+    "meaning": "忍不住……",
+    "example": "面白い話を聞いて、笑わずにはいられない",
+    "example_reading": "面白[おもしろ]い 話[はなし]を 聞[き]いて、 笑[わら]わずにはいられない",
+    "example_meaning": "听到有趣的故事忍不住笑"
+  },
+  {
+    "id": "n1-026",
+    "grammar": "〜ずにはすまない",
+    "reading": "zu ni wa sumanai",
+    "meaning": "必须……/不……不行",
+    "example": "この件は責任者として謝らずにはすまない",
+    "example_reading": "この 件[けん]は 責任者[せきにんしゃ]として 謝[あやま]らずにはすまない",
+    "example_meaning": "作为负责人这件事必须道歉"
+  },
+  {
+    "id": "n1-027",
+    "grammar": "〜ないことには〜ない",
+    "reading": "nai koto niwa nai",
+    "meaning": "不……的话就不……",
+    "example": "行かないことには、何もわからない",
+    "example_reading": "行[い]かないことには、 何[なに]もわからない",
+    "example_meaning": "不去的话什么都不明白"
+  },
+  {
+    "id": "n1-028",
+    "grammar": "〜なしには/なしに",
+    "reading": "nashi niwa / nashi ni",
+    "meaning": "没有……就不能……",
+    "example": "彼女なしには生きていけない",
+    "example_reading": "彼女[かのじょ]なしには 生[い]きていけない",
+    "example_meaning": "没有她活不下去"
+  },
+  {
+    "id": "n1-029",
+    "grammar": "〜をおいて",
+    "reading": "wo oite",
+    "meaning": "除了……之外",
+    "example": "この仕事を任せられるのは君をおいて他にいない",
+    "example_reading": "この 仕事[しごと]を 任[まか]せられるのは 君[きみ]をおいて 他[ほか]にいない",
+    "example_meaning": "除了你没人能胜任这项工作"
+  },
+  {
+    "id": "n1-030",
+    "grammar": "〜にこしたことはない",
+    "reading": "ni koshita koto wa nai",
+    "meaning": "最好是……",
+    "example": "健康に気をつけるにこしたことはない",
+    "example_reading": "健康[けんこう]に 気[き]をつけるにこしたことはない",
+    "example_meaning": "最好注意健康"
+  },
+  {
+    "id": "n1-031",
+    "grammar": "〜べからず/べからざる",
+    "reading": "bekarazu / bekarazaru",
+    "meaning": "不可……",
+    "example": "立入るべからず",
+    "example_reading": "立[たち] 入[い]るべからず",
+    "example_meaning": "禁止入内"
+  },
+  {
+    "id": "n1-032",
+    "grammar": "〜べく",
+    "reading": "beku",
+    "meaning": "为了……（书面）",
+    "example": "合格すべく、毎日勉強している",
+    "example_reading": "合格[ごうかく]すべく、 毎日[まいにち] 勉強[べんきょう]している",
+    "example_meaning": "为了合格每天学习"
+  },
+  {
+    "id": "n1-033",
+    "grammar": "〜べき/べし",
+    "reading": "beki / beshi",
+    "meaning": "应该……（古体）",
+    "example": "若者は未来を信じるべきだ",
+    "example_reading": "若者[わかもの]は 未来[みらい]を 信[しん]じるべきだ",
+    "example_meaning": "年轻人应该相信未来"
+  },
+  {
+    "id": "n1-034",
+    "grammar": "〜まじき/まじきこと",
+    "reading": "majiki / majiki koto",
+    "meaning": "不该有的……",
+    "example": "教師としてあるまじき行為だ",
+    "example_reading": "教師[きょうし]としてあるまじき 行為[こうい]だ",
+    "example_meaning": "这是作为教师不该有的行为"
+  },
+  {
+    "id": "n1-035",
+    "grammar": "〜きらいがある",
+    "reading": "kirai ga aru",
+    "meaning": "有点……的倾向",
+    "example": "彼の言い方には上から目線きらいがある",
+    "example_reading": "彼[かれ]の 言[い]い 方[かた]には 上[うえ]から 目線[めせん]きらいがある",
+    "example_meaning": "他说话的方式有点居高临下"
+  },
+  {
+    "id": "n1-036",
+    "grammar": "〜この上ない",
+    "reading": "kono ue nai",
+    "meaning": "无比……",
+    "example": "幸せなこの上ない日々だ",
+    "example_reading": "幸[しあわ]せなこの 上[うえ]ない 日々[ひび]だ",
+    "example_meaning": "这是无比幸福的日子"
+  },
+  {
+    "id": "n1-037",
+    "grammar": "〜てたまらない",
+    "reading": "te tamaranai",
+    "meaning": "……得不得了",
+    "example": "彼に会いたくてたまらない",
+    "example_reading": "彼[かれ]に 会[あ]いたくてたまらない",
+    "example_meaning": "想他想得不得了"
+  },
+  {
+    "id": "n1-038",
+    "grammar": "〜しようがない",
+    "reading": "shiyou ga nai",
+    "meaning": "……得不得了",
+    "example": "あの映画が悲しくてしようがない",
+    "example_reading": "あの 映画[えいが]が 悲[かな]しくてしようがない",
+    "example_meaning": "那部电影让我悲伤得不得了"
+  },
+  {
+    "id": "n1-039",
+    "grammar": "〜てならない",
+    "reading": "te naranai",
+    "meaning": "情不自禁……",
+    "example": "故郷が恋しくてならない",
+    "example_reading": "故郷[ふるさと]が 恋[こい]しくてならない",
+    "example_meaning": "情不自禁地思念故乡"
+  },
+  {
+    "id": "n1-040",
+    "grammar": "〜ずくめだ",
+    "reading": "zukume da",
+    "meaning": "全是……",
+    "example": "今日はいいことずくめだ",
+    "example_reading": "今日[きょう]はいいことずくめだ",
+    "example_meaning": "今天全是好事"
+  },
+  {
+    "id": "n1-041",
+    "grammar": "〜だらけだ",
+    "reading": "darake da",
+    "meaning": "满是……",
+    "example": "部屋はゴミだらけだ",
+    "example_reading": "部屋[へや]はゴミだらけだ",
+    "example_meaning": "房间里全是垃圾"
+  },
+  {
+    "id": "n1-042",
+    "grammar": "〜つくす/つくす",
+    "reading": "tsukusu",
+    "meaning": "……尽/……完",
+    "example": "持っている力を出し尽くした",
+    "example_reading": "持[も]っている 力[ちから]を 出[だ]し 尽[つ]くした",
+    "example_meaning": "使出了全部力量"
+  },
+  {
+    "id": "n1-043",
+    "grammar": "〜かねる",
+    "reading": "kaneru",
+    "meaning": "难以……",
+    "example": "その件については、お答えしかねます",
+    "example_reading": "その 件[けん]については、お 答[こた]えしかねます",
+    "example_meaning": "关于那件事我难以回答"
+  },
+  {
+    "id": "n1-044",
+    "grammar": "〜がたい",
+    "reading": "gatai",
+    "meaning": "难以……",
+    "example": "彼の気持ちは理解しがたい",
+    "example_reading": "彼[かれ]の 気持[きも]ちは 理解[りかい]しがたい",
+    "example_meaning": "他的心情难以理解"
+  },
+  {
+    "id": "n1-045",
+    "grammar": "〜かける/かける",
+    "reading": "kakeru",
+    "meaning": "做到一半/刚开始……",
+    "example": "食べかけのケーキを置いた",
+    "example_reading": "食[た]べかけのケーキを 置[お]いた",
+    "example_meaning": "放下了吃了一半的蛋糕"
+  },
+  {
+    "id": "n1-046",
+    "grammar": "〜そびれる",
+    "reading": "sobireru",
+    "meaning": "错过……",
+    "example": "電車に乗りそびれた",
+    "example_reading": "電車[でんしゃ]に 乗[の]りそびれた",
+    "example_meaning": "没赶上电车"
+  },
+  {
+    "id": "n1-047",
+    "grammar": "〜損ねる",
+    "reading": "sokoneru",
+    "meaning": "没……成/搞砸……",
+    "example": "良いチャンスを逃し損ねた",
+    "example_reading": "良[よ]いチャンスを 逃[のが]し 損[そこ]ねた",
+    "example_meaning": "差点错过好机会"
+  },
+  {
+    "id": "n1-048",
+    "grammar": "〜わけがない",
+    "reading": "wake ga nai",
+    "meaning": "不可能……",
+    "example": "彼が犯人のわけがない",
+    "example_reading": "彼[かれ]が 犯人[はんにん]のわけがない",
+    "example_meaning": "他不可能是犯人"
+  },
+  {
+    "id": "n1-049",
+    "grammar": "〜わけではない",
+    "reading": "wake dewa nai",
+    "meaning": "并非……",
+    "example": "私がいつも正しいわけではない",
+    "example_reading": "私[わたし]がいつも 正[ただ]しいわけではない",
+    "example_meaning": "我并不总是对的"
+  },
+  {
+    "id": "n1-050",
+    "grammar": "〜わけにはいかない",
+    "reading": "wake ni wa ikanai",
+    "meaning": "不能……",
+    "example": "家族が待っているので、帰らないわけにはいかない",
+    "example_reading": "家族[かぞく]が 待[ま]っているので、 帰[かえ]らないわけにはいかない",
+    "example_meaning": "家人在等，不能不回去"
+  }
+]

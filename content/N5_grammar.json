@@ -1,0 +1,452 @@
+[
+  {
+    "id": "n5-001",
+    "grammar": "〜です",
+    "reading": "desu",
+    "meaning": "是……（敬体判断）",
+    "example": "私は学生です",
+    "example_reading": "私[わたし]は 学生[がくせい]です",
+    "example_meaning": "我是学生"
+  },
+  {
+    "id": "n5-002",
+    "grammar": "〜ます",
+    "reading": "masu",
+    "meaning": "……（敬体动词词尾）",
+    "example": "毎日日本語を勉強します",
+    "example_reading": "毎日[まいにち] 日本語[にほんご]を 勉強[べんきょう]します",
+    "example_meaning": "我每天学习日语"
+  },
+  {
+    "id": "n5-003",
+    "grammar": "〜ではありません",
+    "reading": "dewa arimasen",
+    "meaning": "不是……",
+    "example": "これは私の本ではありません",
+    "example_reading": "これは 私[わたし]の 本[ほん]ではありません",
+    "example_meaning": "这不是我的书"
+  },
+  {
+    "id": "n5-004",
+    "grammar": "〜でした",
+    "reading": "deshita",
+    "meaning": "过去是……",
+    "example": "昨日は忙しかったです",
+    "example_reading": "昨日[きのう]は 忙[いそが]しかったです",
+    "example_meaning": "昨天很忙"
+  },
+  {
+    "id": "n5-005",
+    "grammar": "〜ませんか",
+    "reading": "masen ka",
+    "meaning": "……好吗？（邀请、提议）",
+    "example": "一緒に映画を見ませんか",
+    "example_reading": "一緒[いっしょ]に 映画[えいが]を 見[み]ませんか",
+    "example_meaning": "一起看电影好吗？"
+  },
+  {
+    "id": "n5-006",
+    "grammar": "〜ましょう",
+    "reading": "mashou",
+    "meaning": "让我们……吧",
+    "example": "一緒に行きましょう",
+    "example_reading": "一緒[いっしょ]に 行[い]きましょう",
+    "example_meaning": "一起去吧"
+  },
+  {
+    "id": "n5-007",
+    "grammar": "〜たいです",
+    "reading": "tai desu",
+    "meaning": "想要……",
+    "example": "日本に行きたいです",
+    "example_reading": "日本[にほん]に 行[い]きたいです",
+    "example_meaning": "我想去日本"
+  },
+  {
+    "id": "n5-008",
+    "grammar": "〜てください",
+    "reading": "te kudasai",
+    "meaning": "请……",
+    "example": "ここに名前を書いてください",
+    "example_reading": "ここに 名前[なまえ]を 書[か]いてください",
+    "example_meaning": "请在这里写上名字"
+  },
+  {
+    "id": "n5-009",
+    "grammar": "〜ている",
+    "reading": "te iru",
+    "meaning": "正在……/持续……",
+    "example": "今、昼ご飯を食べています",
+    "example_reading": "今[いま]、 昼[ひる]ご 飯[はん]を 食[た]べています",
+    "example_meaning": "现在正在吃午饭"
+  },
+  {
+    "id": "n5-010",
+    "grammar": "〜てもいいです",
+    "reading": "te mo ii desu",
+    "meaning": "可以……",
+    "example": "写真を撮ってもいいですか",
+    "example_reading": "写真[しゃしん]を 撮[と]ってもいいですか",
+    "example_meaning": "可以拍照吗？"
+  },
+  {
+    "id": "n5-011",
+    "grammar": "〜てはいけません",
+    "reading": "te wa ikemasen",
+    "meaning": "不可以……",
+    "example": "ここでタバコを吸ってはいけません",
+    "example_reading": "ここでタバコを 吸[す]ってはいけません",
+    "example_meaning": "这里不可以吸烟"
+  },
+  {
+    "id": "n5-012",
+    "grammar": "〜ことができます",
+    "reading": "koto ga dekimasu",
+    "meaning": "能够……",
+    "example": "彼女はピアノを弾くことができます",
+    "example_reading": "彼女[かのじょ]はピアノを 弾[ひ]くことができます",
+    "example_meaning": "她会弹钢琴"
+  },
+  {
+    "id": "n5-013",
+    "grammar": "〜前に",
+    "reading": "mae ni",
+    "meaning": "在……之前",
+    "example": "寝る前に歯を磨きます",
+    "example_reading": "寝[ね]る 前[まえ]に 歯[は]を 磨[みが]きます",
+    "example_meaning": "睡前刷牙"
+  },
+  {
+    "id": "n5-014",
+    "grammar": "〜後で",
+    "reading": "ato de",
+    "meaning": "在……之后",
+    "example": "食事の後で散歩します",
+    "example_reading": "食事[しょくじ]の 後[あと]で 散歩[さんぽ]します",
+    "example_meaning": "饭后散步"
+  },
+  {
+    "id": "n5-015",
+    "grammar": "〜から",
+    "reading": "kara",
+    "meaning": "因为……/从……",
+    "example": "雨だから、出かけません",
+    "example_reading": "雨[あめ]だから、 出[で]かけません",
+    "example_meaning": "因为下雨，所以不出去"
+  },
+  {
+    "id": "n5-016",
+    "grammar": "〜が、〜",
+    "reading": "ga",
+    "meaning": "虽然……但是……",
+    "example": "寒いですが、外に出ます",
+    "example_reading": "寒[さむ]いですが、 外[そと]に 出[で]ます",
+    "example_meaning": "虽然冷，但还是要出去"
+  },
+  {
+    "id": "n5-017",
+    "grammar": "〜けど",
+    "reading": "kedo",
+    "meaning": "但是……（口语）",
+    "example": "美味しいけど、高いです",
+    "example_reading": "美味[おい]しいけど、 高[たか]いです",
+    "example_meaning": "虽然好吃，但是贵"
+  },
+  {
+    "id": "n5-018",
+    "grammar": "〜と",
+    "reading": "to",
+    "meaning": "一……就……/和",
+    "example": "春になると、花が咲きます",
+    "example_reading": "春[はる]になると、 花[はな]が 咲[さ]きます",
+    "example_meaning": "一到春天，花就开了"
+  },
+  {
+    "id": "n5-019",
+    "grammar": "〜たら",
+    "reading": "tara",
+    "meaning": "如果……的话",
+    "example": "雨が降ったら、試合を中止します",
+    "example_reading": "雨[あめ]が 降[ふ]ったら、 試合[しあい]を 中止[ちゅうし]します",
+    "example_meaning": "如果下雨，比赛就中止"
+  },
+  {
+    "id": "n5-020",
+    "grammar": "〜なら",
+    "reading": "nara",
+    "meaning": "如果……的话（假设）",
+    "example": "君なら、できるよ",
+    "example_reading": "君[きみ]なら、できるよ",
+    "example_meaning": "如果是你，一定可以做到"
+  },
+  {
+    "id": "n5-021",
+    "grammar": "〜のに",
+    "reading": "noni",
+    "meaning": "明明……却……",
+    "example": "一生懸命勉強したのに、合格しなかった",
+    "example_reading": "一生懸命[いっしょうけんめい] 勉強[べんきょう]したのに、 合格[ごうかく]しなかった",
+    "example_meaning": "明明很努力学习，却没及格"
+  },
+  {
+    "id": "n5-022",
+    "grammar": "〜ので",
+    "reading": "node",
+    "meaning": "因为……（客观理由）",
+    "example": "電車が遅れたので、遅刻しました",
+    "example_reading": "電車[でんしゃ]が 遅[おく]れたので、 遅刻[ちこく]しました",
+    "example_meaning": "因为电车晚点了，所以迟到了"
+  },
+  {
+    "id": "n5-023",
+    "grammar": "〜と思います",
+    "reading": "to omoimasu",
+    "meaning": "我认为……",
+    "example": "明日は雨だと思います",
+    "example_reading": "明日[あした]は 雨[あめ]だと 思[おも]います",
+    "example_meaning": "我觉得明天会下雨"
+  },
+  {
+    "id": "n5-024",
+    "grammar": "〜と言っていました",
+    "reading": "to itte imashita",
+    "meaning": "（某人）说过……",
+    "example": "彼は来ないと言っていました",
+    "example_reading": "彼[かれ]は 来[こ]ないと 言[い]っていました",
+    "example_meaning": "他说他不来"
+  },
+  {
+    "id": "n5-025",
+    "grammar": "〜に行く/来る/帰る",
+    "reading": "ni iku/kuru/kaeru",
+    "meaning": "去做……/来做……/回去……",
+    "example": "友達の家へ遊びに行きます",
+    "example_reading": "友達[ともだち]の 家[いえ]へ 遊[あそ]びに 行[い]きます",
+    "example_meaning": "去朋友家玩"
+  },
+  {
+    "id": "n5-026",
+    "grammar": "〜たことがある",
+    "reading": "ta koto ga aru",
+    "meaning": "曾经……过",
+    "example": "日本に行ったことがあります",
+    "example_reading": "日本[にほん]に 行[い]ったことがあります",
+    "example_meaning": "我曾经去过日本"
+  },
+  {
+    "id": "n5-027",
+    "grammar": "〜たり〜たりする",
+    "reading": "tari tari suru",
+    "meaning": "又……又……/或……或……",
+    "example": "休みの日は映画を見たり、本を読んだりします",
+    "example_reading": "休[やす]みの 日[ひ]は 映画[えいが]を 見[み]たり、 本[ほん]を 読[よ]んだりします",
+    "example_meaning": "休息日看看电影、读读书"
+  },
+  {
+    "id": "n5-028",
+    "grammar": "〜やすい/にくい",
+    "reading": "yasui/nikui",
+    "meaning": "容易……/难于……",
+    "example": "このペンは書きやすいです",
+    "example_reading": "このペンは 書[か]きやすいです",
+    "example_meaning": "这支笔很好写"
+  },
+  {
+    "id": "n5-029",
+    "grammar": "〜ほしい",
+    "reading": "hoshii",
+    "meaning": "想要……",
+    "example": "新しい靴がほしいです",
+    "example_reading": "新[あたら]しい 靴[くつ]がほしいです",
+    "example_meaning": "我想要新鞋"
+  },
+  {
+    "id": "n5-030",
+    "grammar": "〜ながら",
+    "reading": "nagara",
+    "meaning": "一边……一边……",
+    "example": "音楽を聞きながら勉強します",
+    "example_reading": "音楽[おんがく]を 聞[き]きながら 勉強[べんきょう]します",
+    "example_meaning": "边听音乐边学习"
+  },
+  {
+    "id": "n5-031",
+    "grammar": "〜あとで",
+    "reading": "ato de",
+    "meaning": "……之后（名词+の）",
+    "example": "仕事のあとで、飲みに行きましょう",
+    "example_reading": "仕事[しごと]のあとで、 飲[の]みに 行[い]きましょう",
+    "example_meaning": "下班后去喝一杯吧"
+  },
+  {
+    "id": "n5-032",
+    "grammar": "〜間に",
+    "reading": "aida ni",
+    "meaning": "在……期间",
+    "example": "夏休みの間に、旅行したいです",
+    "example_reading": "夏休[なつやす]みの 間[あいだ]に、 旅行[りょこう]したいです",
+    "example_meaning": "我想在暑假期间去旅行"
+  },
+  {
+    "id": "n5-033",
+    "grammar": "〜方",
+    "reading": "kata",
+    "meaning": "……的方法",
+    "example": "この漢字の読み方を教えてください",
+    "example_reading": "この 漢字[かんじ]の 読[よ]み 方[かた]を 教[おし]えてください",
+    "example_meaning": "请教我这个汉字的读法"
+  },
+  {
+    "id": "n5-034",
+    "grammar": "〜過ぎる",
+    "reading": "sugiru",
+    "meaning": "过于……",
+    "example": "昨日は食べ過ぎました",
+    "example_reading": "昨日[きのう]は 食[た]べすぎました",
+    "example_meaning": "昨天吃太多了"
+  },
+  {
+    "id": "n5-035",
+    "grammar": "〜始める",
+    "reading": "hajimeru",
+    "meaning": "开始……",
+    "example": "もうすぐ雨が降り始めます",
+    "example_reading": "もうすぐ 雨[あめ]が 降[ふ]りはじめます",
+    "example_meaning": "很快就要开始下雨了"
+  },
+  {
+    "id": "n5-036",
+    "grammar": "〜終わる",
+    "reading": "owaru",
+    "meaning": "……完",
+    "example": "仕事が終わったら、電話してください",
+    "example_reading": "仕事[しごと]が 終[お]わったら、 電話[でんわ]してください",
+    "example_meaning": "工作结束后请给我打电话"
+  },
+  {
+    "id": "n5-037",
+    "grammar": "〜たほうがいい",
+    "reading": "ta hou ga ii",
+    "meaning": "最好……",
+    "example": "もっと野菜を食べたほうがいいです",
+    "example_reading": "もっと 野菜[やさい]を 食[た]べたほうがいいです",
+    "example_meaning": "最好多吃蔬菜"
+  },
+  {
+    "id": "n5-038",
+    "grammar": "〜ないほうがいい",
+    "reading": "nai hou ga ii",
+    "meaning": "最好不要……",
+    "example": "あまり焦らないほうがいいです",
+    "example_reading": "あまり 焦[あせ]らないほうがいいです",
+    "example_meaning": "最好不要太着急"
+  },
+  {
+    "id": "n5-039",
+    "grammar": "〜ようだ",
+    "reading": "you da",
+    "meaning": "好像……",
+    "example": "雨が降りそうです",
+    "example_reading": "雨[あめ]が 降[ふ]りそうです",
+    "example_meaning": "好像要下雨了"
+  },
+  {
+    "id": "n5-040",
+    "grammar": "〜みたいだ",
+    "reading": "mitai da",
+    "meaning": "好像……（口语）",
+    "example": "彼は怒っているみたいだ",
+    "example_reading": "彼[かれ]は 怒[おこ]っているみたいだ",
+    "example_meaning": "他好像生气了"
+  },
+  {
+    "id": "n5-041",
+    "grammar": "〜そうだ",
+    "reading": "sou da",
+    "meaning": "听说……/好像……",
+    "example": "田中さんは結婚したそうです",
+    "example_reading": "田中[たなか]さんは 結婚[けっこん]したそうです",
+    "example_meaning": "听说田中结婚了"
+  },
+  {
+    "id": "n5-042",
+    "grammar": "〜について",
+    "reading": "ni tsuite",
+    "meaning": "关于……",
+    "example": "日本の文化について話します",
+    "example_reading": "日本[にほん]の 文化[ぶんか]について 話[はな]します",
+    "example_meaning": "谈谈关于日本文化"
+  },
+  {
+    "id": "n5-043",
+    "grammar": "〜によって",
+    "reading": "ni yotte",
+    "meaning": "根据……/由于……",
+    "example": "人によって考え方が違います",
+    "example_reading": "人[ひと]によって 考[かんが]え方[がた]が 違[ちが]います",
+    "example_meaning": "因人而异"
+  },
+  {
+    "id": "n5-044",
+    "grammar": "〜に対して",
+    "reading": "ni taishite",
+    "meaning": "对于……",
+    "example": "お客様に対して丁寧に話す",
+    "example_reading": "お 客様[きゃくさま]に 対[たい]して 丁寧[ていねい]に 話[はな]す",
+    "example_meaning": "对顾客说话要礼貌"
+  },
+  {
+    "id": "n5-045",
+    "grammar": "〜ようにする",
+    "reading": "you ni suru",
+    "meaning": "努力做到……",
+    "example": "毎日早く寝るようにしています",
+    "example_reading": "毎日[まいにち] 早[はや]く 寝[ね]るようにしています",
+    "example_meaning": "我努力做到每天早睡"
+  },
+  {
+    "id": "n5-046",
+    "grammar": "〜ようになる",
+    "reading": "you ni naru",
+    "meaning": "变得能够……",
+    "example": "日本語で話せるようになりました",
+    "example_reading": "日本語[にほんご]で 話[はな]せるようになりました",
+    "example_meaning": "变得能够用日语说话了"
+  },
+  {
+    "id": "n5-047",
+    "grammar": "〜そばから",
+    "reading": "soba kara",
+    "meaning": "刚……就……",
+    "example": "覚えるそばから忘れてしまう",
+    "example_reading": "覚[おぼ]えるそばから 忘[わす]れてしまう",
+    "example_meaning": "刚记住就忘了"
+  },
+  {
+    "id": "n5-048",
+    "grammar": "〜かもしれない",
+    "reading": "kamoshirenai",
+    "meaning": "也许……",
+    "example": "明日は雨かもしれません",
+    "example_reading": "明日[あした]は 雨[あめ]かもしれません",
+    "example_meaning": "明天也许会下雨"
+  },
+  {
+    "id": "n5-049",
+    "grammar": "〜にとって",
+    "reading": "ni totte",
+    "meaning": "对……来说",
+    "example": "私にとって、家族は大切です",
+    "example_reading": "私[わたし]にとって、 家族[かぞく]は 大切[たいせつ]です",
+    "example_meaning": "对我来说，家人很重要"
+  },
+  {
+    "id": "n5-050",
+    "grammar": "〜わけではない",
+    "reading": "wake dewa nai",
+    "meaning": "并非……",
+    "example": "彼が嫌いなわけではない",
+    "example_reading": "彼[かれ]が 嫌[きら]いなわけではない",
+    "example_meaning": "并非讨厌他"
+  }
+]

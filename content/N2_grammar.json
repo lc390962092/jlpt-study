@@ -1,0 +1,452 @@
+[
+  {
+    "id": "n2-001",
+    "grammar": "〜ものだ",
+    "reading": "mono da",
+    "meaning": "感慨……/本应……",
+    "example": "若い時は、何でも挑戦したいものだ",
+    "example_reading": "若[わか]い 時[とき]は、 何[なに]でも 挑戦[ちょうせん]したいものだ",
+    "example_meaning": "年轻的时候，什么都想挑战"
+  },
+  {
+    "id": "n2-002",
+    "grammar": "〜ものではない",
+    "reading": "mono dewa nai",
+    "meaning": "不应该……",
+    "example": "人を裏切ることは人間としてあるものではない",
+    "example_reading": "人[ひと]を 裏切[うらぎ]ることは 人間[にんげん]としてあるものではない",
+    "example_meaning": "作为人不应该背叛别人"
+  },
+  {
+    "id": "n2-003",
+    "grammar": "〜ことだ",
+    "reading": "koto da",
+    "meaning": "最好……/就是……",
+    "example": "健康を大切にすることだ",
+    "example_reading": "健康[けんこう]を 大切[たいせつ]にすることだ",
+    "example_meaning": "最重要的是珍惜健康"
+  },
+  {
+    "id": "n2-004",
+    "grammar": "〜ことはない",
+    "reading": "koto wa nai",
+    "meaning": "不必……",
+    "example": "少しの失敗で落ち込むことはない",
+    "example_reading": "少[すこ]しの 失敗[しっぱい]で 落[お]ち 込[こ]むことはない",
+    "example_meaning": "不必因为一点失败就消沉"
+  },
+  {
+    "id": "n2-005",
+    "grammar": "〜べきだ",
+    "reading": "beki da",
+    "meaning": "应该……",
+    "example": "正しいことを貫くべきだ",
+    "example_reading": "正[ただ]しいことを 貫[つらぬ]くべきだ",
+    "example_meaning": "应该坚持正确的事"
+  },
+  {
+    "id": "n2-006",
+    "grammar": "〜べきではない",
+    "reading": "beki dewa nai",
+    "meaning": "不应该……",
+    "example": "人を軽蔑する態度を取るべきではない",
+    "example_reading": "人[ひと]を 軽蔑[けいべつ]する 態度[たいど]を 取[と]るべきではない",
+    "example_meaning": "不应该采取蔑视他人的态度"
+  },
+  {
+    "id": "n2-007",
+    "grammar": "〜に違いない",
+    "reading": "ni chigai nai",
+    "meaning": "一定……",
+    "example": "あの慎重な彼がミスをしたに違いない",
+    "example_reading": "あの 慎重[しんちょう]な 彼[かれ]がミスをしたに 違[ちが]いない",
+    "example_meaning": "一定是那个谨慎的他犯了错"
+  },
+  {
+    "id": "n2-008",
+    "grammar": "〜に決まっている",
+    "reading": "ni kimatte iru",
+    "meaning": "肯定……",
+    "example": "あの人が優勝するに決まっている",
+    "example_reading": "あの 人[ひと]が 優勝[ゆうしょう]するに 決[き]まっている",
+    "example_meaning": "那个人肯定会获胜"
+  },
+  {
+    "id": "n2-009",
+    "grammar": "〜はずだ",
+    "reading": "hazu da",
+    "meaning": "应该……",
+    "example": "この電車なら30分で着くはずだ",
+    "example_reading": "この 電車[でんしゃ]なら30 分[ぷん]で 着[つ]くはずだ",
+    "example_meaning": "这趟电车应该30分钟能到"
+  },
+  {
+    "id": "n2-010",
+    "grammar": "〜はずがない",
+    "reading": "hazu ga nai",
+    "meaning": "不可能……",
+    "example": "彼が犯人のはずがない",
+    "example_reading": "彼[かれ]が 犯人[はんにん]のはずがない",
+    "example_meaning": "他不可能是犯人"
+  },
+  {
+    "id": "n2-011",
+    "grammar": "〜かもしれない",
+    "reading": "kamoshirenai",
+    "meaning": "也许……",
+    "example": "この計画は失敗するかもしれない",
+    "example_reading": "この 計画[けいかく]は 失敗[しっぱい]するかもしれない",
+    "example_meaning": "这个计划也许会失败"
+  },
+  {
+    "id": "n2-012",
+    "grammar": "〜かねない",
+    "reading": "kanenai",
+    "meaning": "说不定会……",
+    "example": "彼は怒りかねないから、注意して話そう",
+    "example_reading": "彼[かれ]は 怒[おこ]りかねないから、 注意[ちゅうい]して 話[はな]そう",
+    "example_meaning": "说不定他会生气，说话注意点"
+  },
+  {
+    "id": "n2-013",
+    "grammar": "〜に相違ない",
+    "reading": "ni souinai",
+    "meaning": "一定……",
+    "example": "彼女が犯人に相違ない",
+    "example_reading": "彼女[かのじょ]が 犯人[はんにん]に 相違[そうい]ない",
+    "example_meaning": "她一定是犯人"
+  },
+  {
+    "id": "n2-014",
+    "grammar": "〜まい",
+    "reading": "mai",
+    "meaning": "不……吧",
+    "example": "あんな危険な場所へは二度と行くまい",
+    "example_reading": "あんな 危険[きけん]な 場所[ばしょ]へは 二度[にど]と 行[い]くまい",
+    "example_meaning": "我不会再去那么危险的地方了"
+  },
+  {
+    "id": "n2-015",
+    "grammar": "〜う/ようとする",
+    "reading": "u/you to suru",
+    "meaning": "想要……/试图……",
+    "example": "彼は立ち上がろうとしたが、力が入らなかった",
+    "example_reading": "彼[かれ]は 立[た]ち 上[あ]がろうとしたが、 力[ちから]が 入[はい]らなかった",
+    "example_meaning": "他想要站起来，但使不上力"
+  },
+  {
+    "id": "n2-016",
+    "grammar": "〜う/ようとしない",
+    "reading": "u/you to shinai",
+    "meaning": "不想……",
+    "example": "彼はどうしても謝ろうとしない",
+    "example_reading": "彼[かれ]はどうしても 謝[あやま]ろうとしない",
+    "example_meaning": "他怎么也不想道歉"
+  },
+  {
+    "id": "n2-017",
+    "grammar": "〜つつ",
+    "reading": "tsutsu",
+    "meaning": "一边……一边……",
+    "example": "仕事をしつつ、子供の世話もする",
+    "example_reading": "仕事[しごと]をしつつ、 子供[こども]の 世話[せわ]もする",
+    "example_meaning": "一边工作一边照顾孩子"
+  },
+  {
+    "id": "n2-018",
+    "grammar": "〜つつも",
+    "reading": "tsutsu mo",
+    "meaning": "虽然……但是……",
+    "example": "危険を承知しつつも、山に登った",
+    "example_reading": "危険[きけん]を 承知[しょうち]しつつも、 山[やま]に 登[のぼ]った",
+    "example_meaning": "明知危险还是去登山了"
+  },
+  {
+    "id": "n2-019",
+    "grammar": "〜ながらも",
+    "reading": "nagara mo",
+    "meaning": "虽然……但是……",
+    "example": "彼は子供ながらも、大人のような発言をする",
+    "example_reading": "彼[かれ]は 子供[こども]ながらも、 大人[おとな]のような 発言[はつげん]をする",
+    "example_meaning": "他虽然还是个孩子，却说着像大人一样的话"
+  },
+  {
+    "id": "n2-020",
+    "grammar": "〜とはいえ",
+    "reading": "to wa ie",
+    "meaning": "虽说……",
+    "example": "経験者とはいえ、ミスはつきものだ",
+    "example_reading": "経験者[けいけんしゃ]とはいえ、ミスはつきものだ",
+    "example_meaning": "虽说是有经验的人，但错误总是难免的"
+  },
+  {
+    "id": "n2-021",
+    "grammar": "〜と言っても",
+    "reading": "to itte mo",
+    "meaning": "虽说……",
+    "example": "高いと言っても、それほどではない",
+    "example_reading": "高[たか]いと 言[い]っても、それほどではない",
+    "example_meaning": "虽说贵，但也没那么贵"
+  },
+  {
+    "id": "n2-022",
+    "grammar": "〜といえども",
+    "reading": "to iedo mo",
+    "meaning": "虽说……但是……",
+    "example": "専門家といえども、全てを知っているわけではない",
+    "example_reading": "専門家[せんもんか]といえども、 全[すべ]てを 知[し]っているわけではない",
+    "example_meaning": "虽说是专家，但也不是全都知道"
+  },
+  {
+    "id": "n2-023",
+    "grammar": "〜くせに",
+    "reading": "kuse ni",
+    "meaning": "明明……却……",
+    "example": "知っているくせに、知らないふりをする",
+    "example_reading": "知[し]っているくせに、 知[し]らないふりをする",
+    "example_meaning": "明明知道却装作不知道"
+  },
+  {
+    "id": "n2-024",
+    "grammar": "〜のに",
+    "reading": "noni",
+    "meaning": "明明……却……",
+    "example": "待っていたのに、来てくれなかった",
+    "example_reading": "待[ま]っていたのに、 来[こ]てくれなかった",
+    "example_meaning": "明明等他了，却没来"
+  },
+  {
+    "id": "n2-025",
+    "grammar": "〜ものの",
+    "reading": "mono no",
+    "meaning": "虽然……但是……",
+    "example": "承知したものの、納得していない",
+    "example_reading": "承知[しょうち]したものの、 納得[なっとく]していない",
+    "example_meaning": "虽然答应了，但并不信服"
+  },
+  {
+    "id": "n2-026",
+    "grammar": "〜たとたん",
+    "reading": "ta totan",
+    "meaning": "刚一……就……",
+    "example": "ドアを開けたとたん、猫が飛び出した",
+    "example_reading": "ドアを 開[あ]けたとたん、 猫[ねこ]が 飛[と]び 出[だ]した",
+    "example_meaning": "刚打开门，猫就冲了出去"
+  },
+  {
+    "id": "n2-027",
+    "grammar": "〜か〜ないかのうちに",
+    "reading": "ka nai ka no uchi ni",
+    "meaning": "刚……就……",
+    "example": "彼女は電話に出るか出ないかのうちに、泣き出した",
+    "example_reading": "彼女[かのじょ]は 電話[でんわ]に 出[で]るか 出[で]ないかのうちに、 泣[な]き 出[だ]した",
+    "example_meaning": "她电话还没接就哭了"
+  },
+  {
+    "id": "n2-028",
+    "grammar": "〜や否や",
+    "reading": "ya ina ya",
+    "meaning": "刚一……就……",
+    "example": "彼は社長室に入るや否や、怒鳴り始めた",
+    "example_reading": "彼[かれ]は 社長室[しゃちょうしつ]に 入[はい]るや 否[いな]や、 怒鳴[どな]り 始[はじ]めた",
+    "example_meaning": "他刚进社长室就开始怒吼"
+  },
+  {
+    "id": "n2-029",
+    "grammar": "〜そばから",
+    "reading": "soba kara",
+    "meaning": "刚……就……",
+    "example": "覚えるそばから忘れてしまう",
+    "example_reading": "覚[おぼ]えるそばから 忘[わす]れてしまう",
+    "example_meaning": "刚记住就忘了"
+  },
+  {
+    "id": "n2-030",
+    "grammar": "〜が早いか",
+    "reading": "ga hayai ka",
+    "meaning": "刚……就……",
+    "example": "彼は会うが早いか、抱きついてきた",
+    "example_reading": "彼[かれ]は 会[あ]うが 早[はや]いか、 抱[だ]きついてきた",
+    "example_meaning": "他刚一见面就抱了过来"
+  },
+  {
+    "id": "n2-031",
+    "grammar": "〜たところ",
+    "reading": "ta tokoro",
+    "meaning": "刚……之后",
+    "example": "家に着いたところに、電話がかかってきた",
+    "example_reading": "家[いえ]に 着[つ]いたところに、 電話[でんわ]がかかってきた",
+    "example_meaning": "我刚到家电话就来了"
+  },
+  {
+    "id": "n2-032",
+    "grammar": "〜たばかり",
+    "reading": "ta bakari",
+    "meaning": "刚刚……",
+    "example": "食べたばかりなので、お腹が空かない",
+    "example_reading": "食[た]べたばかりなので、お 腹[なか]が 空[す]かない",
+    "example_meaning": "刚吃过所以不饿"
+  },
+  {
+    "id": "n2-033",
+    "grammar": "〜かと思ったら",
+    "reading": "ka to omottara",
+    "meaning": "原以为……却……",
+    "example": "雨が降るかと思ったら、晴れてきた",
+    "example_reading": "雨[あめ]が 降[ふ]るかと 思[おも]ったら、 晴[は]れてきた",
+    "example_meaning": "原以为会下雨，结果放晴了"
+  },
+  {
+    "id": "n2-034",
+    "grammar": "〜と思いきや",
+    "reading": "to omoikiya",
+    "meaning": "原以为……没想到……",
+    "example": "彼は来ると思いきや、来なかった",
+    "example_reading": "彼[かれ]は 来[く]ると 思[おも]いきや、 来[こ]なかった",
+    "example_meaning": "原以为他会来，结果没来"
+  },
+  {
+    "id": "n2-035",
+    "grammar": "〜かのように",
+    "reading": "ka no you ni",
+    "meaning": "宛如……/好像……",
+    "example": "彼女は何も知らないかのように振る舞った",
+    "example_reading": "彼女[かのじょ]は 何[なに]も 知[し]らないかのように 振[ふ]る 舞[ま]った",
+    "example_meaning": "她装作什么都不知道"
+  },
+  {
+    "id": "n2-036",
+    "grammar": "〜かのような",
+    "reading": "ka no you na",
+    "meaning": "宛如……的",
+    "example": "まるで夢を見ているかのような気分だ",
+    "example_reading": "まるで 夢[ゆめ]を 見[み]ているかのような 気分[きぶん]だ",
+    "example_meaning": "感觉就像在做梦一样"
+  },
+  {
+    "id": "n2-037",
+    "grammar": "〜ようで",
+    "reading": "you de",
+    "meaning": "好像……/虽然……",
+    "example": "簡単なようで、実は難しい",
+    "example_reading": "簡単[かんたん]なようで、 実[じつ]は 難[むずか]しい",
+    "example_meaning": "看似简单，其实很难"
+  },
+  {
+    "id": "n2-038",
+    "grammar": "〜ようではないか",
+    "reading": "you dewa nai ka",
+    "meaning": "不是……吗？（呼吁）",
+    "example": "一緒に努力しようではないか",
+    "example_reading": "一緒[いっしょ]に 努力[どりょく]しようではないか",
+    "example_meaning": "让我们一起努力吧"
+  },
+  {
+    "id": "n2-039",
+    "grammar": "〜ないことはない",
+    "reading": "nai koto wa nai",
+    "meaning": "并非不……/也有可能……",
+    "example": "その話は本当ではないことはない",
+    "example_reading": "その 話[はなし]は 本当[ほんとう]ではないことはない",
+    "example_meaning": "那件事也不是没有可能是真的"
+  },
+  {
+    "id": "n2-040",
+    "grammar": "〜ずにはいられない",
+    "reading": "zu ni wa irarenai",
+    "meaning": "忍不住……",
+    "example": "面白い話を聞いて、笑わずにはいられない",
+    "example_reading": "面白[おもしろ]い 話[はなし]を 聞[き]いて、 笑[わら]わずにはいられない",
+    "example_meaning": "听到有趣的故事忍不住笑"
+  },
+  {
+    "id": "n2-041",
+    "grammar": "〜ないではいられない",
+    "reading": "nai dewa irarenai",
+    "meaning": "忍不住……",
+    "example": "彼の優しさに感動しないではいられない",
+    "example_reading": "彼[かれ]の 優[やさ]しさに 感動[かんどう]しないではいられない",
+    "example_meaning": "忍不住被他的温柔打动"
+  },
+  {
+    "id": "n2-042",
+    "grammar": "〜ずにはすまない",
+    "reading": "zu ni wa sumanai",
+    "meaning": "不……不行",
+    "example": "今回の失敗は謝らずにはすまない",
+    "example_reading": "今回[こんかい]の 失敗[しっぱい]は 謝[あやま]らずにはすまない",
+    "example_meaning": "这次失败不能不道歉"
+  },
+  {
+    "id": "n2-043",
+    "grammar": "〜ないではすまない",
+    "reading": "nai dewa sumanai",
+    "meaning": "不……不行",
+    "example": "自分の責任なので、説明しないではすまない",
+    "example_reading": "自分[じぶん]の 責任[せきにん]なので、 説明[せつめい]しないではすまない",
+    "example_meaning": "因为是自己的责任，必须说明"
+  },
+  {
+    "id": "n2-044",
+    "grammar": "〜を禁じえない",
+    "reading": "wo kinji enai",
+    "meaning": "不禁……",
+    "example": "彼の頑張りを見て、涙を禁じえない",
+    "example_reading": "彼[かれ]の 頑張[がんば]りを 見[み]て、 涙[なみだ]を 禁[きん]じえない",
+    "example_meaning": "看到他的努力不禁落泪"
+  },
+  {
+    "id": "n2-045",
+    "grammar": "〜に越したことはない",
+    "reading": "ni koshita koto wa nai",
+    "meaning": "最好是……",
+    "example": "健康には気をつけるに越したことはない",
+    "example_reading": "健康[けんこう]には 気[き]をつけるに 越[こ]したことはない",
+    "example_meaning": "最好注意健康"
+  },
+  {
+    "id": "n2-046",
+    "grammar": "〜にしろ/にせよ",
+    "reading": "ni shiro / ni seyo",
+    "meaning": "即使……也……",
+    "example": "理由にしろ、遅刻は許されない",
+    "example_reading": "理由[りゆう]にしろ、 遅刻[ちこく]は 許[ゆる]されない",
+    "example_meaning": "即使有理由，迟到也不被允许"
+  },
+  {
+    "id": "n2-047",
+    "grammar": "〜だろうと/であろうと",
+    "reading": "darou to / de arou to",
+    "meaning": "无论……都……",
+    "example": "誰だろうと、平等に扱う",
+    "example_reading": "誰[だれ]だろうと、 平等[びょうどう]に 扱[あつか]う",
+    "example_meaning": "无论谁都平等对待"
+  },
+  {
+    "id": "n2-048",
+    "grammar": "〜であれ/であろうと",
+    "reading": "de are / de arou to",
+    "meaning": "无论……都……",
+    "example": "親であれ、子供に暴力を振るうべきではない",
+    "example_reading": "親[おや]であれ、 子供[こども]に 暴力[ぼうりょく]を 振[ふ]るうべきではない",
+    "example_meaning": "即使是父母也不应该对孩子使用暴力"
+  },
+  {
+    "id": "n2-049",
+    "grammar": "〜といったらない",
+    "reading": "to ittara nai",
+    "meaning": "……得不得了",
+    "example": "彼の怠慢ぶりといったらない",
+    "example_reading": "彼[かれ]の 怠慢[たいまん]ぶりといったらない",
+    "example_meaning": "他的怠慢程度简直没法说"
+  },
+  {
+    "id": "n2-050",
+    "grammar": "〜たら最後/れば最後",
+    "reading": "tara saigo / reba saigo",
+    "meaning": "一旦……就完了",
+    "example": "一度言ったら最後、彼は絶対引かない",
+    "example_reading": "一度[いちど] 言[い]ったら 最後[さいご]、 彼[かれ]は 絶対[ぜったい] 引[ひ]かない",
+    "example_meaning": "一旦说出口，他就绝对不会退缩"
+  }
+]
