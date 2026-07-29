@@ -300,6 +300,7 @@
                             <input type="file" id="fileInput" accept=".json,application/json">
                         </label>
                         <button class="btn btn-secondary" id="pasteBtn">粘贴 JSON 导入</button>
+                        <button class="btn btn-primary" id="builtInBtn">一键导入内置真题</button>
                         <div class="json-sample">
                             格式说明：<br>
                             {<br>
@@ -328,6 +329,7 @@
             document.getElementById('dropZone').addEventListener('dragleave', (e) => { e.currentTarget.style.borderColor = ''; });
             document.getElementById('dropZone').addEventListener('drop', (e) => { e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) readFile(f); });
             document.getElementById('pasteBtn').addEventListener('click', importFromPaste);
+            document.getElementById('builtInBtn').addEventListener('click', importBuiltInExams);
         }
 
         function switchTab(tab) {
@@ -380,6 +382,37 @@
         function importFromPaste() {
             const raw = prompt('请粘贴 JSON 内容：');
             if (raw && raw.trim()) importJson(raw.trim());
+        }
+
+        async function importBuiltInExams() {
+            const basePath = location.pathname.replace(/\/[^\/]*$/, '/');
+            const files = [
+                'content/exams/N5_bunpou_266.json',
+                'content/exams/N4_bunpou_90.json',
+                'content/exams/N3_bunpou_200.json',
+                'content/exams/N2_bunpou_90.json',
+                'content/exams/N1_bunpou_1800.json'
+            ];
+            let count = 0;
+            for (const file of files) {
+                try {
+                    const resp = await fetch(`${basePath}${file}`);
+                    if (!resp.ok) continue;
+                    const data = await resp.json();
+                    const err = validateExam(data);
+                    if (err) { console.warn(file, err); continue; }
+                    normalizeExam(data);
+                    const exists = exams.some(e => e.title === data.title);
+                    if (!exists) {
+                        exams.unshift(data);
+                        count++;
+                    }
+                } catch (e) { console.warn(file, e); }
+            }
+            saveExams();
+            if (count) alert(`已内置导入 ${count} 套真题`);
+            else alert('内置真题已全部存在');
+            renderList();
         }
 
         function importJson(raw) {

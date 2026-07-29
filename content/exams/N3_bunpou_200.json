@@ -1,0 +1,3226 @@
+{
+  "level": "N3",
+  "title": "N3 文法 200題（githubtarohario 整理）",
+  "description": "来自 GitHub githubtarohario/japanese-n3-grammar 的 N3 文法问题集",
+  "source": "https://github.com/githubtarohario/japanese-n3-grammar",
+  "license": "未标注",
+  "sections": [
+    {
+      "id": "bunpou",
+      "name": "文法",
+      "questions": [
+        {
+          "id": "n3-bunpou-0001",
+          "type": "grammar_form",
+          "question": "彼は小説家（    ）有名になったが、普段は小さな病院で働く医者だ。",
+          "options": [
+            "について",
+            "として",
+            "にしたがって",
+            "と比べて"
+          ],
+          "answer": 1,
+          "explanation": "「～として」は資格・立場を表す。"
+        },
+        {
+          "id": "n3-bunpou-0002",
+          "type": "grammar_form",
+          "question": "この問題は子供（    ）難しすぎる。",
+          "options": [
+            "にとって",
+            "について",
+            "に関して",
+            "に対して"
+          ],
+          "answer": 0,
+          "explanation": "「～にとって」は判断の立場を表す。"
+        },
+        {
+          "id": "n3-bunpou-0003",
+          "type": "grammar_form",
+          "question": "私は日本文化（    ）研究しています。",
+          "options": [
+            "について",
+            "にとって",
+            "として",
+            "にしては"
+          ],
+          "answer": 0,
+          "explanation": "「～について」は対象（テーマ）を表す。"
+        },
+        {
+          "id": "n3-bunpou-0004",
+          "type": "grammar_form",
+          "question": "母は私（    ）厳しい。",
+          "options": [
+            "について",
+            "として",
+            "に対して",
+            "にとって"
+          ],
+          "answer": 2,
+          "explanation": "「～に対して」は人・物に向ける態度を表す。"
+        },
+        {
+          "id": "n3-bunpou-0005",
+          "type": "grammar_form",
+          "question": "この映画は若者（    ）人気がある。",
+          "options": [
+            "について",
+            "に対して",
+            "の間で",
+            "にとって"
+          ],
+          "answer": 2,
+          "explanation": "「～の間で」は集団内での意味を表す。"
+        },
+        {
+          "id": "n3-bunpou-0006",
+          "type": "grammar_form",
+          "question": "代表（    ）スピーチをした。",
+          "options": [
+            "について",
+            "として",
+            "に対して",
+            "にとって"
+          ],
+          "answer": 1,
+          "explanation": "「～として」は資格・立場を表す。"
+        },
+        {
+          "id": "n3-bunpou-0007",
+          "type": "grammar_form",
+          "question": "環境問題（    ）話し合った。",
+          "options": [
+            "について",
+            "にとって",
+            "として",
+            "にしては"
+          ],
+          "answer": 0,
+          "explanation": "「～について」はテーマ。"
+        },
+        {
+          "id": "n3-bunpou-0008",
+          "type": "grammar_form",
+          "question": "私（    ）一番大切なのは家族です。",
+          "options": [
+            "について",
+            "に対して",
+            "として",
+            "にとって"
+          ],
+          "answer": 3,
+          "explanation": "「～にとって」は判断の立場。"
+        },
+        {
+          "id": "n3-bunpou-0009",
+          "type": "grammar_form",
+          "question": "学生（    ）勉強は仕事のようなものだ。",
+          "options": [
+            "について",
+            "に対して",
+            "として",
+            "にとって"
+          ],
+          "answer": 3,
+          "explanation": "「～にとって」は判断の立場。"
+        },
+        {
+          "id": "n3-bunpou-0010",
+          "type": "grammar_form",
+          "question": "先生は生徒（    ）優しく接する。",
+          "options": [
+            "について",
+            "に対して",
+            "として",
+            "にとって"
+          ],
+          "answer": 1,
+          "explanation": "「～に対して」は接する相手を示す。"
+        },
+        {
+          "id": "n3-bunpou-0011",
+          "type": "grammar_form",
+          "question": "戦争（    ）の本を読んでいる。",
+          "options": [
+            "について",
+            "として",
+            "に対して",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～について」は対象。"
+        },
+        {
+          "id": "n3-bunpou-0012",
+          "type": "grammar_form",
+          "question": "その問題（    ）は専門家に聞いた方がいい。",
+          "options": [
+            "にとって",
+            "に関して",
+            "として",
+            "にしては"
+          ],
+          "answer": 1,
+          "explanation": "「～に関して」はテーマを限定する。"
+        },
+        {
+          "id": "n3-bunpou-0013",
+          "type": "grammar_form",
+          "question": "観光客（    ）京都は人気の街だ。",
+          "options": [
+            "について",
+            "に対して",
+            "として",
+            "にとって"
+          ],
+          "answer": 3,
+          "explanation": "「～にとって」は判断の立場。"
+        },
+        {
+          "id": "n3-bunpou-0014",
+          "type": "grammar_form",
+          "question": "この件（    ）責任を取ります。",
+          "options": [
+            "について",
+            "にとって",
+            "として",
+            "にしては"
+          ],
+          "answer": 0,
+          "explanation": "「～について」は対象。"
+        },
+        {
+          "id": "n3-bunpou-0015",
+          "type": "grammar_form",
+          "question": "彼は日本語教師（    ）働いている。",
+          "options": [
+            "について",
+            "として",
+            "に対して",
+            "にとって"
+          ],
+          "answer": 1,
+          "explanation": "「～として」は資格。"
+        },
+        {
+          "id": "n3-bunpou-0016",
+          "type": "grammar_form",
+          "question": "天気予報（    ）、明日は大雪になるそうだ。",
+          "options": [
+            "によると",
+            "によって",
+            "について",
+            "に対して"
+          ],
+          "answer": 0,
+          "explanation": "「～によると」は情報源。"
+        },
+        {
+          "id": "n3-bunpou-0017",
+          "type": "grammar_form",
+          "question": "国（    ）習慣が違う。",
+          "options": [
+            "について",
+            "によって",
+            "として",
+            "にとって"
+          ],
+          "answer": 1,
+          "explanation": "「～によって」は違いの原因。"
+        },
+        {
+          "id": "n3-bunpou-0018",
+          "type": "grammar_form",
+          "question": "新聞（    ）、来週から値上げらしい。",
+          "options": [
+            "によると",
+            "によって",
+            "について",
+            "として"
+          ],
+          "answer": 0,
+          "explanation": "「～によると」は伝聞の情報源。"
+        },
+        {
+          "id": "n3-bunpou-0019",
+          "type": "grammar_form",
+          "question": "電車の事故（    ）、遅刻した。",
+          "options": [
+            "によると",
+            "によって",
+            "について",
+            "として"
+          ],
+          "answer": 1,
+          "explanation": "「～によって」は原因。"
+        },
+        {
+          "id": "n3-bunpou-0020",
+          "type": "grammar_form",
+          "question": "この曲は有名な作曲家（    ）作られた。",
+          "options": [
+            "によると",
+            "によって",
+            "について",
+            "として"
+          ],
+          "answer": 1,
+          "explanation": "受身文の動作主を「～によって」で表す。"
+        },
+        {
+          "id": "n3-bunpou-0021",
+          "type": "grammar_form",
+          "question": "人（    ）考え方が違う。",
+          "options": [
+            "について",
+            "によって",
+            "として",
+            "にとって"
+          ],
+          "answer": 1,
+          "explanation": "「～によって」は変化の対象。"
+        },
+        {
+          "id": "n3-bunpou-0022",
+          "type": "grammar_form",
+          "question": "友達の話（    ）、その店は安いそうだ。",
+          "options": [
+            "によると",
+            "によって",
+            "について",
+            "として"
+          ],
+          "answer": 0,
+          "explanation": "「～によると」は情報源。"
+        },
+        {
+          "id": "n3-bunpou-0023",
+          "type": "grammar_form",
+          "question": "努力（    ）成功した。",
+          "options": [
+            "によると",
+            "によって",
+            "について",
+            "として"
+          ],
+          "answer": 1,
+          "explanation": "「～によって」は手段。"
+        },
+        {
+          "id": "n3-bunpou-0024",
+          "type": "grammar_form",
+          "question": "天候（    ）、試合は中止になることもある。",
+          "options": [
+            "によると",
+            "により",
+            "について",
+            "として"
+          ],
+          "answer": 1,
+          "explanation": "「～により」は原因（書き言葉）。"
+        },
+        {
+          "id": "n3-bunpou-0025",
+          "type": "grammar_form",
+          "question": "この問題は話し合い（    ）解決された。",
+          "options": [
+            "によって",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～によって」は手段。"
+        },
+        {
+          "id": "n3-bunpou-0026",
+          "type": "grammar_form",
+          "question": "雨が降っている（    ）、試合は中止になった。",
+          "options": [
+            "ために",
+            "ように",
+            "ところが",
+            "ばかりで"
+          ],
+          "answer": 0,
+          "explanation": "「～ために」は原因・理由。"
+        },
+        {
+          "id": "n3-bunpou-0027",
+          "type": "grammar_form",
+          "question": "風邪を引かない（    ）、暖かい服装をしてください。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 0,
+          "explanation": "「～ないように」は否定の目的。"
+        },
+        {
+          "id": "n3-bunpou-0028",
+          "type": "grammar_form",
+          "question": "日本語を勉強する（    ）、毎日努力しています。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 1,
+          "explanation": "「～ために」は積極的な目的。"
+        },
+        {
+          "id": "n3-bunpou-0029",
+          "type": "grammar_form",
+          "question": "健康の（    ）、毎朝走っている。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 1,
+          "explanation": "「～のために」は目的。"
+        },
+        {
+          "id": "n3-bunpou-0030",
+          "type": "grammar_form",
+          "question": "聞こえる（    ）大きな声で話してください。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 0,
+          "explanation": "可能・無意志は「～ように」。"
+        },
+        {
+          "id": "n3-bunpou-0031",
+          "type": "grammar_form",
+          "question": "電車に間に合う（    ）走った。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 1,
+          "explanation": "意志的目的は「～ために」。"
+        },
+        {
+          "id": "n3-bunpou-0032",
+          "type": "grammar_form",
+          "question": "日本語が話せる（    ）毎日練習している。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 0,
+          "explanation": "可能・無意志動詞には「～ように」。"
+        },
+        {
+          "id": "n3-bunpou-0033",
+          "type": "grammar_form",
+          "question": "事故の（    ）電車が止まった。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 1,
+          "explanation": "「～のために」は原因。"
+        },
+        {
+          "id": "n3-bunpou-0034",
+          "type": "grammar_form",
+          "question": "忘れない（    ）、メモを取った。",
+          "options": [
+            "ように",
+            "ために",
+            "ことに",
+            "ものに"
+          ],
+          "answer": 0,
+          "explanation": "否定+目的は「～ないように」。"
+        },
+        {
+          "id": "n3-bunpou-0035",
+          "type": "grammar_form",
+          "question": "子供（    ）絵本を買った。",
+          "options": [
+            "のように",
+            "のために",
+            "のことに",
+            "のものに"
+          ],
+          "answer": 1,
+          "explanation": "「～のために」は受益者を示す。"
+        },
+        {
+          "id": "n3-bunpou-0036",
+          "type": "grammar_form",
+          "question": "明日は試験だ。今夜は早く寝る（    ）。",
+          "options": [
+            "ことにする",
+            "ことになる",
+            "ようにする",
+            "ようになる"
+          ],
+          "answer": 0,
+          "explanation": "自分の決定は「～ことにする」。"
+        },
+        {
+          "id": "n3-bunpou-0037",
+          "type": "grammar_form",
+          "question": "来月から大阪に転勤する（    ）。",
+          "options": [
+            "ことにする",
+            "ことになった",
+            "ようにした",
+            "ようになった"
+          ],
+          "answer": 1,
+          "explanation": "他者の決定は「～ことになった」。"
+        },
+        {
+          "id": "n3-bunpou-0038",
+          "type": "grammar_form",
+          "question": "毎朝ジョギングする（    ）しています。",
+          "options": [
+            "ことに",
+            "ように",
+            "ものに",
+            "ところに"
+          ],
+          "answer": 1,
+          "explanation": "習慣的努力は「～ようにしている」。"
+        },
+        {
+          "id": "n3-bunpou-0039",
+          "type": "grammar_form",
+          "question": "最近、日本語が話せる（    ）なりました。",
+          "options": [
+            "ことに",
+            "ように",
+            "ものに",
+            "ところに"
+          ],
+          "answer": 1,
+          "explanation": "能力変化は「～ようになる」。"
+        },
+        {
+          "id": "n3-bunpou-0040",
+          "type": "grammar_form",
+          "question": "野菜をたくさん食べる（    ）しています。",
+          "options": [
+            "ことに",
+            "ように",
+            "ものに",
+            "ところに"
+          ],
+          "answer": 1,
+          "explanation": "習慣的努力。"
+        },
+        {
+          "id": "n3-bunpou-0041",
+          "type": "grammar_form",
+          "question": "来年、結婚する（    ）。",
+          "options": [
+            "ことにした",
+            "ことになった",
+            "ようにした",
+            "ようになった"
+          ],
+          "answer": 0,
+          "explanation": "自分の決定。"
+        },
+        {
+          "id": "n3-bunpou-0042",
+          "type": "grammar_form",
+          "question": "最近、彼は遅刻しなく（    ）。",
+          "options": [
+            "ことになった",
+            "ようになった",
+            "ことにした",
+            "ようにした"
+          ],
+          "answer": 1,
+          "explanation": "状態の変化。"
+        },
+        {
+          "id": "n3-bunpou-0043",
+          "type": "grammar_form",
+          "question": "明日から会議が始まる（    ）。",
+          "options": [
+            "ことにした",
+            "ことになった",
+            "ようにした",
+            "ようになった"
+          ],
+          "answer": 1,
+          "explanation": "決定された事実。"
+        },
+        {
+          "id": "n3-bunpou-0044",
+          "type": "grammar_form",
+          "question": "毎日日記を書く（    ）。",
+          "options": [
+            "ことにした",
+            "ことになった",
+            "ようにした",
+            "ようになった"
+          ],
+          "answer": 0,
+          "explanation": "自分の決定。"
+        },
+        {
+          "id": "n3-bunpou-0045",
+          "type": "grammar_form",
+          "question": "ピアノが弾ける（    ）なりたい。",
+          "options": [
+            "ことに",
+            "ように",
+            "ものに",
+            "ところに"
+          ],
+          "answer": 1,
+          "explanation": "可能・状態変化。"
+        },
+        {
+          "id": "n3-bunpou-0046",
+          "type": "grammar_form",
+          "question": "勉強すれ（    ）するほど、わからないことが増えてくる。",
+          "options": [
+            "ば",
+            "たら",
+            "なら",
+            "と"
+          ],
+          "answer": 0,
+          "explanation": "「～ば～ほど」は比例関係。"
+        },
+        {
+          "id": "n3-bunpou-0047",
+          "type": "grammar_form",
+          "question": "値段が高けれ（    ）高いほど品質がいい。",
+          "options": [
+            "ば",
+            "たら",
+            "なら",
+            "と"
+          ],
+          "answer": 0,
+          "explanation": "比例関係。"
+        },
+        {
+          "id": "n3-bunpou-0048",
+          "type": "grammar_form",
+          "question": "考えれば（    ）ほど混乱する。",
+          "options": [
+            "考える",
+            "考えた",
+            "考え",
+            "考えて"
+          ],
+          "answer": 0,
+          "explanation": "「～ば～ほど」の形。"
+        },
+        {
+          "id": "n3-bunpou-0049",
+          "type": "grammar_form",
+          "question": "練習する（    ）するほど上手になる。",
+          "options": [
+            "ば",
+            "なら",
+            "たら",
+            "と"
+          ],
+          "answer": 0,
+          "explanation": "「すれば～するほど」。"
+        },
+        {
+          "id": "n3-bunpou-0050",
+          "type": "grammar_form",
+          "question": "先生に質問した（    ）、丁寧に教えてくれた。",
+          "options": [
+            "ところ",
+            "ものの",
+            "うちに",
+            "ばかりで"
+          ],
+          "answer": 0,
+          "explanation": "「～たところ」は試した結果。"
+        },
+        {
+          "id": "n3-bunpou-0051",
+          "type": "grammar_form",
+          "question": "今、駅に着いた（    ）です。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ばかりに",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "動作直後は「～たところ」。"
+        },
+        {
+          "id": "n3-bunpou-0052",
+          "type": "grammar_form",
+          "question": "ご飯を食べた（    ）なのにもうお腹が空いた。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ものの",
+            "あまり"
+          ],
+          "answer": 1,
+          "explanation": "「～たばかり」は時間が経っていない感覚。"
+        },
+        {
+          "id": "n3-bunpou-0053",
+          "type": "grammar_form",
+          "question": "日本に来た（    ）で、まだ日本語が話せない。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ものの",
+            "あまり"
+          ],
+          "answer": 1,
+          "explanation": "時間経過の少なさ。"
+        },
+        {
+          "id": "n3-bunpou-0054",
+          "type": "grammar_form",
+          "question": "電話した（    ）、留守だった。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ものの",
+            "あまり"
+          ],
+          "answer": 0,
+          "explanation": "試した結果。"
+        },
+        {
+          "id": "n3-bunpou-0055",
+          "type": "grammar_form",
+          "question": "今ちょうど出かける（    ）です。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ものの",
+            "あまり"
+          ],
+          "answer": 0,
+          "explanation": "「～るところ」は直前。"
+        },
+        {
+          "id": "n3-bunpou-0056",
+          "type": "grammar_form",
+          "question": "今、宿題をしている（    ）です。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ものの",
+            "あまり"
+          ],
+          "answer": 0,
+          "explanation": "「～ているところ」は進行中。"
+        },
+        {
+          "id": "n3-bunpou-0057",
+          "type": "grammar_form",
+          "question": "日本に来て（    ）、もう5年が経った。",
+          "options": [
+            "以来",
+            "以外",
+            "以上",
+            "以後"
+          ],
+          "answer": 0,
+          "explanation": "「～て以来」はずっと。"
+        },
+        {
+          "id": "n3-bunpou-0058",
+          "type": "grammar_form",
+          "question": "彼は約束した（    ）、必ず守る人だ。",
+          "options": [
+            "以上",
+            "以来",
+            "以後",
+            "以前"
+          ],
+          "answer": 0,
+          "explanation": "「～以上」は強い決意。"
+        },
+        {
+          "id": "n3-bunpou-0059",
+          "type": "grammar_form",
+          "question": "卒業して（    ）、会っていない。",
+          "options": [
+            "以来",
+            "以外",
+            "以上",
+            "以後"
+          ],
+          "answer": 0,
+          "explanation": "「～以来」はずっと。"
+        },
+        {
+          "id": "n3-bunpou-0060",
+          "type": "grammar_form",
+          "question": "学生である（    ）、勉強するべきだ。",
+          "options": [
+            "以上",
+            "以来",
+            "以後",
+            "以前"
+          ],
+          "answer": 0,
+          "explanation": "立場+当然。"
+        },
+        {
+          "id": "n3-bunpou-0061",
+          "type": "grammar_form",
+          "question": "引っ越して（    ）、近所の人と話していない。",
+          "options": [
+            "以来",
+            "以外",
+            "以上",
+            "以後"
+          ],
+          "answer": 0,
+          "explanation": "「～て以来」。"
+        },
+        {
+          "id": "n3-bunpou-0062",
+          "type": "grammar_form",
+          "question": "電車が遅れた（    ）、遅刻してしまった。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ために",
+            "ようで"
+          ],
+          "answer": 0,
+          "explanation": "悪い結果の原因は「～せいで」。"
+        },
+        {
+          "id": "n3-bunpou-0063",
+          "type": "grammar_form",
+          "question": "先生の（    ）、合格できました。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ために",
+            "ようで"
+          ],
+          "answer": 1,
+          "explanation": "良い結果の原因は「～おかげで」。"
+        },
+        {
+          "id": "n3-bunpou-0064",
+          "type": "grammar_form",
+          "question": "勉強しすぎた（    ）、頭が痛くなった。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ばかりに",
+            "あまり"
+          ],
+          "answer": 3,
+          "explanation": "「～あまり」は～しすぎた結果。"
+        },
+        {
+          "id": "n3-bunpou-0065",
+          "type": "grammar_form",
+          "question": "うっかりした（    ）、財布を忘れた。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ばかりに",
+            "あまり"
+          ],
+          "answer": 2,
+          "explanation": "「～ばかりに」は唯一の悪い原因。"
+        },
+        {
+          "id": "n3-bunpou-0066",
+          "type": "grammar_form",
+          "question": "雨の（    ）、出かけられない。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ばかりに",
+            "あまり"
+          ],
+          "answer": 0,
+          "explanation": "悪い原因。"
+        },
+        {
+          "id": "n3-bunpou-0067",
+          "type": "grammar_form",
+          "question": "あなたの（    ）助かりました。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ばかりに",
+            "あまり"
+          ],
+          "answer": 1,
+          "explanation": "感謝の表現。"
+        },
+        {
+          "id": "n3-bunpou-0068",
+          "type": "grammar_form",
+          "question": "驚きの（    ）、声も出なかった。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ばかりに",
+            "あまり"
+          ],
+          "answer": 3,
+          "explanation": "感情の度合い。"
+        },
+        {
+          "id": "n3-bunpou-0069",
+          "type": "grammar_form",
+          "question": "うそをついた（    ）、信用を失った。",
+          "options": [
+            "せいで",
+            "おかげで",
+            "ばかりに",
+            "あまり"
+          ],
+          "answer": 2,
+          "explanation": "唯一の原因。"
+        },
+        {
+          "id": "n3-bunpou-0070",
+          "type": "grammar_form",
+          "question": "彼は10年間日本に住んでいる。日本語が上手な（    ）。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 0,
+          "explanation": "「～わけだ」は当然の結論。"
+        },
+        {
+          "id": "n3-bunpou-0071",
+          "type": "grammar_form",
+          "question": "あの真面目な彼が嘘をつく（    ）。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 1,
+          "explanation": "「～わけがない」は強い否定。"
+        },
+        {
+          "id": "n3-bunpou-0072",
+          "type": "grammar_form",
+          "question": "嫌いな（    ）が、毎日は食べたくない。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 2,
+          "explanation": "「～わけではない」は部分否定。"
+        },
+        {
+          "id": "n3-bunpou-0073",
+          "type": "grammar_form",
+          "question": "明日は試験だから、遊ぶ（    ）。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 3,
+          "explanation": "「～わけにはいかない」は不可能。"
+        },
+        {
+          "id": "n3-bunpou-0074",
+          "type": "grammar_form",
+          "question": "彼女は中国出身だ。中国語が話せる（    ）。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 0,
+          "explanation": "当然の結論。"
+        },
+        {
+          "id": "n3-bunpou-0075",
+          "type": "grammar_form",
+          "question": "高い（    ）が、安くもない。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 2,
+          "explanation": "部分否定。"
+        },
+        {
+          "id": "n3-bunpou-0076",
+          "type": "grammar_form",
+          "question": "まだ仕事中だから、帰る（    ）。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 3,
+          "explanation": "「～わけにはいかない」。"
+        },
+        {
+          "id": "n3-bunpou-0077",
+          "type": "grammar_form",
+          "question": "あの人がそんなことをする（    ）。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "answer": 1,
+          "explanation": "強い否定。"
+        },
+        {
+          "id": "n3-bunpou-0078",
+          "type": "grammar_form",
+          "question": "彼は朝早く出たから、もう着いている（    ）。",
+          "options": [
+            "はずだ",
+            "はずがない",
+            "わけにはいかない",
+            "にちがいない"
+          ],
+          "answer": 0,
+          "explanation": "「～はずだ」は予想・確信。"
+        },
+        {
+          "id": "n3-bunpou-0079",
+          "type": "grammar_form",
+          "question": "そんなことがある（    ）。",
+          "options": [
+            "はずだ",
+            "はずがない",
+            "わけだ",
+            "ようだ"
+          ],
+          "answer": 1,
+          "explanation": "「～はずがない」は強い否定の確信。"
+        },
+        {
+          "id": "n3-bunpou-0080",
+          "type": "grammar_form",
+          "question": "電気がついている。誰かいる（    ）。",
+          "options": [
+            "はずだ",
+            "ようがない",
+            "わけにはいかない",
+            "にちがいない"
+          ],
+          "answer": 3,
+          "explanation": "「～にちがいない」は強い確信。"
+        },
+        {
+          "id": "n3-bunpou-0081",
+          "type": "grammar_form",
+          "question": "鍵を閉めたから、入れる（    ）。",
+          "options": [
+            "はずだ",
+            "はずがない",
+            "わけだ",
+            "ようだ"
+          ],
+          "answer": 1,
+          "explanation": "可能性ゼロの確信。"
+        },
+        {
+          "id": "n3-bunpou-0082",
+          "type": "grammar_form",
+          "question": "彼が犯人である（    ）。証拠が揃っている。",
+          "options": [
+            "はずだ",
+            "はずがない",
+            "わけだ",
+            "にちがいない"
+          ],
+          "answer": 3,
+          "explanation": "強い確信。"
+        },
+        {
+          "id": "n3-bunpou-0083",
+          "type": "grammar_form",
+          "question": "天気予報によると明日は雨だ（    ）。",
+          "options": [
+            "らしい",
+            "ようだ",
+            "みたいだ",
+            "そうだ"
+          ],
+          "answer": 3,
+          "explanation": "「～そうだ」は伝聞。"
+        },
+        {
+          "id": "n3-bunpou-0084",
+          "type": "grammar_form",
+          "question": "空が暗くなってきた。雨が降り（    ）だ。",
+          "options": [
+            "らしい",
+            "そう",
+            "みたい",
+            "よう"
+          ],
+          "answer": 1,
+          "explanation": "「～そうだ」は様態。"
+        },
+        {
+          "id": "n3-bunpou-0085",
+          "type": "grammar_form",
+          "question": "彼はとても疲れている（    ）。",
+          "options": [
+            "らしい",
+            "ようだ",
+            "みたい",
+            "そうだ"
+          ],
+          "answer": 1,
+          "explanation": "「～ようだ」は推量。"
+        },
+        {
+          "id": "n3-bunpou-0086",
+          "type": "grammar_form",
+          "question": "あの子は天使（    ）だ。",
+          "options": [
+            "らしい",
+            "ようだ",
+            "みたい",
+            "そうだ"
+          ],
+          "answer": 2,
+          "explanation": "「～みたいだ」は比喩（口語）。"
+        },
+        {
+          "id": "n3-bunpou-0087",
+          "type": "grammar_form",
+          "question": "彼女は来ない（    ）。連絡がない。",
+          "options": [
+            "らしい",
+            "ようだ",
+            "みたい",
+            "そうだ"
+          ],
+          "answer": 0,
+          "explanation": "「～らしい」は伝聞・推量。"
+        },
+        {
+          "id": "n3-bunpou-0088",
+          "type": "grammar_form",
+          "question": "彼は学生（    ）行動をする。",
+          "options": [
+            "らしい",
+            "ようだ",
+            "みたい",
+            "そうだ"
+          ],
+          "answer": 0,
+          "explanation": "「～らしい」は典型・性質。"
+        },
+        {
+          "id": "n3-bunpou-0089",
+          "type": "grammar_form",
+          "question": "雪が降る（    ）から、暖かくして出かけよう。",
+          "options": [
+            "かもしれない",
+            "にちがいない",
+            "はずがない",
+            "わけがない"
+          ],
+          "answer": 0,
+          "explanation": "「～かもしれない」は可能性。"
+        },
+        {
+          "id": "n3-bunpou-0090",
+          "type": "grammar_form",
+          "question": "彼は来ない（    ）。",
+          "options": [
+            "かもしれない",
+            "わけがない",
+            "はずがない",
+            "ことがない"
+          ],
+          "answer": 0,
+          "explanation": "可能性。"
+        },
+        {
+          "id": "n3-bunpou-0091",
+          "type": "grammar_form",
+          "question": "彼が来る（    ）わかりません。",
+          "options": [
+            "かどうか",
+            "かどうかも",
+            "かどう",
+            "ことか"
+          ],
+          "answer": 0,
+          "explanation": "不確かな疑問。"
+        },
+        {
+          "id": "n3-bunpou-0092",
+          "type": "grammar_form",
+          "question": "正しい（    ）確認してください。",
+          "options": [
+            "かどうか",
+            "かどうし",
+            "ことか",
+            "ものか"
+          ],
+          "answer": 0,
+          "explanation": "「～かどうか」。"
+        },
+        {
+          "id": "n3-bunpou-0093",
+          "type": "grammar_form",
+          "question": "音楽を聞き（    ）勉強する。",
+          "options": [
+            "ながら",
+            "ついで",
+            "うちに",
+            "とともに"
+          ],
+          "answer": 0,
+          "explanation": "同時動作。"
+        },
+        {
+          "id": "n3-bunpou-0094",
+          "type": "grammar_form",
+          "question": "彼は若い（    ）、考え方が古い。",
+          "options": [
+            "ながら",
+            "ついで",
+            "うちに",
+            "とともに"
+          ],
+          "answer": 0,
+          "explanation": "「～ながら」は逆接。"
+        },
+        {
+          "id": "n3-bunpou-0095",
+          "type": "grammar_form",
+          "question": "悪いと知り（    ）、嘘をついた。",
+          "options": [
+            "ながら",
+            "ついで",
+            "うちに",
+            "とともに"
+          ],
+          "answer": 0,
+          "explanation": "知っていながら。"
+        },
+        {
+          "id": "n3-bunpou-0096",
+          "type": "grammar_form",
+          "question": "歩き（    ）話しましょう。",
+          "options": [
+            "ながら",
+            "ついで",
+            "うちに",
+            "とともに"
+          ],
+          "answer": 0,
+          "explanation": "同時動作。"
+        },
+        {
+          "id": "n3-bunpou-0097",
+          "type": "grammar_form",
+          "question": "休日は本を読ん（    ）映画を見（    ）する。",
+          "options": [
+            "で / で",
+            "だり / たり",
+            "たり / たり",
+            "だり / だり"
+          ],
+          "answer": 3,
+          "explanation": "「読む」の音便はだり。"
+        },
+        {
+          "id": "n3-bunpou-0098",
+          "type": "grammar_form",
+          "question": "雨が降っ（    ）止ん（    ）している。",
+          "options": [
+            "て / て",
+            "たり / だり",
+            "たり / たり",
+            "だり / だり"
+          ],
+          "answer": 1,
+          "explanation": "降ったり止んだり。"
+        },
+        {
+          "id": "n3-bunpou-0099",
+          "type": "grammar_form",
+          "question": "彼に会う（    ）、昔を思い出す。",
+          "options": [
+            "たびに",
+            "ついでに",
+            "うえに",
+            "あいだに"
+          ],
+          "answer": 0,
+          "explanation": "「～たびに」はその度に。"
+        },
+        {
+          "id": "n3-bunpou-0100",
+          "type": "grammar_form",
+          "question": "東京に行く（    ）、必ず友達に会う。",
+          "options": [
+            "たびに",
+            "ついでに",
+            "うえに",
+            "あいだに"
+          ],
+          "answer": 0,
+          "explanation": "毎回。"
+        },
+        {
+          "id": "n3-bunpou-0101",
+          "type": "grammar_form",
+          "question": "若い（    ）、いろいろな経験をしたい。",
+          "options": [
+            "うちに",
+            "あいだに",
+            "ばかりに",
+            "ながら"
+          ],
+          "answer": 0,
+          "explanation": "「～うちに」は状態のうちに。"
+        },
+        {
+          "id": "n3-bunpou-0102",
+          "type": "grammar_form",
+          "question": "話している（    ）、日が暮れた。",
+          "options": [
+            "うちに",
+            "あいだに",
+            "ばかりに",
+            "ながら"
+          ],
+          "answer": 0,
+          "explanation": "無意識的変化は「～うちに」。"
+        },
+        {
+          "id": "n3-bunpou-0103",
+          "type": "grammar_form",
+          "question": "母が出かけている（    ）に、ケーキを作った。",
+          "options": [
+            "うち",
+            "あいだ",
+            "ばかり",
+            "なか"
+          ],
+          "answer": 1,
+          "explanation": "明確な期間は「～あいだに」。"
+        },
+        {
+          "id": "n3-bunpou-0104",
+          "type": "grammar_form",
+          "question": "赤ちゃんが寝ている（    ）に、買い物に行った。",
+          "options": [
+            "うち",
+            "あいだ",
+            "ばかり",
+            "なか"
+          ],
+          "answer": 1,
+          "explanation": "限られた時間。"
+        },
+        {
+          "id": "n3-bunpou-0105",
+          "type": "grammar_form",
+          "question": "暖かい（    ）、散歩に行こう。",
+          "options": [
+            "うちに",
+            "あいだに",
+            "ばかりに",
+            "ながら"
+          ],
+          "answer": 0,
+          "explanation": "状態のうちに。"
+        },
+        {
+          "id": "n3-bunpou-0106",
+          "type": "grammar_form",
+          "question": "結果（    ）、努力した過程が大切だ。",
+          "options": [
+            "によって",
+            "にかかわらず",
+            "について",
+            "として"
+          ],
+          "answer": 1,
+          "explanation": "「～にかかわらず」は無関係。"
+        },
+        {
+          "id": "n3-bunpou-0107",
+          "type": "grammar_form",
+          "question": "雨にもかかわらず、試合は行われた。",
+          "options": [
+            "雨にもかかわらず、試合は行われた。",
+            "雨だから、試合は中止になった。",
+            "雨のせいで、試合が中止された。",
+            "雨のあとで、試合が始まった。"
+          ],
+          "answer": 0,
+          "explanation": "「～にもかかわらず」は逆接。"
+        },
+        {
+          "id": "n3-bunpou-0108",
+          "type": "grammar_form",
+          "question": "勉強した（    ）、試験に落ちた。",
+          "options": [
+            "ものの",
+            "ものか",
+            "ものを",
+            "ものなら"
+          ],
+          "answer": 0,
+          "explanation": "「～ものの」は逆接。"
+        },
+        {
+          "id": "n3-bunpou-0109",
+          "type": "grammar_form",
+          "question": "高い（    ）、品質はよくない。",
+          "options": [
+            "ものの",
+            "ものか",
+            "ものを",
+            "ものなら"
+          ],
+          "answer": 0,
+          "explanation": "逆接。"
+        },
+        {
+          "id": "n3-bunpou-0110",
+          "type": "grammar_form",
+          "question": "天候（    ）試合は行われる。",
+          "options": [
+            "によって",
+            "にかかわらず",
+            "について",
+            "として"
+          ],
+          "answer": 1,
+          "explanation": "天候に関係なく。"
+        },
+        {
+          "id": "n3-bunpou-0111",
+          "type": "grammar_form",
+          "question": "年齢（    ）応募できる。",
+          "options": [
+            "について",
+            "にかかわらず",
+            "として",
+            "にとって"
+          ],
+          "answer": 1,
+          "explanation": "「～にかかわらず」。"
+        },
+        {
+          "id": "n3-bunpou-0112",
+          "type": "grammar_form",
+          "question": "母（    ）父が学校に来た。",
+          "options": [
+            "のかわりに",
+            "にかわって",
+            "として",
+            "について"
+          ],
+          "answer": 0,
+          "explanation": "「～のかわりに」は代替。"
+        },
+        {
+          "id": "n3-bunpou-0113",
+          "type": "grammar_form",
+          "question": "肉のかわりに豆腐を使った。",
+          "options": [
+            "肉のかわりに豆腐を使った。",
+            "肉だけを使った。",
+            "肉と豆腐を使った。",
+            "豆腐だけを使った。"
+          ],
+          "answer": 0,
+          "explanation": "代替。"
+        },
+        {
+          "id": "n3-bunpou-0114",
+          "type": "grammar_form",
+          "question": "社長（    ）副社長が出席した。",
+          "options": [
+            "のかわりに",
+            "について",
+            "として",
+            "に対して"
+          ],
+          "answer": 0,
+          "explanation": "代理。"
+        },
+        {
+          "id": "n3-bunpou-0115",
+          "type": "grammar_form",
+          "question": "先生が言う（    ）、やってみた。",
+          "options": [
+            "とおり",
+            "ところ",
+            "うちに",
+            "ばかりに"
+          ],
+          "answer": 0,
+          "explanation": "「～とおり」は同じように。"
+        },
+        {
+          "id": "n3-bunpou-0116",
+          "type": "grammar_form",
+          "question": "予定（    ）会議を進めた。",
+          "options": [
+            "とおり",
+            "どおり",
+            "として",
+            "について"
+          ],
+          "answer": 1,
+          "explanation": "名詞+どおり。"
+        },
+        {
+          "id": "n3-bunpou-0117",
+          "type": "grammar_form",
+          "question": "言われた（    ）にやればいい。",
+          "options": [
+            "とおり",
+            "どおり",
+            "ところ",
+            "ばかり"
+          ],
+          "answer": 0,
+          "explanation": "動詞+とおり。"
+        },
+        {
+          "id": "n3-bunpou-0118",
+          "type": "grammar_form",
+          "question": "結果が出（    ）連絡します。",
+          "options": [
+            "次第",
+            "ばかり",
+            "ところ",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "「～次第」は～したらすぐ。"
+        },
+        {
+          "id": "n3-bunpou-0119",
+          "type": "grammar_form",
+          "question": "成功するかどうかは努力（    ）だ。",
+          "options": [
+            "次第",
+            "ばかり",
+            "ところ",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "「～次第だ」は～によって決まる。"
+        },
+        {
+          "id": "n3-bunpou-0120",
+          "type": "grammar_form",
+          "question": "天気（    ）で予定が変わる。",
+          "options": [
+            "次第",
+            "ばかり",
+            "ところ",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "「～次第で」は～によって。"
+        },
+        {
+          "id": "n3-bunpou-0121",
+          "type": "grammar_form",
+          "question": "インターネット（    ）友達ができた。",
+          "options": [
+            "を通じて",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～を通じて」は手段。"
+        },
+        {
+          "id": "n3-bunpou-0122",
+          "type": "grammar_form",
+          "question": "一年（    ）暖かい地域。",
+          "options": [
+            "を通じて",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～を通じて」は期間全体。"
+        },
+        {
+          "id": "n3-bunpou-0123",
+          "type": "grammar_form",
+          "question": "本（    ）多くを学んだ。",
+          "options": [
+            "を通して",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～を通して」は手段。"
+        },
+        {
+          "id": "n3-bunpou-0124",
+          "type": "grammar_form",
+          "question": "焼き（    ）のパンはおいしい。",
+          "options": [
+            "たて",
+            "かけ",
+            "ぎみ",
+            "がち"
+          ],
+          "answer": 0,
+          "explanation": "「～たて」は直後。"
+        },
+        {
+          "id": "n3-bunpou-0125",
+          "type": "grammar_form",
+          "question": "本を読み（    ）でやめた。",
+          "options": [
+            "たて",
+            "かけ",
+            "ぎみ",
+            "がち"
+          ],
+          "answer": 1,
+          "explanation": "「～かけ」は途中。"
+        },
+        {
+          "id": "n3-bunpou-0126",
+          "type": "grammar_form",
+          "question": "炊き（    )のご飯はおいしい。",
+          "options": [
+            "たて",
+            "かけ",
+            "ぎみ",
+            "がち"
+          ],
+          "answer": 0,
+          "explanation": "直後。"
+        },
+        {
+          "id": "n3-bunpou-0127",
+          "type": "grammar_form",
+          "question": "言い（    ）でやめた。",
+          "options": [
+            "たて",
+            "かけ",
+            "ぎみ",
+            "がち"
+          ],
+          "answer": 1,
+          "explanation": "途中。"
+        },
+        {
+          "id": "n3-bunpou-0128",
+          "type": "grammar_form",
+          "question": "風邪（    ）なので休みます。",
+          "options": [
+            "ぎみ",
+            "がち",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 0,
+          "explanation": "「～ぎみ」はそういう傾向。"
+        },
+        {
+          "id": "n3-bunpou-0129",
+          "type": "grammar_form",
+          "question": "最近、雨（    ）の天気だ。",
+          "options": [
+            "ぎみ",
+            "がち",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 1,
+          "explanation": "「～がち」は～が多い。"
+        },
+        {
+          "id": "n3-bunpou-0130",
+          "type": "grammar_form",
+          "question": "彼は子供（    ）性格だ。",
+          "options": [
+            "ぎみ",
+            "がち",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 2,
+          "explanation": "「～っぽい」は～のような。"
+        },
+        {
+          "id": "n3-bunpou-0131",
+          "type": "grammar_form",
+          "question": "彼は怒り（    ）な人だ。",
+          "options": [
+            "ぎみ",
+            "がち",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 2,
+          "explanation": "怒りやすい性質。"
+        },
+        {
+          "id": "n3-bunpou-0132",
+          "type": "grammar_form",
+          "question": "疲れ（    ）の声で答えた。",
+          "options": [
+            "ぎみ",
+            "がち",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 0,
+          "explanation": "傾向。"
+        },
+        {
+          "id": "n3-bunpou-0133",
+          "type": "grammar_form",
+          "question": "最近、忘れ（    )だ。",
+          "options": [
+            "ぎみ",
+            "がち",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 1,
+          "explanation": "頻度。"
+        },
+        {
+          "id": "n3-bunpou-0134",
+          "type": "grammar_form",
+          "question": "知らない（    ）をしている。",
+          "options": [
+            "ふり",
+            "まま",
+            "うち",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "「～ふり」は装う。"
+        },
+        {
+          "id": "n3-bunpou-0135",
+          "type": "grammar_form",
+          "question": "テレビをつけた（    ）寝てしまった。",
+          "options": [
+            "ふり",
+            "まま",
+            "うち",
+            "ところ"
+          ],
+          "answer": 1,
+          "explanation": "「～まま」は状態継続。"
+        },
+        {
+          "id": "n3-bunpou-0136",
+          "type": "grammar_form",
+          "question": "靴をはいた（    )部屋に入った。",
+          "options": [
+            "ふり",
+            "まま",
+            "うち",
+            "ところ"
+          ],
+          "answer": 1,
+          "explanation": "状態継続。"
+        },
+        {
+          "id": "n3-bunpou-0137",
+          "type": "grammar_form",
+          "question": "聞こえない（    )をした。",
+          "options": [
+            "ふり",
+            "まま",
+            "うち",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "装う。"
+        },
+        {
+          "id": "n3-bunpou-0138",
+          "type": "grammar_form",
+          "question": "彼とは去年会った（    ）会っていない。",
+          "options": [
+            "きり",
+            "ばかり",
+            "ところ",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "「～きり」はそれ以来。"
+        },
+        {
+          "id": "n3-bunpou-0139",
+          "type": "grammar_form",
+          "question": "服が泥（    ）になった。",
+          "options": [
+            "きり",
+            "だらけ",
+            "まみれ",
+            "ぎみ"
+          ],
+          "answer": 1,
+          "explanation": "「～だらけ」は多い状態。"
+        },
+        {
+          "id": "n3-bunpou-0140",
+          "type": "grammar_form",
+          "question": "間違い（    )の答案。",
+          "options": [
+            "きり",
+            "だらけ",
+            "ぎみ",
+            "がち"
+          ],
+          "answer": 1,
+          "explanation": "多い状態。"
+        },
+        {
+          "id": "n3-bunpou-0141",
+          "type": "grammar_form",
+          "question": "毎日少し（    ）勉強する。",
+          "options": [
+            "ずつ",
+            "おき",
+            "ごと",
+            "あたり"
+          ],
+          "answer": 0,
+          "explanation": "「～ずつ」は均等分配。"
+        },
+        {
+          "id": "n3-bunpou-0142",
+          "type": "grammar_form",
+          "question": "一日（    ）に薬を飲む。",
+          "options": [
+            "ずつ",
+            "おき",
+            "ごと",
+            "あたり"
+          ],
+          "answer": 1,
+          "explanation": "「～おき」は間隔。"
+        },
+        {
+          "id": "n3-bunpou-0143",
+          "type": "grammar_form",
+          "question": "あなた（    ）いれば幸せだ。",
+          "options": [
+            "さえ",
+            "こそ",
+            "ばかり",
+            "だけ"
+          ],
+          "answer": 0,
+          "explanation": "「～さえ～ば」は条件。"
+        },
+        {
+          "id": "n3-bunpou-0144",
+          "type": "grammar_form",
+          "question": "子供（    ）知っている。",
+          "options": [
+            "でさえ",
+            "こそ",
+            "ばかり",
+            "ばかりに"
+          ],
+          "answer": 0,
+          "explanation": "「～でさえ」は極端な例。"
+        },
+        {
+          "id": "n3-bunpou-0145",
+          "type": "grammar_form",
+          "question": "お金（    )あれば何でも買える。",
+          "options": [
+            "さえ",
+            "こそ",
+            "ばかり",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "条件。"
+        },
+        {
+          "id": "n3-bunpou-0146",
+          "type": "grammar_form",
+          "question": "それはうわさ（    ）。",
+          "options": [
+            "にすぎない",
+            "にちがいない",
+            "にとって",
+            "について"
+          ],
+          "answer": 0,
+          "explanation": "「～にすぎない」はただ～だけ。"
+        },
+        {
+          "id": "n3-bunpou-0147",
+          "type": "grammar_form",
+          "question": "彼が来る（    ）。約束したから。",
+          "options": [
+            "にすぎない",
+            "にきまっている",
+            "にとって",
+            "について"
+          ],
+          "answer": 1,
+          "explanation": "「～にきまっている」は確信。"
+        },
+        {
+          "id": "n3-bunpou-0148",
+          "type": "grammar_form",
+          "question": "うそ（    )。",
+          "options": [
+            "にすぎない",
+            "にきまっている",
+            "にとって",
+            "について"
+          ],
+          "answer": 1,
+          "explanation": "確信。"
+        },
+        {
+          "id": "n3-bunpou-0149",
+          "type": "grammar_form",
+          "question": "子供は遊ぶ（    ）だ。",
+          "options": [
+            "もの",
+            "べき",
+            "わけ",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "「～ものだ」は本来。"
+        },
+        {
+          "id": "n3-bunpou-0150",
+          "type": "grammar_form",
+          "question": "学生は勉強する（    ）だ。",
+          "options": [
+            "もの",
+            "べき",
+            "わけ",
+            "ところ"
+          ],
+          "answer": 1,
+          "explanation": "「～べきだ」は義務。"
+        },
+        {
+          "id": "n3-bunpou-0151",
+          "type": "grammar_form",
+          "question": "昔、よく遊んだ（    )だ。",
+          "options": [
+            "もの",
+            "べき",
+            "わけ",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "「～たものだ」は懐古。"
+        },
+        {
+          "id": "n3-bunpou-0152",
+          "type": "grammar_form",
+          "question": "席に着く（    ）電話が鳴った。",
+          "options": [
+            "か着かないかのうちに",
+            "かと思うと",
+            "ばかりに",
+            "ところで"
+          ],
+          "answer": 0,
+          "explanation": "ほぼ同時。"
+        },
+        {
+          "id": "n3-bunpou-0153",
+          "type": "grammar_form",
+          "question": "泣いた（    ）笑い出した。",
+          "options": [
+            "か泣かないかのうちに",
+            "かと思うと",
+            "ばかりに",
+            "ところで"
+          ],
+          "answer": 1,
+          "explanation": "急変。"
+        },
+        {
+          "id": "n3-bunpou-0154",
+          "type": "grammar_form",
+          "question": "私は日本語（    ）話せない。",
+          "options": [
+            "しか",
+            "だけ",
+            "ばかり",
+            "こそ"
+          ],
+          "answer": 0,
+          "explanation": "「～しか～ない」は限定。"
+        },
+        {
+          "id": "n3-bunpou-0155",
+          "type": "grammar_form",
+          "question": "練習（    ）すれば上手になる。",
+          "options": [
+            "さえ",
+            "しか",
+            "ばかり",
+            "こそ"
+          ],
+          "answer": 0,
+          "explanation": "「～さえ～ば」は条件。"
+        },
+        {
+          "id": "n3-bunpou-0156",
+          "type": "grammar_form",
+          "question": "年をとる（    ）、忘れっぽくなる。",
+          "options": [
+            "につれて",
+            "にとって",
+            "として",
+            "について"
+          ],
+          "answer": 0,
+          "explanation": "「～につれて」は変化に伴う変化。"
+        },
+        {
+          "id": "n3-bunpou-0157",
+          "type": "grammar_form",
+          "question": "山を登る（    ）、寒くなる。",
+          "options": [
+            "にしたがって",
+            "にとって",
+            "として",
+            "について"
+          ],
+          "answer": 0,
+          "explanation": "「～にしたがって」は変化に伴う変化。"
+        },
+        {
+          "id": "n3-bunpou-0158",
+          "type": "grammar_form",
+          "question": "技術が進む（    )、生活が変わる。",
+          "options": [
+            "につれて",
+            "にとって",
+            "として",
+            "について"
+          ],
+          "answer": 0,
+          "explanation": "比例変化。"
+        },
+        {
+          "id": "n3-bunpou-0159",
+          "type": "grammar_form",
+          "question": "会議は本社（    ）行われた。",
+          "options": [
+            "において",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～において」は場所。"
+        },
+        {
+          "id": "n3-bunpou-0160",
+          "type": "grammar_form",
+          "question": "現代（    ）問題。",
+          "options": [
+            "における",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "名詞修飾。"
+        },
+        {
+          "id": "n3-bunpou-0161",
+          "type": "grammar_form",
+          "question": "収入（    ）税金を払う。",
+          "options": [
+            "に応じて",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～に応じて」は対応。"
+        },
+        {
+          "id": "n3-bunpou-0162",
+          "type": "grammar_form",
+          "question": "事実（    ）報告した。",
+          "options": [
+            "に基づいて",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～に基づいて」は基準。"
+        },
+        {
+          "id": "n3-bunpou-0163",
+          "type": "grammar_form",
+          "question": "計画（    ）進める。",
+          "options": [
+            "に沿って",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～に沿って」は方針通り。"
+        },
+        {
+          "id": "n3-bunpou-0164",
+          "type": "grammar_form",
+          "question": "ニーズ（    )商品を作る。",
+          "options": [
+            "に応じて",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "対応。"
+        },
+        {
+          "id": "n3-bunpou-0165",
+          "type": "grammar_form",
+          "question": "ドアを開けた（    ）猫が飛び出した。",
+          "options": [
+            "とたん",
+            "ところで",
+            "ばかりに",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "「～たとたん」は直後の意外。"
+        },
+        {
+          "id": "n3-bunpou-0166",
+          "type": "grammar_form",
+          "question": "立ち上がった（    )めまいがした。",
+          "options": [
+            "とたん",
+            "ところで",
+            "ばかりに",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "直後。"
+        },
+        {
+          "id": "n3-bunpou-0167",
+          "type": "grammar_form",
+          "question": "彼の話し方（    ）外国人だとわかる。",
+          "options": [
+            "ことから",
+            "ことだから",
+            "ことに",
+            "ものの"
+          ],
+          "answer": 0,
+          "explanation": "「～ことから」は判断根拠。"
+        },
+        {
+          "id": "n3-bunpou-0168",
+          "type": "grammar_form",
+          "question": "真面目な彼の（    ）、約束を守るだろう。",
+          "options": [
+            "ことから",
+            "ことだから",
+            "ことに",
+            "ものの"
+          ],
+          "answer": 1,
+          "explanation": "「～ことだから」は性格判断。"
+        },
+        {
+          "id": "n3-bunpou-0169",
+          "type": "grammar_form",
+          "question": "よく考えた（    )決めた。",
+          "options": [
+            "うえで",
+            "うえに",
+            "うちに",
+            "ところで"
+          ],
+          "answer": 0,
+          "explanation": "「～うえで」は手順。"
+        },
+        {
+          "id": "n3-bunpou-0170",
+          "type": "grammar_form",
+          "question": "雨の（    )風も強い。",
+          "options": [
+            "うえで",
+            "うえに",
+            "うちに",
+            "ところで"
+          ],
+          "answer": 1,
+          "explanation": "「～うえに」は追加。"
+        },
+        {
+          "id": "n3-bunpou-0171",
+          "type": "grammar_form",
+          "question": "彼は英語（    )中国語も話せる。",
+          "options": [
+            "ばかりでなく",
+            "ばかりに",
+            "だけに",
+            "ばかりか"
+          ],
+          "answer": 0,
+          "explanation": "追加。"
+        },
+        {
+          "id": "n3-bunpou-0172",
+          "type": "grammar_form",
+          "question": "勉強（    )スポーツも得意だ。",
+          "options": [
+            "だけでなく",
+            "だけに",
+            "ばかりに",
+            "ばかりか"
+          ],
+          "answer": 0,
+          "explanation": "「～だけでなく」。"
+        },
+        {
+          "id": "n3-bunpou-0173",
+          "type": "grammar_form",
+          "question": "このペンは書き（    )。",
+          "options": [
+            "やすい",
+            "にくい",
+            "がち",
+            "がてら"
+          ],
+          "answer": 0,
+          "explanation": "「～やすい」は容易。"
+        },
+        {
+          "id": "n3-bunpou-0174",
+          "type": "grammar_form",
+          "question": "この字は読み（    )。",
+          "options": [
+            "やすい",
+            "にくい",
+            "がち",
+            "がてら"
+          ],
+          "answer": 1,
+          "explanation": "「～にくい」は困難。"
+        },
+        {
+          "id": "n3-bunpou-0175",
+          "type": "grammar_form",
+          "question": "この道は歩き（    )。",
+          "options": [
+            "やすい",
+            "にくい",
+            "がち",
+            "がてら"
+          ],
+          "answer": 0,
+          "explanation": "容易。"
+        },
+        {
+          "id": "n3-bunpou-0176",
+          "type": "grammar_form",
+          "question": "この機械は使い（    )。",
+          "options": [
+            "やすい",
+            "にくい",
+            "がち",
+            "がてら"
+          ],
+          "answer": 1,
+          "explanation": "難しい。"
+        },
+        {
+          "id": "n3-bunpou-0177",
+          "type": "grammar_form",
+          "question": "食べ（    )お腹が痛い。",
+          "options": [
+            "すぎて",
+            "始めて",
+            "続けて",
+            "出して"
+          ],
+          "answer": 0,
+          "explanation": "「～すぎる」は度を越す。"
+        },
+        {
+          "id": "n3-bunpou-0178",
+          "type": "grammar_form",
+          "question": "急に雨が降り（    )た。",
+          "options": [
+            "すぎ",
+            "始め",
+            "続け",
+            "出し"
+          ],
+          "answer": 3,
+          "explanation": "「～出す」は突然。"
+        },
+        {
+          "id": "n3-bunpou-0179",
+          "type": "grammar_form",
+          "question": "3時間勉強し（    )た。",
+          "options": [
+            "すぎ",
+            "始め",
+            "続け",
+            "出し"
+          ],
+          "answer": 2,
+          "explanation": "「～続ける」は継続。"
+        },
+        {
+          "id": "n3-bunpou-0180",
+          "type": "grammar_form",
+          "question": "桜が咲き（    )た。",
+          "options": [
+            "すぎ",
+            "始め",
+            "続け",
+            "出し"
+          ],
+          "answer": 1,
+          "explanation": "「～始める」は開始。"
+        },
+        {
+          "id": "n3-bunpou-0181",
+          "type": "grammar_form",
+          "question": "明日休ま（    )ます。",
+          "options": [
+            "せていただき",
+            "せていただい",
+            "せてくれ",
+            "せてあげ"
+          ],
+          "answer": 0,
+          "explanation": "「～させていただく」は謙譲。"
+        },
+        {
+          "id": "n3-bunpou-0182",
+          "type": "grammar_form",
+          "question": "先生に教え（    )た。",
+          "options": [
+            "ていただい",
+            "てもらっ",
+            "てくれ",
+            "てあげ"
+          ],
+          "answer": 0,
+          "explanation": "目上には「～ていただく」。"
+        },
+        {
+          "id": "n3-bunpou-0183",
+          "type": "grammar_form",
+          "question": "弟に本を読ん（    )た。",
+          "options": [
+            "でいただい",
+            "でもらっ",
+            "でくれ",
+            "であげ"
+          ],
+          "answer": 3,
+          "explanation": "「～てあげる」は与える。"
+        },
+        {
+          "id": "n3-bunpou-0184",
+          "type": "grammar_form",
+          "question": "宿題を忘れて（    )た。",
+          "options": [
+            "しまっ",
+            "おい",
+            "あっ",
+            "い"
+          ],
+          "answer": 0,
+          "explanation": "「～てしまう」は完了・後悔。"
+        },
+        {
+          "id": "n3-bunpou-0185",
+          "type": "grammar_form",
+          "question": "明日の準備をして（    )。",
+          "options": [
+            "しまう",
+            "おく",
+            "ある",
+            "いる"
+          ],
+          "answer": 1,
+          "explanation": "「～ておく」は事前準備。"
+        },
+        {
+          "id": "n3-bunpou-0186",
+          "type": "grammar_form",
+          "question": "壁に絵が掛けて（    )。",
+          "options": [
+            "しまう",
+            "おく",
+            "ある",
+            "いる"
+          ],
+          "answer": 2,
+          "explanation": "「～てある」は意図的状態。"
+        },
+        {
+          "id": "n3-bunpou-0187",
+          "type": "grammar_form",
+          "question": "先生は今、教室で話して（    )。",
+          "options": [
+            "しまう",
+            "おく",
+            "ある",
+            "いる"
+          ],
+          "answer": 3,
+          "explanation": "「～ている」は進行。"
+        },
+        {
+          "id": "n3-bunpou-0188",
+          "type": "grammar_form",
+          "question": "わからなかったら、聞け（    )。",
+          "options": [
+            "ばいい",
+            "たらいい",
+            "といい",
+            "のがいい"
+          ],
+          "answer": 0,
+          "explanation": "「～ばいい」は助言。"
+        },
+        {
+          "id": "n3-bunpou-0189",
+          "type": "grammar_form",
+          "question": "明日、晴れる（    )。",
+          "options": [
+            "といい",
+            "ばいい",
+            "たらいい",
+            "のがいい"
+          ],
+          "answer": 0,
+          "explanation": "「～といい」は願望。"
+        },
+        {
+          "id": "n3-bunpou-0190",
+          "type": "grammar_form",
+          "question": "日本へ行った（    )がある。",
+          "options": [
+            "こと",
+            "もの",
+            "ところ",
+            "わけ"
+          ],
+          "answer": 0,
+          "explanation": "「～たことがある」は経験。"
+        },
+        {
+          "id": "n3-bunpou-0191",
+          "type": "grammar_form",
+          "question": "授業中に寝る（    )がある。",
+          "options": [
+            "こと",
+            "もの",
+            "ところ",
+            "わけ"
+          ],
+          "answer": 0,
+          "explanation": "「～ことがある」は時々。"
+        },
+        {
+          "id": "n3-bunpou-0192",
+          "type": "grammar_form",
+          "question": "雨が降っ（    )出かける。",
+          "options": [
+            "ても",
+            "たら",
+            "ば",
+            "と"
+          ],
+          "answer": 0,
+          "explanation": "逆接条件。"
+        },
+        {
+          "id": "n3-bunpou-0193",
+          "type": "grammar_form",
+          "question": "いくら勉強し（    )覚えられない。",
+          "options": [
+            "ても",
+            "たら",
+            "ば",
+            "と"
+          ],
+          "answer": 0,
+          "explanation": "強調逆接。"
+        },
+        {
+          "id": "n3-bunpou-0194",
+          "type": "grammar_form",
+          "question": "春になる（    )桜が咲く。",
+          "options": [
+            "と",
+            "ば",
+            "たら",
+            "なら"
+          ],
+          "answer": 0,
+          "explanation": "「～と」は自然現象。"
+        },
+        {
+          "id": "n3-bunpou-0195",
+          "type": "grammar_form",
+          "question": "京都へ行く（    )、清水寺がいい。",
+          "options": [
+            "と",
+            "ば",
+            "たら",
+            "なら"
+          ],
+          "answer": 3,
+          "explanation": "「～なら」は仮定。"
+        },
+        {
+          "id": "n3-bunpou-0196",
+          "type": "grammar_form",
+          "question": "時間があっ（    )来てください。",
+          "options": [
+            "と",
+            "ば",
+            "たら",
+            "なら"
+          ],
+          "answer": 2,
+          "explanation": "「～たら」は条件。"
+        },
+        {
+          "id": "n3-bunpou-0197",
+          "type": "grammar_form",
+          "question": "押せ（    )開きます。",
+          "options": [
+            "と",
+            "ば",
+            "たら",
+            "なら"
+          ],
+          "answer": 1,
+          "explanation": "「～ば」は条件。"
+        },
+        {
+          "id": "n3-bunpou-0198",
+          "type": "grammar_form",
+          "question": "彼は来る（    )言った。",
+          "options": [
+            "と",
+            "ば",
+            "たら",
+            "なら"
+          ],
+          "answer": 0,
+          "explanation": "引用の「と」。"
+        },
+        {
+          "id": "n3-bunpou-0199",
+          "type": "grammar_form",
+          "question": "勉強し（    )しないで遊んでいる。",
+          "options": [
+            "ないで",
+            "ずに",
+            "なくて",
+            "ないと"
+          ],
+          "answer": 0,
+          "explanation": "「～ないで」は付帯。"
+        },
+        {
+          "id": "n3-bunpou-0200",
+          "type": "grammar_form",
+          "question": "傘を持た（    )出かけた。",
+          "options": [
+            "ないで",
+            "ずに",
+            "なくて",
+            "ないと"
+          ],
+          "answer": 1,
+          "explanation": "「～ずに」は否定の付帯（書き言葉）。"
+        },
+        {
+          "id": "n3-bunpou-0201",
+          "type": "grammar_form",
+          "question": "宿題が終わら（    )困っている。",
+          "options": [
+            "ないで",
+            "ずに",
+            "なくて",
+            "ないと"
+          ],
+          "answer": 2,
+          "explanation": "「～なくて」は原因。"
+        },
+        {
+          "id": "n3-bunpou-0202",
+          "type": "grammar_form",
+          "question": "早くしない（    )間に合わない。",
+          "options": [
+            "ないで",
+            "ずに",
+            "なくて",
+            "と"
+          ],
+          "answer": 3,
+          "explanation": "「～ないと」は条件。"
+        },
+        {
+          "id": "n3-bunpou-0203",
+          "type": "grammar_form",
+          "question": "先生の説明を聞い（    )わかった。",
+          "options": [
+            "て",
+            "から",
+            "たら",
+            "ば"
+          ],
+          "answer": 0,
+          "explanation": "「～て」は順接。"
+        },
+        {
+          "id": "n3-bunpou-0204",
+          "type": "grammar_form",
+          "question": "宿題をして（    )遊ぶ。",
+          "options": [
+            "て",
+            "から",
+            "たら",
+            "ば"
+          ],
+          "answer": 1,
+          "explanation": "「～てから」は順序。"
+        },
+        {
+          "id": "n3-bunpou-0205",
+          "type": "grammar_form",
+          "question": "彼の意見（    )賛成する。",
+          "options": [
+            "に",
+            "を",
+            "が",
+            "で"
+          ],
+          "answer": 0,
+          "explanation": "「～に賛成する」。"
+        },
+        {
+          "id": "n3-bunpou-0206",
+          "type": "grammar_form",
+          "question": "母（    )子供を迎えに行かせた。",
+          "options": [
+            "は",
+            "を",
+            "に",
+            "で"
+          ],
+          "answer": 1,
+          "explanation": "使役の対象。"
+        },
+        {
+          "id": "n3-bunpou-0207",
+          "type": "grammar_form",
+          "question": "弟（    )ピアノを習わせる。",
+          "options": [
+            "は",
+            "を",
+            "に",
+            "で"
+          ],
+          "answer": 2,
+          "explanation": "使役で目的語があるとき「に」。"
+        },
+        {
+          "id": "n3-bunpou-0208",
+          "type": "grammar_form",
+          "question": "彼に聞いた（    )、知らなかった。",
+          "options": [
+            "ところ",
+            "ばかり",
+            "ものの",
+            "あまり"
+          ],
+          "answer": 0,
+          "explanation": "結果。"
+        },
+        {
+          "id": "n3-bunpou-0209",
+          "type": "grammar_form",
+          "question": "彼は約束を守る（    )。",
+          "options": [
+            "はずだ",
+            "わけだ",
+            "ものだ",
+            "ところだ"
+          ],
+          "answer": 0,
+          "explanation": "確信。"
+        },
+        {
+          "id": "n3-bunpou-0210",
+          "type": "grammar_form",
+          "question": "新しい言語を学ぶ（    )大変だ。",
+          "options": [
+            "のは",
+            "のが",
+            "のに",
+            "のを"
+          ],
+          "answer": 0,
+          "explanation": "「～のは」主題。"
+        },
+        {
+          "id": "n3-bunpou-0211",
+          "type": "grammar_form",
+          "question": "勉強する（    )時間が足りない。",
+          "options": [
+            "のは",
+            "のが",
+            "のに",
+            "のを"
+          ],
+          "answer": 2,
+          "explanation": "「～のに」逆接。"
+        },
+        {
+          "id": "n3-bunpou-0212",
+          "type": "grammar_form",
+          "question": "本を読む（    )好きだ。",
+          "options": [
+            "のは",
+            "のが",
+            "のに",
+            "のを"
+          ],
+          "answer": 1,
+          "explanation": "「～のが好き」。"
+        },
+        {
+          "id": "n3-bunpou-0213",
+          "type": "grammar_form",
+          "question": "見る（    )忘れた。",
+          "options": [
+            "のは",
+            "のが",
+            "のに",
+            "のを"
+          ],
+          "answer": 3,
+          "explanation": "「～のを忘れる」。"
+        },
+        {
+          "id": "n3-bunpou-0214",
+          "type": "grammar_form",
+          "question": "雨が止む（    )待った。",
+          "options": [
+            "のは",
+            "のが",
+            "のに",
+            "のを"
+          ],
+          "answer": 3,
+          "explanation": "「～のを待つ」。"
+        },
+        {
+          "id": "n3-bunpou-0215",
+          "type": "grammar_form",
+          "question": "彼は走る（    )速い。",
+          "options": [
+            "のは",
+            "のが",
+            "のに",
+            "のを"
+          ],
+          "answer": 1,
+          "explanation": "「～のが速い」。"
+        },
+        {
+          "id": "n3-bunpou-0216",
+          "type": "grammar_form",
+          "question": "出発する（    )先立って確認した。",
+          "options": [
+            "のに",
+            "に",
+            "を",
+            "で"
+          ],
+          "answer": 1,
+          "explanation": "「～に先立って」。"
+        },
+        {
+          "id": "n3-bunpou-0217",
+          "type": "grammar_form",
+          "question": "失敗を恐れ（    )行動できない。",
+          "options": [
+            "て",
+            "ては",
+            "たら",
+            "と"
+          ],
+          "answer": 1,
+          "explanation": "「～ては」は条件。"
+        },
+        {
+          "id": "n3-bunpou-0218",
+          "type": "grammar_form",
+          "question": "本を借りる（    )、図書館へ行った。",
+          "options": [
+            "ために",
+            "ように",
+            "のに",
+            "から"
+          ],
+          "answer": 0,
+          "explanation": "目的。"
+        },
+        {
+          "id": "n3-bunpou-0219",
+          "type": "grammar_form",
+          "question": "歌い（    )踊る。",
+          "options": [
+            "ながら",
+            "ついで",
+            "うちに",
+            "とともに"
+          ],
+          "answer": 0,
+          "explanation": "同時。"
+        },
+        {
+          "id": "n3-bunpou-0220",
+          "type": "grammar_form",
+          "question": "病気の（    )会社を休んだ。",
+          "options": [
+            "ために",
+            "ように",
+            "のに",
+            "から"
+          ],
+          "answer": 0,
+          "explanation": "原因。"
+        },
+        {
+          "id": "n3-bunpou-0221",
+          "type": "grammar_form",
+          "question": "今日中に終わる（    )はない。",
+          "options": [
+            "はず",
+            "わけ",
+            "もの",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "「～はずがない」可能性ゼロ。"
+        },
+        {
+          "id": "n3-bunpou-0222",
+          "type": "grammar_form",
+          "question": "急いだ（    )間に合わなかった。",
+          "options": [
+            "のに",
+            "ので",
+            "から",
+            "ため"
+          ],
+          "answer": 0,
+          "explanation": "逆接。"
+        },
+        {
+          "id": "n3-bunpou-0223",
+          "type": "grammar_form",
+          "question": "雨だった（    )中止になった。",
+          "options": [
+            "のに",
+            "ので",
+            "から",
+            "とき"
+          ],
+          "answer": 1,
+          "explanation": "原因（丁寧）。"
+        },
+        {
+          "id": "n3-bunpou-0224",
+          "type": "grammar_form",
+          "question": "彼は頭がいい。だから合格した（    )。",
+          "options": [
+            "わけだ",
+            "わけがない",
+            "ものだ",
+            "ところだ"
+          ],
+          "answer": 0,
+          "explanation": "結論。"
+        },
+        {
+          "id": "n3-bunpou-0225",
+          "type": "grammar_form",
+          "question": "電気がついた（    )消えた。",
+          "options": [
+            "かと思うと",
+            "ばかりに",
+            "ところで",
+            "うちに"
+          ],
+          "answer": 0,
+          "explanation": "急変。"
+        },
+        {
+          "id": "n3-bunpou-0226",
+          "type": "grammar_form",
+          "question": "音楽を聞きながら勉強する（    )集中できる。",
+          "options": [
+            "と",
+            "ば",
+            "なら",
+            "から"
+          ],
+          "answer": 0,
+          "explanation": "自然な結果。"
+        },
+        {
+          "id": "n3-bunpou-0227",
+          "type": "grammar_form",
+          "question": "10時を過ぎた（    )誰も来ない。",
+          "options": [
+            "のに",
+            "ので",
+            "から",
+            "とき"
+          ],
+          "answer": 0,
+          "explanation": "逆接。"
+        },
+        {
+          "id": "n3-bunpou-0228",
+          "type": "grammar_form",
+          "question": "あの人はすぐ怒る（    )ので付き合いにくい。",
+          "options": [
+            "がち",
+            "ぎみ",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 2,
+          "explanation": "性質。"
+        },
+        {
+          "id": "n3-bunpou-0229",
+          "type": "grammar_form",
+          "question": "風邪をひき（    )なので気をつけている。",
+          "options": [
+            "がち",
+            "ぎみ",
+            "っぽい",
+            "ふう"
+          ],
+          "answer": 0,
+          "explanation": "頻度。"
+        },
+        {
+          "id": "n3-bunpou-0230",
+          "type": "grammar_form",
+          "question": "やっと宿題が終わった（    )。",
+          "options": [
+            "ところだ",
+            "ばかりだ",
+            "とおりだ",
+            "ようだ"
+          ],
+          "answer": 0,
+          "explanation": "「終わったところ」直後。"
+        },
+        {
+          "id": "n3-bunpou-0231",
+          "type": "grammar_form",
+          "question": "5分前に着いた（    )。",
+          "options": [
+            "ところだ",
+            "ばかりだ",
+            "とおりだ",
+            "ようだ"
+          ],
+          "answer": 1,
+          "explanation": "短時間前。"
+        },
+        {
+          "id": "n3-bunpou-0232",
+          "type": "grammar_form",
+          "question": "試験が近づく（    )緊張する。",
+          "options": [
+            "につれて",
+            "にとって",
+            "として",
+            "について"
+          ],
+          "answer": 0,
+          "explanation": "変化に伴う変化。"
+        },
+        {
+          "id": "n3-bunpou-0233",
+          "type": "grammar_form",
+          "question": "経験（    )判断する。",
+          "options": [
+            "に基づいて",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "根拠。"
+        },
+        {
+          "id": "n3-bunpou-0234",
+          "type": "grammar_form",
+          "question": "天候（    )中止する場合があります。",
+          "options": [
+            "によっては",
+            "について",
+            "として",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～によっては」場合により。"
+        },
+        {
+          "id": "n3-bunpou-0235",
+          "type": "grammar_form",
+          "question": "彼は学生（    )しっかりしている。",
+          "options": [
+            "にしては",
+            "として",
+            "について",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "「～にしては」は予想と違う。"
+        },
+        {
+          "id": "n3-bunpou-0236",
+          "type": "grammar_form",
+          "question": "プロ（    )下手だね。",
+          "options": [
+            "にしては",
+            "として",
+            "について",
+            "にとって"
+          ],
+          "answer": 0,
+          "explanation": "予想に反する。"
+        },
+        {
+          "id": "n3-bunpou-0237",
+          "type": "grammar_form",
+          "question": "毎日30分（    )運動する。",
+          "options": [
+            "ずつ",
+            "おき",
+            "ごと",
+            "あたり"
+          ],
+          "answer": 0,
+          "explanation": "均等。"
+        },
+        {
+          "id": "n3-bunpou-0238",
+          "type": "grammar_form",
+          "question": "急に泣き（    )た。",
+          "options": [
+            "出し",
+            "始め",
+            "続け",
+            "終わっ"
+          ],
+          "answer": 0,
+          "explanation": "突然開始。"
+        },
+        {
+          "id": "n3-bunpou-0239",
+          "type": "grammar_form",
+          "question": "雨が降り（    )ている。",
+          "options": [
+            "出し",
+            "始め",
+            "続け",
+            "終わっ"
+          ],
+          "answer": 2,
+          "explanation": "継続。"
+        },
+        {
+          "id": "n3-bunpou-0240",
+          "type": "grammar_form",
+          "question": "話し（    )てください。",
+          "options": [
+            "出し",
+            "始め",
+            "続け",
+            "終わっ"
+          ],
+          "answer": 2,
+          "explanation": "継続して話す。"
+        },
+        {
+          "id": "n3-bunpou-0241",
+          "type": "grammar_form",
+          "question": "歌を歌い（    )た。",
+          "options": [
+            "出し",
+            "始め",
+            "続け",
+            "終わっ"
+          ],
+          "answer": 3,
+          "explanation": "完了。"
+        },
+        {
+          "id": "n3-bunpou-0242",
+          "type": "grammar_form",
+          "question": "彼は英語が話せる（    )なった。",
+          "options": [
+            "ように",
+            "ことに",
+            "もの",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "可能変化。"
+        },
+        {
+          "id": "n3-bunpou-0243",
+          "type": "grammar_form",
+          "question": "毎日早起きする（    )している。",
+          "options": [
+            "ように",
+            "ことに",
+            "もの",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "習慣的努力。"
+        },
+        {
+          "id": "n3-bunpou-0244",
+          "type": "grammar_form",
+          "question": "今日は早く帰る（    )した。",
+          "options": [
+            "ように",
+            "ことに",
+            "もの",
+            "ところ"
+          ],
+          "answer": 1,
+          "explanation": "自分の決定。"
+        },
+        {
+          "id": "n3-bunpou-0245",
+          "type": "grammar_form",
+          "question": "来週から会議が始まる（    )なった。",
+          "options": [
+            "ように",
+            "ことに",
+            "もの",
+            "ところ"
+          ],
+          "answer": 1,
+          "explanation": "他者決定。"
+        },
+        {
+          "id": "n3-bunpou-0246",
+          "type": "grammar_form",
+          "question": "息子は野菜を食べる（    )なった。",
+          "options": [
+            "ように",
+            "ことに",
+            "もの",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "状態変化。"
+        },
+        {
+          "id": "n3-bunpou-0247",
+          "type": "grammar_form",
+          "question": "授業に遅れない（    )早く出る。",
+          "options": [
+            "ように",
+            "ことに",
+            "もの",
+            "ところ"
+          ],
+          "answer": 0,
+          "explanation": "目的（無意志）。"
+        }
+      ]
+    }
+  ]
+}
