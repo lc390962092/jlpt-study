@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JLPT 真题导入</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "Hiragino Sans", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .back { text-decoration: none; color: #667eea; font-size: 15px; }
+        .level-title { font-size: 18px; font-weight: bold; }
+        .stage { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .panel {
+            background: white;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+        .panel h2 { font-size: 22px; margin-bottom: 8px; }
+        .panel .sub { font-size: 14px; color: #888; margin-bottom: 22px; }
+        .tab-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 22px;
+        }
+        .tab {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            border-radius: 14px;
+            background: #f3f4f6;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+        .tab.active {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 12px rgba(102,126,234,0.25);
+        }
+        .hidden { display: none !important; }
+
+        .upload-zone {
+            border: 2px dashed #d1d5db;
+            border-radius: 18px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .upload-zone:hover { border-color: #667eea; background: #f8f9ff; }
+        .upload-zone .icon { font-size: 40px; margin-bottom: 10px; }
+        .upload-zone .hint { font-size: 14px; color: #888; }
+        .upload-zone input { display: none; }
+        .json-sample {
+            background: #f9fafb;
+            border-radius: 14px;
+            padding: 14px;
+            font-size: 12px;
+            color: #555;
+            overflow-x: auto;
+            margin-top: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 14px;
+        }
+        .btn-primary { background: #667eea; color: white; }
+        .btn-secondary { background: #f3f4f6; color: #555; }
+
+        .exam-list { margin-top: 10px; }
+        .exam-item {
+            background: white;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .exam-item .title { font-size: 16px; font-weight: bold; color: #333; }
+        .exam-item .meta { font-size: 12px; color: #888; margin: 6px 0; }
+        .exam-item .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+        .tag {
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: #f3f4f6;
+            color: #666;
+        }
+        .tag.moji { background: #eff6ff; color: #2563eb; }
+        .tag.bunpou { background: #f0fdf4; color: #16a34a; }
+        .exam-actions { display: flex; gap: 10px; margin-top: 14px; }
+        .exam-actions button { flex: 1; }
+        .empty-tip { text-align: center; padding: 40px; color: #888; font-size: 14px; }
+
+        /* 做题界面复用 quiz.html 样式 */
+        .quiz-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #888;
+        }
+        .progress-track {
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 3px;
+            transition: width .3s ease;
+        }
+        .question-card {
+            background: white;
+            border-radius: 24px;
+            padding: 30px 22px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            margin-bottom: 18px;
+        }
+        .q-type { font-size: 12px; color: #888; margin-bottom: 10px; }
+        .q-main { font-size: 22px; font-weight: bold; line-height: 1.6; margin-bottom: 10px; word-break: break-word; }
+        .q-sub { font-size: 14px; color: #667eea; }
+        .choices { display: flex; flex-direction: column; gap: 10px; }
+        .choice {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 16px 18px;
+            font-size: 15px;
+            text-align: left;
+            cursor: pointer;
+            transition: all .12s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .choice:active { transform: scale(0.98); }
+        .choice .badge {
+            flex-shrink: 0;
+            width: 26px; height: 26px; line-height: 26px;
+            border-radius: 50%;
+            background: #f3f4f6;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .choice.correct { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
+        .choice.correct .badge { background: #22c55e; color: white; }
+        .choice.wrong { border-color: #ef4444; background: #fef2f2; color: #b91c1c; }
+        .choice.wrong .badge { background: #ef4444; color: white; }
+        .choice.disabled { pointer-events: none; }
+        .feedback {
+            background: white;
+            border-radius: 18px;
+            padding: 18px;
+            margin-top: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            font-size: 14px;
+        }
+        .feedback.correct { border-left: 5px solid #22c55e; }
+        .feedback.wrong { border-left: 5px solid #ef4444; }
+        .feedback-title { font-weight: bold; margin-bottom: 6px; }
+        .feedback.correct .feedback-title { color: #15803d; }
+        .feedback.wrong .feedback-title { color: #b91c1c; }
+        .feedback-detail { color: #555; line-height: 1.6; }
+        .next-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 16px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 14px;
+        }
+
+        .result-score { text-align: center; padding: 30px 0; }
+        .score-ring {
+            width: 140px; height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: conic-gradient(#667eea var(--score-deg), #e5e7eb 0);
+            position: relative;
+        }
+        .score-ring::before {
+            content: ''; position: absolute;
+            width: 116px; height: 116px;
+            border-radius: 50%;
+            background: white;
+        }
+        .score-text { position: relative; font-size: 36px; font-weight: bold; color: #333; }
+        .score-label { position: relative; font-size: 12px; color: #888; }
+        .result-title { font-size: 20px; font-weight: bold; margin-bottom: 6px; }
+        .result-desc { font-size: 14px; color: #888; }
+        .stat-row { display: flex; justify-content: center; gap: 24px; margin: 22px 0; }
+        .stat { text-align: center; }
+        .stat .num { font-size: 22px; font-weight: bold; color: #333; }
+        .stat .label { font-size: 12px; color: #888; }
+        .section-stat { margin-top: 20px; }
+        .section-stat h3 { font-size: 15px; margin-bottom: 12px; }
+        .section-bar {
+            display: flex; align-items: center;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .section-bar .name { width: 90px; color: #555; }
+        .section-bar .track { flex: 1; height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
+        .section-bar .fill { height: 100%; background: #667eea; border-radius: 4px; transition: width .3s; }
+        .section-bar .pct { width: 40px; text-align: right; color: #888; }
+        .btn-row { display: flex; gap: 12px; margin-top: 22px; }
+        .btn-row button { flex: 1; }
+        .msg { text-align: center; padding: 40px; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <a href="index.html" class="back">← 返回</a>
+        <div class="level-title">真题导入</div>
+        <div style="width:40px"></div>
+    </div>
+    <div class="stage" id="stage">
+        <div class="msg">加载中...</div>
+    </div>
+
+    <script>
+        const stageEl = document.getElementById('stage');
+        const EXAMS_KEY = 'jlpt_imported_exams';
+
+        let exams = [];
+        let currentExam = null;
+        let currentQuestions = [];
+        let currentIdx = 0;
+        let correctCount = 0;
+        let sectionStats = {};
+
+        function init() {
+            loadExams();
+            renderList();
+        }
+
+        function loadExams() {
+            try { exams = JSON.parse(localStorage.getItem(EXAMS_KEY)) || []; }
+            catch { exams = []; }
+        }
+        function saveExams() {
+            localStorage.setItem(EXAMS_KEY, JSON.stringify(exams));
+        }
+
+        function renderList() {
+            stageEl.innerHTML = `
+                <div class="tab-row">
+                    <div class="tab active" id="tabList">真题列表</div>
+                    <div class="tab" id="tabImport">导入真题</div>
+                </div>
+                <div id="listPanel">
+                    ${exams.length ? `<div class="exam-list">${exams.map((ex, i) => renderExamItem(ex, i)).join('')}</div>` : `<div class="empty-tip">暂无导入的真题<br>点击「导入真题」开始</div>`}
+                </div>
+                <div id="importPanel" class="hidden">
+                    <div class="panel">
+                        <h2>导入 JLPT 真题</h2>
+                        <div class="sub">支持文字・語彙、文法 JSON 格式，导入后本地保存</div>
+                        <label class="upload-zone" id="dropZone">
+                            <div class="icon">📄</div>
+                            <div class="hint">点击上传 JSON 文件 或拖拽到此处</div>
+                            <input type="file" id="fileInput" accept=".json,application/json">
+                        </label>
+                        <button class="btn btn-secondary" id="pasteBtn">粘贴 JSON 导入</button>
+                        <div class="json-sample">
+                            格式说明：<br>
+                            {<br>
+                            &nbsp;&nbsp;"level": "N5",<br>
+                            &nbsp;&nbsp;"year": 2024, "month": 7,<br>
+                            &nbsp;&nbsp;"title": "N5 真题示例卷",<br>
+                            &nbsp;&nbsp;"description": "...",<br>
+                            &nbsp;&nbsp;"sections": [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": "moji",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "文字・語彙",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"questions": [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ "id": "...", "type": "kanji_reading", "question": "...", "options": [...], "answer": 0, "explanation": "..." }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;]<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('tabList').addEventListener('click', () => switchTab('list'));
+            document.getElementById('tabImport').addEventListener('click', () => switchTab('import'));
+            document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+            document.getElementById('dropZone').addEventListener('dragover', (e) => { e.preventDefault(); e.currentTarget.style.borderColor = '#667eea'; });
+            document.getElementById('dropZone').addEventListener('dragleave', (e) => { e.currentTarget.style.borderColor = ''; });
+            document.getElementById('dropZone').addEventListener('drop', (e) => { e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) readFile(f); });
+            document.getElementById('pasteBtn').addEventListener('click', importFromPaste);
+        }
+
+        function switchTab(tab) {
+            const listPanel = document.getElementById('listPanel');
+            const importPanel = document.getElementById('importPanel');
+            const tabList = document.getElementById('tabList');
+            const tabImport = document.getElementById('tabImport');
+            if (tab === 'list') {
+                listPanel.classList.remove('hidden');
+                importPanel.classList.add('hidden');
+                tabList.classList.add('active');
+                tabImport.classList.remove('active');
+                renderList();
+            } else {
+                listPanel.classList.add('hidden');
+                importPanel.classList.remove('hidden');
+                tabList.classList.remove('active');
+                tabImport.classList.add('active');
+            }
+        }
+
+        function renderExamItem(ex, idx) {
+            const sectionTags = (ex.sections || []).map(s => `<span class="tag ${s.id}">${s.name} ${s.questions?.length || 0}题</span>`).join('');
+            const total = (ex.sections || []).reduce((sum, s) => sum + (s.questions?.length || 0), 0);
+            const meta = [ex.level, ex.year ? `${ex.year}年${ex.month || ''}月` : '', `${total}题`].filter(Boolean).join(' · ');
+            return `
+                <div class="exam-item">
+                    <div class="title">${escapeHtml(ex.title)}</div>
+                    <div class="meta">${escapeHtml(meta)}</div>
+                    <div class="tags">${sectionTags}</div>
+                    <div class="exam-actions">
+                        <button class="btn btn-primary" onclick="startExam(${idx})">开始测试</button>
+                        <button class="btn btn-secondary" onclick="deleteExam(${idx})">删除</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function handleFileSelect(e) {
+            const f = e.target.files[0];
+            if (f) readFile(f);
+        }
+
+        function readFile(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => importJson(e.target.result);
+            reader.readAsText(file);
+        }
+
+        function importFromPaste() {
+            const raw = prompt('请粘贴 JSON 内容：');
+            if (raw && raw.trim()) importJson(raw.trim());
+        }
+
+        function importJson(raw) {
+            let data;
+            try {
+                data = JSON.parse(raw);
+            } catch {
+                alert('JSON 解析失败，请检查格式');
+                return;
+            }
+            const err = validateExam(data);
+            if (err) { alert(err); return; }
+            normalizeExam(data);
+            exams.unshift(data);
+            saveExams();
+            alert(`已导入：${data.title}`);
+            switchTab('list');
+        }
+
+        function validateExam(data) {
+            if (!data || typeof data !== 'object') return 'JSON 格式不正确';
+            if (!data.title) return '缺少 title';
+            if (!Array.isArray(data.sections)) return '缺少 sections 数组';
+            for (const sec of data.sections) {
+                if (!sec.id || !sec.name) return '每个 section 必须包含 id 和 name';
+                if (!Array.isArray(sec.questions)) return `${sec.name} 缺少 questions 数组`;
+                for (const q of sec.questions) {
+                    if (!q.id || !q.question || !Array.isArray(q.options) || typeof q.answer !== 'number') {
+                        return `题目 ${q.id || '?'} 缺少必要字段（id/question/options/answer）`;
+                    }
+                    if (q.answer < 0 || q.answer >= q.options.length) return `题目 ${q.id} 答案索引越界`;
+                }
+            }
+            return null;
+        }
+
+        function normalizeExam(data) {
+            if (!data.description) data.description = '';
+            if (!data.level) data.level = '';
+            data.importedAt = new Date().toISOString();
+            data.sections.forEach(sec => {
+                sec.questions.forEach(q => {
+                    if (!q.type) q.type = sec.id;
+                    if (!q.sectionId) q.sectionId = sec.id;
+                    if (!q.sectionName) q.sectionName = sec.name;
+                    if (!q.explanation) q.explanation = '';
+                });
+            });
+        }
+
+        function deleteExam(idx) {
+            if (!confirm('确定删除这套真题吗？')) return;
+            exams.splice(idx, 1);
+            saveExams();
+            renderList();
+        }
+
+        function startExam(idx) {
+            currentExam = exams[idx];
+            currentQuestions = currentExam.sections.flatMap(s => s.questions);
+            shuffle(currentQuestions);
+            currentIdx = 0;
+            correctCount = 0;
+            sectionStats = {};
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            const q = currentQuestions[currentIdx];
+            const progress = ((currentIdx) / currentQuestions.length) * 100;
+            stageEl.innerHTML = `
+                <div class="topbar" style="position:static;margin-bottom:15px;">
+                    <a href="javascript:renderList()" class="back">← 退出</a>
+                    <div class="level-title">${escapeHtml(currentExam.title)}</div>
+                    <div style="width:40px"></div>
+                </div>
+                <div class="quiz-top">
+                    <span>第 ${currentIdx + 1} / ${currentQuestions.length} 题</span>
+                    <span>${escapeHtml(q.sectionName)}</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:${progress}%"></div></div>
+                <div class="question-card">
+                    <div class="q-type">${typeLabel(q.type)}</div>
+                    <div class="q-main">${escapeHtml(q.question)}</div>
+                    ${q.sub ? `<div class="q-sub">${escapeHtml(q.sub)}</div>` : ''}
+                </div>
+                <div class="choices" id="choices"></div>
+                <div class="feedback hidden" id="feedback"></div>
+                <button class="next-btn hidden" id="nextBtn">下一题</button>
+            `;
+            const choicesEl = document.getElementById('choices');
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('div');
+                btn.className = 'choice';
+                btn.innerHTML = `<div class="badge">${String.fromCharCode(65 + i)}</div><div>${escapeHtml(opt)}</div>`;
+                btn.addEventListener('click', () => selectOption(i));
+                choicesEl.appendChild(btn);
+            });
+            document.getElementById('nextBtn').addEventListener('click', nextQuestion);
+        }
+
+        function typeLabel(type) {
+            const map = {
+                'moji': '文字・語彙',
+                'bunpou': '文法',
+                'kanji_reading': '漢字読み',
+                'kanji_usage': '漢字表記',
+                'context_vocabulary': '文脈語彙',
+                'synonym': '類義語・反対語',
+                'grammar_form': '文法形式',
+                'sentence_pattern': '文の文法'
+            };
+            return map[type] || type;
+        }
+
+        function selectOption(idx) {
+            const q = currentQuestions[currentIdx];
+            const correct = idx === q.answer;
+            const choices = document.querySelectorAll('.choice');
+            choices.forEach((c, i) => {
+                c.classList.add('disabled');
+                if (i === q.answer) c.classList.add('correct');
+                else if (i === idx) c.classList.add('wrong');
+            });
+            if (correct) {
+                correctCount++;
+                sectionStats[q.sectionId] = sectionStats[q.sectionId] || { name: q.sectionName, total: 0, correct: 0 };
+                sectionStats[q.sectionId].total++;
+                sectionStats[q.sectionId].correct++;
+            } else {
+                sectionStats[q.sectionId] = sectionStats[q.sectionId] || { name: q.sectionName, total: 0, correct: 0 };
+                sectionStats[q.sectionId].total++;
+            }
+
+            const fb = document.getElementById('feedback');
+            fb.className = `feedback ${correct ? 'correct' : 'wrong'}`;
+            fb.innerHTML = `
+                <div class="feedback-title">${correct ? '✓ 回答正确' : '✗ 回答错误'}</div>
+                <div class="feedback-detail">${escapeHtml(q.explanation || '正确答案是：' + q.options[q.answer])}</div>
+            `;
+            fb.classList.remove('hidden');
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.textContent = currentIdx === currentQuestions.length - 1 ? '查看结果' : '下一题';
+            nextBtn.classList.remove('hidden');
+            nextBtn.focus();
+        }
+
+        function nextQuestion() {
+            currentIdx++;
+            if (currentIdx >= currentQuestions.length) {
+                renderResult();
+            } else {
+                renderQuestion();
+            }
+        }
+
+        function renderResult() {
+            const total = currentQuestions.length;
+            const wrong = total - correctCount;
+            const pct = total ? Math.round((correctCount / total) * 100) : 0;
+            const deg = pct * 3.6;
+            stageEl.innerHTML = `
+                <div class="panel">
+                    <div class="result-score">
+                        <div class="score-ring" style="--score-deg:${deg}deg;">
+                            <div class="score-text">${pct}%</div>
+                            <div class="score-label">正确率</div>
+                        </div>
+                        <div class="result-title">${scoreComment(pct)}</div>
+                        <div class="result-desc">${escapeHtml(currentExam.title)}</div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat"><div class="num">${correctCount}</div><div class="label">正确</div></div>
+                        <div class="stat"><div class="num">${wrong}</div><div class="label">错误</div></div>
+                        <div class="stat"><div class="num">${total}</div><div class="label">总计</div></div>
+                    </div>
+                    <div class="section-stat">
+                        <h3>各单元正确率</h3>
+                        ${Object.values(sectionStats).map(s => `
+                            <div class="section-bar">
+                                <div class="name">${escapeHtml(s.name)}</div>
+                                <div class="track"><div class="fill" style="width:${Math.round(s.correct/s.total*100)}%"></div></div>
+                                <div class="pct">${Math.round(s.correct/s.total*100)}%</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn btn-primary" onclick="startExamById('${currentExam.importedAt}')">再做一次</button>
+                        <button class="btn btn-secondary" onclick="renderList()">真题列表</button>
+                    </div>
+                </div>
+            `;
+            saveHistory({ exam: currentExam, total, correct: correctCount, pct, sectionStats, date: new Date().toISOString() });
+        }
+
+        function startExamById(importedAt) {
+            const idx = exams.findIndex(e => e.importedAt === importedAt);
+            if (idx >= 0) startExam(idx);
+            else alert('真题未找到');
+        }
+
+        function scoreComment(pct) {
+            if (pct >= 90) return '优秀！';
+            if (pct >= 75) return '不错，继续巩固';
+            if (pct >= 60) return '及格，还有提升空间';
+            return '加油，多复习错题';
+        }
+
+        function saveHistory(record) {
+            const key = 'jlpt_exam_history';
+            const history = JSON.parse(localStorage.getItem(key) || '[]');
+            history.unshift(record);
+            localStorage.setItem(key, JSON.stringify(history.slice(0, 50)));
+        }
+
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+
+        function escapeHtml(str) {
+            if (str == null) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        init();
+    </script>
+</body>
+</html>

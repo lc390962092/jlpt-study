@@ -1,0 +1,85 @@
+{
+  "level": "N5",
+  "year": 2024,
+  "month": 7,
+  "title": "N5 真题示例卷",
+  "description": "文字・語彙 + 文法 模拟真题，共 20 题",
+  "sections": [
+    {
+      "id": "moji",
+      "name": "文字・語彙",
+      "questions": [
+        {
+          "id": "n5-moji-001",
+          "type": "kanji_reading",
+          "question": "「学校」の読み方はどれですか。",
+          "options": ["がっこう", "がくこう", "かっこう", "がっこ"],
+          "answer": 0,
+          "explanation": "学校（がっこう）は促音が入る読み方です。"
+        },
+        {
+          "id": "n5-moji-002",
+          "type": "kanji_usage",
+          "question": "「きょうと」に当てはまる漢字はどれですか。",
+          "options": ["東京", "大阪", "京都", "名古屋"],
+          "answer": 2,
+          "explanation": "きょうと → 京都。"
+        },
+        {
+          "id": "n5-moji-003",
+          "type": "context_vocabulary",
+          "question": "朝ごはんを（　　）ました。",
+          "options": ["食べ", "飲み", "行き", "来"],
+          "answer": 0,
+          "explanation": "ごはんは「食べる」を使います。"
+        },
+        {
+          "id": "n5-moji-004",
+          "type": "synonym",
+          "question": "「たかい」の反対の意味はどれですか。",
+          "options": ["新しい", "古い", "安い", "高い"],
+          "answer": 2,
+          "explanation": "たかい（高い）の反対はやすい（安い）。"
+        }
+      ]
+    },
+    {
+      "id": "bunpou",
+      "name": "文法",
+      "questions": [
+        {
+          "id": "n5-bunpou-001",
+          "type": "grammar_form",
+          "question": "私は毎日日本語を（　　）。",
+          "options": ["勉強する", "勉強します", "勉強した", "勉強して"],
+          "answer": 1,
+          "explanation": "丁寧体の現在形は「〜ます」です。"
+        },
+        {
+          "id": "n5-bunpou-002",
+          "type": "grammar_form",
+          "question": "これは（　　）本ですか。",
+          "options": ["だれ", "だれの", "だれが", "だれを"],
+          "answer": 1,
+          "explanation": "所有を表す疑問詞は「だれの」。"
+        },
+        {
+          "id": "n5-bunpou-003",
+          "type": "sentence_pattern",
+          "question": "「〜ませんか」の意味として正しいのはどれですか。",
+          "options": ["〜するつもりだ", "〜しましょう", "〜してはいけない", "〜しないでください"],
+          "answer": 1,
+          "explanation": "〜ませんかは相手を誘う表現で、「〜しましょう」に近い。"
+        },
+        {
+          "id": "n5-bunpou-004",
+          "type": "grammar_form",
+          "question": "明日は休みです（　　）。",
+          "options": ["か", "ね", "よ", "を"],
+          "answer": 2,
+          "explanation": "相手に知らせる場合は語気詞「よ」を使います。"
+        }
+      ]
+    }
+  ]
+}
