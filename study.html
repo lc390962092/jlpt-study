@@ -11,6 +11,7 @@
             background: #f5f7fa;
             color: #333;
             min-height: 100vh;
+            overflow-x: hidden;
         }
         .topbar {
             display: flex;
@@ -27,21 +28,61 @@
         .level-title { font-size: 18px; font-weight: bold; }
         .progress-info { font-size: 13px; color: #888; }
         .stage { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .settings-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .setting-label {
+            font-size: 14px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+        .setting-label input { cursor: pointer; width: 16px; height: 16px; }
+        .card-stack {
+            position: relative;
+            min-height: 400px;
+            margin-bottom: 20px;
+        }
         .card {
             background: white;
             border-radius: 24px;
             padding: 40px 25px;
             text-align: center;
             box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-            min-height: 360px;
+            min-height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.25s ease, opacity 0.25s ease;
             user-select: none;
+            position: relative;
+            width: 100%;
         }
+        .card.next {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0.92);
+            opacity: 0.4;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .card.current {
+            z-index: 1;
+        }
+        .card.sliding-left { transform: translateX(-120%) rotate(-8deg); opacity: 0; }
+        .card.sliding-right { transform: translateX(120%) rotate(8deg); opacity: 0; }
         .card:active { transform: scale(0.98); }
+        .card.next:active { transform: scale(0.92); }
         .word { font-size: 52px; font-weight: bold; margin-bottom: 12px; }
         .hint { font-size: 14px; color: #888; margin-top: 20px; }
         .back-face { display: none; }
@@ -126,6 +167,7 @@
         let words = [];
         let index = 0;
         let known = new Set();
+        let autoFlip = localStorage.getItem('jlpt_auto_flip') === 'true';
         let synth = window.speechSynthesis;
         let japaneseVoice = null;
 
@@ -154,9 +196,44 @@
         function loadProgress() {
             const saved = localStorage.getItem(`jlpt_progress_${level}`);
             if (saved) known = new Set(JSON.parse(saved));
+            autoFlip = localStorage.getItem('jlpt_auto_flip') === 'true';
         }
         function saveProgress() {
             localStorage.setItem(`jlpt_progress_${level}`, JSON.stringify([...known]));
+        }
+
+        function renderCardContent(w) {
+            return {
+                front: `
+                    <div class="word">${w.word}</div>
+                    <div class="accent">${w.pos} ${w.accent}</div>
+                    <div class="hint">点击卡片查看释义</div>
+                `,
+                back: `
+                    <div class="word">${w.word}</div>
+                    <div class="reading">${w.reading}</div>
+                    <div class="accent">${w.pos} ${w.accent}</div>
+                    <div class="meaning">${w.meaning}</div>
+                    ${w.sentence ? `
+                    <div class="sentence-box">
+                        <div class="sentence">${w.sentence}</div>
+                        <div class="sentence-reading">${w.sentence_reading}</div>
+                        <div class="sentence-meaning">${w.sentence_meaning}</div>
+                    </div>
+                    ` : ''}
+                `
+            };
+        }
+
+        function cardHtml(w, cls) {
+            const content = renderCardContent(w);
+            const flipped = autoFlip ? 'flipped' : '';
+            return `
+                <div class="card ${cls} ${flipped}" data-id="${w.id}">
+                    <div class="front-face">${content.front}</div>
+                    <div class="back-face">${content.back}</div>
+                </div>
+            `;
         }
 
         function render() {
@@ -176,28 +253,19 @@
                 return;
             }
             const w = words[index];
+            const nextW = words[index + 1];
             const isKnown = known.has(w.id);
             progressEl.textContent = `${index + 1} / ${words.length} · 已掌握 ${known.size}`;
             stageEl.innerHTML = `
-                <div class="card" id="card" onclick="flip()">
-                    <div class="front-face">
-                        <div class="word">${w.word}</div>
-                        <div class="accent">${w.pos} ${w.accent}</div>
-                        <div class="hint">点击卡片查看释义</div>
-                    </div>
-                    <div class="back-face">
-                        <div class="word">${w.word}</div>
-                        <div class="reading">${w.reading}</div>
-                        <div class="accent">${w.pos} ${w.accent}</div>
-                        <div class="meaning">${w.meaning}</div>
-                        ${w.sentence ? `
-                        <div class="sentence-box">
-                            <div class="sentence">${w.sentence}</div>
-                            <div class="sentence-reading">${w.sentence_reading}</div>
-                            <div class="sentence-meaning">${w.sentence_meaning}</div>
-                        </div>
-                        ` : ''}
-                    </div>
+                <div class="settings-bar">
+                    <label class="setting-label">
+                        <input type="checkbox" id="autoFlipCheck" ${autoFlip ? 'checked' : ''}>
+                        默认展开释义
+                    </label>
+                </div>
+                <div class="card-stack" id="cardStack">
+                    ${nextW ? cardHtml(nextW, 'next') : ''}
+                    ${cardHtml(w, 'current')}
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-word" onclick="event.stopPropagation(); speakWord()">🔊 读音</button>
@@ -209,10 +277,83 @@
                     <button class="nav-btn" onclick="next()">下一个 →</button>
                 </div>
             `;
+
+            const autoFlipCheck = document.getElementById('autoFlipCheck');
+            if (autoFlipCheck) {
+                autoFlipCheck.addEventListener('change', (e) => {
+                    autoFlip = e.target.checked;
+                    localStorage.setItem('jlpt_auto_flip', autoFlip ? 'true' : 'false');
+                    render();
+                });
+            }
+
+            setupCardClick();
+            setupSwipe();
+        }
+
+        function setupCardClick() {
+            const card = document.querySelector('#cardStack .card.current');
+            if (!card) return;
+            card.addEventListener('click', (e) => {
+                if (card.dataset.swiped === 'true') {
+                    card.dataset.swiped = 'false';
+                    return;
+                }
+                card.classList.toggle('flipped');
+            });
+        }
+
+        function setupSwipe() {
+            const card = document.querySelector('#cardStack .card.current');
+            if (!card) return;
+
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+
+            const onStart = (x) => {
+                startX = x;
+                currentX = x;
+                isDragging = true;
+                card.style.transition = 'none';
+                card.dataset.swiped = 'false';
+            };
+            const onMove = (x) => {
+                if (!isDragging) return;
+                currentX = x;
+                const dx = currentX - startX;
+                card.style.transform = `translateX(${dx}px) rotate(${dx * 0.03}deg)`;
+            };
+            const onEnd = () => {
+                if (!isDragging) return;
+                isDragging = false;
+                card.style.transition = '';
+                const dx = currentX - startX;
+                if (dx < -80) {
+                    card.dataset.swiped = 'true';
+                    card.classList.add('sliding-left');
+                    setTimeout(next, 250);
+                } else if (dx > 80) {
+                    card.dataset.swiped = 'true';
+                    card.classList.add('sliding-right');
+                    setTimeout(prev, 250);
+                } else {
+                    card.style.transform = '';
+                }
+            };
+
+            card.addEventListener('touchstart', (e) => onStart(e.touches[0].clientX), { passive: true });
+            card.addEventListener('touchmove', (e) => onMove(e.touches[0].clientX), { passive: true });
+            card.addEventListener('touchend', onEnd);
+
+            card.addEventListener('mousedown', (e) => onStart(e.clientX));
+            window.addEventListener('mousemove', (e) => onMove(e.clientX));
+            window.addEventListener('mouseup', onEnd);
         }
 
         function flip() {
-            document.getElementById('card').classList.toggle('flipped');
+            const card = document.querySelector('#cardStack .card.current');
+            if (card) card.classList.toggle('flipped');
         }
 
         function speakWord() {
