@@ -86,6 +86,9 @@
             box-shadow: 0 6px 18px rgba(102,126,234,0.3);
         }
         .start-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .quick-test-row { display: flex; gap: 10px; margin-top: 12px; }
+        .quick-test-row button { flex: 1; padding: 12px; border: 1px solid #667eea; border-radius: 12px; background: white; color: #667eea; font-size: 14px; font-weight: 500; cursor: pointer; }
+        .quick-test-row button:hover { background: #f8f9ff; }
 
         .quiz-top {
             display: flex;
@@ -115,7 +118,25 @@
             text-align: center;
             box-shadow: 0 8px 30px rgba(0,0,0,0.08);
             margin-bottom: 18px;
+            position: relative;
         }
+        .bookmark-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid #e5e7eb;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all .2s;
+        }
+        .bookmark-btn.active { background: #fef3c7; border-color: #f59e0b; }
         .q-type { font-size: 12px; color: #888; margin-bottom: 10px; }
         .q-main { font-size: 26px; font-weight: bold; line-height: 1.5; margin-bottom: 10px; word-break: break-word; }
         .q-sub { font-size: 15px; color: #667eea; }
@@ -177,10 +198,7 @@
             margin-top: 14px;
         }
 
-        .result-score {
-            text-align: center;
-            padding: 30px 0;
-        }
+        .result-score { text-align: center; padding: 30px 0; }
         .score-ring {
             width: 140px; height: 140px;
             border-radius: 50%;
@@ -200,32 +218,25 @@
         .score-label { position: relative; font-size: 12px; color: #888; }
         .result-title { font-size: 20px; font-weight: bold; margin-bottom: 6px; }
         .result-desc { font-size: 14px; color: #888; }
-        .stat-row {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin: 22px 0;
-        }
+        .stat-row { display: flex; justify-content: center; gap: 24px; margin: 22px 0; }
         .stat { text-align: center; }
         .stat .num { font-size: 22px; font-weight: bold; color: #333; }
         .stat .label { font-size: 12px; color: #888; }
-        .mistakes { margin-top: 22px; }
-        .mistakes h3 { font-size: 16px; margin-bottom: 12px; }
-        .mistake-item {
-            background: #f9fafb;
-            border-radius: 14px;
-            padding: 14px;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-        .mistake-item .q { font-weight: bold; color: #333; margin-bottom: 4px; }
-        .mistake-item .a { color: #22c55e; }
-        .mistake-item .y { color: #ef4444; text-decoration: line-through; }
+        .section-stat { margin-top: 20px; }
+        .section-stat h3 { font-size: 15px; margin-bottom: 12px; }
+        .section-bar { display: flex; align-items: center; margin-bottom: 10px; font-size: 13px; }
+        .section-bar .name { width: 90px; color: #555; }
+        .section-bar .track { flex: 1; height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
+        .section-bar .fill { height: 100%; background: #667eea; border-radius: 4px; transition: width .3s; }
+        .section-bar .pct { width: 40px; text-align: right; color: #888; }
+        .weak-point { background: #fef2f2; border-left: 4px solid #ef4444; padding: 12px 16px; border-radius: 12px; margin-top: 16px; }
+        .weak-point h4 { font-size: 14px; color: #b91c1c; margin-bottom: 8px; }
+        .weak-point ul { font-size: 13px; color: #555; padding-left: 18px; }
+        .weak-point li { margin-bottom: 4px; }
         .btn-row { display: flex; gap: 12px; margin-top: 22px; }
         .btn-row button { flex: 1; padding: 14px; border: none; border-radius: 14px; font-size: 15px; font-weight: 500; cursor: pointer; }
         .btn-primary { background: #667eea; color: white; }
         .btn-secondary { background: #f3f4f6; color: #555; }
-
         .msg { text-align: center; padding: 40px; color: #888; }
         .hidden { display: none; }
     </style>
@@ -249,6 +260,7 @@
 
         const LS_KEYS = {
             mistakes: (lv) => `jlpt_quiz_mistakes_${lv}`,
+            bookmarks: (lv) => `jlpt_quiz_bookmarks_${lv}`,
             history: (lv) => `jlpt_quiz_history_${lv}`,
             settings: () => `jlpt_quiz_settings`
         };
@@ -259,7 +271,7 @@
         let currentIdx = 0;
         let correctCount = 0;
         let answers = [];
-        let settings = { count: 20, scope: 'mixed', mistakesOnly: false };
+        let settings = { count: 20, scope: 'mixed', mistakesOnly: false, bookmarksOnly: false, order: 'random' };
 
         async function init() {
             const basePath = location.pathname.replace(/\/[^\/]*$/, '/');
@@ -292,7 +304,7 @@
             return raw ? JSON.parse(raw) : [];
         }
         function saveMistakes(list) {
-            localStorage.setItem(LS_KEYS.mistakes(level), JSON.stringify(list.slice(-100)));
+            localStorage.setItem(LS_KEYS.mistakes(level), JSON.stringify(list.slice(-200)));
         }
         function addMistake(q) {
             const list = getMistakes();
@@ -309,6 +321,28 @@
                 list.splice(idx, 1);
                 saveMistakes(list);
             }
+        }
+
+        function getBookmarks() {
+            const raw = localStorage.getItem(LS_KEYS.bookmarks(level));
+            return raw ? JSON.parse(raw) : [];
+        }
+        function saveBookmarks(list) {
+            localStorage.setItem(LS_KEYS.bookmarks(level), JSON.stringify(list.slice(-500)));
+        }
+        function isBookmarked(key) {
+            return getBookmarks().some(b => b.key === key);
+        }
+        function toggleBookmark(q) {
+            const list = getBookmarks();
+            const idx = list.findIndex(b => b.key === q.key);
+            if (idx >= 0) {
+                list.splice(idx, 1);
+            } else {
+                list.push({ key: q.key, type: q.type, data: q.data, correctText: q.options[q.answerIndex] });
+            }
+            saveBookmarks(list);
+            return idx < 0;
         }
 
         function randPick(arr, n, excludeSet) {
@@ -331,7 +365,7 @@
         }
 
         function makeWordQuestions(pool, count) {
-            const selected = shuffle(pool).slice(0, count);
+            const selected = settings.order === 'random' ? shuffle(pool).slice(0, count) : pool.slice(0, count);
             return selected.map(item => {
                 const isWordToMeaning = Math.random() < 0.5;
                 const correctText = isWordToMeaning ? item.meaning : item.word;
@@ -355,7 +389,7 @@
         }
 
         function makeGrammarQuestions(pool, count) {
-            const selected = shuffle(pool).slice(0, count);
+            const selected = settings.order === 'random' ? shuffle(pool).slice(0, count) : pool.slice(0, count);
             return selected.map(item => {
                 const r = Math.random();
                 let type, question, sub, correctText, distractorMap;
@@ -410,6 +444,20 @@
                 }
                 return shuffle(out);
             }
+            if (settings.bookmarksOnly) {
+                const bookmarks = getBookmarks();
+                const out = [];
+                for (const b of bookmarks) {
+                    if (b.type.startsWith('word_')) {
+                        const item = words.find(x => x.id === b.key);
+                        if (item) out.push(...makeWordQuestions([item], 1));
+                    } else {
+                        const item = grammars.find(x => x.id === b.key);
+                        if (item) out.push(...makeGrammarQuestions([item], 1));
+                    }
+                }
+                return shuffle(out);
+            }
 
             let q = [];
             if (settings.scope === 'words') {
@@ -429,10 +477,11 @@
 
         function renderSetup() {
             const mistakesCount = getMistakes().length;
+            const bookmarksCount = getBookmarks().length;
             stageEl.innerHTML = `
                 <div class="panel">
                     <h2>${level} 真题测试</h2>
-                    <div class="sub">词汇 ${words.length} 条 · 语法 ${grammars.length} 条 · 错题 ${mistakesCount} 条</div>
+                    <div class="sub">词汇 ${words.length} 条 · 语法 ${grammars.length} 条 · 错题 ${mistakesCount} 条 · 收藏 ${bookmarksCount} 条</div>
 
                     <div class="form-row">
                         <label class="form-label">题型</label>
@@ -453,13 +502,32 @@
                     </div>
 
                     <div class="form-row">
+                        <label class="form-label">顺序</label>
+                        <div class="option-group">
+                            <div class="option-chip ${settings.order === 'random' ? 'active' : ''}" data-order="random">随机</div>
+                            <div class="option-chip ${settings.order === 'sequential' ? 'active' : ''}" data-order="sequential">顺序</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
                         <div class="switch-row" id="mistakesToggle">
-                            <span>只练错题</span>
+                            <span>只练错题 (${mistakesCount})</span>
                             <div class="switch ${settings.mistakesOnly ? 'active' : ''}"></div>
                         </div>
                     </div>
 
+                    <div class="form-row">
+                        <div class="switch-row" id="bookmarksToggle">
+                            <span>只练收藏 (${bookmarksCount})</span>
+                            <div class="switch ${settings.bookmarksOnly ? 'active' : ''}"></div>
+                        </div>
+                    </div>
+
                     <button class="start-btn" id="startBtn">开始测试</button>
+                    <div class="quick-test-row">
+                        <button data-quick="10">10 题速测</button>
+                        <button data-quick="20">20 题速测</button>
+                    </div>
                 </div>
             `;
 
@@ -467,6 +535,7 @@
                 el.addEventListener('click', () => {
                     settings.scope = el.dataset.scope;
                     if (settings.mistakesOnly) settings.mistakesOnly = false;
+                    if (settings.bookmarksOnly) settings.bookmarksOnly = false;
                     saveSettings();
                     renderSetup();
                 });
@@ -478,10 +547,33 @@
                     renderSetup();
                 });
             });
+            document.querySelectorAll('[data-order]').forEach(el => {
+                el.addEventListener('click', () => {
+                    settings.order = el.dataset.order;
+                    saveSettings();
+                    renderSetup();
+                });
+            });
             document.getElementById('mistakesToggle').addEventListener('click', () => {
                 settings.mistakesOnly = !settings.mistakesOnly;
+                if (settings.mistakesOnly) settings.bookmarksOnly = false;
                 saveSettings();
                 renderSetup();
+            });
+            document.getElementById('bookmarksToggle').addEventListener('click', () => {
+                settings.bookmarksOnly = !settings.bookmarksOnly;
+                if (settings.bookmarksOnly) settings.mistakesOnly = false;
+                saveSettings();
+                renderSetup();
+            });
+            document.querySelectorAll('[data-quick]').forEach(el => {
+                el.addEventListener('click', () => {
+                    settings.count = parseInt(el.dataset.quick, 10);
+                    settings.mistakesOnly = false;
+                    settings.bookmarksOnly = false;
+                    saveSettings();
+                    startQuiz();
+                });
             });
             document.getElementById('startBtn').addEventListener('click', startQuiz);
         }
@@ -489,7 +581,9 @@
         function startQuiz() {
             questions = generateQuestions();
             if (!questions.length) {
-                alert(settings.mistakesOnly ? '暂无错题，先去学习吧！' : '题目生成失败，请检查数据。');
+                if (settings.mistakesOnly) alert('暂无错题，先去学习吧！');
+                else if (settings.bookmarksOnly) alert('暂无收藏，做题时长按收藏按钮添加。');
+                else alert('题目生成失败，请检查数据。');
                 return;
             }
             currentIdx = 0;
@@ -500,42 +594,47 @@
 
         function renderQuestion() {
             const q = questions[currentIdx];
-            const progress = ((currentIdx) / questions.length) * 100;
+            const total = questions.length;
+            const progress = ((currentIdx) / total) * 100;
+            const bookmarked = isBookmarked(q.key);
             stageEl.innerHTML = `
                 <div class="quiz-top">
-                    <span>第 ${currentIdx + 1} / ${questions.length} 题</span>
-                    <span>${q.type.includes('word') ? '词汇' : '语法'}</span>
+                    <span>${currentIdx + 1} / ${total}</span>
+                    <span>${typeLabel(q.type)}</span>
                 </div>
                 <div class="progress-track"><div class="progress-fill" style="width:${progress}%"></div></div>
                 <div class="question-card">
+                    <button class="bookmark-btn ${bookmarked ? 'active' : ''}" id="bookmarkBtn" title="收藏">${bookmarked ? '★' : '☆'}</button>
                     <div class="q-type">${typeLabel(q.type)}</div>
                     <div class="q-main">${escapeHtml(q.question)}</div>
                     ${q.sub ? `<div class="q-sub">${escapeHtml(q.sub)}</div>` : ''}
                 </div>
-                <div class="choices" id="choices"></div>
-                <div class="feedback hidden" id="feedback"></div>
+                <div class="choices" id="choices">
+                    ${q.options.map((opt, i) => `
+                        <div class="choice" data-idx="${i}">
+                            <span class="badge">${String.fromCharCode(65 + i)}</span>
+                            <span>${escapeHtml(opt)}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                <div id="feedback"></div>
                 <button class="next-btn hidden" id="nextBtn">下一题</button>
             `;
-
-            const choicesEl = document.getElementById('choices');
-            q.options.forEach((opt, i) => {
-                const btn = document.createElement('div');
-                btn.className = 'choice';
-                btn.innerHTML = `<div class="badge">${String.fromCharCode(65 + i)}</div><div>${escapeHtml(opt)}</div>`;
-                btn.addEventListener('click', () => selectOption(i));
-                choicesEl.appendChild(btn);
+            document.getElementById('bookmarkBtn').addEventListener('click', () => {
+                const now = toggleBookmark(q);
+                document.getElementById('bookmarkBtn').innerHTML = now ? '★' : '☆';
+                document.getElementById('bookmarkBtn').classList.toggle('active', now);
             });
-
+            document.querySelectorAll('.choice').forEach(el => {
+                el.addEventListener('click', () => selectOption(parseInt(el.dataset.idx)));
+            });
             document.getElementById('nextBtn').addEventListener('click', nextQuestion);
         }
 
         function typeLabel(type) {
             const map = {
-                word_meaning: '词汇：选择中文释义',
-                word_recognition: '词汇：选择日文词',
-                grammar_meaning: '语法：选择释义',
-                grammar_form: '语法：选择语法形式',
-                grammar_pattern: '语法：选择接续方式'
+                word_meaning: '词义选择', word_recognition: '看义选词',
+                grammar_meaning: '语法含义', grammar_pattern: '语法接续', grammar_form: '语法形式'
             };
             return map[type] || type;
         }
@@ -556,20 +655,20 @@
             } else {
                 addMistake(q);
             }
-            answers.push({ q, selected: idx, correct });
+            answers.push({ selected: idx, correct, q });
+            saveHistory();
 
             const fb = document.getElementById('feedback');
-            fb.className = `feedback ${correct ? 'correct' : 'wrong'}`;
             fb.innerHTML = `
-                <div class="feedback-title">${correct ? '✓ 回答正确' : '✗ 回答错误'}</div>
-                <div class="feedback-detail">${escapeHtml(q.explanation)}</div>
+                <div class="feedback ${correct ? 'correct' : 'wrong'}">
+                    <div class="feedback-title">${correct ? '回答正确！' : '回答错误'}</div>
+                    <div class="feedback-detail">
+                        正确答案：${escapeHtml(q.options[q.answerIndex])}<br>
+                        ${escapeHtml(q.explanation)}
+                    </div>
+                </div>
             `;
-            fb.classList.remove('hidden');
-
-            const nextBtn = document.getElementById('nextBtn');
-            nextBtn.textContent = currentIdx === questions.length - 1 ? '查看结果' : '下一题';
-            nextBtn.classList.remove('hidden');
-            nextBtn.focus();
+            document.getElementById('nextBtn').classList.remove('hidden');
         }
 
         function nextQuestion() {
@@ -581,81 +680,115 @@
             }
         }
 
+        function saveHistory() {
+            const key = LS_KEYS.history(level);
+            let history = [];
+            try { history = JSON.parse(localStorage.getItem(key)) || []; } catch { history = []; }
+            history.push({
+                time: Date.now(),
+                total: questions.length,
+                correct: correctCount,
+                answers: answers.map(a => ({ key: a.q.key, type: a.q.type, correct: a.correct }))
+            });
+            localStorage.setItem(key, JSON.stringify(history.slice(-50)));
+        }
+
         function renderResult() {
             const total = questions.length;
-            const wrong = total - correctCount;
             const pct = total ? Math.round((correctCount / total) * 100) : 0;
-            const deg = pct * 3.6;
             const mistakes = answers.filter(a => !a.correct);
+            const typeStats = {};
+            for (const a of answers) {
+                const t = a.q.type;
+                if (!typeStats[t]) typeStats[t] = { total: 0, correct: 0 };
+                typeStats[t].total++;
+                if (a.correct) typeStats[t].correct++;
+            }
+            // weak grammar points
+            const weakPoints = [];
+            for (const a of answers.filter(x => !x.correct && x.q.type.startsWith('grammar'))) {
+                const name = a.q.data.grammar || a.q.data.word;
+                if (name) weakPoints.push(name);
+            }
+            const topWeak = Object.entries(weakPoints.reduce((acc, cur) => { acc[cur] = (acc[cur] || 0) + 1; return acc; }, {}))
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 3)
+                .map(([name, count]) => `${name}（${count} 次）`);
 
             stageEl.innerHTML = `
                 <div class="panel">
                     <div class="result-score">
-                        <div class="score-ring" style="--score-deg:${deg}deg;">
+                        <div class="score-ring" style="--score-deg:${pct * 3.6}deg">
                             <div class="score-text">${pct}%</div>
                             <div class="score-label">正确率</div>
                         </div>
                         <div class="result-title">${scoreComment(pct)}</div>
-                        <div class="result-desc">${level} · ${settings.scope === 'mixed' ? '混合' : (settings.scope === 'words' ? '词汇' : '语法')} · 共 ${total} 题</div>
+                        <div class="result-desc">答对 ${correctCount} / ${total} 题</div>
                     </div>
                     <div class="stat-row">
+                        <div class="stat"><div class="num">${total}</div><div class="label">总题数</div></div>
                         <div class="stat"><div class="num">${correctCount}</div><div class="label">正确</div></div>
-                        <div class="stat"><div class="num">${wrong}</div><div class="label">错误</div></div>
-                        <div class="stat"><div class="num">${total}</div><div class="label">总计</div></div>
+                        <div class="stat"><div class="num">${total - correctCount}</div><div class="label">错误</div></div>
                     </div>
-                    ${mistakes.length ? `
-                    <div class="mistakes">
-                        <h3>错题回顾</h3>
-                        ${mistakes.slice(0, 20).map(a => `
-                            <div class="mistake-item">
-                                <div class="q">${escapeHtml(a.q.question)}</div>
-                                <div class="y">你的答案：${escapeHtml(a.q.options[a.selected])}</div>
-                                <div class="a">正确答案：${escapeHtml(a.q.options[a.q.answerIndex])}</div>
-                            </div>
-                        `).join('')}
-                    </div>
-                    ` : '<div class="msg" style="padding:20px;">🎉 全对！继续保持</div>'}
+                    ${topWeak.length ? `
+                    <div class="weak-point">
+                        <h4>薄弱语法点 TOP3</h4>
+                        <ul>${topWeak.map(w => `<li>${escapeHtml(w)}</li>`).join('')}</ul>
+                    </div>` : ''}
                     <div class="btn-row">
-                        <button class="btn-primary" onclick="restartQuiz()">再测一次</button>
-                        <button class="btn-secondary" onclick="reviewMistakes()">只练错题</button>
-                        <button class="btn-secondary" onclick="location.href='index.html'">返回首页</button>
+                        <button class="btn-primary" id="restartBtn">再做一次</button>
+                        <button class="btn-secondary" id="reviewBtn">查看错题</button>
+                    </div>
+                    <div class="btn-row" style="margin-top:12px;">
+                        <button class="btn-secondary" id="bookmarksBtn">查看收藏</button>
+                        <button class="btn-secondary" id="setupBtn">返回设置</button>
                     </div>
                 </div>
             `;
+            document.getElementById('restartBtn').addEventListener('click', () => { currentIdx = 0; correctCount = 0; answers = []; questions = generateQuestions(); renderQuestion(); });
+            document.getElementById('reviewBtn').addEventListener('click', () => reviewMistakes(mistakes));
+            document.getElementById('bookmarksBtn').addEventListener('click', () => {
+                settings.bookmarksOnly = true;
+                settings.mistakesOnly = false;
+                saveSettings();
+                startQuiz();
+            });
+            document.getElementById('setupBtn').addEventListener('click', renderSetup);
+        }
 
-            const history = JSON.parse(localStorage.getItem(LS_KEYS.history(level)) || '[]');
-            history.unshift({ date: new Date().toISOString(), level, scope: settings.scope, total, correct: correctCount, pct });
-            localStorage.setItem(LS_KEYS.history(level), JSON.stringify(history.slice(0, 20)));
+        function reviewMistakes(mistakes) {
+            if (!mistakes.length) {
+                stageEl.innerHTML = `<div class="panel"><div class="msg">没有错题，太棒了！</div><button class="start-btn" id="backBtn">返回</button></div>`;
+                document.getElementById('backBtn').addEventListener('click', renderResult);
+                return;
+            }
+            stageEl.innerHTML = `
+                <div class="panel">
+                    <h2>错题回顾</h2>
+                    <div class="sub">共 ${mistakes.length} 题</div>
+                    ${mistakes.map(a => `
+                        <div class="review-item">
+                            <div class="rev-q">${escapeHtml(a.q.question)}</div>
+                            <div class="rev-ans">正确答案：<span class="right">${escapeHtml(a.q.options[a.q.answerIndex])}</span> · 你的答案：<span class="wrong">${escapeHtml(a.q.options[a.selected])}</span></div>
+                            <div class="rev-exp">${escapeHtml(a.q.explanation)}</div>
+                        </div>
+                    `).join('')}
+                    <button class="start-btn" id="backBtn">返回</button>
+                </div>
+            `;
+            document.getElementById('backBtn').addEventListener('click', renderResult);
         }
 
         function scoreComment(pct) {
-            if (pct >= 90) return '优秀！';
-            if (pct >= 75) return '不错，继续巩固';
-            if (pct >= 60) return '及格，还有提升空间';
-            return '加油，多复习错题';
-        }
-
-        function restartQuiz() {
-            currentIdx = 0;
-            correctCount = 0;
-            answers = [];
-            renderQuestion();
-        }
-
-        function reviewMistakes() {
-            settings.mistakesOnly = true;
-            saveSettings();
-            startQuiz();
+            if (pct >= 90) return ' excellent！继续保持';
+            if (pct >= 70) return ' 还不错，继续加油';
+            if (pct >= 50) return ' 有进步空间，针对错题复习';
+            return ' 别灰心，错题是最好的老师';
         }
 
         function escapeHtml(str) {
             if (str == null) return '';
-            return String(str)
-                .replace(/&/g, '&amp;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;')
-                .replace(/'/g, '&#039;');
+            return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         }
 
         init();

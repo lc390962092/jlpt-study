@@ -118,7 +118,23 @@
         .exam-actions button { flex: 1; }
         .empty-tip { text-align: center; padding: 40px; color: #888; font-size: 14px; }
 
-        /* 做题界面复用 quiz.html 样式 */
+        .dashboard-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .dash-card {
+            background: white;
+            border-radius: 16px;
+            padding: 14px 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .dash-card .num { font-size: 22px; font-weight: bold; color: #667eea; }
+        .dash-card .label { font-size: 12px; color: #888; margin-top: 4px; }
+        .dash-card .link { text-decoration: none; }
+
         .quiz-top {
             display: flex;
             align-items: center;
@@ -147,7 +163,25 @@
             text-align: center;
             box-shadow: 0 8px 30px rgba(0,0,0,0.08);
             margin-bottom: 18px;
+            position: relative;
         }
+        .bookmark-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid #e5e7eb;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all .2s;
+        }
+        .bookmark-btn.active { background: #fef3c7; border-color: #f59e0b; }
         .q-type { font-size: 12px; color: #888; margin-bottom: 10px; }
         .q-main { font-size: 22px; font-weight: bold; line-height: 1.6; margin-bottom: 10px; word-break: break-word; }
         .q-sub { font-size: 14px; color: #667eea; }
@@ -242,10 +276,17 @@
         .section-bar .track { flex: 1; height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
         .section-bar .fill { height: 100%; background: #667eea; border-radius: 4px; transition: width .3s; }
         .section-bar .pct { width: 40px; text-align: right; color: #888; }
-        .btn-row { display: flex; gap: 12px; margin-top: 22px; }
-        .btn-row button { flex: 1; }
-        .btn-row button.half { flex: 1; }
+        .btn-row { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+        .btn-row button { flex: 1; min-width: 120px; }
         .msg { text-align: center; padding: 40px; color: #888; }
+        .history-list { margin-top: 16px; }
+        .history-item {
+            background: white; border-radius: 16px; padding: 14px; margin-bottom: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center;
+        }
+        .history-item .title { font-size: 14px; font-weight: bold; color: #333; }
+        .history-item .meta { font-size: 12px; color: #888; margin-top: 4px; }
+        .history-item .pct { font-size: 18px; font-weight: bold; color: #667eea; }
 
         .review-list { margin-top: 18px; }
         .review-item {
@@ -278,6 +319,8 @@
     <script>
         const stageEl = document.getElementById('stage');
         const EXAMS_KEY = 'jlpt_imported_exams';
+        const BOOKMARKS_KEY = 'jlpt_exam_bookmarks';
+        const HISTORY_KEY = 'jlpt_exam_history';
 
         let exams = [];
         let currentExam = null;
@@ -285,10 +328,12 @@
         let currentIdx = 0;
         let correctCount = 0;
         let sectionStats = {};
-        let currentAnswers = []; // 记录每题作答：{ selected, correct, q }
+        let currentAnswers = [];
+        let currentBookmarks = [];
 
         function init() {
             loadExams();
+            loadBookmarks();
             renderList();
         }
 
@@ -299,15 +344,82 @@
         function saveExams() {
             localStorage.setItem(EXAMS_KEY, JSON.stringify(exams));
         }
+        function loadBookmarks() {
+            try { currentBookmarks = JSON.parse(localStorage.getItem(BOOKMARKS_KEY)) || []; }
+            catch { currentBookmarks = []; }
+        }
+        function saveBookmarks() {
+            localStorage.setItem(BOOKMARKS_KEY, JSON.stringify(currentBookmarks.slice(-500)));
+        }
+        function isBookmarked(q) {
+            return currentBookmarks.some(b => b.qid === q.id);
+        }
+        function toggleBookmark(q) {
+            const idx = currentBookmarks.findIndex(b => b.qid === q.id);
+            if (idx >= 0) {
+                currentBookmarks.splice(idx, 1);
+            } else {
+                currentBookmarks.push({
+                    qid: q.id,
+                    type: q.type,
+                    question: q.question,
+                    options: q.options,
+                    answer: q.answer,
+                    explanation: q.explanation || '',
+                    sectionName: q.sectionName || '',
+                    level: currentExam ? currentExam.level : '',
+                    examTitle: currentExam ? currentExam.title : '',
+                    createdAt: new Date().toISOString()
+                });
+            }
+            saveBookmarks();
+            return idx < 0;
+        }
 
         function renderList() {
+            const history = getHistory();
+            const recentHistory = history.slice(0, 5);
+            const totalDone = history.reduce((sum, h) => sum + h.total, 0);
+            const totalCorrect = history.reduce((sum, h) => sum + h.correct, 0);
+            const avgPct = totalDone ? Math.round((totalCorrect / totalDone) * 100) : 0;
+
             stageEl.innerHTML = `
+                <div class="dashboard-row">
+                    <a href="javascript:showBookmarks()" class="dash-card link">
+                        <div class="num">${currentBookmarks.length}</div>
+                        <div class="label">收藏</div>
+                    </a>
+                    <div class="dash-card">
+                        <div class="num">${totalDone}</div>
+                        <div class="label">做题</div>
+                    </div>
+                    <div class="dash-card">
+                        <div class="num">${avgPct}%</div>
+                        <div class="label">平均正确率</div>
+                    </div>
+                </div>
                 <div class="tab-row">
                     <div class="tab active" id="tabList">真题列表</div>
                     <div class="tab" id="tabImport">导入真题</div>
                 </div>
                 <div id="listPanel">
                     ${exams.length ? `<div class="exam-list">${exams.map((ex, i) => renderExamItem(ex, i)).join('')}</div>` : `<div class="empty-tip">暂无导入的真题<br>点击「导入真题」开始</div>`}
+                    ${history.length ? `
+                    <div class="panel" style="margin-top:20px;">
+                        <h2>最近练习</h2>
+                        <div class="history-list">
+                            ${recentHistory.map(h => `
+                                <div class="history-item">
+                                    <div>
+                                        <div class="title">${escapeHtml(h.examTitle || '练习')}</div>
+                                        <div class="meta">${formatDate(h.date)} · ${h.correct}/${h.total} 正确</div>
+                                    </div>
+                                    <div class="pct">${h.pct}%</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="btn btn-secondary" onclick="showStatistics()">查看完整统计</button>
+                    </div>` : ''}
                 </div>
                 <div id="importPanel" class="hidden">
                     <div class="panel">
@@ -491,7 +603,7 @@
 
         function startExam(idx) {
             currentExam = exams[idx];
-            currentQuestions = currentExam.sections.flatMap(s => s.questions);
+            currentQuestions = currentExam.sections.flatMap(s => s.questions.map(q => ({...q, sectionId: s.id, sectionName: s.name})));
             shuffle(currentQuestions);
             currentIdx = 0;
             correctCount = 0;
@@ -503,6 +615,7 @@
         function renderQuestion() {
             const q = currentQuestions[currentIdx];
             const progress = ((currentIdx) / currentQuestions.length) * 100;
+            const bookmarked = isBookmarked(q);
             stageEl.innerHTML = `
                 <div class="topbar" style="position:static;margin-bottom:15px;">
                     <a href="javascript:renderList()" class="back">← 退出</a>
@@ -515,6 +628,7 @@
                 </div>
                 <div class="progress-track"><div class="progress-fill" style="width:${progress}%"></div></div>
                 <div class="question-card">
+                    <button class="bookmark-btn ${bookmarked ? 'active' : ''}" id="bookmarkBtn" title="收藏">${bookmarked ? '★' : '☆'}</button>
                     <div class="q-type">${typeLabel(q.type)}</div>
                     <div class="q-main">${escapeHtml(q.question)}</div>
                     ${q.sub ? `<div class="q-sub">${escapeHtml(q.sub)}</div>` : ''}
@@ -523,6 +637,11 @@
                 <div class="feedback hidden" id="feedback"></div>
                 <button class="next-btn hidden" id="nextBtn">下一题</button>
             `;
+            document.getElementById('bookmarkBtn').addEventListener('click', () => {
+                const now = toggleBookmark(q);
+                document.getElementById('bookmarkBtn').innerHTML = now ? '★' : '☆';
+                document.getElementById('bookmarkBtn').classList.toggle('active', now);
+            });
             const choicesEl = document.getElementById('choices');
             q.options.forEach((opt, i) => {
                 const btn = document.createElement('div');
@@ -543,7 +662,11 @@
                 'context_vocabulary': '文脈語彙',
                 'synonym': '類義語・反対語',
                 'grammar_form': '文法形式',
-                'sentence_pattern': '文の文法'
+                'sentence_pattern': '文の文法',
+                'grammar_meaning': '语法含义',
+                'grammar_pattern': '语法接续',
+                'word_meaning': '词义选择',
+                'word_recognition': '看义选词'
             };
             return map[type] || type;
         }
@@ -683,52 +806,124 @@
             return '加油，多复习错题';
         }
 
+        function getHistory() {
+            try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+            catch { return []; }
+        }
         function saveHistory(record) {
-            const key = 'jlpt_exam_history';
-            const history = JSON.parse(localStorage.getItem(key) || '[]');
+            const history = getHistory();
             history.unshift(record);
-            localStorage.setItem(key, JSON.stringify(history.slice(0, 50)));
+            localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 50)));
         }
 
-        function renderResult() {
-            const total = currentQuestions.length;
-            const wrong = total - correctCount;
-            const pct = total ? Math.round((correctCount / total) * 100) : 0;
-            const deg = pct * 3.6;
+        function showBookmarks() {
+            loadBookmarks();
+            const list = currentBookmarks;
             stageEl.innerHTML = `
-                <div class="panel">
-                    <div class="result-score">
-                        <div class="score-ring" style="--score-deg:${deg}deg;">
-                            <div class="score-text">${pct}%</div>
-                            <div class="score-label">正确率</div>
-                        </div>
-                        <div class="result-title">${scoreComment(pct)}</div>
-                        <div class="result-desc">${escapeHtml(currentExam.title)}</div>
-                    </div>
-                    <div class="stat-row">
-                        <div class="stat"><div class="num">${correctCount}</div><div class="label">正确</div></div>
-                        <div class="stat"><div class="num">${wrong}</div><div class="label">错误</div></div>
-                        <div class="stat"><div class="num">${total}</div><div class="label">总计</div></div>
-                    </div>
-                    <div class="section-stat">
-                        <h3>各单元正确率</h3>
-                        ${Object.values(sectionStats).map(s => `
-                            <div class="section-bar">
-                                <div class="name">${escapeHtml(s.name)}</div>
-                                <div class="track"><div class="fill" style="width:${Math.round(s.correct/s.total*100)}%"></div></div>
-                                <div class="pct">${Math.round(s.correct/s.total*100)}%</div>
+                <div class="topbar" style="position:static;margin-bottom:15px;">
+                    <a href="javascript:renderList()" class="back">← 返回</a>
+                    <div class="level-title">我的收藏 (${list.length})</div>
+                    <div style="width:40px"></div>
+                </div>
+                <div class="review-filter">
+                    <button class="active" onclick="showBookmarks()">全部</button>
+                    <button class="btn-secondary" onclick="clearAllBookmarks()">清空收藏</button>
+                </div>
+                <div class="review-list">
+                    ${list.length ? list.map((b, i) => `
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div style="font-size:12px;color:#888;">${escapeHtml(b.examTitle || '')} · ${escapeHtml(typeLabel(b.type))}</div>
+                                <span class="tag" style="cursor:pointer;" onclick="removeBookmarkFromList('${b.qid}')">取消收藏</span>
                             </div>
-                        `).join('')}
-                    </div>
-                    <div class="btn-row">
-                        <button class="btn btn-primary" onclick="startExamById('${currentExam.importedAt}')">再做一次</button>
-                        <button class="btn btn-secondary" onclick="renderReview('wrong')">错题解析</button>
-                        <button class="btn btn-secondary" onclick="renderReview('all')">全部解析</button>
-                        <button class="btn btn-secondary" onclick="renderList()">真题列表</button>
-                    </div>
+                            <div class="rev-q">${escapeHtml(b.question)}</div>
+                            <div class="rev-ans">正确答案：<span class="right">${escapeHtml(b.options[b.answer])}</span></div>
+                            <div class="rev-exp">${escapeHtml(b.explanation)}</div>
+                        </div>
+                    `).join('') : '<div class="msg">暂无收藏题目</div>'}
                 </div>
             `;
-            saveHistory({ exam: currentExam, total, correct: correctCount, pct, sectionStats, answers: currentAnswers, date: new Date().toISOString() });
+        }
+
+        function removeBookmarkFromList(qid) {
+            currentBookmarks = currentBookmarks.filter(b => b.qid !== qid);
+            saveBookmarks();
+            showBookmarks();
+        }
+        function clearAllBookmarks() {
+            if (!confirm('确定清空所有收藏吗？')) return;
+            currentBookmarks = [];
+            saveBookmarks();
+            showBookmarks();
+        }
+
+        function showStatistics() {
+            const history = getHistory();
+            const totalDone = history.reduce((sum, h) => sum + h.total, 0);
+            const totalCorrect = history.reduce((sum, h) => sum + h.correct, 0);
+            const avgPct = totalDone ? Math.round((totalCorrect / totalDone) * 100) : 0;
+            const sessions = history.length;
+            const weakMap = {};
+            for (const h of history) {
+                for (const a of (h.answers || [])) {
+                    if (!a.correct) {
+                        const key = a.q.type || 'unknown';
+                        weakMap[key] = (weakMap[key] || 0) + 1;
+                    }
+                }
+            }
+            const weakList = Object.entries(weakMap).sort((a,b) => b[1]-a[1]).slice(0,5);
+            stageEl.innerHTML = `
+                <div class="topbar" style="position:static;margin-bottom:15px;">
+                    <a href="javascript:renderList()" class="back">← 返回</a>
+                    <div class="level-title">练习统计</div>
+                    <div style="width:40px"></div>
+                </div>
+                <div class="dashboard-row">
+                    <div class="dash-card"><div class="num">${sessions}</div><div class="label">练习次数</div></div>
+                    <div class="dash-card"><div class="num">${totalDone}</div><div class="label">总做题</div></div>
+                    <div class="dash-card"><div class="num">${avgPct}%</div><div class="label">总正确率</div></div>
+                </div>
+                <div class="panel" style="margin-bottom:16px;">
+                    <h2>薄弱点 TOP5</h2>
+                    ${weakList.length ? `<div class="section-stat" style="margin-top:12px;">
+                        ${weakList.map(([type, count]) => `
+                            <div class="section-bar">
+                                <div class="name">${escapeHtml(typeLabel(type))}</div>
+                                <div class="track"><div class="fill" style="width:100%;background:#ef4444;"></div></div>
+                                <div class="pct">${count} 错</div>
+                            </div>
+                        `).join('')}
+                    </div>` : '<div class="msg">还没有错题数据，继续练习吧！</div>'}
+                </div>
+                <div class="panel">
+                    <h2>历史记录</h2>
+                    <div class="history-list" style="margin-top:12px;">
+                        ${history.length ? history.map(h => `
+                            <div class="history-item">
+                                <div>
+                                    <div class="title">${escapeHtml(h.examTitle || '练习')}</div>
+                                    <div class="meta">${formatDate(h.date)} · ${h.correct}/${h.total} 正确</div>
+                                </div>
+                                <div class="pct">${h.pct}%</div>
+                            </div>
+                        `).join('') : '<div class="msg">暂无历史记录</div>'}
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top:16px;" onclick="clearHistory()">清空历史记录</button>
+            `;
+        }
+
+        function clearHistory() {
+            if (!confirm('确定清空所有练习历史吗？')) return;
+            localStorage.removeItem(HISTORY_KEY);
+            showStatistics();
+        }
+
+        function formatDate(iso) {
+            if (!iso) return '';
+            const d = new Date(iso);
+            return `${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}`;
         }
 
         function shuffle(arr) {

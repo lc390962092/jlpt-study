@@ -11,7 +11,7 @@
       "questions": [
         {
           "id": "OFFER_001",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "かばんが 多いですね。もち（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -20,11 +20,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_002",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "休み時間ですから、コーヒーを 入れ（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -33,11 +34,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_003",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "あついですから、まどを 開け（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -46,11 +48,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_004",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "へやが くらいですね。でんきを つけ（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -59,11 +62,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_005",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "あついですから、れいぼうを つけ（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -72,11 +76,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_006",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "さむいですから、まどを 閉め（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -85,11 +90,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_007",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "へやが きたないですから、そうじを し（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -98,11 +104,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_008",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "しごとが たいへんですから、てつだい（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -111,11 +118,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_009",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "きたない さらが 多いですから、さらを あらい（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -124,11 +132,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "OFFER_010",
-          "type": "ましょうか",
+          "type": "grammar_form",
           "question": "じゅぎょうが はじまりますから、ドアを しめ（　　　　）？",
           "options": [
             "ませんでしたか？",
@@ -137,11 +146,12 @@
             "ました？"
           ],
           "answer": 2,
-          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。"
+          "explanation": "「〜ましょうか」表示主动提议为对方做某事，常用于询问对方是否需要帮忙。",
+          "grammar_point": "ましょうか"
         },
         {
           "id": "PERM_001",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "くらいですから、でんきを つけ（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -150,11 +160,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_002",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "あついですから、れいぼうを つけ（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -163,11 +174,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_003",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "さむいですから、れいぼうを けし（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -176,11 +188,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_004",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "休み時間ですから、ドアを 開け（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -189,11 +202,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_005",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "あたまが いたいです。家に かえっ（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -202,11 +216,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于向对方请求许可，意为“可以做某事吗？”。"
+          "explanation": "「〜てもいいですか」用于向对方请求许可，意为“可以做某事吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_006",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "大切な でんわが 来ましたから、話し（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -215,11 +230,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_007",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "風が つよいですから、まどを 閉め（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -228,11 +244,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_008",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "明日は 休みですから、しゅくだいを しなく（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -241,11 +258,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_009",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "明日は 休みですから、学校に 行かなく（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -254,11 +272,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。"
+          "explanation": "「〜てもいいですか」用于征求许可，意为“可以……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PERM_010",
-          "type": "てもいいですか",
+          "type": "grammar_form",
           "question": "まだ たくさん ありますから、買わなく（　　　　）？",
           "options": [
             "てはいけませんか？",
@@ -267,11 +286,12 @@
             "てもいいですか？"
           ],
           "answer": 3,
-          "explanation": "「〜なくてもいいですか」用于请求不做某事的许可，意为“可以不……吗？”。"
+          "explanation": "「〜なくてもいいですか」用于请求不做某事的许可，意为“可以不……吗？”。",
+          "grammar_point": "てもいいですか"
         },
         {
           "id": "PROH_001",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "明日は しけんが ありますから、友だちと ゲームを し（　　　　）。",
           "options": [
             "てはいけません",
@@ -280,11 +300,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_002",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "お酒を 飲みましたから、うんてんし（　　　　）。",
           "options": [
             "てはいけません",
@@ -293,11 +314,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_003",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "あぶないですから、ここに 入っ（　　　　）。",
           "options": [
             "てはいけません",
@@ -306,11 +328,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_004",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "これは しけんですから、きょうかしょを 見（　　　　）。",
           "options": [
             "てはいけません",
@@ -319,11 +342,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_005",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "うんてんを していますから、スマホを つかっ（　　　　）。",
           "options": [
             "てはいけません",
@@ -332,11 +356,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_006",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "子どもですから、お酒を 買っ（　　　　）。",
           "options": [
             "てはいけません",
@@ -345,11 +370,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_007",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "としょかんですから、大きい こえで 話し（　　　　）。",
           "options": [
             "てはいけません",
@@ -358,11 +384,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_008",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "かいぎを していますから、食べものを 食べ（　　　　）。",
           "options": [
             "てはいけません",
@@ -371,11 +398,12 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_009",
-          "type": "てはいけません",
+          "type": "grammar_form",
           "question": "へやの 中で、たばこを すっ（　　　　）。",
           "options": [
             "てはいけません",
@@ -384,7 +412,8 @@
             "ましょうか"
           ],
           "answer": 0,
-          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。"
+          "explanation": "「〜てはいけません」表示禁止，意为“不可以……”。",
+          "grammar_point": "てはいけません"
         },
         {
           "id": "PROH_010",
@@ -401,7 +430,7 @@
         },
         {
           "id": "OBL_001",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "明日は じゅぎょうが ありますから、しゅくだいを し（　　　　）。",
           "options": [
             "なければいけません",
@@ -410,11 +439,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_002",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "明日は 雨ですから、かさを じゅんびし（　　　　）。",
           "options": [
             "なければいけません",
@@ -423,11 +453,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_003",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "大切な かいぎが ありますから、会社に 行か（　　　　）。",
           "options": [
             "なければいけません",
@@ -436,11 +467,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_004",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "明日は 早く おきますから、もう ね（　　　　）。",
           "options": [
             "なければいけません",
@@ -449,11 +481,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_005",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "日本に 行きますから、ひこうきの チケットを 買わ（　　　　）。",
           "options": [
             "なければいけません",
@@ -462,11 +495,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_006",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "りょこうに 行きますから、ホテルを よやくし（　　　　）。",
           "options": [
             "なければいけません",
@@ -475,11 +509,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_007",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "しけんが ありますから、べんきょうし（　　　　）。",
           "options": [
             "なければいけません",
@@ -488,11 +523,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_008",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "へやが きたないですから、そうじを し（　　　　）。",
           "options": [
             "なければいけません",
@@ -501,11 +537,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_009",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "明日は じゅぎょうが ありますから、早く おき（　　　　）。",
           "options": [
             "なければいけません",
@@ -514,11 +551,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "OBL_010",
-          "type": "なければいけません",
+          "type": "grammar_form",
           "question": "おなかが いたいですから、くすりを 飲ま（　　　　）。",
           "options": [
             "なければいけません",
@@ -527,11 +565,12 @@
             "てはいけません"
           ],
           "answer": 0,
-          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。"
+          "explanation": "「〜なければいけません」表示义务或必要性，意为“必须……”。",
+          "grammar_point": "なければいけません"
         },
         {
           "id": "STAR01",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿ ＿ ＿ ★ けします。",
           "options": [
             "でんき",
@@ -544,7 +583,7 @@
         },
         {
           "id": "STAR02",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "朝ごはんを ＿ ★、 学校 ＿ ＿。",
           "options": [
             "に",
@@ -557,7 +596,7 @@
         },
         {
           "id": "STAR03",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ★ 食べて、＿＿ ＿＿ ねます。",
           "options": [
             "おふろに",
@@ -570,7 +609,7 @@
         },
         {
           "id": "STAR04",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ＿＿ ★ ＿＿ べんきょうします。",
           "options": [
             "ながら",
@@ -583,7 +622,7 @@
         },
         {
           "id": "STAR05",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿ ★、 ＿ ＿。",
           "options": [
             "うちに",
@@ -596,7 +635,7 @@
         },
         {
           "id": "STAR06",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "この道を ＿ ★、 ＿ ＿ あります。",
           "options": [
             "はし",
@@ -609,7 +648,7 @@
         },
         {
           "id": "STAR07",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ＿＿ ＿＿ ★ です。",
           "options": [
             "としょかんで",
@@ -622,7 +661,7 @@
         },
         {
           "id": "STAR08",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ＿＿ ＿＿ ★ です。",
           "options": [
             "来週",
@@ -635,7 +674,7 @@
         },
         {
           "id": "STAR09",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ＿＿ ＿＿ ★ です。",
           "options": [
             "見て",
@@ -648,7 +687,7 @@
         },
         {
           "id": "STAR10",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "明日は休みです ＿ ＿ ★ ＿ です。",
           "options": [
             "から",
@@ -661,7 +700,7 @@
         },
         {
           "id": "STAR11",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "明日は じゅぎょうが あります ＿、 ＿ ★ ＿ 。",
           "options": [
             "早く",
@@ -674,7 +713,7 @@
         },
         {
           "id": "STAR12",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿ ＿ ★ ＿ 。",
           "options": [
             "行きましょう",
@@ -687,7 +726,7 @@
         },
         {
           "id": "STAR13",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "じゅぎょうが はじまります ＿、 ＿ ★ ＿ ましょうか？",
           "options": [
             "閉め",
@@ -700,7 +739,7 @@
         },
         {
           "id": "STAR14",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ＿＿ ＿＿ ★ です。",
           "options": [
             "日本",
@@ -713,7 +752,7 @@
         },
         {
           "id": "STAR15",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿ ＿ ★ ＿ 。",
           "options": [
             "たばこ",
@@ -726,7 +765,7 @@
         },
         {
           "id": "STAR16",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿ ＿ テレビ ＿ ★ います。",
           "options": [
             "見て",
@@ -739,7 +778,7 @@
         },
         {
           "id": "STAR17",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿ ＿ ★ ＿、 テレビを 見て、 ねます。",
           "options": [
             "を",
@@ -752,7 +791,7 @@
         },
         {
           "id": "STAR18",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "おふろに ★ ＿、 ごはん ＿ ＿。",
           "options": [
             "あとで",
@@ -765,7 +804,7 @@
         },
         {
           "id": "STAR19",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "＿＿ ＿＿ ＿＿ ★ 入ります。",
           "options": [
             "風",
@@ -778,7 +817,7 @@
         },
         {
           "id": "STAR20",
-          "type": "並び替え",
+          "type": "ordering",
           "question": "★ ＿、 ＿ ＿ 見ます。",
           "options": [
             "を",
@@ -791,7 +830,7 @@
         },
         {
           "id": "D_KOTOGA_001",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "日本に（　）ことがあります。",
           "options": [
             "行った",
@@ -800,11 +839,12 @@
             "行きます"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_002",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "日本の なっとうを（　）ことがあります。",
           "options": [
             "食べた",
@@ -813,11 +853,12 @@
             "食べます"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_003",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "スキーを（　）ことがあります。",
           "options": [
             "した",
@@ -826,11 +867,12 @@
             "しました"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_004",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "ひこうきに（　）ことがあります。",
           "options": [
             "のった",
@@ -839,11 +881,12 @@
             "のります"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_005",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "ふねに（　）ことがあります。",
           "options": [
             "のった",
@@ -852,11 +895,12 @@
             "のります"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_006",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "外国に（　）ことがあります。",
           "options": [
             "行った",
@@ -865,11 +909,12 @@
             "行きます"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_007",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "からてを（　）ことがあります。",
           "options": [
             "した",
@@ -878,11 +923,12 @@
             "しました"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_008",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "テニスを（　）ことがあります。",
           "options": [
             "した",
@@ -891,11 +937,12 @@
             "しました"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_009",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "けんどうを（　）ことがあります。",
           "options": [
             "した",
@@ -904,11 +951,12 @@
             "しました"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_KOTOGA_010",
-          "type": "ことがある",
+          "type": "grammar_form",
           "question": "すもうを（　）ことがあります。",
           "options": [
             "見た",
@@ -917,11 +965,12 @@
             "見ます"
           ],
           "answer": 0,
-          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。"
+          "explanation": "「〜たことがある」表示过去的经历，意为“曾经……”。",
+          "grammar_point": "ことがある"
         },
         {
           "id": "D_ATODE_001",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "しゅくだいを （　）あとで、お茶を 飲みます。",
           "options": [
             "した",
@@ -930,11 +979,12 @@
             "しました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_002",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "テレビを （　）あとで、ねます。",
           "options": [
             "見た",
@@ -943,11 +993,12 @@
             "見ました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_003",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "本を （　）あとで、テレビを 見ます。",
           "options": [
             "読んだ",
@@ -956,11 +1007,12 @@
             "読みました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_004",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "ごはんを （　）あとで、しごとを します。",
           "options": [
             "食べた",
@@ -969,11 +1021,12 @@
             "食べました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_005",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "お茶を （　）あとで、うんどうを します。",
           "options": [
             "飲んだ",
@@ -982,11 +1035,12 @@
             "飲みました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_006",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "うんどうを （　）あとで、シャワーを あびます。",
           "options": [
             "した",
@@ -995,11 +1049,12 @@
             "しました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_007",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "子どもと （　）あとで、りょうりを します。",
           "options": [
             "遊んだ",
@@ -1008,11 +1063,12 @@
             "遊びました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_008",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "えを （　）あとで、ごはんを つくります。",
           "options": [
             "かいた",
@@ -1021,11 +1077,12 @@
             "かきました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_009",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "少し （　）あとで、べんきょうを します。",
           "options": [
             "休んだ",
@@ -1034,11 +1091,12 @@
             "休みました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_ATODE_010",
-          "type": "あとで",
+          "type": "grammar_form",
           "question": "母を （　）あとで、まんがを 読みます。",
           "options": [
             "てつだった",
@@ -1047,11 +1105,12 @@
             "てつだいました"
           ],
           "answer": 0,
-          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。"
+          "explanation": "「〜たあとで」表示在某动作之后发生，动词用た形。",
+          "grammar_point": "あとで"
         },
         {
           "id": "D_MAENI_001",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "はを （　）前に、ごはんを 食べます。",
           "options": [
             "みがく",
@@ -1060,11 +1119,12 @@
             "みがかない"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_002",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "ごはんを （　）前に、りょうりを します。",
           "options": [
             "食べる",
@@ -1073,11 +1133,12 @@
             "食べない"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_003",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "しゅくだいを （　）前に、おんがくを 聞きます。",
           "options": [
             "する",
@@ -1086,11 +1147,12 @@
             "した"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_004",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "えいがを （　）前に、ごはんを つくります。",
           "options": [
             "見る",
@@ -1099,11 +1161,12 @@
             "見ました"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_005",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "おんがくを （　）前に、しゅくだいを します。",
           "options": [
             "聞く",
@@ -1112,11 +1175,12 @@
             "聞いた"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_006",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "デパートに （　）前に、シャワーを あびます。",
           "options": [
             "行く",
@@ -1125,11 +1189,12 @@
             "行きました"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_007",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "（　）前に、ヨガを します。",
           "options": [
             "ねる",
@@ -1138,11 +1203,12 @@
             "ねました"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_008",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "友だちと（　）前に、べんきょうを します。",
           "options": [
             "あそぶ",
@@ -1151,11 +1217,12 @@
             "あそびました"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_009",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "会社に（　）前に、コーヒーを 飲みます。",
           "options": [
             "行く",
@@ -1164,11 +1231,12 @@
             "行きました"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_MAENI_010",
-          "type": "前に",
+          "type": "grammar_form",
           "question": "シャワーを（　）前に、うんどうを します。",
           "options": [
             "あびる",
@@ -1177,11 +1245,12 @@
             "あびました"
           ],
           "answer": 0,
-          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。"
+          "explanation": "「〜前に」表示在某动作之前发生，动词用辞书形。",
+          "grammar_point": "前に"
         },
         {
           "id": "D_TEKUDASAI_001",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "へやが くらいですから、でんきを （　）ください。",
           "options": [
             "つけて",
@@ -1190,11 +1259,12 @@
             "つけない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_002",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "へやが あついですから、まどを （　）ください。",
           "options": [
             "開けて",
@@ -1203,11 +1273,12 @@
             "開けない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_003",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "外が うるさいですから、まどを （　）ください。",
           "options": [
             "閉めて",
@@ -1216,11 +1287,12 @@
             "閉めない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_004",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "へやが きたないですから、そうじを （　）ください。",
           "options": [
             "して",
@@ -1229,11 +1301,12 @@
             "しない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_005",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "すみません。もういちど、 （　）ください。",
           "options": [
             "言って",
@@ -1242,11 +1315,12 @@
             "言わない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词需用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词需用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_006",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "このかんじは 何ですか。 （　）ください。",
           "options": [
             "読んで",
@@ -1255,11 +1329,12 @@
             "読まない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_007",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "すみません。もう少し ゆっくり、 （　）ください。",
           "options": [
             "歩いて",
@@ -1268,11 +1343,12 @@
             "歩かない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词需用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词需用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_008",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "前が 見えません。 （　）ください。",
           "options": [
             "すわって",
@@ -1281,11 +1357,12 @@
             "すわらない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词需用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词需用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_009",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "すぐ 来ますから、ここで 少し、 （　）ください。",
           "options": [
             "まって",
@@ -1294,11 +1371,12 @@
             "またない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_TEKUDASAI_010",
-          "type": "てください",
+          "type": "grammar_form",
           "question": "じゅぎょうが おわりましたから、きょうしつのでんきを （　）ください。",
           "options": [
             "けして",
@@ -1307,11 +1385,12 @@
             "けさない"
           ],
           "answer": 0,
-          "explanation": "「〜てください」表示请求对方做某事，动词用て形。"
+          "explanation": "「〜てください」表示请求对方做某事，动词用て形。",
+          "grammar_point": "てください"
         },
         {
           "id": "D_NAIDEKUDASAI_001",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "前が 見えませんから、（　）ないでください。",
           "options": [
             "立つ",
@@ -1320,11 +1399,12 @@
             "立た"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词需用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词需用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_002",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "しけんですから、きょうかしょを （　）ないでください。",
           "options": [
             "見る",
@@ -1333,11 +1413,12 @@
             "見"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_003",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "体に よくないですから、たくさん お酒を （　）ないでください。",
           "options": [
             "飲む",
@@ -1346,11 +1427,12 @@
             "飲ま"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_004",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "ここは としょかんですから、大きい こえで （　）ないでください。",
           "options": [
             "話す",
@@ -1359,11 +1441,12 @@
             "話さ"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_005",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "すみませんから、たばこを （　）ないでください。",
           "options": [
             "すう",
@@ -1372,11 +1455,12 @@
             "すわ"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词需用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词需用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_006",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "いすが こわれていますから、（　）ないでください。",
           "options": [
             "すわる",
@@ -1385,11 +1469,12 @@
             "すわら"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_007",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "まだ つかっていますから、電気を （　）ないでください。",
           "options": [
             "けす",
@@ -1398,11 +1483,12 @@
             "けさ"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_008",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "風が つよいですから、まどを （　）ないでください。",
           "options": [
             "開ける",
@@ -1411,11 +1497,12 @@
             "開け"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_009",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "かいぎを していますから、へやに （　）ないでください。",
           "options": [
             "入る",
@@ -1424,11 +1511,12 @@
             "入ら"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_NAIDEKUDASAI_010",
-          "type": "ないでください",
+          "type": "grammar_form",
           "question": "今 そうじを していますから、（　）ないでください。",
           "options": [
             "つかう",
@@ -1437,11 +1525,12 @@
             "つかわ"
           ],
           "answer": 3,
-          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。"
+          "explanation": "「〜ないでください」表示请求对方不要做某事，动词用ない形。",
+          "grammar_point": "ないでください"
         },
         {
           "id": "D_TAHOUGAII_001",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "時間が もう おそいですから、もう（　）ほうがいいです。",
           "options": [
             "かえる",
@@ -1450,11 +1539,12 @@
             "かえりました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_002",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "とても つかれていますから、もう（　）ほうがいいです。",
           "options": [
             "かえる",
@@ -1463,11 +1553,12 @@
             "かえりました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_003",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "あたまが いたいですから、くすりを（　）ほうがいいです。",
           "options": [
             "飲む",
@@ -1476,11 +1567,12 @@
             "飲みました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_004",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "とても ねむいですから、もう（　）ほうがいいです。",
           "options": [
             "ねる",
@@ -1489,11 +1581,12 @@
             "ねました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_005",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "明日 はやく おきなければ いけませんから、もう（　）ほうがいいです。",
           "options": [
             "ねる",
@@ -1502,11 +1595,12 @@
             "ねました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_006",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "びょうきですから、よく（　）ほうがいいです。",
           "options": [
             "休む",
@@ -1515,11 +1609,12 @@
             "休みました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_007",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "明日 いそがしいですから、もう（　）ほうがいいです。",
           "options": [
             "休む",
@@ -1528,11 +1623,12 @@
             "休みました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_008",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "ねつが ありますから、くすりを（　）ほうがいいです。",
           "options": [
             "飲む",
@@ -1541,11 +1637,12 @@
             "飲みました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_009",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "そのいすは こわれていますから、このいすに（　）ほうがいいです。",
           "options": [
             "すわる",
@@ -1554,11 +1651,12 @@
             "すわりました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_TAHOUGAII_010",
-          "type": "たほうがいい",
+          "type": "grammar_form",
           "question": "今日は とても さむいですから、あついくつしたを（　）ほうがいいです。",
           "options": [
             "はく",
@@ -1567,11 +1665,12 @@
             "はきました"
           ],
           "answer": 1,
-          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。"
+          "explanation": "「〜たほうがいい」表示建议，意为“最好……（做过某事更好）”。",
+          "grammar_point": "たほうがいい"
         },
         {
           "id": "D_SUGIRU_001",
-          "type": "すぎる",
+          "type": "grammar_form",
           "question": "（　）すぎるから、しませんでした。",
           "options": [
             "高い",
@@ -1580,11 +1679,12 @@
             "高いです"
           ],
           "answer": 2,
-          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。"
+          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。",
+          "grammar_point": "すぎる"
         },
         {
           "id": "D_SUGIRU_002",
-          "type": "すぎる",
+          "type": "grammar_form",
           "question": "（　）すぎるから、しませんでした。",
           "options": [
             "むずかしい",
@@ -1593,11 +1693,12 @@
             "むずかしいです"
           ],
           "answer": 2,
-          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。"
+          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。",
+          "grammar_point": "すぎる"
         },
         {
           "id": "D_SUGIRU_003",
-          "type": "すぎる",
+          "type": "grammar_form",
           "question": "（　）すぎるから、しませんでした。",
           "options": [
             "うるさい",
@@ -1606,11 +1707,12 @@
             "うるさいです"
           ],
           "answer": 2,
-          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。"
+          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。",
+          "grammar_point": "すぎる"
         },
         {
           "id": "D_SUGIRU_004",
-          "type": "すぎる",
+          "type": "grammar_form",
           "question": "（　）すぎるから、しませんでした。",
           "options": [
             "きたない",
@@ -1619,11 +1721,12 @@
             "きたないです"
           ],
           "answer": 2,
-          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。"
+          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。",
+          "grammar_point": "すぎる"
         },
         {
           "id": "D_SUGIRU_005",
-          "type": "すぎる",
+          "type": "grammar_form",
           "question": "（　）すぎるから、しませんでした。",
           "options": [
             "ふべんだ",
@@ -1632,11 +1735,12 @@
             "ふべんです"
           ],
           "answer": 2,
-          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。"
+          "explanation": "「〜すぎる」表示过度、过分，意为“太……”。",
+          "grammar_point": "すぎる"
         },
         {
           "id": "D_TARITARI_001",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "週末は、そうじを（　）たり、べんきょうを（　）たりしています。",
           "options": [
             "し/し",
@@ -1645,11 +1749,12 @@
             "する/する"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_002",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "週末は、そうじを（　）たり、えいがを（　）たりしています。",
           "options": [
             "し/見",
@@ -1658,11 +1763,12 @@
             "する/見る"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_003",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "週末は、ゲームを（　）たり、おいしいものを（　）たりしています。",
           "options": [
             "し/食べ",
@@ -1671,11 +1777,12 @@
             "する/食べる"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_004",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "週末は、えいがを（　）たり、おいしいものを（　）たりしています。",
           "options": [
             "見/食べ",
@@ -1684,11 +1791,12 @@
             "見る/食べる"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_005",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "週末は、本を（　）だり、えいがを（　）たりしています。",
           "options": [
             "読ん/見",
@@ -1697,11 +1805,12 @@
             "読む/見る"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_006",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "休みは、子どもと（　）だり、車を（　）たりしています。",
           "options": [
             "あそん/あらっ",
@@ -1710,11 +1819,12 @@
             "あそぶ/あらう"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_007",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "休みは、ケーキを（　）たり、ピアノを（　）たりしています。",
           "options": [
             "つくっ/ひい",
@@ -1723,11 +1833,12 @@
             "つくる/ひく"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_008",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "土よう日は びじゆつかんに（　）たり、買いものを（　）たりしています。",
           "options": [
             "行っ/し",
@@ -1736,11 +1847,12 @@
             "行く/する"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_009",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "休みは 友だちに （　）たり、おいしいものを（　）たりしています。",
           "options": [
             "会っ/食べ",
@@ -1749,11 +1861,12 @@
             "会う/食べる"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_TARITARI_010",
-          "type": "たり",
+          "type": "grammar_form",
           "question": "日よう日に こうえんで （　）たり、（　）たりしています。",
           "options": [
             "歩い/はしっ",
@@ -1762,11 +1875,12 @@
             "歩く/はしる"
           ],
           "answer": 0,
-          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。"
+          "explanation": "「〜たり〜たりする」表示列举几个有代表性的动作，动词需用た形。",
+          "grammar_point": "たり"
         },
         {
           "id": "D_DEKIRU_001",
-          "type": "できる",
+          "type": "grammar_form",
           "question": "えいごを 話す ことが（　）。",
           "options": [
             "できます",
@@ -1775,11 +1889,12 @@
             "でしょう"
           ],
           "answer": 0,
-          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。"
+          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。",
+          "grammar_point": "できる"
         },
         {
           "id": "D_DEKIRU_002",
-          "type": "できる",
+          "type": "grammar_form",
           "question": "にほんごを 読む ことが（　）。",
           "options": [
             "できます",
@@ -1788,11 +1903,12 @@
             "でしょう"
           ],
           "answer": 0,
-          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。"
+          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。",
+          "grammar_point": "できる"
         },
         {
           "id": "D_DEKIRU_003",
-          "type": "できる",
+          "type": "grammar_form",
           "question": "車を うんてんする ことが（　）。",
           "options": [
             "できます",
@@ -1801,11 +1917,12 @@
             "でしょう"
           ],
           "answer": 0,
-          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。"
+          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。",
+          "grammar_point": "できる"
         },
         {
           "id": "D_DEKIRU_004",
-          "type": "できる",
+          "type": "grammar_form",
           "question": "ピアノを ひく ことが（　）。",
           "options": [
             "できます",
@@ -1814,11 +1931,12 @@
             "でしょう"
           ],
           "answer": 0,
-          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。"
+          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。",
+          "grammar_point": "できる"
         },
         {
           "id": "D_DEKIRU_005",
-          "type": "できる",
+          "type": "grammar_form",
           "question": "にほんごの えいがを 見る ことが（　）。",
           "options": [
             "できます",
@@ -1827,11 +1945,12 @@
             "でしょう"
           ],
           "answer": 0,
-          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。"
+          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。",
+          "grammar_point": "できる"
         },
         {
           "id": "D_DEKIRU_006",
-          "type": "できる",
+          "type": "grammar_form",
           "question": "りょうりを する ことが（　）。",
           "options": [
             "できます",
@@ -1840,11 +1959,12 @@
             "でしょう"
           ],
           "answer": 0,
-          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。"
+          "explanation": "「〜ことができます」表示能力或可能性，意为“会/能……”。",
+          "grammar_point": "できる"
         },
         {
           "id": "P_YA_001",
-          "type": "や",
+          "type": "grammar_form",
           "question": "くだもの（　　）やさい などを 買いました。",
           "options": [
             "や",
@@ -1853,11 +1973,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「や」用于列举部分事物，常与「など」搭配。"
+          "explanation": "「や」用于列举部分事物，常与「など」搭配。",
+          "grammar_point": "や"
         },
         {
           "id": "P_YA_002",
-          "type": "や",
+          "type": "grammar_form",
           "question": "魚（　　）肉 などを 買いました。",
           "options": [
             "や",
@@ -1866,11 +1987,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「や」用于列举部分事物，常与「など」搭配。"
+          "explanation": "「や」用于列举部分事物，常与「など」搭配。",
+          "grammar_point": "や"
         },
         {
           "id": "P_YA_003",
-          "type": "や",
+          "type": "grammar_form",
           "question": "えいが（　　）おんがく などが すきです。",
           "options": [
             "や",
@@ -1879,11 +2001,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「や」用于列举部分事物，常与「など」搭配。"
+          "explanation": "「や」用于列举部分事物，常与「など」搭配。",
+          "grammar_point": "や"
         },
         {
           "id": "P_YA_004",
-          "type": "や",
+          "type": "grammar_form",
           "question": "クッキー（　　）ケーキ などが すきです。",
           "options": [
             "や",
@@ -1892,11 +2015,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「や」用于列举部分事物，常与「など」搭配。"
+          "explanation": "「や」用于列举部分事物，常与「など」搭配。",
+          "grammar_point": "や"
         },
         {
           "id": "P_YA_005",
-          "type": "や",
+          "type": "grammar_form",
           "question": "しんぶん（　　）ざっし などが あります。",
           "options": [
             "や",
@@ -1905,11 +2029,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「や」表示列举部分事物，常与「など」搭配。"
+          "explanation": "「や」表示列举部分事物，常与「など」搭配。",
+          "grammar_point": "や"
         },
         {
           "id": "P_YA_006",
-          "type": "や",
+          "type": "grammar_form",
           "question": "スマホ（　　）さいふ などが あります。",
           "options": [
             "や",
@@ -1918,11 +2043,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「や」表示列举部分事物，常与「など」搭配。"
+          "explanation": "「や」表示列举部分事物，常与「など」搭配。",
+          "grammar_point": "や"
         },
         {
           "id": "P_WO_001",
-          "type": "を",
+          "type": "grammar_form",
           "question": "朝、おきてから、水（　　）飲みます。",
           "options": [
             "を",
@@ -1931,11 +2057,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。"
+          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。",
+          "grammar_point": "を"
         },
         {
           "id": "P_WO_002",
-          "type": "を",
+          "type": "grammar_form",
           "question": "今日、3時に、りんご（　　）食べました。",
           "options": [
             "を",
@@ -1944,11 +2071,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。"
+          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。",
+          "grammar_point": "を"
         },
         {
           "id": "P_WO_003",
-          "type": "を",
+          "type": "grammar_form",
           "question": "今から、しゅくだい（　　）します。",
           "options": [
             "を",
@@ -1957,11 +2085,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。"
+          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。",
+          "grammar_point": "を"
         },
         {
           "id": "P_WO_004",
-          "type": "を",
+          "type": "grammar_form",
           "question": "ねる前に、えいが（　　）見るつもりです。",
           "options": [
             "を",
@@ -1970,11 +2099,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。"
+          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。",
+          "grammar_point": "を"
         },
         {
           "id": "P_WO_005",
-          "type": "を",
+          "type": "grammar_form",
           "question": "毎日、会社で しごと（　　）しています。",
           "options": [
             "を",
@@ -1983,11 +2113,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。"
+          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。",
+          "grammar_point": "を"
         },
         {
           "id": "P_WO_006",
-          "type": "を",
+          "type": "grammar_form",
           "question": "あとで、でんわ（　　）しなければいけません。",
           "options": [
             "を",
@@ -1996,11 +2127,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。"
+          "explanation": "「を」用于提示动作的直接对象或移动经过的场所。",
+          "grammar_point": "を"
         },
         {
           "id": "P_DE_TOOL_001",
-          "type": "で",
+          "type": "grammar_form",
           "question": "バス（　　）学校に 行きます。",
           "options": [
             "で",
@@ -2009,11 +2141,12 @@
             "が"
           ],
           "answer": 0,
-          "explanation": "「で」用于表示交通工具、工具或手段。"
+          "explanation": "「で」用于表示交通工具、工具或手段。",
+          "grammar_point": "で"
         },
         {
           "id": "P_DE_TOOL_002",
-          "type": "で",
+          "type": "grammar_form",
           "question": "えんぴつ（　　）書きます。",
           "options": [
             "で",
@@ -2022,11 +2155,12 @@
             "が"
           ],
           "answer": 0,
-          "explanation": "「で」表示动作发生的场所、使用的交通工具或工具、手段、原因等。"
+          "explanation": "「で」表示动作发生的场所、使用的交通工具或工具、手段、原因等。",
+          "grammar_point": "で"
         },
         {
           "id": "P_DE_TOOL_003",
-          "type": "で",
+          "type": "grammar_form",
           "question": "スマホ（　　）でんわを します。",
           "options": [
             "で",
@@ -2035,11 +2169,12 @@
             "が"
           ],
           "answer": 0,
-          "explanation": "「で」用于表示交通工具、工具或手段。"
+          "explanation": "「で」用于表示交通工具、工具或手段。",
+          "grammar_point": "で"
         },
         {
           "id": "P_DE_TOOL_004",
-          "type": "で",
+          "type": "grammar_form",
           "question": "ひこうき（　　）日本へ 行きます。",
           "options": [
             "で",
@@ -2048,11 +2183,12 @@
             "が"
           ],
           "answer": 0,
-          "explanation": "「で」表示动作发生的场所、使用的交通工具或工具、手段、原因等。"
+          "explanation": "「で」表示动作发生的场所、使用的交通工具或工具、手段、原因等。",
+          "grammar_point": "で"
         },
         {
           "id": "P_DE_TOOL_005",
-          "type": "で",
+          "type": "grammar_form",
           "question": "タクシー（　　）家に もどります。",
           "options": [
             "で",
@@ -2061,11 +2197,12 @@
             "が"
           ],
           "answer": 0,
-          "explanation": "「で」用于表示交通工具、工具或手段。"
+          "explanation": "「で」用于表示交通工具、工具或手段。",
+          "grammar_point": "で"
         },
         {
           "id": "P_DE_TOOL_006",
-          "type": "で",
+          "type": "grammar_form",
           "question": "はさみ（　　）かみを 切ります。",
           "options": [
             "で",
@@ -2074,11 +2211,12 @@
             "が"
           ],
           "answer": 0,
-          "explanation": "「で」用于表示交通工具、工具或手段。"
+          "explanation": "「で」用于表示交通工具、工具或手段。",
+          "grammar_point": "で"
         },
         {
           "id": "P_NI_TIME_001",
-          "type": "に",
+          "type": "grammar_form",
           "question": "明日 12時（　　）友だちに 会います。",
           "options": [
             "に",
@@ -2087,11 +2225,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「に」用于表示具体的时间点。"
+          "explanation": "「に」用于表示具体的时间点。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_TIME_002",
-          "type": "に",
+          "type": "grammar_form",
           "question": "日ようび（　　）家で 休みます。",
           "options": [
             "に",
@@ -2100,11 +2239,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「に」用于表示具体的时间点。"
+          "explanation": "「に」用于表示具体的时间点。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_TIME_003",
-          "type": "に",
+          "type": "grammar_form",
           "question": "5月（　　）、友だちと りょこうが したいです。",
           "options": [
             "に",
@@ -2113,11 +2253,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「に」表示具体时间点、移动方向、动作对象、存在场所或动作的着落点。"
+          "explanation": "「に」表示具体时间点、移动方向、动作对象、存在场所或动作的着落点。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_TIME_004",
-          "type": "に",
+          "type": "grammar_form",
           "question": "6時（　　）、デパートの前で 友だちに 会います。",
           "options": [
             "に",
@@ -2126,11 +2267,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「に」用于表示具体的时间点。"
+          "explanation": "「に」用于表示具体的时间点。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_TIME_005",
-          "type": "に",
+          "type": "grammar_form",
           "question": "毎日 7時（　　） おきて、朝ごはんを 食べます。",
           "options": [
             "に",
@@ -2139,11 +2281,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「に」用于表示具体的时间点。"
+          "explanation": "「に」用于表示具体的时间点。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_TIME_006",
-          "type": "に",
+          "type": "grammar_form",
           "question": "父は まいばん 8時（　　）、うんどうを しています。",
           "options": [
             "に",
@@ -2152,11 +2295,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「に」用于表示具体的时间点。"
+          "explanation": "「に」用于表示具体的时间点。",
+          "grammar_point": "に"
         },
         {
           "id": "P_KARA_001",
-          "type": "から",
+          "type": "grammar_form",
           "question": "今日、えき（　　）家まで、歩きました。",
           "options": [
             "から",
@@ -2165,11 +2309,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「から」用于表示起点、原因或理由。"
+          "explanation": "「から」用于表示起点、原因或理由。",
+          "grammar_point": "から"
         },
         {
           "id": "P_KARA_002",
-          "type": "から",
+          "type": "grammar_form",
           "question": "学校（　　）こうえんまで、はしります。",
           "options": [
             "から",
@@ -2178,11 +2323,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「から」用于表示起点、原因或理由。"
+          "explanation": "「から」用于表示起点、原因或理由。",
+          "grammar_point": "から"
         },
         {
           "id": "P_KARA_003",
-          "type": "から",
+          "type": "grammar_form",
           "question": "家（　　）びょういんまで、バスで 行きます。",
           "options": [
             "から",
@@ -2191,11 +2337,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「から」用于表示起点、原因或理由。"
+          "explanation": "「から」用于表示起点、原因或理由。",
+          "grammar_point": "から"
         },
         {
           "id": "P_MADE_001",
-          "type": "まで",
+          "type": "grammar_form",
           "question": "スーパーから、家（　　）車で かえります。",
           "options": [
             "まで",
@@ -2204,11 +2351,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「まで」用于表示时间或空间的终点。"
+          "explanation": "「まで」用于表示时间或空间的终点。",
+          "grammar_point": "まで"
         },
         {
           "id": "P_MADE_002",
-          "type": "まで",
+          "type": "grammar_form",
           "question": "えきから くうこう（　　）ちかてつで 行きます。",
           "options": [
             "まで",
@@ -2217,11 +2365,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「まで」用于表示时间或空间的终点。"
+          "explanation": "「まで」用于表示时间或空间的终点。",
+          "grammar_point": "まで"
         },
         {
           "id": "P_MADE_003",
-          "type": "まで",
+          "type": "grammar_form",
           "question": "会社から レストラン（　　）歩いて 行きます。",
           "options": [
             "まで",
@@ -2230,11 +2379,12 @@
             "で"
           ],
           "answer": 0,
-          "explanation": "「まで」表示时间或空间的终点，意为“到……为止”。"
+          "explanation": "「まで」表示时间或空间的终点，意为“到……为止”。",
+          "grammar_point": "まで"
         },
         {
           "id": "P_NO_001",
-          "type": "の",
+          "type": "grammar_form",
           "question": "これは わたし（　　）かばんです。",
           "options": [
             "の",
@@ -2243,11 +2393,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「の」用于连接名词，表示所属、属性或名词化。"
+          "explanation": "「の」用于连接名词，表示所属、属性或名词化。",
+          "grammar_point": "の"
         },
         {
           "id": "P_NO_002",
-          "type": "の",
+          "type": "grammar_form",
           "question": "友だち（　　）家に あそびに 行きます。",
           "options": [
             "の",
@@ -2256,11 +2407,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「の」用于连接名词，表示所属、属性或名词化。"
+          "explanation": "「の」用于连接名词，表示所属、属性或名词化。",
+          "grammar_point": "の"
         },
         {
           "id": "P_NO_003",
-          "type": "の",
+          "type": "grammar_form",
           "question": "先生（　　）車は、大きいです。",
           "options": [
             "の",
@@ -2269,11 +2421,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「の」用于连接名词，表示所属、属性或名词化。"
+          "explanation": "「の」用于连接名词，表示所属、属性或名词化。",
+          "grammar_point": "の"
         },
         {
           "id": "P_NO_004",
-          "type": "の",
+          "type": "grammar_form",
           "question": "会社（　　）つくえは、とても べんりです。",
           "options": [
             "の",
@@ -2282,11 +2435,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「の」用于连接名词，表示所属、属性或名词化。"
+          "explanation": "「の」用于连接名词，表示所属、属性或名词化。",
+          "grammar_point": "の"
         },
         {
           "id": "P_NO_005",
-          "type": "の",
+          "type": "grammar_form",
           "question": "今日（　　）天気は 雨が ふっていて さむいです。",
           "options": [
             "の",
@@ -2295,11 +2449,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「の」用于连接名词，表示所属、属性或名词化。"
+          "explanation": "「の」用于连接名词，表示所属、属性或名词化。",
+          "grammar_point": "の"
         },
         {
           "id": "P_NO_006",
-          "type": "の",
+          "type": "grammar_form",
           "question": "学校（　　）しょくどうは 安くて おいしいです。",
           "options": [
             "の",
@@ -2308,11 +2463,12 @@
             "を"
           ],
           "answer": 0,
-          "explanation": "「の」用于连接名词，表示所属、属性或名词化。"
+          "explanation": "「の」用于连接名词，表示所属、属性或名词化。",
+          "grammar_point": "の"
         },
         {
           "id": "P_NI_DEST_001",
-          "type": "に",
+          "type": "grammar_form",
           "question": "毎日 バスで 学校（　　）行きます。",
           "options": [
             "の",
@@ -2321,11 +2477,12 @@
             "を"
           ],
           "answer": 1,
-          "explanation": "「に」用于表示移动的方向或目的地。"
+          "explanation": "「に」用于表示移动的方向或目的地。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_DEST_002",
-          "type": "に",
+          "type": "grammar_form",
           "question": "毎日 じてんしゃで 会社（　　）行きます。",
           "options": [
             "の",
@@ -2334,11 +2491,12 @@
             "を"
           ],
           "answer": 1,
-          "explanation": "「に」用于表示移动的方向或目的地。"
+          "explanation": "「に」用于表示移动的方向或目的地。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_DEST_003",
-          "type": "に",
+          "type": "grammar_form",
           "question": "きのう 夜11時に タクシーで、家（　　）かえりました。",
           "options": [
             "の",
@@ -2347,11 +2505,12 @@
             "を"
           ],
           "answer": 1,
-          "explanation": "「に」用于表示移动的方向或目的地。"
+          "explanation": "「に」用于表示移动的方向或目的地。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_DEST_004",
-          "type": "に",
+          "type": "grammar_form",
           "question": "毎週 木よう日に 車で、びょういん（　　）行きます。",
           "options": [
             "の",
@@ -2360,11 +2519,12 @@
             "を"
           ],
           "answer": 1,
-          "explanation": "「に」用于表示移动的方向或目的地。"
+          "explanation": "「に」用于表示移动的方向或目的地。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_DEST_005",
-          "type": "に",
+          "type": "grammar_form",
           "question": "くうこうから ちかてつで、となりの町（　　）行きます。",
           "options": [
             "の",
@@ -2373,11 +2533,12 @@
             "を"
           ],
           "answer": 1,
-          "explanation": "「に」用于表示移动的方向或目的地。"
+          "explanation": "「に」用于表示移动的方向或目的地。",
+          "grammar_point": "に"
         },
         {
           "id": "P_NI_DEST_006",
-          "type": "に",
+          "type": "grammar_form",
           "question": "先週 雪が ふりましたから、歩いて 家（　　）もどりました。",
           "options": [
             "の",
@@ -2386,11 +2547,12 @@
             "を"
           ],
           "answer": 1,
-          "explanation": "「に」用于表示移动的方向或目的地。"
+          "explanation": "「に」用于表示移动的方向或目的地。",
+          "grammar_point": "に"
         },
         {
           "id": "P_GA_001",
-          "type": "が",
+          "type": "grammar_form",
           "question": "きょうしつに、いすと つくえ（　　）、あります。",
           "options": [
             "が",
@@ -2399,11 +2561,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。"
+          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。",
+          "grammar_point": "が"
         },
         {
           "id": "P_GA_002",
-          "type": "が",
+          "type": "grammar_form",
           "question": "こうえんに、大きい木と きれいな花（　　）、あります。",
           "options": [
             "が",
@@ -2412,11 +2575,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。"
+          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。",
+          "grammar_point": "が"
         },
         {
           "id": "P_GA_003",
-          "type": "が",
+          "type": "grammar_form",
           "question": "びじゅつかんに きれいな絵と 古いもの（　　）、あります。",
           "options": [
             "が",
@@ -2425,11 +2589,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。"
+          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。",
+          "grammar_point": "が"
         },
         {
           "id": "P_GA_004",
-          "type": "が",
+          "type": "grammar_form",
           "question": "へやの中に、人（　　）たくさん いました。",
           "options": [
             "が",
@@ -2438,11 +2603,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。"
+          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。",
+          "grammar_point": "が"
         },
         {
           "id": "P_GA_005",
-          "type": "が",
+          "type": "grammar_form",
           "question": "庭に、とり（　　）たくさん 来ました。",
           "options": [
             "が",
@@ -2451,11 +2617,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。"
+          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。",
+          "grammar_point": "が"
         },
         {
           "id": "P_GA_006",
-          "type": "が",
+          "type": "grammar_form",
           "question": "きょうしつに、先生と 学生（　　）います。",
           "options": [
             "が",
@@ -2464,11 +2631,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。"
+          "explanation": "「が」用于提示存在句主语、能力/好恶对象或新信息。",
+          "grammar_point": "が"
         },
         {
           "id": "P_TO_001",
-          "type": "と",
+          "type": "grammar_form",
           "question": "朝7時に、水（　　）こうちゃを 飲みます。",
           "options": [
             "も",
@@ -2477,11 +2645,12 @@
             "と"
           ],
           "answer": 3,
-          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。"
+          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。",
+          "grammar_point": "と"
         },
         {
           "id": "P_TO_002",
-          "type": "と",
+          "type": "grammar_form",
           "question": "いつも 学校で、きょうかしょ（　　）ペンを つかいます。",
           "options": [
             "も",
@@ -2490,11 +2659,12 @@
             "と"
           ],
           "answer": 3,
-          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。"
+          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。",
+          "grammar_point": "と"
         },
         {
           "id": "P_TO_003",
-          "type": "と",
+          "type": "grammar_form",
           "question": "今日、スーパーで、パン（　　）ぎゅうにゅうを 買わなければいけません。",
           "options": [
             "も",
@@ -2503,11 +2673,12 @@
             "と"
           ],
           "answer": 3,
-          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。"
+          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。",
+          "grammar_point": "と"
         },
         {
           "id": "P_TO_004",
-          "type": "と",
+          "type": "grammar_form",
           "question": "きのうのひる12時に、母（　　）外で、ごはんを 食べました。",
           "options": [
             "や",
@@ -2516,11 +2687,12 @@
             "と"
           ],
           "answer": 3,
-          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。"
+          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。",
+          "grammar_point": "と"
         },
         {
           "id": "P_TO_005",
-          "type": "と",
+          "type": "grammar_form",
           "question": "週末、かぞく（　　）こうえんに 行きます。",
           "options": [
             "や",
@@ -2529,11 +2701,12 @@
             "と"
           ],
           "answer": 3,
-          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。"
+          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。",
+          "grammar_point": "と"
         },
         {
           "id": "P_TO_006",
-          "type": "と",
+          "type": "grammar_form",
           "question": "わたしのへやに、今、犬（　　）ねこが います。",
           "options": [
             "も",
@@ -2542,11 +2715,12 @@
             "と"
           ],
           "answer": 3,
-          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。"
+          "explanation": "「と」表示共同动作的伙伴、并列关系、引用内容或恒常条件。",
+          "grammar_point": "と"
         },
         {
           "id": "P_MO_001",
-          "type": "も",
+          "type": "grammar_form",
           "question": "わたしのへやで、ねこが ねています。ねこのとなりで、犬（　　）ねています。",
           "options": [
             "も",
@@ -2555,11 +2729,12 @@
             "や"
           ],
           "answer": 0,
-          "explanation": "「も」用于表示同类追加，意为“也”。"
+          "explanation": "「も」用于表示同类追加，意为“也”。",
+          "grammar_point": "も"
         },
         {
           "id": "P_MO_002",
-          "type": "も",
+          "type": "grammar_form",
           "question": "わたしの兄は、アイスクリームを 食べました。あとで、ケーキ（　　）食べました。",
           "options": [
             "も",
@@ -2568,11 +2743,12 @@
             "は"
           ],
           "answer": 0,
-          "explanation": "「も」用于表示同类追加，意为“也”。"
+          "explanation": "「も」用于表示同类追加，意为“也”。",
+          "grammar_point": "も"
         },
         {
           "id": "P_MO_003",
-          "type": "も",
+          "type": "grammar_form",
           "question": "来週、しけんが ありますから、今日、べんきょうします。明日（　　）べんきょう しなければいけません。",
           "options": [
             "も",
@@ -2581,11 +2757,12 @@
             "は"
           ],
           "answer": 0,
-          "explanation": "「も」用于表示同类追加，意为“也”。"
+          "explanation": "「も」用于表示同类追加，意为“也”。",
+          "grammar_point": "も"
         },
         {
           "id": "P_MO_004",
-          "type": "も",
+          "type": "grammar_form",
           "question": "今日、スーパーで、やさいと 肉を 買います。魚と たまご（　　）買わなければいけません。",
           "options": [
             "も",
@@ -2594,11 +2771,12 @@
             "は"
           ],
           "answer": 0,
-          "explanation": "「も」用于表示同类追加，意为“也”。"
+          "explanation": "「も」用于表示同类追加，意为“也”。",
+          "grammar_point": "も"
         },
         {
           "id": "P_MO_005",
-          "type": "も",
+          "type": "grammar_form",
           "question": "つくえの上に、しんぶんや スマホなどが あります。 そして、にほんごの 本（　　）あります。",
           "options": [
             "も",
@@ -2607,11 +2785,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「も」用于表示同类追加，意为“也”。"
+          "explanation": "「も」用于表示同类追加，意为“也”。",
+          "grammar_point": "も"
         },
         {
           "id": "P_MO_006",
-          "type": "も",
+          "type": "grammar_form",
           "question": "なつ休みに、りょこうが したいです。 そして、うんどう（　　）たくさん したいです。",
           "options": [
             "も",
@@ -2620,11 +2799,12 @@
             "と"
           ],
           "answer": 0,
-          "explanation": "「も」表示同类追加，意为“也”。"
+          "explanation": "「も」表示同类追加，意为“也”。",
+          "grammar_point": "も"
         },
         {
           "id": "E_YOTEI_001",
-          "type": "よてい",
+          "type": "grammar_form",
           "question": "来月、中国(ちゅうごく）に しゅっちょう(　　　）よていです。",
           "options": [
             "します",
@@ -2633,11 +2813,12 @@
             "する"
           ],
           "answer": 3,
-          "explanation": "「〜よていです」表示预定、计划。"
+          "explanation": "「〜よていです」表示预定、计划。",
+          "grammar_point": "よてい"
         },
         {
           "id": "E_YOTEI_002",
-          "type": "よてい",
+          "type": "grammar_form",
           "question": "今年の なつ休みに、友だちと 日本に (　　　）よていです。",
           "options": [
             "行きます",
@@ -2646,11 +2827,12 @@
             "行く"
           ],
           "answer": 3,
-          "explanation": "「〜よていです」表示预定、计划。"
+          "explanation": "「〜よていです」表示预定、计划。",
+          "grammar_point": "よてい"
         },
         {
           "id": "E_YOTEI_003",
-          "type": "よてい",
+          "type": "grammar_form",
           "question": "来週、学校で、しけんが（　　　）よていです。",
           "options": [
             "あります",
@@ -2659,11 +2841,12 @@
             "ある"
           ],
           "answer": 3,
-          "explanation": "「〜よていです」表示预定、计划。"
+          "explanation": "「〜よていです」表示预定、计划。",
+          "grammar_point": "よてい"
         },
         {
           "id": "E_YOTEI_004",
-          "type": "よてい",
+          "type": "grammar_form",
           "question": "来年、大学で にほんごを べんきょう（　　　）よていです。",
           "options": [
             "します",
@@ -2672,11 +2855,12 @@
             "しません"
           ],
           "answer": 1,
-          "explanation": "「〜よていです」表示预定、计划。"
+          "explanation": "「〜よていです」表示预定、计划。",
+          "grammar_point": "よてい"
         },
         {
           "id": "E_YOTEI_005",
-          "type": "よてい",
+          "type": "grammar_form",
           "question": "休みの (　　）を かぞくと かんがえて います。",
           "options": [
             "つもり",
@@ -2685,11 +2869,12 @@
             "しません"
           ],
           "answer": 1,
-          "explanation": "「〜よていです」表示预定、计划。"
+          "explanation": "「〜よていです」表示预定、计划。",
+          "grammar_point": "よてい"
         },
         {
           "id": "E_TSUMORI_001",
-          "type": "つもり",
+          "type": "grammar_form",
           "question": "週末は、友だちと オンラインゲームを（　　）つもりです。",
           "options": [
             "します",
@@ -2698,11 +2883,12 @@
             "する"
           ],
           "answer": 3,
-          "explanation": "「〜つもりです」表示计划或打算。"
+          "explanation": "「〜つもりです」表示计划或打算。",
+          "grammar_point": "つもり"
         },
         {
           "id": "E_TSUMORI_002",
-          "type": "つもり",
+          "type": "grammar_form",
           "question": "今日の 夜、レストランで、ごはんを（　　）つもりです。",
           "options": [
             "食べます",
@@ -2711,11 +2897,12 @@
             "食べる"
           ],
           "answer": 3,
-          "explanation": "「〜つもりです」表示计划或打算。"
+          "explanation": "「〜つもりです」表示计划或打算。",
+          "grammar_point": "つもり"
         },
         {
           "id": "E_TSUMORI_003",
-          "type": "つもり",
+          "type": "grammar_form",
           "question": "今日は 天気が いいですから、じてんしゃで、（　　）つもりです。",
           "options": [
             "行きます",
@@ -2724,11 +2911,12 @@
             "行く"
           ],
           "answer": 3,
-          "explanation": "「〜つもりです」表示计划或打算。"
+          "explanation": "「〜つもりです」表示计划或打算。",
+          "grammar_point": "つもり"
         },
         {
           "id": "E_TSUMORI_004",
-          "type": "つもり",
+          "type": "grammar_form",
           "question": "ふゆ休みに、スキーをしたり、にほんごの べんきょうを したり (　　）つもりです。",
           "options": [
             "します",
@@ -2737,11 +2925,12 @@
             "する"
           ],
           "answer": 3,
-          "explanation": "「〜つもりです」表示计划或打算。"
+          "explanation": "「〜つもりです」表示计划或打算。",
+          "grammar_point": "つもり"
         },
         {
           "id": "E_TSUMORI_005",
-          "type": "つもり",
+          "type": "grammar_form",
           "question": "日よう日に、びじゅつかんに、（　　）つもりです。",
           "options": [
             "行きます",
@@ -2750,11 +2939,12 @@
             "行く"
           ],
           "answer": 3,
-          "explanation": "「〜つもりです」表示计划或打算。"
+          "explanation": "「〜つもりです」表示计划或打算。",
+          "grammar_point": "つもり"
         },
         {
           "id": "E_DESHOU_001",
-          "type": "でしょう",
+          "type": "grammar_form",
           "question": "きのうは 雨でした。今日も 雨です。明日も 雨が (　　）でしょう。",
           "options": [
             "ふった",
@@ -2763,11 +2953,12 @@
             "ふり"
           ],
           "answer": 1,
-          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。"
+          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。",
+          "grammar_point": "でしょう"
         },
         {
           "id": "E_DESHOU_002",
-          "type": "でしょう",
+          "type": "grammar_form",
           "question": "毎日 さむいです。明日も (　　）でしょう。",
           "options": [
             "さむくない",
@@ -2776,11 +2967,12 @@
             "さむかった"
           ],
           "answer": 1,
-          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。"
+          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。",
+          "grammar_point": "でしょう"
         },
         {
           "id": "E_DESHOU_003",
-          "type": "でしょう",
+          "type": "grammar_form",
           "question": "毎日 あついです。明日も (　　　）でしょう。",
           "options": [
             "あつくない",
@@ -2789,11 +2981,12 @@
             "あつかった"
           ],
           "answer": 1,
-          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。"
+          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。",
+          "grammar_point": "でしょう"
         },
         {
           "id": "E_DESHOU_004",
-          "type": "でしょう",
+          "type": "grammar_form",
           "question": "毎日 くもって います。明日も くもり（　　　）。",
           "options": [
             "でした",
@@ -2802,11 +2995,12 @@
             "ました"
           ],
           "answer": 1,
-          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。"
+          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。",
+          "grammar_point": "でしょう"
         },
         {
           "id": "E_DESHOU_005",
-          "type": "でしょう",
+          "type": "grammar_form",
           "question": "きのうは とても 天気が よかったです。今日も とても いいです。明日も 天気が いい（　　　）。",
           "options": [
             "でした",
@@ -2815,11 +3009,12 @@
             "ました"
           ],
           "answer": 1,
-          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。"
+          "explanation": "「〜でしょう」表示推测，意为“大概……吧”。",
+          "grammar_point": "でしょう"
         },
         {
           "id": "E_TAI_001",
-          "type": "たい",
+          "type": "grammar_form",
           "question": "とても つかれています。すこし 休み（　　）。",
           "options": [
             "ました",
@@ -2828,11 +3023,12 @@
             "たかったです"
           ],
           "answer": 2,
-          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。"
+          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。",
+          "grammar_point": "たい"
         },
         {
           "id": "E_TAI_002",
-          "type": "たい",
+          "type": "grammar_form",
           "question": "とても あついです。水が 飲み（　　）。",
           "options": [
             "ました",
@@ -2841,11 +3037,12 @@
             "たかったです"
           ],
           "answer": 2,
-          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。"
+          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。",
+          "grammar_point": "たい"
         },
         {
           "id": "E_TAI_003",
-          "type": "たい",
+          "type": "grammar_form",
           "question": "おなかが すきました。ごはんが 食べ(　　）。",
           "options": [
             "ました",
@@ -2854,11 +3051,12 @@
             "たかったです"
           ],
           "answer": 2,
-          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。"
+          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。",
+          "grammar_point": "たい"
         },
         {
           "id": "E_TAI_004",
-          "type": "たい",
+          "type": "grammar_form",
           "question": "明日は いそがしいですから、朝6時に おき（　　）。",
           "options": [
             "ました",
@@ -2867,11 +3065,12 @@
             "たかったです"
           ],
           "answer": 2,
-          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。"
+          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。",
+          "grammar_point": "たい"
         },
         {
           "id": "E_TAI_005",
-          "type": "たい",
+          "type": "grammar_form",
           "question": "もう 時間が おそいです。はやく 家に かえり(　　）。",
           "options": [
             "ました",
@@ -2880,11 +3079,12 @@
             "たかったです"
           ],
           "answer": 2,
-          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。"
+          "explanation": "「〜たい」表示说话人的愿望，意为“想……”。",
+          "grammar_point": "たい"
         },
         {
           "id": "E_TEIRU_001",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "弟は、今、友だちと でんわで、話し(　　　）。",
           "options": [
             "でしょう",
@@ -2893,11 +3093,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_002",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "姉は、今、母と りょうりを し(　　　）。",
           "options": [
             "でしょう",
@@ -2906,11 +3107,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_003",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "わたしは、毎日、でんしゃで、学校に、行(　　　）。",
           "options": [
             "でしょう",
@@ -2919,11 +3121,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_004",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "わたしは、毎日、会社の しょくどうで、おひるごはんを 食べ(　　　)。",
           "options": [
             "でしょう",
@@ -2932,11 +3135,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_005",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "わたしは、水よう日に、にほんごクラスで、にほんごを なら(　　　)。",
           "options": [
             "でしょう",
@@ -2945,11 +3149,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_006",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "わたしの 友だちは、今、日本に すん(　　　)。",
           "options": [
             "でしょう",
@@ -2958,11 +3163,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_007",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "わたしは 今、父と 家で、えいがを 見(　　　)。",
           "options": [
             "でしょう",
@@ -2971,11 +3177,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_008",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "わたしは、けっこん し(　　　)。",
           "options": [
             "でしょう",
@@ -2984,11 +3191,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_009",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "妹は、へやで、おんがくを 聞い(　　　)。",
           "options": [
             "でしょう",
@@ -2997,11 +3205,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEIRU_010",
-          "type": "ている",
+          "type": "grammar_form",
           "question": "スーパーは、夜7時まで、 開い(　　　)。",
           "options": [
             "でしょう",
@@ -3010,11 +3219,12 @@
             "です"
           ],
           "answer": 2,
-          "explanation": "「〜ています」表示动作正在进行或状态持续。"
+          "explanation": "「〜ています」表示动作正在进行或状态持续。",
+          "grammar_point": "ている"
         },
         {
           "id": "E_TEKARA_001",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "ごはんを 食べ(　　　)、えいがを 見ます。",
           "options": [
             "から",
@@ -3023,11 +3233,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_002",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "朝、おき(　　　)、コーヒーを 飲みます。",
           "options": [
             "から",
@@ -3036,11 +3247,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_003",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "家に かえっ(　　　)、シャワーを あびます。",
           "options": [
             "から",
@@ -3049,11 +3261,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_004",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "本を 読ん(　　　)、友だちに でんわを かけます。",
           "options": [
             "から",
@@ -3062,11 +3275,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_005",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "犬と あそん(　　　)、そうじを します。",
           "options": [
             "から",
@@ -3075,11 +3289,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_006",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "シャワーを あび(　　　)、ねました。",
           "options": [
             "から",
@@ -3088,11 +3303,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_007",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "しゅくだいを し(　　　)、買いものに 行きました。",
           "options": [
             "から",
@@ -3101,11 +3317,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_008",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "お茶を 飲ん(　　　)、しごとを しました。",
           "options": [
             "から",
@@ -3114,11 +3331,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_009",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "まんがを 読ん(　　　)、ケーキを 食べました。",
           "options": [
             "から",
@@ -3127,11 +3345,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_TEKARA_010",
-          "type": "てから",
+          "type": "grammar_form",
           "question": "子どもと あそん(　　　)、ごはんを つくりました。",
           "options": [
             "から",
@@ -3140,11 +3359,12 @@
             "でしたから"
           ],
           "answer": 1,
-          "explanation": "「〜てから」表示一个动作完成之后。"
+          "explanation": "「〜てから」表示一个动作完成之后。",
+          "grammar_point": "てから"
         },
         {
           "id": "E_NAGARA_001",
-          "type": "ながら",
+          "type": "grammar_form",
           "question": "おんがくを 聞き(　　　)、まんがを 読みます。",
           "options": [
             "ます",
@@ -3153,11 +3373,12 @@
             "とき"
           ],
           "answer": 1,
-          "explanation": "「〜ながら」表示两个动作同时进行。"
+          "explanation": "「〜ながら」表示两个动作同时进行。",
+          "grammar_point": "ながら"
         },
         {
           "id": "E_NAGARA_002",
-          "type": "ながら",
+          "type": "grammar_form",
           "question": "おかしを 食べ(　　　)、えいがを 見ます。",
           "options": [
             "ます",
@@ -3166,11 +3387,12 @@
             "とき"
           ],
           "answer": 1,
-          "explanation": "「〜ながら」表示两个动作同时进行。"
+          "explanation": "「〜ながら」表示两个动作同时进行。",
+          "grammar_point": "ながら"
         },
         {
           "id": "E_NAGARA_003",
-          "type": "ながら",
+          "type": "grammar_form",
           "question": "うんてんを し(　　)、ラジオを 聞きます。",
           "options": [
             "ます",
@@ -3179,11 +3401,12 @@
             "とき"
           ],
           "answer": 1,
-          "explanation": "「〜ながら」表示两个动作同时进行。"
+          "explanation": "「〜ながら」表示两个动作同时进行。",
+          "grammar_point": "ながら"
         },
         {
           "id": "E_NAGARA_004",
-          "type": "ながら",
+          "type": "grammar_form",
           "question": "テレビを 見(　　　)、ごはんを 食べます。",
           "options": [
             "ます",
@@ -3192,11 +3415,12 @@
             "とき"
           ],
           "answer": 1,
-          "explanation": "「〜ながら」表示两个动作同时进行。"
+          "explanation": "「〜ながら」表示两个动作同时进行。",
+          "grammar_point": "ながら"
         },
         {
           "id": "E_NAGARA_005",
-          "type": "ながら",
+          "type": "grammar_form",
           "question": "スマホで 話し(　　　)、歩きます。",
           "options": [
             "ます",
@@ -3205,11 +3429,12 @@
             "とき"
           ],
           "answer": 1,
-          "explanation": "「〜ながら」表示两个动作同时进行。"
+          "explanation": "「〜ながら」表示两个动作同时进行。",
+          "grammar_point": "ながら"
         },
         {
           "id": "AP_001",
-          "type": "から・あとで・ましょう",
+          "type": "grammar_form",
           "question": "まりさんへ \n\n  きのうは びょういんに 行きました。\nあたまが いたかったです（A）、\nくすりを 飲みました。\nびょういんの（B）、えきの ちかくで コーヒーを 飲みました。\nよかったら、こんど また 話し（C）。\n\nミナ",
           "options": [
             "Aから・Bあとで・Cましょう",
@@ -3217,11 +3442,12 @@
             "Aから・Bあとで・Cません"
           ],
           "answer": 0,
-          "explanation": "文中A处描述过去发生的事情，用「ありました」；B处邀请对方一起吃饭，用「〜ませんか」；C处提议一起去咖啡馆，用「〜ましょう」。"
+          "explanation": "文中A处描述过去发生的事情，用「ありました」；B处邀请对方一起吃饭，用「〜ませんか」；C处提议一起去咖啡馆，用「〜ましょう」。",
+          "grammar_point": "から・あとで・ましょう"
         },
         {
           "id": "AP_002",
-          "type": "でも・ながら・い形容詞過去",
+          "type": "grammar_form",
           "question": "今日のあさ、雨が ふって いました。（A）、家を 出る とき、はれて いました。\nそれで、えきまで 歩いて 行きました。\nえきの ちかくで、友だちに 会いました。\nコーヒーを 飲み（B）、いろいろな ことを 話しました。\nつかれて いましたが、とても（C）。",
           "options": [
             "Aでも・Bながら・Cたのしかったです",
@@ -3229,11 +3455,12 @@
             "Aでも・Bまして・Cたのしかったです"
           ],
           "answer": 0,
-          "explanation": "A处说明过去存在很多工作，用「ありました」；B处连接「買いものをして」与「行きました」，用「て」表示动作的先后；C处表示吃完饭之后睡觉，用「〜たあとで」。"
+          "explanation": "A处说明过去存在很多工作，用「ありました」；B处连接「買いものをして」与「行きました」，用「て」表示动作的先后；C处表示吃完饭之后睡觉，用「〜たあとで」。",
+          "grammar_point": "でも・ながら・い形容詞過去"
         },
         {
           "id": "AP_003",
-          "type": "から・それで・で",
+          "type": "grammar_form",
           "question": "ゆかさんへ \n\n  ゆかさん、げんきですか。\nわたしは 今日、会社へ 行きました。でも、えきで じこが ありました（A）、でんしゃが 来ませんでした。（B）、タクシーで 会社へ 行きました。しごとは いそがしかったですが、じょうずに できました。\n明日は 休みですから、うちで ゆっくり します。\nよかったら、こんど オンライン（C）、話しませんか。\n\nミナ",
           "options": [
             "Aから・Bそれで・Cで",
@@ -3241,11 +3468,12 @@
             "Aから・Bそれから・Cで"
           ],
           "answer": 0,
-          "explanation": "A处描述今天很忙的过去状态，用い形容詞过去形「かったです」；B处表示在车站附近看到面包店，用「で」表示场所；C处说明因为看起来很美味所以明天想吃，用「から」表示原因。"
+          "explanation": "A处描述今天很忙的过去状态，用い形容詞过去形「かったです」；B处表示在车站附近看到面包店，用「で」表示场所；C处说明因为看起来很美味所以明天想吃，用「から」表示原因。",
+          "grammar_point": "から・それで・で"
         },
         {
           "id": "AP_004",
-          "type": "で・から・て形",
+          "type": "grammar_form",
           "question": "今日は 友だちと 買いものに 行きました。スーパーで いろいろな ものを 買いました。\nたとえば、りんごや パンを 買いました。\nそのあと、こうえん（A）、コーヒーを 飲みました。\nでも、雨が ふって きました（B）、はやく かえりました。\n家に かえった あとで、テレビを（C）、休みました。",
           "options": [
             "Aで・Bから・C見て",
@@ -3253,11 +3481,12 @@
             "Aで・Bから・C見ました"
           ],
           "answer": 0,
-          "explanation": "A处用「から」表示头疼的原因；B处表示离开医院之后喝咖啡，用「〜たあとで」；C处提议再聊天，用「〜ましょう」。"
+          "explanation": "A处用「から」表示头疼的原因；B处表示离开医院之后喝咖啡，用「〜たあとで」；C处提议再聊天，用「〜ましょう」。",
+          "grammar_point": "で・から・て形"
         },
         {
           "id": "AP_005",
-          "type": "たり〜たり・です",
+          "type": "grammar_form",
           "question": "ゆりさんへ \n\n  ゆりさん、げんきですか。\nわたしは 今日、友だちの たんじょうびの パーティーに 行きました。\nおいしい ものが たくさん（A）。\nたとえば、ケーキや ジュースなどです。\nみんなで うたを うた（B）、えいがを 見（B）しました。\nとても たのしかったです。\n明日は 休みですから、うれしい（C）。\nよかったら、えきで 会いましょう。\n\nミナ",
           "options": [
             "Aありました・Bったり/たり・Cです",
@@ -3265,11 +3494,12 @@
             "Aありました・Bって/ったり・Cです"
           ],
           "answer": 0,
-          "explanation": "A处用「〜てから」表示洗完澡之后喝咖啡；B处用「が」表示转折（想吃披萨但没有）；C处用い形容詞否定过去形「くなかった」表示今天不太开心。"
+          "explanation": "A处用「〜てから」表示洗完澡之后喝咖啡；B处用「が」表示转折（想吃披萨但没有）；C处用い形容詞否定过去形「くなかった」表示今天不太开心。",
+          "grammar_point": "たり〜たり・です"
         },
         {
           "id": "AP_006",
-          "type": "てもいい・と・い形容詞（過去）",
+          "type": "grammar_form",
           "question": "今日は 先生に にほんごを おしえて もらいました。\n学校では、先生に たくさん しつもん（A）いいです。\n先生は とても しんせつです。\nそのあと、きょうしつで、友だち（B）たくさん べんきょうしました。\nとても むずかしかったですが、たのし（C）。\n夜は うちで、日本の えいがを 見て、ねました。",
           "options": [
             "Aしても・Bと・Cかったです",
@@ -3277,11 +3507,12 @@
             "Aしては・Bと・Cかったです"
           ],
           "answer": 0,
-          "explanation": "A处用「〜てから」表示吃完早饭后喝咖啡；B处用「が」表示转折；C处用「ながら」表示一边听音乐一边读书。"
+          "explanation": "A处用「〜てから」表示吃完早饭后喝咖啡；B处用「が」表示转折；C处用「ながら」表示一边听音乐一边读书。",
+          "grammar_point": "てもいい・と・い形容詞（過去）"
         },
         {
           "id": "AP_007",
-          "type": "で・てから・ましょう",
+          "type": "grammar_form",
           "question": "みさきさんへ \n\n  みさきさん、げんきですか。\nわたしは 今日、えきまで バス（A）行きました。\nとても こんで いました。それから、えきの ちかくで 友だちに 会いました。\nひるごはんを 食べて（B）、いっしょに えいがを 見ました。\nとても おもしろかったです。でも、すこし ねむかったです。\n明日は 休みです。よかったら、また 話し（C）。\n\nミナ",
           "options": [
             "Aで・Bから・Cましょう",
@@ -3289,11 +3520,12 @@
             "Aで・Bから・Cます"
           ],
           "answer": 0,
-          "explanation": "A处用「から」表示电车没来是因为事故；B处用「それで」引出结果；C处用「で」表示在线聊天的方式。"
+          "explanation": "A处用「から」表示电车没来是因为事故；B处用「それで」引出结果；C处用「で」表示在线聊天的方式。",
+          "grammar_point": "で・てから・ましょう"
         },
         {
           "id": "AP_008",
-          "type": "あります・て形・後で",
+          "type": "grammar_form",
           "question": "今日は 会社で たくさん しごとが（A）。\n朝、コーヒーを 飲んでから、でんしゃに のりました。\nとても いそがしかったですから、すこし つかれました。\nひるは 友だちと レストランで ごはんを 食べました。\nそのあと、スーパーへ 買いものを し（B）、行きました。\n肉が とても 高かったです。\nつかれて いましたから、ごはんを 食べた（C）、すぐに ねました。",
           "options": [
             "Aありました・Bに・Cあとで",
@@ -3301,11 +3533,12 @@
             "Aありました・Bて・Cから"
           ],
           "answer": 0,
-          "explanation": "A处用「から」表示生病所以请假；B处用「〜て」连接吃药和休息；C处用「〜てはいけません」表示因为身体不好不能外出。"
+          "explanation": "A处用「から」表示生病所以请假；B处用「〜て」连接吃药和休息；C处用「〜てはいけません」表示因为身体不好不能外出。",
+          "grammar_point": "あります・て形・後で"
         },
         {
           "id": "AP_009",
-          "type": "です・たり〜たり・たい",
+          "type": "grammar_form",
           "question": "ともこさんへ \n\n  ともこさん、げんきですか。\nわたしは 今日、海へ 行きました。\n天気が よかった（A）から、とても きれいでした。\n海で およい（B）、すなで あそん（B）しました。\nそれから、ちかくの 店で アイスを 食べました。\nあつかったですから、とても おいしかったです。\n今日は たくさん しゃしんを とりました。\nこんど、ともこさんに 見せ（C）。\n\nミナ",
           "options": [
             "Aです・Bだり・Cたいです",
@@ -3313,11 +3546,12 @@
             "Aです・Bだり・Cましょう"
           ],
           "answer": 0,
-          "explanation": "A处用「〜てもいい」表示在学校可以问老师问题；B处用「と」表示和朋友一起；C处用い形容詞过去形「かったです」表示过去很开心。"
+          "explanation": "A处用「〜てもいい」表示在学校可以问老师问题；B处用「と」表示和朋友一起；C处用い形容詞过去形「かったです」表示过去很开心。",
+          "grammar_point": "です・たり〜たり・たい"
         },
         {
           "id": "AP_010",
-          "type": "から・て形・てはいけません",
+          "type": "grammar_form",
           "question": "あやさんへ \n\n あやさん、げんきですか。\nわたしは きのうから ねつが あります。\n今日は びょうきです（A）、しごとを 休みました。\nそれで、くすりを（B）休みました。\nまだ よくないですから、外に 出ては（C）。\nよく なったら、また 会いましょう。\n\nミナ",
           "options": [
             "Aから・B飲んで・Cいけません",
@@ -3325,11 +3559,12 @@
             "Aから・B飲んだから・Cいいです"
           ],
           "answer": 0,
-          "explanation": "A处用「〜てから」表示准备完伞之后去学校；B处用「が」表示转折；C处用「たのしくありませんでした」表示过去否定。"
+          "explanation": "A处用「〜てから」表示准备完伞之后去学校；B处用「が」表示转折；C处用「たのしくありませんでした」表示过去否定。",
+          "grammar_point": "から・て形・てはいけません"
         },
         {
           "id": "AP_011",
-          "type": "から・が・い形容詞（否定過去）",
+          "type": "grammar_form",
           "question": "今日は 朝から さむかったです。\nシャワーを あびて（A）、あたたかい コーヒーを 飲みました。\nひるは 友だちと レストランに 行きました。\nピザを 食べたかったです（B）、ありませんでした。\n明日は 休みたいですから、うちに います。\n今日は あまり たのし（C）です。",
           "options": [
             "Aから・Bが・Cくなかった",
@@ -3337,11 +3572,12 @@
             "Aあとで・Bでも・Cくなかった"
           ],
           "answer": 0,
-          "explanation": "A处用「でも」表示转折（早上下雨，但出门时天晴了）；B处用「ながら」表示边喝咖啡边聊天；C处用い形容詞过去形「かったです」表示很开心。"
+          "explanation": "A处用「でも」表示转折（早上下雨，但出门时天晴了）；B处用「ながら」表示边喝咖啡边聊天；C处用い形容詞过去形「かったです」表示很开心。",
+          "grammar_point": "から・が・い形容詞（否定過去）"
         },
         {
           "id": "AP_012",
-          "type": "ながら・それで・ましょう",
+          "type": "grammar_form",
           "question": "りかさんへ \n\n  りかさん、げんきですか。\nわたしは 今、えきで でんしゃを まち（A）、この 手紙を 書いています。\n今日は 大切な しけんが あります。\n（B）、すこし しんぱいです。\nしけんの あと、いっしょに コーヒーを（C）。\nもし 時間が あったら、カフェに 行きませんか。\n\nミナ",
           "options": [
             "Aながら・Bそれで・C飲みましょう",
@@ -3349,11 +3585,12 @@
             "Aて・Bそれで・C飲みましょう"
           ],
           "answer": 0,
-          "explanation": "A处用「で」表示在公园喝咖啡的场所；B处用「から」表示因为下雨了所以要早点回去；C处用「〜て」连接看电视和休息两个动作。"
+          "explanation": "A处用「で」表示在公园喝咖啡的场所；B处用「から」表示因为下雨了所以要早点回去；C处用「〜て」连接看电视和休息两个动作。",
+          "grammar_point": "ながら・それで・ましょう"
         },
         {
           "id": "AP_013",
-          "type": "や・そして・ませんか",
+          "type": "grammar_form",
           "question": "今日は 朝から いそがしかったです。母と いっしょに いちばに 行きました。\nやさい（A）、魚（A）、肉などを 買いました。\n夜は うちで、りょうりを しました。\nとても たのしかったです。（B）、りょうりも おいしかったです。\n明日は ケーキを つくり（C）。",
           "options": [
             "Aや・Bそして・Cたいです",
@@ -3361,11 +3598,12 @@
             "Aや・Bでも・Cたいです"
           ],
           "answer": 0,
-          "explanation": "A处用「で」表示乘坐公交车；B处用「〜てから」表示吃完午饭后看电影；C处用「〜ましょう」提议聊天。"
+          "explanation": "A处用「で」表示乘坐公交车；B处用「〜てから」表示吃完午饭后看电影；C处用「〜ましょう」提议聊天。",
+          "grammar_point": "や・そして・ませんか"
         },
         {
           "id": "AP_014",
-          "type": "ありました・ませんか・ましょう",
+          "type": "grammar_form",
           "question": "りなさんへ \n\n  りなさん、げんきですか。\nわたしは 今日、会社で たくさん しごとが（A）。\nそれで、とても つかれました。\nひるは 外で パンを 食べました。\nでも、あまり おいしく ありませんでした。\n明日 いっしょに ごはんを 食べ（B）。\nおいしい カフェを しっています。\nよかったら、その カフェに 行き（C）。\n\nミナ",
           "options": [
             "Aありました・Bませんか・Cましょう",
@@ -3373,11 +3611,12 @@
             "Aありました・Bませんか・Cました"
           ],
           "answer": 0,
-          "explanation": "A处用「〜です」礼貌说明天气好；B处用「〜たり〜たり」列举游泳和玩沙子等动作；C处用「〜たい」表达想给朋友看照片的愿望。"
+          "explanation": "A处用「〜です」礼貌说明天气好；B处用「〜たり〜たり」列举游泳和玩沙子等动作；C处用「〜たい」表达想给朋友看照片的愿望。",
+          "grammar_point": "ありました・ませんか・ましょう"
         },
         {
           "id": "AP_015",
-          "type": "て形・が・い形容詞（否定過去）",
+          "type": "grammar_form",
           "question": "今日は 朝から 雨が ふって いました。\nそれで、かさを じゅんび（A）から、学校に 行きました。\nひるは 友だちと 外で ごはんを 食べました（B）、さむかったですから、すぐに 中に 入りました。\n夜は うちで テレビを 見て、はやく ねました。\n今日は あまり たのしく（C）。",
           "options": [
             "Aして・Bが・Cありませんでした",
@@ -3385,11 +3624,12 @@
             "Aした・Bので・Cなかったでした"
           ],
           "answer": 0,
-          "explanation": "A处用「ながら」表示一边等电车一边写信；B处用「それで」引出因此担心的心情；C处用「〜ましょう」提议一起喝咖啡。"
+          "explanation": "A处用「ながら」表示一边等电车一边写信；B处用「それで」引出因此担心的心情；C处用「〜ましょう」提议一起喝咖啡。",
+          "grammar_point": "て形・が・い形容詞（否定過去）"
         },
         {
           "id": "AP_016",
-          "type": "それで・たり〜たり・ませんか",
+          "type": "grammar_form",
           "question": "まりさんへ \n\n  まりさん、げんきですか。\nわたしは 今日、まちで 友だちに 会いました。\n友だちは いそがしいですから、すぐに かえりました。（A）、\nわたしは 一人で コーヒーを 飲ん（B）、本を 読ん（B）しました。\n今、春ですから、春の 花が とても きれいです。\nこんど、いっしょに、こうえんで、さんぽを（C）。\n\nミナ",
           "options": [
             "Aそれで・Bだり・Cしませんか",
@@ -3397,11 +3637,12 @@
             "Aそれで・Bで・Cしませんか"
           ],
           "answer": 0,
-          "explanation": "A处用「な形容詞+な」修饰名词「絵」；B处用「に」表示移动方向；C处用「も」表示除了正餐还吃了蛋糕。"
+          "explanation": "A处用「な形容詞+な」修饰名词「絵」；B处用「に」表示移动方向；C处用「も」表示除了正餐还吃了蛋糕。",
+          "grammar_point": "それで・たり〜たり・ませんか"
         },
         {
           "id": "AP_017",
-          "type": "から・が・ながら",
+          "type": "grammar_form",
           "question": "今日は 休みでした。\n朝、パンを 食べて（A）、コーヒーを 飲みました。\nそのあと、へやを そうじして、えきまで 歩きました。\nひるは 友だちと こうえんで、うんどうしました。\nとても たのしかったです（B）、すこし つかれました。\nそれで、うちに かえって、おんがくを 聞き（C）、本を 読みました。\n夜は テレビを 見て、はやく ねました。",
           "options": [
             "Aから・Bが・Cながら",
@@ -3409,11 +3650,12 @@
             "Aあとで・Bが・Cながら"
           ],
           "answer": 0,
-          "explanation": "A处用「や」列举蔬菜、鱼等；B处用「そして」连接句子；C处用「〜たい」表示想做蛋糕的愿望。"
+          "explanation": "A处用「や」列举蔬菜、鱼等；B处用「そして」连接句子；C处用「〜たい」表示想做蛋糕的愿望。",
+          "grammar_point": "から・が・ながら"
         },
         {
           "id": "AP_018",
-          "type": "い形容詞（過去）・で・から",
+          "type": "grammar_form",
           "question": "みえさんへ \n\n  みえさん、げんきですか。\nわたしは 今日、しごとが たくさん ありました。\nそれで、夜まで いそがし（A）。\nでも、えきの ちかく（B）、あたらしい パンやを 見ました。\nとても おいしそうでした（C）、明日 買って 食べて みたいです。\nおいしかったら、こんど、いっしょに 食べましょう。\n\nミナ",
           "options": [
             "Aかったです・Bで・Cから",
@@ -3421,11 +3663,12 @@
             "Aかったです・Bに・Cから"
           ],
           "answer": 0,
-          "explanation": "A处用「〜でしょう」推测明天也会下雨；B处用「〜前に」表示去学校之前买面包；C处用「〜ていません」表示作业还没做。"
+          "explanation": "A处用「〜でしょう」推测明天也会下雨；B处用「〜前に」表示去学校之前买面包；C处用「〜ていません」表示作业还没做。",
+          "grammar_point": "い形容詞（過去）・で・から"
         },
         {
           "id": "AP_019",
-          "type": "でしょう・前に・ている（否定）",
+          "type": "grammar_form",
           "question": "今日は 朝から よるまで、雨が ふって いました。\n明日も 雨が ふる（A）。\nそれで、かさを かばんに 入れました。\n学校に（B）前に、パンを 買いました。\n今日は たくさん 歩きました。\nまだ、しゅくだいを（C）。\nとても ねむいです。\n今日は とても つかれました。",
           "options": [
             "Aでしょう・B行く・Cしていません",
@@ -3433,11 +3676,12 @@
             "Aます・B行く・Cしていません"
           ],
           "answer": 0,
-          "explanation": "这是综合应用题，需要根据上下文选择最恰当的语法形式。"
+          "explanation": "这是综合应用题，需要根据上下文选择最恰当的语法形式。",
+          "grammar_point": "でしょう・前に・ている（否定）"
         },
         {
           "id": "AP_020",
-          "type": "な形容詞・に・も",
+          "type": "grammar_form",
           "question": "きのう、そふと そぼと いっしょに、びじゅつかんに 行きました。\nとても（A）絵が たくさん ありました。\nそのあと、レストランに、ごはんを 食べ（B）、行きました。\nおいしい 食べものを 食べてから、ケーキ（C）食べました。\n今日は、とても たのしかったです。",
           "options": [
             "Aきれいな・Bに・Cも",
@@ -3445,7 +3689,8 @@
             "Aきれいな・Bて・Cも"
           ],
           "answer": 0,
-          "explanation": "这是综合应用题，需要根据上下文选择最恰当的语法形式。"
+          "explanation": "这是综合应用题，需要根据上下文选择最恰当的语法形式。",
+          "grammar_point": "な形容詞・に・も"
         }
       ]
     }
