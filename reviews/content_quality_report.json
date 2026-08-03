@@ -1,0 +1,191 @@
+{
+  "grammar": {
+    "N5": {
+      "level": "N5",
+      "total": 100,
+      "duplicates": 6,
+      "missing_fields": [],
+      "missing_examples": 0,
+      "issues": [
+        "第58条重复 grammar: 〜から",
+        "第60条重复 grammar: 〜と",
+        "第85条重复 grammar: 〜について",
+        "第87条重复 grammar: 〜によって",
+        "第89条重复 grammar: 〜に対して",
+        "第90条重复 grammar: 〜にとって"
+      ]
+    },
+    "N4": {
+      "level": "N4",
+      "total": 100,
+      "duplicates": 6,
+      "missing_fields": [],
+      "missing_examples": 0,
+      "issues": [
+        "第31条重复 grammar: 〜そうだ",
+        "第32条重复 grammar: 〜らしい",
+        "第65条重复 grammar: 〜ようになる",
+        "第81条重复 grammar: 〜わけにはいかない",
+        "第83条重复 grammar: 〜わけではない",
+        "第84条重复 grammar: 〜わけだ"
+      ]
+    },
+    "N3": {
+      "level": "N3",
+      "total": 100,
+      "duplicates": 8,
+      "missing_fields": [],
+      "missing_examples": 0,
+      "issues": [
+        "第21条重复 grammar: 〜そうだ",
+        "第33条重复 grammar: 〜に違いない",
+        "第34条重复 grammar: 〜に決まっている",
+        "第61条重复 grammar: 〜ながら",
+        "第62条重复 grammar: 〜つつ",
+        "第67条重复 grammar: 〜に違いない",
+        "第81条重复 grammar: 〜反面",
+        "第82条重复 grammar: 〜反面"
+      ]
+    },
+    "N2": {
+      "level": "N2",
+      "total": 100,
+      "duplicates": 4,
+      "missing_fields": [],
+      "missing_examples": 0,
+      "issues": [
+        "第69条重复 grammar: 〜を禁じえない",
+        "第70条重复 grammar: 〜ずにはいられない",
+        "第71条重复 grammar: 〜ずにはすまない",
+        "第75条重复 grammar: 〜に越したことはない"
+      ]
+    },
+    "N1": {
+      "level": "N1",
+      "total": 100,
+      "duplicates": 14,
+      "missing_fields": [],
+      "missing_examples": 0,
+      "issues": [
+        "第58条重复 grammar: 〜を禁じえない",
+        "第62条重复 grammar: 〜がてら",
+        "第64条重复 grammar: 〜かねる",
+        "第72条重复 grammar: 〜を余儀なくされる",
+        "第73条重复 grammar: 〜を余儀なくする",
+        "第78条重复 grammar: 〜べく",
+        "第82条重复 grammar: 〜きらいがある",
+        "第92条重复 grammar: 〜かたわら",
+        "第93条重复 grammar: 〜そばから",
+        "第94条重复 grammar: 〜が早いか",
+        "第95条重复 grammar: 〜や否や",
+        "第96条重复 grammar: 〜かと思うと/思えば",
+        "第98条重复 grammar: 〜そばらく",
+        "第99条重复 grammar: 〜たかと思うと/思えば"
+      ]
+    }
+  },
+  "words": {
+    "N5": {
+      "level": "N5",
+      "total": 807,
+      "duplicates": 13,
+      "missing_fields": []
+    },
+    "N4": {
+      "level": "N4",
+      "total": 757,
+      "duplicates": 4,
+      "missing_fields": []
+    },
+    "N3": {
+      "level": "N3",
+      "total": 1818,
+      "duplicates": 7,
+      "missing_fields": []
+    },
+    "N2": {
+      "level": "N2",
+      "total": 3208,
+      "duplicates": 3,
+      "missing_fields": []
+    },
+    "N1": {
+      "level": "N1",
+      "total": 4044,
+      "duplicates": 3,
+      "missing_fields": []
+    }
+  },
+  "exams": [
+    {
+      "file": "N1_bunpou_1800.json",
+      "level": "N1",
+      "title": "N1 文法 1800題（jlpt-test 整理）",
+      "total": 1836,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    },
+    {
+      "file": "N1_bunpou_90.json",
+      "level": "N1",
+      "title": "N1 文法 90題（chenmarvin 整理）",
+      "total": 90,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    },
+    {
+      "file": "N2_bunpou_90.json",
+      "level": "N2",
+      "title": "N2 文法 90題（chenmarvin 整理）",
+      "total": 90,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    },
+    {
+      "file": "N3_bunpou_200.json",
+      "level": "N3",
+      "title": "N3 文法 200題（githubtarohario 整理）",
+      "total": 247,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    },
+    {
+      "file": "N4_bunpou_90.json",
+      "level": "N4",
+      "title": "N4 文法 90題（chenmarvin 整理）",
+      "total": 90,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    },
+    {
+      "file": "N5_bunpou_266.json",
+      "level": "N5",
+      "title": "N5 文法 266題（enjoyjdk N5 app 整理）",
+      "total": 266,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    },
+    {
+      "file": "sample_N5.json",
+      "level": "N5",
+      "title": "N5 真题示例卷",
+      "total": 8,
+      "missing_explanation": 0,
+      "empty_options": 0,
+      "answer_out_of_range": 0,
+      "duplicate_questions": 0
+    }
+  ]
+}

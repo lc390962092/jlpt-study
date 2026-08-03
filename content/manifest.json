@@ -1,0 +1,137 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-08-03T16:15:14.655598+00:00",
+  "levels": {
+    "N5": {
+      "grammar": {
+        "file": "content/N5_grammar.json",
+        "count": 100,
+        "sha256": "18b3ac4eaa82",
+        "missing_examples": 0,
+        "homonyms": 12
+      },
+      "words": {
+        "file": "content/N5_words.json",
+        "count": 807,
+        "sha256": "9ef27b47861b",
+        "missing_examples": 0,
+        "homonyms": 4
+      }
+    },
+    "N4": {
+      "grammar": {
+        "file": "content/N4_grammar.json",
+        "count": 100,
+        "sha256": "45892252e249",
+        "missing_examples": 0,
+        "homonyms": 12
+      },
+      "words": {
+        "file": "content/N4_words.json",
+        "count": 757,
+        "sha256": "95ee3ff8a4c2",
+        "missing_examples": 0,
+        "homonyms": 0
+      }
+    },
+    "N3": {
+      "grammar": {
+        "file": "content/N3_grammar.json",
+        "count": 100,
+        "sha256": "ac1fe267a4bb",
+        "missing_examples": 0,
+        "homonyms": 14
+      },
+      "words": {
+        "file": "content/N3_words.json",
+        "count": 1818,
+        "sha256": "5fa8a8b0d3f6",
+        "missing_examples": 0,
+        "homonyms": 4
+      }
+    },
+    "N2": {
+      "grammar": {
+        "file": "content/N2_grammar.json",
+        "count": 99,
+        "sha256": "a3214b24f89f",
+        "missing_examples": 0,
+        "homonyms": 6
+      },
+      "words": {
+        "file": "content/N2_words.json",
+        "count": 3208,
+        "sha256": "d57f25aace4a",
+        "missing_examples": 0,
+        "homonyms": 2
+      }
+    },
+    "N1": {
+      "grammar": {
+        "file": "content/N1_grammar.json",
+        "count": 99,
+        "sha256": "d54af0a9886c",
+        "missing_examples": 0,
+        "homonyms": 22
+      },
+      "words": {
+        "file": "content/N1_words.json",
+        "count": 4044,
+        "sha256": "d80417b2ebc2",
+        "missing_examples": 0,
+        "homonyms": 2
+      }
+    }
+  },
+  "exams": [
+    {
+      "file": "content/exams/N1_bunpou_1800.json",
+      "title": "N1 文法 1800題（jlpt-test 整理）",
+      "level": "N1",
+      "count": 1836,
+      "sha256": "e7e9503acae4"
+    },
+    {
+      "file": "content/exams/N1_bunpou_90.json",
+      "title": "N1 文法 90題（chenmarvin 整理）",
+      "level": "N1",
+      "count": 90,
+      "sha256": "a9b5e0e5d5bd"
+    },
+    {
+      "file": "content/exams/N2_bunpou_90.json",
+      "title": "N2 文法 90題（chenmarvin 整理）",
+      "level": "N2",
+      "count": 90,
+      "sha256": "466c7ca9e520"
+    },
+    {
+      "file": "content/exams/N3_bunpou_200.json",
+      "title": "N3 文法 200題（githubtarohario 整理）",
+      "level": "N3",
+      "count": 247,
+      "sha256": "44be8513ff0f"
+    },
+    {
+      "file": "content/exams/N4_bunpou_90.json",
+      "title": "N4 文法 90題（chenmarvin 整理）",
+      "level": "N4",
+      "count": 90,
+      "sha256": "b72914499482"
+    },
+    {
+      "file": "content/exams/N5_bunpou_266.json",
+      "title": "N5 文法 266題（enjoyjdk N5 app 整理）",
+      "level": "N5",
+      "count": 266,
+      "sha256": "365d65add75a"
+    },
+    {
+      "file": "content/exams/sample_N5.json",
+      "title": "N5 真题示例卷",
+      "level": "N5",
+      "count": 8,
+      "sha256": "e25edd1e5b54"
+    }
+  ]
+}

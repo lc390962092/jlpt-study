@@ -1,0 +1,35 @@
+# JLPT 学习项目 - 忽略规则
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+venv/
+
+# 编辑器和系统文件
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 临时/备份文件（保留在项目目录但不进入 git）
+*.bak
+*.bak.*
+*.log
+*.tmp
+
+# 大型原始数据（notes.csv 是未清洗原始数据，不进入版本控制）
+notes.csv
+
+# 本地测试产物
+*.sqlite
+*.db
+coverage/
+node_modules/
+dist/
+build/
