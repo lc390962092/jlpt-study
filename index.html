@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="JLPT 日语学习应用，支持 N1-N5 词汇、语法学习与真题测试">
+    <meta name="theme-color" content="#667eea" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="JLPT学习">
+    <meta property="og:title" content="JLPT 日语学习">
+    <meta property="og:description" content="词汇 + 语法 · N1-N5 全等级">
+    <meta property="og:type" content="website">
     <title>JLPT 日语学习</title>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link rel="icon" type="image/png" href="icons/icon-96x96.png">
     <link rel="stylesheet" href="css/common.css">
     <style>
         .header { padding: 40px 20px 30px; }
@@ -32,6 +44,22 @@
             return known.length;
         }
 
+        function progressBarHTML(done, total, label, kind) {
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const safePct = Math.min(100, Math.max(0, pct));
+            return `
+                <div class="progress-item ${kind}">
+                    <div class="progress-label">
+                        <span>${label}</span>
+                        <span>${done}/${total}</span>
+                    </div>
+                    <div class="progress-bar" aria-label="${label} 学习进度 ${safePct}%">
+                        <div class="fill" style="width: ${safePct}%;"></div>
+                    </div>
+                </div>
+            `;
+        }
+
         async function render() {
             const summary = await fetch('content/summary.json').then(r => r.json());
             const container = document.getElementById('levels');
@@ -51,8 +79,8 @@
                             <a href="exam.html" class="mode-btn exam">真题</a>
                         </div>
                         <div class="progress-row">
-                            <span>词 ${wordsDone}/${wordsTotal}</span>
-                            <span>法 ${grammarDone}/${grammarTotal}</span>
+                            ${progressBarHTML(wordsDone, wordsTotal, '词汇', 'words')}
+                            ${progressBarHTML(grammarDone, grammarTotal, '语法', 'grammar')}
                         </div>
                     </div>
                 `;

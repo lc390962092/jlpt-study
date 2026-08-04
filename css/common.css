@@ -1321,8 +1321,16 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 20px;
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+  .levels {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 24px 20px;
+  }
 }
 
 .level-card {
@@ -1332,7 +1340,15 @@ a {
   text-align: center;
   box-shadow: var(--shadow);
   color: inherit;
-  transition: background-color 0.25s, box-shadow 0.25s;
+  transition: transform 0.2s, background-color 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.level-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
 }
 
 .level-card h3 {
@@ -1410,26 +1426,73 @@ a {
   border-color: var(--border);
 }
 
-.mode-btn.quiz {
-  background: var(--warning-soft);
-  color: var(--warning-text);
-  border-color: var(--border);
-}
-
 .mode-btn.exam {
   background: var(--surface-2);
   color: var(--accent-5);
   border-color: var(--border);
 }
 
+.mode-btn.quiz {
+  background: var(--warning-soft);
+  color: var(--warning-text);
+  border-color: var(--border);
+}
+
+.mode-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+}
+
 .progress-row {
-  margin-top: 12px;
+  margin-top: 14px;
   font-size: 12px;
   color: var(--text-muted);
   display: flex;
-  justify-content: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
   transition: color 0.25s ease;
+}
+
+.progress-row .progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.progress-row .progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--surface-3);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--primary);
+  transition: width 0.4s ease;
+  min-width: 0;
+}
+
+.progress-item.words .fill {
+  background: var(--primary);
+}
+
+.progress-item.grammar .fill {
+  background: var(--info);
 }
 
 /* Quick test buttons */

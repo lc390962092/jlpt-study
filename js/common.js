@@ -10,7 +10,7 @@
   const ICONS = {
     [THEME_LIGHT]: '☀️',
     [THEME_DARK]: '🌙',
-    [THEME_AUTO]: '⚡'
+    [THEME_AUTO]: '🌗'
   };
 
   function getSystemPrefersDark() {
@@ -108,6 +108,25 @@
   } else {
     init();
   }
+
+  function registerServiceWorker() {
+    if (!('serviceWorker' in navigator)) return;
+    // 只在安全上下文（localhost / https）注册
+    const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if (!isLocalhost && location.protocol !== 'https:') return;
+
+    // 自动适配 GitHub Pages 子目录或根目录部署
+    const basePath = location.pathname.replace(/\/[^\/]*\.html$/, '').replace(/\/$/, '') || '';
+    const swPath = (basePath ? basePath : '') + '/sw.js';
+    navigator.serviceWorker.register(swPath)
+      .then((reg) => {
+        console.log('[SW] registered', reg.scope);
+      })
+      .catch((err) => {
+        console.warn('[SW] registration failed', err);
+      });
+  }
+  registerServiceWorker();
 
   // 暴露全局方法，方便页面调用
   window.JLPT = window.JLPT || {};
