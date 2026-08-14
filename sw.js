@@ -12,7 +12,7 @@ const STATIC_ASSETS = [
   BASE + '/grammar.html',
   BASE + '/quiz.html',
   BASE + '/exam.html',
-  BASE + '/css/common.css?v=3',
+  BASE + '/css/common.css?v=4',
   BASE + '/js/common.js',
   BASE + '/site.webmanifest',
   BASE + '/icons/icon-192x192.png',

@@ -13,10 +13,17 @@
     <meta property="og:description" content="词汇 + 语法 · N1-N5 全等级">
     <meta property="og:type" content="website">
     <title>JLPT 日语学习</title>
+    <script>
+        (function () {
+            const basePath = location.pathname.replace(/\/[^/]*$/, '/');
+            window.__BASE_PATH__ = basePath;
+            document.write('<base href="' + basePath + '">');
+        })();
+    </script>
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icons/icon-192x192.png">
     <link rel="icon" type="image/png" href="icons/icon-96x96.png">
-    <link rel="stylesheet" href="css/common.css?v=3">
+    <link rel="stylesheet" href="css/common.css?v=4">
     <style>
         .header { padding: 40px 20px 30px; }
     </style>
@@ -61,30 +68,39 @@
         }
 
         async function render() {
-            const summary = await fetch('content/summary.json').then(r => r.json());
-            const container = document.getElementById('levels');
-            container.innerHTML = levels.map(lv => {
-                const wordsTotal = summary[`${lv.id}_words`] || 0;
-                const grammarTotal = summary[`${lv.id}_grammar`] || 0;
-                const wordsDone = getProgress(lv.id, 'words');
-                const grammarDone = getProgress(lv.id, 'grammar');
-                return `
-                    <div class="level-card ${lv.colorClass}">
-                        <div class="level-badge">${lv.id}</div>
-                        <h3>${lv.name}</h3>
-                        <div class="mode-btns">
-                            <a href="study.html?level=${lv.id}" class="mode-btn words">词汇</a>
-                            <a href="grammar.html?level=${lv.id}" class="mode-btn grammar">语法</a>
-                            <a href="quiz.html?level=${lv.id}" class="mode-btn quiz">测试</a>
-                            <a href="exam.html" class="mode-btn exam">真题</a>
+            const basePath = window.__BASE_PATH__ || location.pathname.replace(/\/[^/]*$/, '/');
+            try {
+                const summary = await fetch(`${basePath}content/summary.json`).then(r => {
+                    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                    return r.json();
+                });
+                const container = document.getElementById('levels');
+                container.innerHTML = levels.map(lv => {
+                    const wordsTotal = summary[`${lv.id}_words`] || 0;
+                    const grammarTotal = summary[`${lv.id}_grammar`] || 0;
+                    const wordsDone = getProgress(lv.id, 'words');
+                    const grammarDone = getProgress(lv.id, 'grammar');
+                    return `
+                        <div class="level-card ${lv.colorClass}">
+                            <div class="level-badge">${lv.id}</div>
+                            <h3>${lv.name}</h3>
+                            <div class="mode-btns">
+                                <a href="${basePath}study.html?level=${lv.id}" class="mode-btn words">词汇</a>
+                                <a href="${basePath}grammar.html?level=${lv.id}" class="mode-btn grammar">语法</a>
+                                <a href="${basePath}quiz.html?level=${lv.id}" class="mode-btn quiz">测试</a>
+                                <a href="${basePath}exam.html" class="mode-btn exam">真题</a>
+                            </div>
+                            <div class="progress-row">
+                                ${progressBarHTML(wordsDone, wordsTotal, '词汇', 'words')}
+                                ${progressBarHTML(grammarDone, grammarTotal, '语法', 'grammar')}
+                            </div>
                         </div>
-                        <div class="progress-row">
-                            ${progressBarHTML(wordsDone, wordsTotal, '词汇', 'words')}
-                            ${progressBarHTML(grammarDone, grammarTotal, '语法', 'grammar')}
-                        </div>
-                    </div>
-                `;
-            }).join('');
+                    `;
+                }).join('');
+            } catch (err) {
+                console.error('加载失败', err);
+                document.getElementById('levels').innerHTML = `<div class="msg">加载失败：${err.message}<br>请刷新重试</div>`;
+            }
         }
         render();
     </script>

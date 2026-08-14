@@ -7,10 +7,17 @@
     <meta name="theme-color" content="#667eea" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
     <title>页面未找到 - JLPT 日语学习</title>
+    <script>
+        (function () {
+            const basePath = location.pathname.replace(/\/[^/]*$/, '/');
+            window.__BASE_PATH__ = basePath;
+            document.write('<base href="' + basePath + '">');
+        })();
+    </script>
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icons/icon-192x192.png">
     <link rel="icon" type="image/png" href="icons/icon-96x96.png">
-    <link rel="stylesheet" href="css/common.css?v=3">
+    <link rel="stylesheet" href="css/common.css?v=4">
 </head>
 <body>
     <div class="header">
