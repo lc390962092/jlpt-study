@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="icons/icon-192x192.png">
     <link rel="icon" type="image/png" href="icons/icon-96x96.png">
 <title>JLPT 语法学习</title>
-    <link rel="stylesheet" href="css/common.css?v=3">
+    <link rel="stylesheet" href="css/common.css?v=4">
     <style>
         /* 跳转弹窗（复用 study.html 样式） */
         .jump-overlay {
@@ -109,6 +109,116 @@
         .btn-jump {
             background: var(--accent-5);
         }
+
+        /* grammar.html 卡片背面分块样式 */
+        .grammar-back {
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) transparent;
+        }
+        .grammar-back::-webkit-scrollbar { width: 6px; }
+        .grammar-back::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+
+        .grammar-back .section {
+            background: var(--surface-2);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin-bottom: 14px;
+            text-align: left;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        }
+        .grammar-back .section:last-child { margin-bottom: 0; }
+
+        .grammar-back .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary-text);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .grammar-back .meaning-text,
+        .grammar-back .usage-text {
+            font-size: 15px;
+            line-height: 1.65;
+            color: var(--text);
+            white-space: pre-wrap;
+        }
+
+        .grammar-back .pattern-box {
+            background: var(--warning-soft);
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 15px;
+            color: var(--warning-text);
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .grammar-back .example-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .grammar-back .example-list li {
+            background: var(--surface);
+            border-left: 3px solid var(--primary);
+            border-radius: 10px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.55;
+            color: var(--text);
+        }
+        .grammar-back .example-list li:last-child { margin-bottom: 0; }
+        .grammar-back .example-list .example-ja {
+            display: block;
+            font-size: 15px;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+        .grammar-back .example-list .example-reading {
+            display: block;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+        .grammar-back .example-list .example-meaning {
+            display: block;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .grammar-back .mistake-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .grammar-back .mistake-list li {
+            background: var(--danger-soft);
+            border-radius: 10px;
+            padding: 9px 12px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: var(--danger-text);
+            line-height: 1.5;
+        }
+
+        .grammar-back .note-text,
+        .grammar-back .compare-text {
+            font-size: 14px;
+            line-height: 1.65;
+            color: var(--text);
+            white-space: pre-wrap;
+        }
+        .grammar-back .compare-text {
+            background: var(--info-soft);
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
     </style>
 </head>
 <body>
@@ -181,25 +291,78 @@
             localStorage.setItem(`jlpt_grammar_progress_${level}`, JSON.stringify([...known]));
         }
 
+        function escapeHtml(text) {
+            if (text === null || text === undefined) return '';
+            return String(text)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        function nl2br(text) {
+            return escapeHtml(text).replace(/\n/g, '<br>');
+        }
+
+        function section(title, icon, body) {
+            return `<div class="section"><div class="section-title">${icon} ${escapeHtml(title)}</div>${body}</div>`;
+        }
+
+        function renderDescription(g) {
+            let html = '';
+            if (g.meaning || g.grammar_cn) {
+                const title = g.grammar_cn ? `${escapeHtml(g.grammar)}（${escapeHtml(g.grammar_cn)}）` : escapeHtml(g.grammar);
+                html += `<div class="grammar-title"><strong>${title}</strong></div>`;
+            }
+            if (g.meaning) {
+                html += section('含义', '💡', `<div class="meaning-text">${nl2br(g.meaning)}</div>`);
+            }
+            if (g.usage) {
+                html += section('用法', '📘', `<div class="usage-text">${nl2br(g.usage)}</div>`);
+            }
+            if (g.pattern) {
+                html += section('接续', '📐', `<div class="pattern-box">${nl2br(g.pattern)}</div>`);
+            }
+            const examples = g.examples && g.examples.length ? g.examples : (g.example ? [{
+                example: g.example,
+                example_reading: g.example_reading,
+                example_meaning: g.example_meaning
+            }] : []);
+            if (examples.length) {
+                const exHtml = examples.map(ex =>
+                    `<li>` +
+                    `${ex.example ? `<span class="example-ja">${escapeHtml(ex.example)}</span>` : ''}` +
+                    `${ex.example_reading ? `<span class="example-reading">${escapeHtml(ex.example_reading)}</span>` : ''}` +
+                    `${ex.example_meaning ? `<span class="example-meaning">${escapeHtml(ex.example_meaning)}</span>` : ''}` +
+                    `</li>`
+                ).join('');
+                html += section('例句', '📝', `<ul class="example-list">${exHtml}</ul>`);
+            }
+            const mistakes = g.common_mistakes || (g.mistakes ? [g.mistakes] : []);
+            if (mistakes && mistakes.length) {
+                const mHtml = mistakes.map(m => `<li>${nl2br(m)}</li>`).join('');
+                html += section('常见错误', '⚠️', `<ul class="mistake-list">${mHtml}</ul>`);
+            }
+            const comparison = g.comparison || g.compare || '';
+            if (comparison) {
+                html += section('辨析', '🔍', `<div class="compare-text">${nl2br(comparison)}</div>`);
+            }
+            if (g.notes) {
+                html += section('注意', '💬', `<div class="note-text">${nl2br(g.notes)}</div>`);
+            }
+            return html;
+        }
+
         function renderCardContent(g) {
+            const hint = g.grammar_cn ? escapeHtml(g.grammar_cn) : '点击卡片查看释义';
             return {
                 front: `
-                    <div class="grammar">${g.grammar}</div>
-                    <div class="hint">点击卡片查看释义</div>
+                    <div class="grammar">${escapeHtml(g.grammar)}</div>
+                    <div class="hint">${hint}</div>
                 `,
                 back: `
-                    <div class="grammar">${g.grammar}</div>
-                    <div class="reading">${g.reading}</div>
-                    <div class="meaning">${g.meaning}</div>
-                    ${g.pattern ? `<div class="pattern"><span class="label">接续：</span>${g.pattern}</div>` : ''}
-                    ${g.compare ? `<div class="compare"><span class="label">对比：</span>${g.compare}</div>` : ''}
-                    ${g.example ? `
-                    <div class="example-box">
-                        <div class="example">${g.example}</div>
-                        <div class="example-reading">${g.example_reading}</div>
-                        <div class="example-meaning">${g.example_meaning}</div>
-                    </div>
-                    ` : ''}
+                    <div class="grammar-back">${renderDescription(g)}</div>
                 `
             };
         }
@@ -343,7 +506,8 @@
 
         function speakExample() {
             const g = items[index];
-            if (g.example) speak(g.example);
+            const exampleText = (g.examples && g.examples[0] && g.examples[0].example) || g.example;
+            if (exampleText) speak(exampleText);
         }
 
         function toggleKnown() {

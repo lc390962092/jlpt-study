@@ -1,5 +1,5 @@
 /* JLPT PWA Service Worker */
-const CACHE_NAME = 'jlpt-study-v3';
+const CACHE_NAME = 'jlpt-study-v4';
 
 // 根据 SW 脚本所在路径自动推断项目 base 路径
 const SW_PATH = self.location.pathname; // e.g. /jlpt-study/sw.js or /sw.js
