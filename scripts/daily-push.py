@@ -1,35 +1,54 @@
 #!/usr/bin/env python3
-"""Generate and push today's JLPT daily grammar points as Feishu card + voice."""
+"""Generate and push today's JLPT daily content as Feishu card + voice.
+
+Rotates every other day:
+- even ordinal  -> 10 vocabulary words
+- odd ordinal   -> 10 grammar points
+"""
 import json
 import os
 import random
 import subprocess
 import sys
-from datetime import datetime, timezone, timedelta
+from datetime import date, datetime, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
 PRIVATE_DIR = os.path.join(BASE_DIR, "private")
-DAILY_DIR = os.path.join(PRIVATE_DIR, "daily-grammar")
+DAILY_DIR = os.path.join(PRIVATE_DIR, "daily")
 MEDIA_DIR = os.path.join(PRIVATE_DIR, "daily-media")
 TARGET_CHAT_ID = "oc_e4395471375838dfcee7f9fc04c120c7"
 
-LEVEL_FILES = {
+GRAMMAR_FILES = {
     "N5": "N5_grammar.json",
     "N4": "N4_grammar.json",
     "N3": "N3_grammar.json",
     "N2": "N2_grammar.json",
     "N1": "N1_grammar.json",
 }
-LEVEL_WEIGHTS = {"N5": 5, "N4": 4, "N3": 3, "N2": 2, "N1": 1}
+LEVEL_WEIGHTS = {"N5": 6, "N4": 5, "N3": 4, "N2": 2, "N1": 1}
+WORD_FILES = {
+    "N5": "N5_words.json",
+    "N4": "N4_words.json",
+    "N3": "N3_words.json",
+    "N2": "N2_words.json",
+    "N1": "N1_words.json",
+}
 
 
 def today_str(tz: timezone) -> str:
     return datetime.now(tz).strftime("%Y-%m-%d")
 
 
-def load_grammar_bank(level: str) -> list:
-    path = os.path.join(CONTENT_DIR, LEVEL_FILES[level])
+def is_words_day(date_str: str) -> bool:
+    """Return True if today is vocabulary day (even ordinal) else grammar day."""
+    y, m, d = map(int, date_str.split("-"))
+    return date(y, m, d).toordinal() % 2 == 0
+
+
+def load_bank(path_key: str, level: str) -> list:
+    mapping = GRAMMAR_FILES if path_key == "grammar" else WORD_FILES
+    path = os.path.join(CONTENT_DIR, mapping[level])
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     if not isinstance(data, list):
@@ -37,15 +56,15 @@ def load_grammar_bank(level: str) -> list:
     return data
 
 
-def pick_grammar(count: int = 10) -> list:
+def pick_items(bank_key: str, count: int = 10) -> list:
     items = []
     used = set()
-    level_pool = [lvl for lvl in LEVEL_FILES for _ in range(LEVEL_WEIGHTS[lvl])]
+    level_pool = [lvl for lvl in GRAMMAR_FILES for _ in range(LEVEL_WEIGHTS[lvl])]
     while len(items) < count:
         level = random.choice(level_pool)
-        bank = load_grammar_bank(level)
+        bank = load_bank(bank_key, level)
         candidate = random.choice(bank)
-        key = candidate.get("id", "")
+        key = candidate.get("id", "") or candidate.get("word", "")
         if key and key not in used:
             used.add(key)
             candidate.setdefault("level", level)
@@ -53,33 +72,46 @@ def pick_grammar(count: int = 10) -> list:
     return items
 
 
-def save_daily(items: list, date_str: str) -> str:
+def save_daily(items: list, date_str: str, mode: str) -> str:
     os.makedirs(DAILY_DIR, exist_ok=True)
-    path = os.path.join(DAILY_DIR, f"{date_str}.json")
+    path = os.path.join(DAILY_DIR, f"{date_str}.{mode}.json")
     if not os.path.exists(path):
         with open(path, "w", encoding="utf-8") as f:
             json.dump(items, f, ensure_ascii=False, indent=2)
     return path
 
 
-def generate_audio(items: list, date_str: str) -> str:
+def generate_audio(items: list, date_str: str, mode: str) -> str:
     os.makedirs(MEDIA_DIR, exist_ok=True)
-    mp3_path = os.path.join(MEDIA_DIR, f"{date_str}.mp3")
-    opus_path = os.path.join(MEDIA_DIR, f"{date_str}.opus")
+    mp3_path = os.path.join(MEDIA_DIR, f"{date_str}.{mode}.mp3")
+    opus_path = os.path.join(MEDIA_DIR, f"{date_str}.{mode}.opus")
 
     lines = []
     for i, item in enumerate(items, 1):
-        grammar = item.get("grammar", "").strip()
-        reading = item.get("reading", "").strip()
-        example = item.get("example", "").strip()
-        example_reading = item.get("example_reading", "").strip()
-        lines.append(f"{i}. {grammar}")
-        if reading:
-            lines.append(reading)
-        if example_reading:
-            lines.append(example_reading)
-        elif example:
-            lines.append(example)
+        if mode == "words":
+            word = item.get("word", "").strip()
+            reading = item.get("reading", "").strip()
+            sentence = item.get("sentence", "").strip()
+            sentence_reading = item.get("sentence_reading", "").strip()
+            lines.append(f"{i}. {word}")
+            if reading:
+                lines.append(reading)
+            if sentence_reading:
+                lines.append(sentence_reading)
+            elif sentence:
+                lines.append(sentence)
+        else:
+            grammar = item.get("grammar", "").strip()
+            reading = item.get("reading", "").strip()
+            example = item.get("example", "").strip()
+            example_reading = item.get("example_reading", "").strip()
+            lines.append(f"{i}. {grammar}")
+            if reading:
+                lines.append(reading)
+            if example_reading:
+                lines.append(example_reading)
+            elif example:
+                lines.append(example)
     text = "\n\n".join(lines)
 
     subprocess.run(
@@ -103,40 +135,68 @@ def generate_audio(items: list, date_str: str) -> str:
     return opus_path
 
 
-def build_card(items: list, date_str: str) -> dict:
+def build_card(items: list, date_str: str, mode: str) -> dict:
+    mode_label = "单词" if mode == "words" else "语法点"
+    mode_title = "每日日语单词" if mode == "words" else "每日日语文法"
     elements = [
         {
             "tag": "div",
             "text": {
                 "tag": "lark_md",
-                "content": f"**今日目标：{len(items)} 条语法点**  坚持打卡，积少成多 💪",
+                "content": f"**今日目标：{len(items)} {mode_label}**  坚持打卡，积少成多 💪",
             },
         },
         {"tag": "hr"},
     ]
     for i, item in enumerate(items, 1):
         level = item.get("level", "")
-        grammar = item.get("grammar", "").strip()
-        reading = item.get("reading", "").strip()
-        grammar_cn = item.get("grammar_cn", "").strip() or item.get("meaning", "").strip()
-        pattern = item.get("pattern", "").strip()
-        example = item.get("example", "").strip()
-        example_reading = item.get("example_reading", "").strip()
-        example_meaning = item.get("example_meaning", "").strip()
+        if mode == "words":
+            word = item.get("word", "").strip()
+            reading = item.get("reading", "").strip()
+            accent = item.get("accent", "").strip()
+            pos = item.get("pos", "").strip()
+            meaning = item.get("meaning", "").strip()
+            sentence = item.get("sentence", "").strip()
+            sentence_reading = item.get("sentence_reading", "").strip()
+            sentence_meaning = item.get("sentence_meaning", "").strip()
 
-        content = f"**{i}. {grammar}**  `{level}`\n"
-        if reading:
-            content += f"读音：{reading}\n"
-        if grammar_cn:
-            content += f"含义：{grammar_cn}\n"
-        if pattern:
-            content += f"接续：{pattern}"
-        if example:
-            content += f"\n\n*例：{example}*"
-            if example_reading:
-                content += f"\n*读：{example_reading}*"
-            if example_meaning:
-                content += f"\n*译：{example_meaning}*"
+            content = f"**{i}. {word}**  `{level}`\n"
+            if reading:
+                content += f"读音：{reading}\n"
+            if accent:
+                content += f"声调：{accent}\n"
+            if pos:
+                content += f"词性：{pos}\n"
+            if meaning:
+                content += f"含义：{meaning}"
+            if sentence:
+                content += f"\n\n*例：{sentence}*"
+                if sentence_reading:
+                    content += f"\n*读：{sentence_reading}*"
+                if sentence_meaning:
+                    content += f"\n*译：{sentence_meaning}*"
+        else:
+            grammar = item.get("grammar", "").strip()
+            reading = item.get("reading", "").strip()
+            grammar_cn = item.get("grammar_cn", "").strip() or item.get("meaning", "").strip()
+            pattern = item.get("pattern", "").strip()
+            example = item.get("example", "").strip()
+            example_reading = item.get("example_reading", "").strip()
+            example_meaning = item.get("example_meaning", "").strip()
+
+            content = f"**{i}. {grammar}**  `{level}`\n"
+            if reading:
+                content += f"读音：{reading}\n"
+            if grammar_cn:
+                content += f"含义：{grammar_cn}\n"
+            if pattern:
+                content += f"接续：{pattern}"
+            if example:
+                content += f"\n\n*例：{example}*"
+                if example_reading:
+                    content += f"\n*读：{example_reading}*"
+                if example_meaning:
+                    content += f"\n*译：{example_meaning}*"
         elements.append(
             {
                 "tag": "div",
@@ -163,7 +223,7 @@ def build_card(items: list, date_str: str) -> dict:
             "template": "blue",
             "title": {
                 "tag": "plain_text",
-                "content": f"每日日语 · {date_str}",
+                "content": f"{mode_title} · {date_str}",
             },
         },
         "elements": elements,
@@ -181,8 +241,8 @@ def send_card(card: dict, date_str: str) -> None:
     subprocess.run(cmd, check=True, cwd=BASE_DIR, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
-def send_voice(date_str: str) -> None:
-    rel_audio = f"private/daily-media/{date_str}.opus"
+def send_voice(date_str: str, mode: str) -> None:
+    rel_audio = f"private/daily-media/{date_str}.{mode}.opus"
     cmd = [
         "lark-cli", "im", "+messages-send",
         "--chat-id", TARGET_CHAT_ID,
@@ -195,15 +255,17 @@ def main():
     tz = timezone(timedelta(hours=9), "Asia/Tokyo")
     date_str = today_str(tz)
 
-    items = pick_grammar(10)
-    save_daily(items, date_str)
+    mode = "words" if is_words_day(date_str) else "grammar"
+    items = pick_items(mode, 10)
+    save_daily(items, date_str, mode)
 
-    audio_path = generate_audio(items, date_str)
-    card = build_card(items, date_str)
+    audio_path = generate_audio(items, date_str, mode)
+    card = build_card(items, date_str, mode)
     send_card(card, date_str)
-    send_voice(date_str)
+    send_voice(date_str, mode)
 
-    print(f"📚 今日 {len(items)} 条日语文法点（{date_str}）已推送\n卡片 + 语音已发送，回复「今日日语打卡」标记完成。")
+    label = "单词" if mode == "words" else "语法点"
+    print(f"📚 今日 {len(items)} {label}（{date_str}）已推送\n卡片 + 语音已发送，回复「今日日语打卡」标记完成。")
 
 
 if __name__ == "__main__":
