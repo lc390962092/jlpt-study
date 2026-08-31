@@ -33,3 +33,6 @@ coverage/
 node_modules/
 dist/
 build/
+
+# 本地私有数据不上传
+private/
