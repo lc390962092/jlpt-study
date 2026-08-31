@@ -10,6 +10,7 @@ import os
 import random
 import subprocess
 import sys
+import re
 from datetime import date, datetime, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +40,19 @@ WORD_FILES = {
 def today_str(tz: timezone) -> str:
     return datetime.now(tz).strftime("%Y-%m-%d")
 
+
+def clean_tts_text(text: str) -> str:
+    """Remove kanji from ruby-annotated strings like 私[わたし] -> わたし.
+
+    Edge-tts would otherwise read the kanji and then the reading separately.
+    """
+    if not text:
+        return ""
+    # Replace "漢字[かな]" with "かな"
+    text = re.sub(r"[^\s\[]+\[([^\]]+)\]", r"\1", text)
+    # Collapse multiple spaces
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 def is_words_day(date_str: str) -> bool:
     """Return True if today is vocabulary day (even ordinal) else grammar day."""
@@ -90,9 +104,9 @@ def generate_audio(items: list, date_str: str, mode: str) -> str:
     for i, item in enumerate(items, 1):
         if mode == "words":
             word = item.get("word", "").strip()
-            reading = item.get("reading", "").strip()
+            reading = clean_tts_text(item.get("reading", "").strip())
             sentence = item.get("sentence", "").strip()
-            sentence_reading = item.get("sentence_reading", "").strip()
+            sentence_reading = clean_tts_text(item.get("sentence_reading", "").strip())
             lines.append(f"{i}. {word}")
             if reading:
                 lines.append(reading)
@@ -102,9 +116,9 @@ def generate_audio(items: list, date_str: str, mode: str) -> str:
                 lines.append(sentence)
         else:
             grammar = item.get("grammar", "").strip()
-            reading = item.get("reading", "").strip()
+            reading = clean_tts_text(item.get("reading", "").strip())
             example = item.get("example", "").strip()
-            example_reading = item.get("example_reading", "").strip()
+            example_reading = clean_tts_text(item.get("example_reading", "").strip())
             lines.append(f"{i}. {grammar}")
             if reading:
                 lines.append(reading)
