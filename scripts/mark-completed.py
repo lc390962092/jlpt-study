@@ -8,7 +8,7 @@ from datetime import date, datetime, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAILY_DIR = os.path.join(BASE_DIR, "private", "daily")
-TARGET_CHAT_ID = "oc_e4395471375838dfcee7f9fc04c120c7"
+TARGET_CHAT_ID = "oc_88d8933f0bd6049c61c7bf9f894e097c"
 
 
 def today_str(tz: timezone) -> str:
@@ -117,8 +117,8 @@ def main():
         send_confirmation(result)
         unit = "个" if result["mode"] == "words" else "条"
         print(f"✅ {result['date']} 日语{result['label']}打卡完成，共 {result['count']} {unit}")
-    except FileNotFoundError as e:
-        print(f"❌ {e}")
+    except FileNotFoundError:
+        print(f"ℹ️ {date_arg} 还没有生成每日日语内容。请先让AI推送当日内容，或运行：python3 scripts/daily-push.py")
         sys.exit(1)
     except Exception as e:
         print(f"❌ 打卡失败：{e}")

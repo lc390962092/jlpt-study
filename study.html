@@ -147,8 +147,10 @@
         let index = 0;
         let known = new Set();
         let autoFlip = localStorage.getItem('jlpt_auto_flip') === 'true';
+        let autoSpeak = localStorage.getItem('jlpt_auto_speak') !== 'false'; // 默认开启
         let synth = window.speechSynthesis;
         let japaneseVoice = null;
+        let isSpeaking = false;
 
         function findJapaneseVoice() {
             const voices = synth.getVoices();
@@ -161,7 +163,7 @@
         }
         findJapaneseVoice();
 
-        function speak(text, rate = 0.85) {
+        function speak(text, rate = 0.85, onEnd = null) {
             if (!synth) return;
             synth.cancel();
             const utter = new SpeechSynthesisUtterance(text);
@@ -169,7 +171,39 @@
             utter.rate = rate;
             utter.pitch = 1.0;
             if (japaneseVoice) utter.voice = japaneseVoice;
+            if (onEnd) utter.onend = onEnd;
             synth.speak(utter);
+        }
+
+        function speakWord(onEnd = null) {
+            const w = words[index];
+            speak(`${w.word}、${w.reading}`, 0.85, onEnd);
+        }
+
+        function speakMeaningAndSentence() {
+            const w = words[index];
+            const parts = [];
+            if (w.meaning) parts.push(w.meaning);
+            if (w.sentence) parts.push(w.sentence);
+            if (parts.length > 0) {
+                speak(parts.join('。'), 0.9);
+            }
+        }
+
+        function autoSpeakCurrent() {
+            if (!autoSpeak || !words.length) return;
+            const w = words[index];
+            if (!w) return;
+            
+            if (autoFlip) {
+                // 默认展开释义：先读单词，然后读释义和例句
+                speakWord(() => {
+                    setTimeout(() => speakMeaningAndSentence(), 300);
+                });
+            } else {
+                // 不展开：只读单词
+                speakWord();
+            }
         }
 
         function loadProgress() {
@@ -241,13 +275,17 @@
                         <input type="checkbox" id="autoFlipCheck" ${autoFlip ? 'checked' : ''}>
                         默认展开释义
                     </label>
+                    <label class="setting-label">
+                        <input type="checkbox" id="autoSpeakCheck" ${autoSpeak ? 'checked' : ''}>
+                        🔊 翻页自动播放
+                    </label>
                 </div>
                 <div class="card-stack" id="cardStack">
                     ${nextW ? cardHtml(nextW, 'next') : ''}
                     ${cardHtml(w, 'current')}
                 </div>
                 <div class="btn-group">
-                    <button class="btn btn-word" onclick="event.stopPropagation(); speakWord()">🔊 读音</button>
+                    <button class="btn btn-word" onclick="event.stopPropagation(); speakWordManual()">🔊 读音</button>
                     ${w.sentence ? `<button class="btn btn-sentence" onclick="event.stopPropagation(); speakSentence()">📝 例句</button>` : ''}
                     <button class="btn btn-jump" onclick="event.stopPropagation(); showJump()">🔍 跳转</button>
                     <button class="btn ${isKnown ? 'btn-unknown' : 'btn-known'}" onclick="event.stopPropagation(); toggleKnown()">${isKnown ? '取消掌握' : '✓ 掌握'}</button>
@@ -255,6 +293,9 @@
                 <div class="controls">
                     <button class="nav-btn" onclick="prev()" ${index === 0 ? 'disabled' : ''}>← 上一个</button>
                     <button class="nav-btn" onclick="next()">下一个 →</button>
+                </div>
+                <div class="keyboard-hint" style="text-align:center;margin-top:12px;font-size:12px;color:var(--text-muted);">
+                    ⌨️ 键盘: ←→ 翻页 | Enter 翻转 | S 读音 | M 例句 | K 掌握
                 </div>
             `;
 
@@ -267,8 +308,65 @@
                 });
             }
 
+            const autoSpeakCheck = document.getElementById('autoSpeakCheck');
+            if (autoSpeakCheck) {
+                autoSpeakCheck.addEventListener('change', (e) => {
+                    autoSpeak = e.target.checked;
+                    localStorage.setItem('jlpt_auto_speak', autoSpeak ? 'true' : 'false');
+                    if (!autoSpeak && synth) synth.cancel();
+                });
+            }
+
             setupCardClick();
             setupSwipe();
+            setupKeyboard();
+
+            // 翻页后自动播放
+            setTimeout(() => autoSpeakCurrent(), 300);
+        }
+
+        function setupKeyboard() {
+            document.removeEventListener('keydown', onKeyDown);
+            document.addEventListener('keydown', onKeyDown);
+        }
+
+        function onKeyDown(e) {
+            // 如果跳转弹窗打开，不处理全局按键
+            const jumpOverlay = document.getElementById('jumpOverlay');
+            if (jumpOverlay && jumpOverlay.classList.contains('active')) return;
+
+            switch (e.key) {
+                case 'ArrowRight':
+                case 'ArrowDown':
+                case ' ':
+                    e.preventDefault();
+                    next();
+                    break;
+                case 'ArrowLeft':
+                case 'ArrowUp':
+                    e.preventDefault();
+                    prev();
+                    break;
+                case 'Enter':
+                    e.preventDefault();
+                    flip();
+                    break;
+                case 'k':
+                case 'K':
+                    e.preventDefault();
+                    toggleKnown();
+                    break;
+                case 's':
+                case 'S':
+                    e.preventDefault();
+                    speakWordManual();
+                    break;
+                case 'm':
+                case 'M':
+                    e.preventDefault();
+                    if (words[index] && words[index].sentence) speakSentence();
+                    break;
+            }
         }
 
         function setupCardClick() {
@@ -364,6 +462,10 @@
             if (synth) synth.cancel();
             if (index > 0) index--;
             render();
+        }
+
+        function speakWordManual() {
+            speakWord();
         }
 
         function restart() {

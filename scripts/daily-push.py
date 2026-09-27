@@ -18,7 +18,7 @@ CONTENT_DIR = os.path.join(BASE_DIR, "content")
 PRIVATE_DIR = os.path.join(BASE_DIR, "private")
 DAILY_DIR = os.path.join(PRIVATE_DIR, "daily")
 MEDIA_DIR = os.path.join(PRIVATE_DIR, "daily-media")
-TARGET_CHAT_ID = "oc_e4395471375838dfcee7f9fc04c120c7"
+TARGET_CHAT_ID = "oc_88d8933f0bd6049c61c7bf9f894e097c"
 
 GRAMMAR_FILES = {
     "N5": "N5_grammar.json",
@@ -103,10 +103,10 @@ def generate_audio(items: list, date_str: str, mode: str) -> str:
     lines = []
     for i, item in enumerate(items, 1):
         if mode == "words":
-            word = item.get("word", "").strip()
-            reading = clean_tts_text(item.get("reading", "").strip())
-            sentence = item.get("sentence", "").strip()
-            sentence_reading = clean_tts_text(item.get("sentence_reading", "").strip())
+            word = (item.get("word") or "").strip()
+            reading = clean_tts_text((item.get("reading") or "").strip())
+            sentence = (item.get("sentence") or "").strip()
+            sentence_reading = clean_tts_text((item.get("sentence_reading") or "").strip())
             lines.append(f"{i}. {word}")
             if reading:
                 lines.append(reading)
@@ -115,10 +115,10 @@ def generate_audio(items: list, date_str: str, mode: str) -> str:
             elif sentence:
                 lines.append(sentence)
         else:
-            grammar = item.get("grammar", "").strip()
-            reading = clean_tts_text(item.get("reading", "").strip())
-            example = item.get("example", "").strip()
-            example_reading = clean_tts_text(item.get("example_reading", "").strip())
+            grammar = (item.get("grammar") or "").strip()
+            reading = clean_tts_text((item.get("reading") or "").strip())
+            example = (item.get("example") or "").strip()
+            example_reading = clean_tts_text((item.get("example_reading") or "").strip())
             lines.append(f"{i}. {grammar}")
             if reading:
                 lines.append(reading)
@@ -165,14 +165,14 @@ def build_card(items: list, date_str: str, mode: str) -> dict:
     for i, item in enumerate(items, 1):
         level = item.get("level", "")
         if mode == "words":
-            word = item.get("word", "").strip()
-            reading = item.get("reading", "").strip()
-            accent = item.get("accent", "").strip()
-            pos = item.get("pos", "").strip()
-            meaning = item.get("meaning", "").strip()
-            sentence = item.get("sentence", "").strip()
-            sentence_reading = item.get("sentence_reading", "").strip()
-            sentence_meaning = item.get("sentence_meaning", "").strip()
+            word = (item.get("word") or "").strip()
+            reading = (item.get("reading") or "").strip()
+            accent = (item.get("accent") or "").strip()
+            pos = (item.get("pos") or "").strip()
+            meaning = (item.get("meaning") or "").strip()
+            sentence = (item.get("sentence") or "").strip()
+            sentence_reading = (item.get("sentence_reading") or "").strip()
+            sentence_meaning = (item.get("sentence_meaning") or "").strip()
 
             content = f"**{i}. {word}**  `{level}`\n"
             if reading:
@@ -190,13 +190,13 @@ def build_card(items: list, date_str: str, mode: str) -> dict:
                 if sentence_meaning:
                     content += f"\n*译：{sentence_meaning}*"
         else:
-            grammar = item.get("grammar", "").strip()
-            reading = item.get("reading", "").strip()
-            grammar_cn = item.get("grammar_cn", "").strip() or item.get("meaning", "").strip()
-            pattern = item.get("pattern", "").strip()
-            example = item.get("example", "").strip()
-            example_reading = item.get("example_reading", "").strip()
-            example_meaning = item.get("example_meaning", "").strip()
+            grammar = (item.get("grammar") or "").strip()
+            reading = (item.get("reading") or "").strip()
+            grammar_cn = (item.get("grammar_cn") or "").strip() or (item.get("meaning") or "").strip()
+            pattern = (item.get("pattern") or "").strip()
+            example = (item.get("example") or "").strip()
+            example_reading = (item.get("example_reading") or "").strip()
+            example_meaning = (item.get("example_meaning") or "").strip()
 
             content = f"**{i}. {grammar}**  `{level}`\n"
             if reading:
@@ -268,8 +268,15 @@ def send_voice(date_str: str, mode: str) -> None:
 def main():
     tz = timezone(timedelta(hours=9), "Asia/Tokyo")
     date_str = today_str(tz)
+    force = "--force" in sys.argv
 
     mode = "words" if is_words_day(date_str) else "grammar"
+    daily_path = os.path.join(DAILY_DIR, f"{date_str}.{mode}.json")
+    if os.path.exists(daily_path) and not force:
+        label = "单词" if mode == "words" else "语法点"
+        print(f"ℹ️ 今日（{date_str}）日语{label}已推送过，跳过重复发送。\n如需重新推送，请使用：python3 scripts/daily-push.py --force")
+        return
+
     items = pick_items(mode, 10)
     save_daily(items, date_str, mode)
 
