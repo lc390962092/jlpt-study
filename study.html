@@ -171,7 +171,10 @@
             utter.rate = rate;
             utter.pitch = 1.0;
             if (japaneseVoice) utter.voice = japaneseVoice;
-            if (onEnd) utter.onend = onEnd;
+            if (onEnd) {
+                utter.onend = onEnd;
+                utter.onerror = onEnd; // error时也触发onEnd，防止链式调用卡住
+            }
             synth.speak(utter);
         }
 
@@ -195,15 +198,10 @@
             const w = words[index];
             if (!w) return;
             
-            if (autoFlip) {
-                // 默认展开释义：先读单词，然后读释义和例句
-                speakWord(() => {
-                    setTimeout(() => speakMeaningAndSentence(), 300);
-                });
-            } else {
-                // 不展开：只读单词
-                speakWord();
-            }
+            // 两种模式都先读单词，然后读释义+例句
+            speakWord(() => {
+                setTimeout(() => speakMeaningAndSentence(), 400);
+            });
         }
 
         function loadProgress() {
